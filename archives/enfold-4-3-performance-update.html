@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en-US" class="html_stretched responsive av-preloader-disabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking html_mobile_menu_tablet html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_av-submenu-hidden html_av-submenu-display-click html_av-overlay-side html_av-overlay-side-classic html_av-submenu-clone html_entry_id_3604 av-no-preview html_text_menu_active ">
+
+<!-- Mirrored from kriesi.at/archives/enfold-4-3-performance-update by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jan 2022 02:12:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="index, follow" />
+
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+<title>Enfold 4.3: Performance Update | Kriesi.at - Premium WordPress Themes</title>
+
+<!-- All in One SEO Pack 2.5 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<meta name="description"  content="This release is probably one of the most important in recent years, since its the first major step in changing some of the core workings of our Enfold theme. Whenever software is written, a developer has to make certain decisions on how this software works. Most of the stuff we decided on, when first building Enfold" />
+
+<link rel="canonical" href="enfold-4-3-performance-update.html" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes &raquo; Feed" href="../feed" />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes &raquo; Comments Feed" href="../comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes &raquo; Enfold 4.3: Performance Update Comments Feed" href="enfold-4-3-performance-update/feed" />
+
+<!-- google webfont font replacement -->
+
+			<script type='text/javascript'>
+			if(!document.cookie.match(/aviaPrivacyGoogleWebfontsDisabled/)){
+				(function() {
+					var f = document.createElement('link');
+					
+					f.type 	= 'text/css';
+					f.rel 	= 'stylesheet';
+					f.href 	= 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600';
+					f.id 	= 'avia-google-webfont';
+					
+					document.getElementsByTagName('head')[0].appendChild(f);
+				})();
+			}
+			</script>
+			<link rel='stylesheet' id='avia-merged-styles-css'  href='../wp-content/uploads/dynamic_avia/avia-merged-styles-c1befd77bb23eb022c8bf487ec55493b.css' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='A few updates regarding WPML: Introducing WPML’s Contractors System' href='introducing-wpmls-contractors-system.html' />
+<link rel='next' title='Scoring 100/100 in Google PageSpeed Insights, GTmetrix PageSpeed and Yslow (and why you probably shouldn&#8217;t bother ;)' href='scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow.html' />
+<meta name="generator" content="WordPress 4.9.19" />
+<link rel='shortlink' href='../index77e0.html?p=3604' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed31d1.json?url=https%3A%2F%2Fkriesi.at%2Farchives%2Fenfold-4-3-performance-update" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed5dab?url=https%3A%2F%2Fkriesi.at%2Farchives%2Fenfold-4-3-performance-update&amp;format=xml" />
+<link rel="author" href="https://plus.google.com/106461359737856957875/posts"/>
+	<link rel="apple-touch-icon-precomposed" href="../wp-content/themes/kriesi/images/apple-touch-icon.png" /><script data-ad-client="ca-pub-3132647751526457" async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script><link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes RSS2 Feed" href="../feed" />
+<link rel="pingback" href="../xmlrpc.html" />
+<!--[if lt IE 9]><script src="https://kriesi.at/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+<link rel="icon" href="../wp-content/uploads/2018/04/favicon_32.png" type="image/png">
+
+<!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
+<script type="text/javascript">'use strict';var avia_is_mobile=!1;if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&'ontouchstart' in document.documentElement){avia_is_mobile=!0;document.documentElement.className+=' avia_mobile '}
+else{document.documentElement.className+=' avia_desktop '};document.documentElement.className+=' js_active ';(function(){var e=['-webkit-','-moz-','-ms-',''],n='';for(var t in e){if(e[t]+'transform' in document.documentElement.style){document.documentElement.className+=' avia_transform ';n=e[t]+'transform'};if(e[t]+'perspective' in document.documentElement.style)document.documentElement.className+=' avia_transform3d '};if(typeof document.getElementsByClassName=='function'&&typeof document.documentElement.getBoundingClientRect=='function'&&avia_is_mobile==!1){if(n&&window.innerHeight>0){setTimeout(function(){var e=0,o={},a=0,t=document.getElementsByClassName('av-parallax'),i=window.pageYOffset||document.documentElement.scrollTop;for(e=0;e<t.length;e++){t[e].style.top='0px';o=t[e].getBoundingClientRect();a=Math.ceil((window.innerHeight+i-o.top)*0.3);t[e].style[n]='translate(0px, '+a+'px)';t[e].style.top='auto';t[e].className+=' enabled-parallax '}},50)}}})();</script><style type='text/css'>
+@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal;
+src: url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot');
+src: url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontellod41d.eot?#iefix') format('embedded-opentype'), 
+url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff') format('woff'), 
+url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf') format('truetype'), 
+url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg#entypo-fontello') format('svg');
+} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+</style>
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Enfold
+Version: 4.4
+Installed: enfold
+AviaFramework Version: 4.7
+AviaBuilder Version: 0.9.5
+aviaElementManager Version: 1.0
+- - - - - - - - - - -
+ChildTheme: Kriesi.at
+ChildTheme Version: 3.1.9
+ChildTheme Installed: enfold
+
+ML:512-PU:36-PLA:9
+WP:4.9.19
+Compress: CSS:all theme files - JS:all theme files
+Updates: enabled
+PLAu:2
+-->
+</head>
+
+
+
+
+<body data-rsssl=1 id="top" class="post-template-default single single-post postid-3604 single-format-standard  rtl_columns stretched open_sans" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+
+	
+	<div id='wrap_all'>
+
+	
+<header id='header' class='all_colors header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_slim av_header_sticky av_header_shrinking av_header_stretch_disabled av_mobile_menu_tablet av_header_searchicon av_header_unstick_top_disabled av_bottom_nav_disabled  av_header_border_disabled'  role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+
+		<div  id='header_main' class='container_wrap container_wrap_logo'>
+	
+        <div class='container av-logo-container'><div class='inner-container'><span class='logo'><a href='../index.html'><img height='100' width='300' src='../wp-content/themes/kriesi/images/logo.png' alt='Kriesi.at - Premium WordPress Themes' /><span class='subtext'><strong class='logo-title'>Kriesi.at</strong><strong class='logo-title logo-subtitle'>Premium Themes</strong></span></a></span><nav class='main_menu' data-selectname='Select a page'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia-menu av-main-nav-wrap"><ul id="avia-menu" class="menu av-main-nav"><li id="menu-item-923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1"><a href="../index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Home</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-3790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-2"><a target="_blank" href="../themes/enfold-overview/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Demos</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-925" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-top-level menu-item-top-level-3 current-menu-item"><a href="../blog.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Blog</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-4"><a href="../about.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">About</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5"><a href="../contact.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Contact</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1812" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-6"><a href="../support/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Support</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-2049" class="jobs-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-7"><a href="http://jobs.kriesi.at/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Jobs</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-search" class="noMobile menu-item menu-item-search-dropdown menu-item-avia-special">
+							<a href="enfold-4-3-performance-update1919.html?s=" data-avia-search-tooltip="
+
+&lt;form action=https://kriesi.at/archives/"https://kriesi.at/" id=&quot;searchform&quot; method=&quot;get&quot; class=&quot;&quot;&gt;
+	&lt;div&gt;
+		&lt;input type=&quot;submit&quot; value=&quot;&quot; id=&quot;searchsubmit&quot; class=&quot;button avia-font-entypo-fontello&quot; /&gt;
+		&lt;input type=&quot;text&quot; id=&quot;s&quot; name=&quot;s&quot; value=&quot;&quot; placeholder='Search' /&gt;
+			&lt;/div&gt;
+&lt;/form&gt;" aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Search</span></a>
+	        		   </li><li class="av-burger-menu-main menu-item-avia-special av-small-burger-icon">
+	        			<a href="#">
+							<span class="av-hamburger av-hamburger--spin av-js-hamburger">
+					        <span class="av-hamburger-box">
+						          <span class="av-hamburger-inner"></span>
+						          <strong>Menu</strong>
+					        </span>
+							</span>
+						</a>
+	        		   </li></ul></div></nav><ul class='noLightbox social_bookmarks icon_count_4'><li class='social_bookmarks_facebook av-social-link-facebook social_icon_1'><a target='_blank' href='http://www.facebook.com/kriesi.at' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Facebook'><span class='avia_hidden_link_text'>Facebook</span></a></li><li class='social_bookmarks_twitter av-social-link-twitter social_icon_2'><a target='_blank' href='http://twitter.com/kriesi' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Twitter'><span class='avia_hidden_link_text'>Twitter</span></a></li><li class='social_bookmarks_dribbble av-social-link-dribbble social_icon_3'><a target='_blank' href='http://dribbble.com/kriesi' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Dribbble'><span class='avia_hidden_link_text'>Dribbble</span></a></li><li class='social_bookmarks_mail av-social-link-mail social_icon_4'><a target='_blank' href='../newsletter.html' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Mail'><span class='avia_hidden_link_text'>Mail</span></a></li></ul></div> </div> 
+		<!-- end container_wrap-->
+		</div>
+		
+		<div class='header_bg'></div>
+
+<!-- end header -->
+</header>
+		
+	<div id='main' class='all_colors' data-scroll-offset='88'>
+
+	
+		<div class='container_wrap container_wrap_first main_color fullsize'>
+
+			<div class='container template-blog template-single-blog '>
+
+				<main class='content units av-content-full alpha '  role="main" itemscope="itemscope" itemtype="https://schema.org/Blog" >
+
+                    <article class='post-entry post-entry-type-standard post-entry-3604 post-loop-1 post-parity-odd post-entry-last single-big with-slider post-3604 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress category-wordpress-themes'  itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" ><div class="preview-pic-blog"><a target='_blank' href="../themes/enfold-pverview/index.html"><img width="800" height="400" src="../wp-content/uploads/2018/04/enfold-4-3-performance.jpg" class="attachment-featured size-featured wp-post-image" alt="" srcset="https://kriesi.at/wp-content/uploads/2018/04/enfold-4-3-performance.jpg 800w, https://kriesi.at/wp-content/uploads/2018/04/enfold-4-3-performance-300x150.jpg 300w, https://kriesi.at/wp-content/uploads/2018/04/enfold-4-3-performance-768x384.jpg 768w, https://kriesi.at/wp-content/uploads/2018/04/enfold-4-3-performance-705x353.jpg 705w, https://kriesi.at/wp-content/uploads/2018/04/enfold-4-3-performance-450x225.jpg 450w" sizes="(max-width: 800px) 100vw, 800px" /></a></div><div class='entry-content-wrapper clearfix standard-content'><span class='post-meta-infos'><span class='date-container minor-meta updated'>April 24, 2018</span><span class='text-sep'>/</span><span class='comment-container minor-meta'><a href="enfold-4-3-performance-update.html#comments" class="comments-link" >80 Comments</a></span><span class='text-sep'>/</span><span class="blog-categories minor-meta">in <a href="category/wordpress.html" rel="tag">Wordpress</a>, <a href="category/wordpress-themes.html" rel="tag">WordPress Themes</a> </span><span class="text-sep">/</span><span class="blog-author minor-meta">by <a href='https://twitter.com/Kriesi'>Kriesi</a> </span></span><div class="entry-content"><h1 class='post-title entry-title'  itemprop="headline" >	<a href='enfold-4-3-performance-update.html' rel='bookmark' title='Permanent Link: Enfold 4.3: Performance Update'>Enfold 4.3: Performance Update			<span class='post-format-icon minor-meta'></span>	</a></h1><p class="av-intro-text">As announced earlier we wanted to improve the speed and usability of Enfold. I think you will like what we came up with :) </p>
+<p>This release is probably one of the most important in recent years, since its the first major step in changing some of the core workings of our Enfold theme.</p>
+<p>Whenever software is written, a developer has to make certain decisions on how this software works. Most of the stuff we decided on, when first building Enfold has served us well. But unfortunately some of those decisions now started to affect our ability to improve the theme further. This is why we decided to do a few major overhauls and Enfold 4.3 is the first one. This release affects performance in a few major ways and its hard to overstate how important all those performance changes are. So before we describe what we did, here is how it affects the theme:</p>
+<ul>
+<li>A typical Enfold based Website now loads anywhere from <strong>15%-75% less</strong> CSS and JS</li>
+<li>Enfold is now probably the best optimised multipurpose theme out there. We checked the competition and Enfold now uses less CSS and less JS on an average site than anyone else.</li>
+<li>In addition to being leaner and cleaner than the competition out of the box, the theme is now also exceptionally easy to optimize and you can <a href="scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow.html">achieve perfect google/gtmetrix pagespeed scores</a> if desired</li>
+<li>Search rankings will be higher for Websites using Enfold since loading speed for mobile will be factored into search results soon</li>
+<li>Conversion from visitors to customers will be better, since it&#8217;s a fact that every millisecond you can shave off the load time has a positive impact</li>
+</ul>
+<div id="attachment_3583" style="width: 1040px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20.png"><img class="size-large wp-image-3583" src="../wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-1030x227.png" alt="" width="1030" height="227" srcset="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-1030x227.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-300x66.png 300w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-768x169.png 768w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-705x155.png 705w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-450x99.png 450w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20.png 1182w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">Achieving a perfect score in google or gtmetrix is now possible ;) &#8211; <a href="scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow.html">Blog post here</a>!</p></div>
+<p>So what did we change and why?</p>
+<p><span id="more-3604"></span></p>
+<h3>Modules</h3>
+<p>In this release we switched to a &#8220;module based&#8221; feature system. Previously when we added a new option in the backend, or added a new template builder element, it was enabled for everyone by default and was always loaded. So as Enfold grew with time, the list of features to load grew with it and the amount of CSS and JS also grew.</p>
+<p>Since only very large sites use every Enfold feature we offer, this means that a lot of smaller sites load a lot of unnecessary resources. It also means that adding new niche features is usually not a good idea since it affects all users who don&#8217;t use the feature negatively. We wanted to change that and therefore switched to a module based system.</p>
+<p>From now on Enfold only loads the CSS and JS files it requires. The theme now keeps track of the elements and options you use. So if you don&#8217;t use a video player, a countdown and a portfolio, the theme will no longer load these features.</p>
+<div id="attachment_3617" style="width: 1040px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2018/04/modules.png"><img class="wp-image-3617 size-large" src="../wp-content/uploads/2018/04/modules-1030x211.png" alt="" width="1030" height="211" srcset="https://kriesi.at/wp-content/uploads/2018/04/modules-1030x211.png 1030w, https://kriesi.at/wp-content/uploads/2018/04/modules-300x61.png 300w, https://kriesi.at/wp-content/uploads/2018/04/modules-768x157.png 768w, https://kriesi.at/wp-content/uploads/2018/04/modules-1500x307.png 1500w, https://kriesi.at/wp-content/uploads/2018/04/modules-705x144.png 705w, https://kriesi.at/wp-content/uploads/2018/04/modules-450x92.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">Enable and Disable Modules to your liking in the new &#8220;Performance&#8221; Theme options</p></div>
+<p>What sounds like a little change,  was actually a lot of work over several months. The effects on performance and loading times are well worth it:</p>
+<p>A medium sized website (which I would say are 90% of our customers) now loads only about 35% of the resources it previously did. Thats 65% less stuff to load for your visitor, and therefore usually a huge speed improvement.</p>
+<p>It also means that we can now easily add niche features if we consider them valuable without affecting everyone elses performance. (like our new <a href="../themes/enfold-elegant-portfolio/about/index.html" target="_blank" rel="noopener">timeline element</a> for example)</p>
+<h3>Compression</h3>
+<p>Along with the module based approach, we added a file compression feature that generates and optimises CSS and JS files, based on the features you use. So not only does the theme need to load less resources, those that are loaded are also compressed and cached properly (without any plugins) which further reduces loading times.</p>
+<div id="attachment_3619" style="width: 1040px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2018/04/compression.png"><img class="wp-image-3619 size-large" src="../wp-content/uploads/2018/04/compression-1030x191.png" alt="" width="1030" height="191" srcset="https://kriesi.at/wp-content/uploads/2018/04/compression-1030x191.png 1030w, https://kriesi.at/wp-content/uploads/2018/04/compression-300x56.png 300w, https://kriesi.at/wp-content/uploads/2018/04/compression-768x143.png 768w, https://kriesi.at/wp-content/uploads/2018/04/compression-1500x278.png 1500w, https://kriesi.at/wp-content/uploads/2018/04/compression-705x131.png 705w, https://kriesi.at/wp-content/uploads/2018/04/compression-450x84.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">File merging and compression for CSS and Javascript</p></div>
+<h3>Performance options</h3>
+<p>Since we were already doing the performance &#8220;dance&#8221; we added a whole performance theme options tab in your backend, that allows you to fine tune resource loading for your theme with a few clicks. We have already released an article on how to score <a href="scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow.html" target="_blank" rel="noopener">perfectly on google pagespeed and gtmetrix</a>.</p>
+<p>The Performance tab allows you to deactivate unnecessary and often unused default WordPress settings, it allows to change the behavior of our new module loading and compression to previous defaults (if you run into any troubles with plugins) and it offers optimization hints like which image optimization plugin or which caching plugin to use :)</p>
+<h3>What else is new and deserves a mention?</h3>
+<p>1.) As always there are lots of changes and improvements in this release and one that we like a lot is the option to use a whole page as a &#8220;global template&#8221;.<br />
+The new template builder element called &#8220;<strong>page content</strong>&#8221; allows you to load another page into the page you are currently using.</p>
+<p>As an example: lets say on each of your pages you want to display a list of links and logos to your business partners.<br />
+If you previously did that and a partner changed you had to change the list on every page individually. Now you can just create a &#8220;partnerlist&#8221; page that only contains this list and then load it into your frontpage, contact page, about page etc.</p>
+<p>If a partner changes you simply edit the &#8220;partnerlist&#8221; page and those changes will be visible on all your other pages as well.</p>
+<p>2.) Similar to that, we figured that using the same boring 3 or 4 column footer layout lost a lot of its appeal over time and is very limiting. You can now generate a footer page with your template builder and set that page to be your footer in your theme options at Enfold-&gt;Footer. A simple example of a nice custom footer can be seen in our <a href="../themes/enfold-elegant-portfolio/index.html#footer-template" target="_blank" rel="noopener">latest demo</a>.</p>
+<p>Among other things we of course got <a href="../themes/enfold-elegant-portfolio/index.html" target="_blank" rel="noopener">a new demo</a>, new template builder elements called &#8220;<a href="../themes/enfold-elegant-portfolio/about/index.html" target="_blank" rel="noopener">timeline</a>&#8221; and &#8220;<a href="../themes/enfold-elegant-portfolio/index.html#footer-template">button row</a>&#8221; (which lets you display multiple buttons in one row) full column linking, the option to display a notifications on pageload (eg cookie use) and so much more. Check the Change log for all the big and small details ;)</p>
+<h3>Whats up next?</h3>
+<p>Now that we only load features based on usage we are free to add niche template builder elements without affecting users who don&#8217;t need those elements. So you will probably see some of those niche elements with some niche demos. That said we are still keen on keeping Enfold easy to use for beginners, so we will of course not add every feature or element that comes to mind :D</p>
+<p>We are planing a smaller release next that adds features that satisfy the upcoming <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation" target="_blank" rel="noopener"><b>General Data Protection Regulation </b></a>which will be enforced accross the EU and also affect everyone doing business with someone in the EU.</p>
+<p>As for the bigger changes that we plan: as I mentioned earlier the way we previously loaded our assests was one of the things that stood in our way to further improve the theme. Another thing that served us well for a time but is now rather limiting are shortcodes. Enfolds template builder is &#8211; like most other template builders &#8211; based on shortcodes. Back when we first built enfold this was a de-facto standard and it had its merits. However, they are now a thing of the past. Shortcodes are slow (in terms of processing), require a lot of overhead (coding wise), cause problems a lot (with improper html nesting and/or HTML special characters) and are not very flexible in some other regards (nesting, global elements).</p>
+<p>WordPress itself is moving away from Shortcodes with their new Gutenberg Editor and we also noticed that some of the things we want to achieve with the builder (like unlimited nesting of columns, template builder content within toggles and tabs, etc) are not really doable while using shortcode as the &#8220;data structure&#8221; of a page. So this is the 2nd big task that we are tackling. We will change the data format of the builder and get rid of the shortcode structure in the long run to be able to improve the builder the way we would like. This will, like the implementation of modules, take a few releases but once done you are in for some big template builder improvements ;)</p>
+<h3>Change log</h3>
+<ul>
+<li>added: a new demo: <a href="../themes/enfold-elegant-portfolio/index.html" target="_blank" rel="noopener">Enfold Elegant Portfolio</a></li>
+<li>added: performance tab in theme options that allows you to improve your website performance by using file compression/removal</li>
+<li>added: <a href="../themes/enfold-elegant-portfolio/index.html#footer-template" target="_blank" rel="noopener">button row element</a> that allows to display multiple buttons beside each other</li>
+<li>added: new &#8220;<a href="../themes/enfold-elegant-portfolio/index.html" target="_blank" rel="noopener">typewriter</a>&#8221; animation for rotating header element</li>
+<li>added: you can now set links for columns and cells</li>
+<li>added: you can now set a page as footer. This allows completely different footer designs</li>
+<li>added: option to close the notification template builder element and set a cookie to not display it again</li>
+<li>added: option to use background gradients for cells, columns and sections</li>
+<li>added: option to display a cookie use notification</li>
+<li>added: option to display button label as tooltip (that way you can use icon only buttons with hover effect)</li>
+<li>added: option to set a custom <a href="../themes/enfold-elegant-portfolio/404/index.html" target="_blank" rel="noopener">404 page layout</a></li>
+<li>added: copyright option for image element</li>
+<li>added: plugin check for image optimization and caching plugins</li>
+<li>added: plugin recommendation for image optimization and caching plugins</li>
+<li>added: advanced styling option to style the active main menu item</li>
+<li>added: new google fonts</li>
+<li>added: margin spacing options for header element and header rotation element</li>
+<li>improved: several CSS and JS files will now only load if they are required, based on the theme option settings</li>
+<li>improved: demo import script</li>
+<li>fixed: buttons in main menu now always got the same height</li>
+<li>fixed: usage of the old jQuery Migrate Library no longer necessary due to JS improvements</li>
+<li>fixed: backwards comp. with PHP &lt; 5.5 in header.php</li>
+<li>fixed: slideshow fallback link handling for easy slider</li>
+<li>fixed: an issue with the size of self hosted videos</li>
+<li>fixed: loading of instagram images works properly again</li>
+<li>fixed: backwards compatibility issues wit RTL styling</li>
+<li>fixed: ALB color section: Small Arrow in Bottom Border Styling shows up twice</li>
+<li>fixed: ALB Product Purchase Button and WooCommerce &gt; 3.0 lead to endless loop</li>
+<li>fixed: Small issue in not creating attributes in breadcrumb for first element</li>
+<li>fixed: an issue with event Calender tickets</li>
+<li>fixed: an display issue with the shop main page and the breadcrumb navigation</li>
+<li>fixed: an issue with image overlay display</li>
+<li>updated: Layerslider plugin</li>
+</ul>
+<a class='extra_theme_info' href='http://bitly.com/wp_enfold' target='_blank'><img src='../wp-content/themes/kriesi/images/enfold.jpg' title='Check out Enfold' alt='' /></a></div></div><div class='post_author_timeline'></div></article>
+
+
+	        	
+	        	
+<div class='comment-entry post-entry'>
+
+<div class='comment_meta_container'>
+			
+			<div class='side-container-comment'>
+	        		
+	        		<div class='side-container-comment-inner'>
+	        				        			
+	        			<span class='comment-count'>80</span>
+   						<span class='comment-text'>replies</span>
+   						<span class='center-border center-border-left'></span>
+   						<span class='center-border center-border-right'></span>
+   						
+	        		</div>
+	        		
+	        	</div>
+			
+			</div>
+
+			
+			<div class='comment_container'>
+			
+
+<span class='comment_page_nav_links comment_page_nav_links_top'><span class='comment_prev_page'><a href="enfold-4-3-performance-update/comment-page-1.html#comments" >&laquo; Older Comments</a></span><span class='comment_next_page'></span></span>			<ol class="commentlist" id="comments">
+				    <li class="comment even thread-even depth-1" id="li-comment-11992">
+
+        <div id="comment-11992">
+        <article>
+            <div class="gravatar">
+                <img alt='Sergio Arregui' src='https://secure.gravatar.com/avatar/c7ca90cce7323eb1a286ed0a0fbd59a2?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/c7ca90cce7323eb1a286ed0a0fbd59a2?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://sergioarregui.com/" ><cite class="comment_author_name">Sergio Arregui</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-11992">
+                                <time  >
+                                    April 26, 2018 at 8:40 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>The best theme of all, no doubt. Very good work.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11993">
+
+        <div id="comment-11993">
+        <article>
+            <div class="gravatar">
+                <img alt='Skye' src='https://secure.gravatar.com/avatar/5e053df73aea5c88dadcdad8ee5ab81a?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/5e053df73aea5c88dadcdad8ee5ab81a?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Skye</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-11993">
+                                <time  >
+                                    April 26, 2018 at 9:29 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Great work! Thank you!</p>
+<p>Caching Plugins detection dosen’t recognize WP Rocket and are reporting no cacheing plugin installed.</p>
+<p>Folder name: wp-rocket<br />
+File name: wp-rocket.php</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+<ul class="children">
+    <li class="comment byuser comment-author-kriesi bypostauthor even depth-2" id="li-comment-11995">
+
+        <div id="comment-11995">
+        <article>
+            <div class="gravatar">
+                <img alt='Kriesi' src='https://secure.gravatar.com/avatar/0f40cc42b2f6ac7fbff31030a84f774b?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0f40cc42b2f6ac7fbff31030a84f774b?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="../index.html" ><cite class="comment_author_name">Kriesi</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-11995">
+                                <time  >
+                                    April 26, 2018 at 12:22 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>thanks, we will add it to the next update ;)</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="li-comment-11994">
+
+        <div id="comment-11994">
+        <article>
+            <div class="gravatar">
+                <img alt='niguli' src='https://secure.gravatar.com/avatar/8b27cab48396962935e1461e6ec12eab?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/8b27cab48396962935e1461e6ec12eab?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">niguli</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-11994">
+                                <time  >
+                                    April 26, 2018 at 10:37 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>incredible work for this release. Thanks.<br />
+Waiting for the next small update for gdpr.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+<ul class="children">
+    <li class="comment even depth-2" id="li-comment-12003">
+
+        <div id="comment-12003">
+        <article>
+            <div class="gravatar">
+                <img alt='Simon' src='https://secure.gravatar.com/avatar/1b328d47f1dd16b84b1216e980a1bb88?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/1b328d47f1dd16b84b1216e980a1bb88?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.vynl.co.uk/" ><cite class="comment_author_name">Simon</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12003">
+                                <time  >
+                                    April 27, 2018 at 9:51 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>ME TOO!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11996">
+
+        <div id="comment-11996">
+        <article>
+            <div class="gravatar">
+                <img alt='Roine' src='https://secure.gravatar.com/avatar/b3c7e5f5a0d654972a3e812de391ef11?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/b3c7e5f5a0d654972a3e812de391ef11?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Roine</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-11996">
+                                <time  >
+                                    April 26, 2018 at 12:41 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>YES! I love it!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-11997">
+
+        <div id="comment-11997">
+        <article>
+            <div class="gravatar">
+                <img alt='Ulle' src='https://secure.gravatar.com/avatar/3245be3b21f1224522f17c8d0fae1216?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/3245be3b21f1224522f17c8d0fae1216?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Ulle</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-11997">
+                                <time  >
+                                    April 26, 2018 at 1:48 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Great work guys!<br />
+Really excited about this update. I&#8217;ve always felt that speed and robustness are the two most important things when it comes to a wordpress theme. The third thing is features. Excited to see some new ALB elements.<br />
+Haven&#8217;t installed the 4.3. update yet but I have multiple sites running Enfold and these updates make me feel really good about choosing enfold as my theme of choice.<br />
+I will continue using enfold on future projects.<br />
+Thanks for keeping the theme up to date and preparing for things like GDPR.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11998">
+
+        <div id="comment-11998">
+        <article>
+            <div class="gravatar">
+                <img alt='Michael Albany' src='https://secure.gravatar.com/avatar/ec5608e459ebf2e925164f624f2c1de2?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/ec5608e459ebf2e925164f624f2c1de2?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://michaelalbany.com/" ><cite class="comment_author_name">Michael Albany</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-11998">
+                                <time  >
+                                    April 26, 2018 at 3:05 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>That is a kicker update and a TON of work.  Thank you!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-11999">
+
+        <div id="comment-11999">
+        <article>
+            <div class="gravatar">
+                <img alt='Ritchie Pettauer | datenschmutz.net' src='https://secure.gravatar.com/avatar/ebb511c14b388d74aae49c6b0bd93996?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/ebb511c14b388d74aae49c6b0bd93996?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://datenschmutz.net/" ><cite class="comment_author_name">Ritchie Pettauer | datenschmutz.net</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-11999">
+                                <time  >
+                                    April 26, 2018 at 7:08 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>WOW-wiggedy-WOW-WOW-WOW!  Didn&#8217;t expect such a huge performance- and feature-packed update even before the gdpr regulations thingie&#8230; You guys keep surprising us lucky user time and time again. I could say so many nice things about this thtme, but let me just stick with this: Since I switched to Enfold, building great WordPress sites has become ten times more fun and twentey times less time consuming. You just R-to-the-O-to-the-C-to-the-K&#8230;R.O.C.K.!!! (And I don&#8217;t use triple punctuations easily either, believe me.)</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12000">
+
+        <div id="comment-12000">
+        <article>
+            <div class="gravatar">
+                <img alt='Raymmar' src='https://secure.gravatar.com/avatar/09da79cbda00539f7b859c834c983f21?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/09da79cbda00539f7b859c834c983f21?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://raymmar.com/" ><cite class="comment_author_name">Raymmar</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12000">
+                                <time  >
+                                    April 26, 2018 at 8:52 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>You all never cease to impress me with the thought that goes into your theme releases. A long time ago I decided you all were the best WordPress theme around, and each release reaffirms it. Thank you for helping us all be better at the things we do by doing what you all do so well. </p>
+<p>Much love, </p>
+<p>Another Enfold User&#8230;</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-12001">
+
+        <div id="comment-12001">
+        <article>
+            <div class="gravatar">
+                <img alt='Erik Dukker' src='https://secure.gravatar.com/avatar/804d05c11d726494dd0cb8c1ad85e1a5?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/804d05c11d726494dd0cb8c1ad85e1a5?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://mdhrecuitment.nl/" ><cite class="comment_author_name">Erik Dukker</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12001">
+                                <time  >
+                                    April 26, 2018 at 9:10 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>layerslider stopped, shortcode is visible. I restored the previous version of the theme: slider works again</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12002">
+
+        <div id="comment-12002">
+        <article>
+            <div class="gravatar">
+                <img alt='Simon' src='https://secure.gravatar.com/avatar/1b328d47f1dd16b84b1216e980a1bb88?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/1b328d47f1dd16b84b1216e980a1bb88?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.vynl.co.uk/" ><cite class="comment_author_name">Simon</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12002">
+                                <time  >
+                                    April 27, 2018 at 9:50 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>This is absolutely excellent news thank you!<br />
+As a long time user and promoter of Enfold to my customers I am very happy to be able to continue to recommend the theme.<br />
+Can you tell me if the new &#8216;out of the box&#8217; settings for the Enfold theme are the ones which you used to gain 100/100 please? And if not then can you publish the complete settings list please?<br />
+Thank you again,<br />
+Simon</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-12004">
+
+        <div id="comment-12004">
+        <article>
+            <div class="gravatar">
+                <img alt='Jochen Gererstorfer' src='https://secure.gravatar.com/avatar/6a5dd52a4fd5f6dc238b64da139c1f5a?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/6a5dd52a4fd5f6dc238b64da139c1f5a?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://j0e.org/" ><cite class="comment_author_name">Jochen Gererstorfer</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12004">
+                                <time  >
+                                    April 27, 2018 at 9:55 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Great Update! Working on the loading speed is 10 times better then 100 new features.<br />
+I also miss the WP Rocket detection.</p>
+<p>thanks<br />
+Jochen</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12005">
+
+        <div id="comment-12005">
+        <article>
+            <div class="gravatar">
+                <img alt='Rapha E.' src='https://secure.gravatar.com/avatar/bba2f009c7b425abdb22247aded13d63?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/bba2f009c7b425abdb22247aded13d63?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://www.twaudio.de/" ><cite class="comment_author_name">Rapha E.</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12005">
+                                <time  >
+                                    April 27, 2018 at 2:32 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Still and always speed up my Enfold pages&#8230;  But i am asking myself is this stilöl needed? </p>
+<p>/* 	Layerslider  deactivate<br />
+************************************************************************************************************** Enfold */<br />
+   add_theme_support(&#8216;deactivate_layerslider&#8217;);</p>
+<p>There are awesome Plugins like WP Disable or other??</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-12006">
+
+        <div id="comment-12006">
+        <article>
+            <div class="gravatar">
+                <img alt='Matthew Lautensack' src='https://secure.gravatar.com/avatar/9c12774774f0b3289cd843dbb5f2f517?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/9c12774774f0b3289cd843dbb5f2f517?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.theretailcoach.net/" ><cite class="comment_author_name">Matthew Lautensack</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12006">
+                                <time  >
+                                    April 27, 2018 at 3:04 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Has anyone else experienced google Maps API Failure after this update?</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+<ul class="children">
+    <li class="comment odd alt depth-2" id="li-comment-12015">
+
+        <div id="comment-12015">
+        <article>
+            <div class="gravatar">
+                <img alt='TJ' src='https://secure.gravatar.com/avatar/366074aff864cb93e607025be49cf2da?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/366074aff864cb93e607025be49cf2da?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">TJ</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12015">
+                                <time  >
+                                    April 30, 2018 at 4:46 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Yes. The Google Map Element is disabled by &#8216;Load only used elements&#8217;, so I can&#8217;t use that feature yet.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even depth-2" id="li-comment-12033">
+
+        <div id="comment-12033">
+        <article>
+            <div class="gravatar">
+                <img alt='Alfonso Balcells' src='https://secure.gravatar.com/avatar/3908e6f78570980de1c45b8ee54376fc?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/3908e6f78570980de1c45b8ee54376fc?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Alfonso Balcells</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12033">
+                                <time  >
+                                    May 2, 2018 at 6:45 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>The same thing happens to me.<br />
+Google Maps and Enfold form disabled when activated:<br />
+Disabling of template builder elements (Load only ussed elemment)</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt depth-2" id="li-comment-12034">
+
+        <div id="comment-12034">
+        <article>
+            <div class="gravatar">
+                <img alt='Alfonso Balcells' src='https://secure.gravatar.com/avatar/3908e6f78570980de1c45b8ee54376fc?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/3908e6f78570980de1c45b8ee54376fc?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Alfonso Balcells</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12034">
+                                <time  >
+                                    May 2, 2018 at 6:47 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Excuse me, interestingly in one Web site, and in another do not occupy this.<br />
+And also tell you, good job;)</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-12007">
+
+        <div id="comment-12007">
+        <article>
+            <div class="gravatar">
+                <img alt='Todd Brown' src='https://secure.gravatar.com/avatar/1ee633039e4d5810e5c4bdd5815a09f2?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/1ee633039e4d5810e5c4bdd5815a09f2?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.toddwbrown.com/" ><cite class="comment_author_name">Todd Brown</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12007">
+                                <time  >
+                                    April 27, 2018 at 7:25 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Best. Theme. Ever.</p>
+<p>Many thanks for all of your hard work!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="li-comment-12008">
+
+        <div id="comment-12008">
+        <article>
+            <div class="gravatar">
+                <img alt='Paul' src='https://secure.gravatar.com/avatar/3c44a8ba5588f09575e09745ebee11a0?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/3c44a8ba5588f09575e09745ebee11a0?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Paul</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12008">
+                                <time  >
+                                    April 28, 2018 at 6:07 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>how to score perfectly on google pagespeed and gtmetrix,<br />
+when we can read this article please?<br />
+thanks in advance.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+<ul class="children">
+    <li class="comment even depth-2" id="li-comment-12023">
+
+        <div id="comment-12023">
+        <article>
+            <div class="gravatar">
+                <img alt='accurIT Presence' src='https://secure.gravatar.com/avatar/d7a702a3157f0612015b8fa0cc15d2cd?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/d7a702a3157f0612015b8fa0cc15d2cd?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://accuritpresence.com/" ><cite class="comment_author_name">accurIT Presence</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12023">
+                                <time  >
+                                    May 1, 2018 at 8:32 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Scoring perfectly is just a portion of the optimization picture.  The focus should be on overall page load time. </p>
+<p><a href="https://accuritpresence.com/enfold-theme-release-reviews-major-releases/" rel="nofollow">https://accuritpresence.com/enfold-theme-release-reviews-major-releases/</a></p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12010">
+
+        <div id="comment-12010">
+        <article>
+            <div class="gravatar">
+                <img alt='Henry' src='https://secure.gravatar.com/avatar/b61a74da5326d7690660f7806b56588e?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/b61a74da5326d7690660f7806b56588e?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://www.cinema9ja.com/" ><cite class="comment_author_name">Henry</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12010">
+                                <time  >
+                                    April 28, 2018 at 9:00 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Thanks for this updates. I was actually working on my page speed. But seeing this made me so happy as it has eased my work. Thanks a lot and keep up with the good work.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-12011">
+
+        <div id="comment-12011">
+        <article>
+            <div class="gravatar">
+                <img alt='Alexander Noé' src='https://secure.gravatar.com/avatar/062f11934c7d1d07da4a013f31232916?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/062f11934c7d1d07da4a013f31232916?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Alexander Noé</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12011">
+                                <time  >
+                                    April 28, 2018 at 2:18 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Hi team,<br />
+great update! Plz don´t forget to attach the detection of WP Rocket as caching tool into the next release.<br />
+Best regards,<br />
+Alexander</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12012">
+
+        <div id="comment-12012">
+        <article>
+            <div class="gravatar">
+                <img alt='Marco' src='https://secure.gravatar.com/avatar/e0e61dce0547829238f4937275c7e11b?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/e0e61dce0547829238f4937275c7e11b?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Marco</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12012">
+                                <time  >
+                                    April 29, 2018 at 7:37 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>I would like to report a bug: if I use advanced editor to configure a woocommerce product, the reviews disappear.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-12013">
+
+        <div id="comment-12013">
+        <article>
+            <div class="gravatar">
+                <img alt='Lukas' src='https://secure.gravatar.com/avatar/cc367ccd682e39ebe7bf6e5798a0974d?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/cc367ccd682e39ebe7bf6e5798a0974d?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Lukas</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12013">
+                                <time  >
+                                    April 29, 2018 at 8:57 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Since the last update, the Layerslider doesn&#8217;t work anymore.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12014">
+
+        <div id="comment-12014">
+        <article>
+            <div class="gravatar">
+                <img alt='Lyse' src='https://secure.gravatar.com/avatar/12de7ce0ba48b043fb6d9588b7aaff69?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/12de7ce0ba48b043fb6d9588b7aaff69?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Lyse</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12014">
+                                <time  >
+                                    April 29, 2018 at 11:24 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Excellent work indeed! Looking forward to more&#8230;</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-12016">
+
+        <div id="comment-12016">
+        <article>
+            <div class="gravatar">
+                <img alt='Martina' src='https://secure.gravatar.com/avatar/b90da86b74efbff179d7ff4adf33b15c?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/b90da86b74efbff179d7ff4adf33b15c?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://martina-fuchs.com/" ><cite class="comment_author_name">Martina</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12016">
+                                <time  >
+                                    April 30, 2018 at 8:17 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>I love your theme and how you serve us with your updates &#8211; fantastic work!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12019">
+
+        <div id="comment-12019">
+        <article>
+            <div class="gravatar">
+                <img alt='Annemarie' src='https://secure.gravatar.com/avatar/5d2a67e0e1bc8c714040e30627f083bd?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/5d2a67e0e1bc8c714040e30627f083bd?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://bizdoktor.dk/" ><cite class="comment_author_name">Annemarie</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12019">
+                                <time  >
+                                    May 1, 2018 at 12:45 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Wow guys, just went through all the &#8220;Performance&#8221; settings for a couple of sites we have&#8230; wow, you deserve huge gratitude! All performance results (tested on <a href="https://tools.pingdom.com/" rel="nofollow">https://tools.pingdom.com</a>) were greatly increased across the board! Thanks again!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-12020">
+
+        <div id="comment-12020">
+        <article>
+            <div class="gravatar">
+                <img alt='accurIT Presence' src='https://secure.gravatar.com/avatar/d7a702a3157f0612015b8fa0cc15d2cd?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/d7a702a3157f0612015b8fa0cc15d2cd?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://accuritpresence.com/enfold-theme-release-reviews-major-releases/" ><cite class="comment_author_name">accurIT Presence</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12020">
+                                <time  >
+                                    May 1, 2018 at 8:26 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>The following line should be removed or re-worded, as it&#8217;s not true.</p>
+<p>&#8220;Search rankings will be higher for Websites using Enfold since loading speed is factored into search results.&#8221;</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+<ul class="children">
+    <li class="comment odd alt depth-2" id="li-comment-12021">
+
+        <div id="comment-12021">
+        <article>
+            <div class="gravatar">
+                <img alt='accurIT Presence' src='https://secure.gravatar.com/avatar/d7a702a3157f0612015b8fa0cc15d2cd?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/d7a702a3157f0612015b8fa0cc15d2cd?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://accuritpresence.com/enfold-theme-release-reviews-major-releases/" ><cite class="comment_author_name">accurIT Presence</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12021">
+                                <time  >
+                                    May 1, 2018 at 8:27 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Loading speed can be awesome and the rest of the site is #*^$, thus completely killing any chance of ranking.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even depth-2" id="li-comment-12022">
+
+        <div id="comment-12022">
+        <article>
+            <div class="gravatar">
+                <img alt='accurIT Presence' src='https://secure.gravatar.com/avatar/d7a702a3157f0612015b8fa0cc15d2cd?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/d7a702a3157f0612015b8fa0cc15d2cd?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://accuritpresence.com/enfold-theme-release-reviews-major-releases/" ><cite class="comment_author_name">accurIT Presence</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12022">
+                                <time  >
+                                    May 1, 2018 at 8:30 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Also, the scores/grades graphic you are displaying is bad form.  You can have an almost perfect score and not have a site that loads quickly, due to overall site size, external HTTP requests, etc.</p>
+<p>Huge fan of Enfold, but c&#8217;mon guys.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment byuser comment-author-kriesi bypostauthor odd alt depth-2" id="li-comment-12026">
+
+        <div id="comment-12026">
+        <article>
+            <div class="gravatar">
+                <img alt='Kriesi' src='https://secure.gravatar.com/avatar/0f40cc42b2f6ac7fbff31030a84f774b?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0f40cc42b2f6ac7fbff31030a84f774b?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="../index.html" ><cite class="comment_author_name">Kriesi</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12026">
+                                <time  >
+                                    May 2, 2018 at 12:12 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Alright. Slightly reworded it but the general information still holds true. Google announced the following in January: </p>
+<p>&#8220;Today we’re announcing that starting in July 2018, page speed will be a ranking factor for mobile searches.&#8221; </p>
+<p>And the scores/grades graphic is a teaser for the next blog post, were we also mention that 100/100 is not exactly necessary and often comes with drawbacks and is also only an indicator for good performance, but to get the readers attention I think its fair to post such a picture ;)</p>
+<p>I think among the competition we are still among those who really try not to over exaggerate for marketing purposes, but we still need to do a little bit of marketing, so don&#8217;t judge us too hard :D</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-12024">
+
+        <div id="comment-12024">
+        <article>
+            <div class="gravatar">
+                <img alt='Giang Hannah' src='https://secure.gravatar.com/avatar/f8b5442d1d0cd2951ca5ce7790f7b26f?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/f8b5442d1d0cd2951ca5ce7790f7b26f?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="https://gianghannah.com/" ><cite class="comment_author_name">Giang Hannah</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12024">
+                                <time  >
+                                    May 2, 2018 at 4:04 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Great work. Thank you!<br />
+I was actually working on my page speed. But seeing this made me so happy as it has eased my work. Thanks a lot and keep up with the good work.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="li-comment-12025">
+
+        <div id="comment-12025">
+        <article>
+            <div class="gravatar">
+                <img alt='Richard Hamel' src='https://secure.gravatar.com/avatar/07a87f900ad949645a3a7eb6928e2d00?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/07a87f900ad949645a3a7eb6928e2d00?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://dotorgwebworks.org/" ><cite class="comment_author_name">Richard Hamel</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12025">
+                                <time  >
+                                    May 2, 2018 at 4:05 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Oh, great. Now I have to spend a few days figuring out how I can implement all these great new features. :-)</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-12027">
+
+        <div id="comment-12027">
+        <article>
+            <div class="gravatar">
+                <img alt='Sam' src='https://secure.gravatar.com/avatar/d1898aa9f4c678b3085861d932004e37?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/d1898aa9f4c678b3085861d932004e37?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Sam</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12027">
+                                <time  >
+                                    May 2, 2018 at 2:30 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>It would be great if you had a tutorial of some sort on when to implement these features.  I tried them out and it made things worse and not only that it caused some of web pages to render improperly.  It would also be great to some sort of visual to go with each element or an indicator to let us know if it is actually being used in the site. Then we know what to turn off.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="li-comment-12028">
+
+        <div id="comment-12028">
+        <article>
+            <div class="gravatar">
+                <img alt='Luke' src='https://secure.gravatar.com/avatar/988bb21bddaddbca31beaf1ecd256435?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/988bb21bddaddbca31beaf1ecd256435?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.plusinternet.co.uk/" ><cite class="comment_author_name">Luke</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12028">
+                                <time  >
+                                    May 2, 2018 at 3:22 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Fantastic! I cannot wait to play with the new features!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-12029">
+
+        <div id="comment-12029">
+        <article>
+            <div class="gravatar">
+                <img alt='Phat Palo' src='https://secure.gravatar.com/avatar/ebd459049a496611684e00189c578c6c?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/ebd459049a496611684e00189c578c6c?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://palo.com/" ><cite class="comment_author_name">Phat Palo</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12029">
+                                <time  >
+                                    May 2, 2018 at 3:29 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Wait for at least 4.3.1 &#8230;before doing anything :)</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="li-comment-12031">
+
+        <div id="comment-12031">
+        <article>
+            <div class="gravatar">
+                <img alt='George' src='https://secure.gravatar.com/avatar/2c39677e5a08298e975c0cb08aa743c5?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/2c39677e5a08298e975c0cb08aa743c5?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.ateluhm.ro/" ><cite class="comment_author_name">George</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12031">
+                                <time  >
+                                    May 2, 2018 at 4:57 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>LayerSlider now needs license and will not work</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-12032">
+
+        <div id="comment-12032">
+        <article>
+            <div class="gravatar">
+                <img alt='Mike' src='https://secure.gravatar.com/avatar/a1d92750f48d9a368f6db63785f926ec?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/a1d92750f48d9a368f6db63785f926ec?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Mike</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="enfold-4-3-performance-update/comment-page-2.html#comment-12032">
+                                <time  >
+                                    May 2, 2018 at 4:59 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Very nice updates for performance!! I ran a gtmetrix.com report on the website before I made any updates and then ran the report again after I updated the theme and implemented some of the new features and watched the scores get better with every change! Very nicely done, the hard work put in to this really shows!!&#8217;</p>
+<p>Thanks for the big update!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+			</ol>
+						
+			
+			
+			
+			
+<span class='comment_page_nav_links comment_page_nav_links_bottom'><span class='comment_prev_page'><a href="enfold-4-3-performance-update/comment-page-1.html#comments" >&laquo; Older Comments</a></span><span class='comment_next_page'></span></span></div> <!-- end grid div--><h3 class=' commentsclosed'>Comments are closed.</h3>
+</div>
+				<!--end content-->
+				</main>
+
+				
+
+			</div><!--end container-->
+
+		</div><!-- close default .container_wrap element -->
+
+
+		
+
+
+			
+
+			
+				<footer class='container_wrap socket_color' id='socket'  role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+                    <div class='container'>
+
+                        <span class='copyright'>© Copyright - Kriesi.at </span>
+
+                        <nav class='sub_menu_socket'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia3-menu"><ul id="avia3-menu" class="menu"><li id="menu-item-1605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1"><a href="../index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Home</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1606" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-top-level menu-item-top-level-2 current-menu-item"><a href="../blog.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Blog</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-3317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-3"><a href="../newsletter.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Newsletter</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-4"><a href="../support/register/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Register</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5"><a href="../legal-information.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Legal Information</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-3726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-6"><a href="../privacy-policy.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Privacy Policy</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+</ul></div></nav>
+                    </div>
+
+	            <!-- ####### END SOCKET CONTAINER ####### -->
+				</footer>
+
+
+					<!-- end main -->
+		</div>
+		
+		<a class='avia-post-nav avia-post-prev with-image' href='introducing-wpmls-contractors-system.html' >    <span class='label iconfont' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span>    <span class='entry-info-wrap'>        <span class='entry-info'>            <span class='entry-title'>A few updates regarding WPML: Introducing WPML’s Contractors System</span>            <span class='entry-image'><img width="80" height="80" src="../wp-content/uploads/2018/01/Enfold-contractors-WPML-80x80.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://kriesi.at/wp-content/uploads/2018/01/Enfold-contractors-WPML-80x80.png 80w, https://kriesi.at/wp-content/uploads/2018/01/Enfold-contractors-WPML-36x36.png 36w, https://kriesi.at/wp-content/uploads/2018/01/Enfold-contractors-WPML-180x180.png 180w, https://kriesi.at/wp-content/uploads/2018/01/Enfold-contractors-WPML-120x120.png 120w" sizes="(max-width: 80px) 100vw, 80px" /></span>        </span>    </span></a><a class='avia-post-nav avia-post-next with-image' href='scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow.html' >    <span class='label iconfont' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span>    <span class='entry-info-wrap'>        <span class='entry-info'>            <span class='entry-image'><img width="80" height="80" src="../wp-content/uploads/2018/03/pagespeed-100-100-80x80.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://kriesi.at/wp-content/uploads/2018/03/pagespeed-100-100-80x80.jpg 80w, https://kriesi.at/wp-content/uploads/2018/03/pagespeed-100-100-36x36.jpg 36w, https://kriesi.at/wp-content/uploads/2018/03/pagespeed-100-100-180x180.jpg 180w, https://kriesi.at/wp-content/uploads/2018/03/pagespeed-100-100-120x120.jpg 120w" sizes="(max-width: 80px) 100vw, 80px" /></span>            <span class='entry-title'>Scoring 100/100 in Google PageSpeed Insights, GTmetrix PageSpeed and Yslow (and...</span>        </span>    </span></a><!-- end wrap_all --></div>
+
+<a href='#top' title='Scroll to top' id='scroll-top-link' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Scroll to top</span></a>
+
+<div id="fb-root"></div>
+
+
+ <script type='text/javascript'>
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = '../wp-content/themes/enfold/framework/index.html';
+    avia_framework_globals.installedAt = '../wp-content/themes/enfold/index.html';
+    avia_framework_globals.ajaxurl = '../wp-admin/admin-ajax.html';
+/* ]]> */ 
+</script>
+ 
+ <script type='text/javascript' src='../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../wp-content/themes/kriesi/js/kriesi68b3.js?ver=1'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.minf420.js?ver=4.9.19'></script>
+<script type='text/javascript' src='../wp-content/uploads/dynamic_avia/avia-footer-scripts-ff82465bde3ba4a0f95d76fade5cd5d3.js'></script>
+
+			<script>
+			if(document.cookie.match(/aviaPrivacyGoogleTrackingDisabled/)){ window['ga-disable-UA-785212-1'] = true; }
+			</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-785212-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_TRACKING_ID', { 'anonymize_ip': true });
+  gtag('config', 'UA-785212-1');
+</script>
+</body>
+
+<!-- Mirrored from kriesi.at/archives/enfold-4-3-performance-update by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jan 2022 02:13:12 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.185 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2022-01-07 22:43:43 -->
+
+<!-- super cache -->

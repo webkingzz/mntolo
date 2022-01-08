@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Enfold 4.4 and the GDPR (General Data Protection Regulation)</title>
+	<atom:link href="https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/feed" rel="self" type="application/rss+xml" />
+	<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation</link>
+	<description>Premium Themes</description>
+	<lastBuildDate>Thu, 03 Jan 2019 09:11:26 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.18</generator>
+	<item>
+		<title>By: Leo</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-2#comment-12131</link>
+		<dc:creator><![CDATA[Leo]]></dc:creator>
+		<pubDate>Mon, 28 May 2018 04:51:30 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12131</guid>
+		<description><![CDATA[Hi, congratulations for the great work done for the new privacy law.
+Now...I have some questions to ask you:
+1) Under Google Service there is Google Analytics Tracking Code section where should be inserted the Google Analytics tracking code (Global Site Tag (gtag.js)).
+Can this section manage Google Remarketing Code also?
+Disabling the Google Analytics Tracking via shortcode is deactivated all code in the box above (Including the Google Remarketing Code)?
+2) How can I manage scripts from other platforms such as tripadvisor?
+
+Thanks in advance
+
+Leo]]></description>
+		<content:encoded><![CDATA[<p>Hi, congratulations for the great work done for the new privacy law.<br />
+Now&#8230;I have some questions to ask you:<br />
+1) Under Google Service there is Google Analytics Tracking Code section where should be inserted the Google Analytics tracking code (Global Site Tag (gtag.js)).<br />
+Can this section manage Google Remarketing Code also?<br />
+Disabling the Google Analytics Tracking via shortcode is deactivated all code in the box above (Including the Google Remarketing Code)?<br />
+2) How can I manage scripts from other platforms such as tripadvisor?</p>
+<p>Thanks in advance</p>
+<p>Leo</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Konstantin Youdenko</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-1#comment-12130</link>
+		<dc:creator><![CDATA[Konstantin Youdenko]]></dc:creator>
+		<pubDate>Sun, 27 May 2018 08:11:45 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12130</guid>
+		<description><![CDATA[Okay :-) got it.
+Well, here is a link to a standard example: https://www.w3schools.com/howto/howto_css_switch.asp
+Please include the correct orientation in the next release. For me, as UI professional, flipping the toggle orientation is the same as placing the &quot;x&quot; button in the bottom left corner of the popup. Thanks!]]></description>
+		<content:encoded><![CDATA[<p>Okay :-) got it.<br />
+Well, here is a link to a standard example: <a href="https://www.w3schools.com/howto/howto_css_switch.asp" rel="nofollow">https://www.w3schools.com/howto/howto_css_switch.asp</a><br />
+Please include the correct orientation in the next release. For me, as UI professional, flipping the toggle orientation is the same as placing the &#8220;x&#8221; button in the bottom left corner of the popup. Thanks!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Nenad</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-2#comment-12128</link>
+		<dc:creator><![CDATA[Nenad]]></dc:creator>
+		<pubDate>Sat, 26 May 2018 12:39:43 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12128</guid>
+		<description><![CDATA[Hi Rob, would you please share how you have achieved the usage of self hosted fonts? Many thanks in advance and have a nice day, Nenad]]></description>
+		<content:encoded><![CDATA[<p>Hi Rob, would you please share how you have achieved the usage of self hosted fonts? Many thanks in advance and have a nice day, Nenad</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Stefan</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-2#comment-12126</link>
+		<dc:creator><![CDATA[Stefan]]></dc:creator>
+		<pubDate>Fri, 25 May 2018 20:44:59 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12126</guid>
+		<description><![CDATA[Erst einmal vielen Dank für die DSGVO Erweiterungen. Wichtig wäre m.E. noch ein anzukreuzendes Feld (analog zu den Kontaktformularen) auf der Checkoutseite bei Woocommerce Shops (also über dem &quot;Jetzt kaufen&quot; Button).
+Ich hatte bei mehreren Installationen das Problem, das beim erstellen der Cookie Consens Buttons diese erst angezeigt wurden nachdem ich die &quot;Setupseite&quot; mehrfach verlassen und wieder aufgerufen hatte. Bei einer Installation war erst nur der OK Button editierbar (da nur dieser zu sehen war) nach ein paar mal Seite verlassen und wieder aufrufen konnte ich einen weitern Button hinzufügen. Vielleicht wäre es auch hilfreich, nur die Privacy und Cookie Einstellungen exportieren und importieren zu können.]]></description>
+		<content:encoded><![CDATA[<p>Erst einmal vielen Dank für die DSGVO Erweiterungen. Wichtig wäre m.E. noch ein anzukreuzendes Feld (analog zu den Kontaktformularen) auf der Checkoutseite bei Woocommerce Shops (also über dem &#8220;Jetzt kaufen&#8221; Button).<br />
+Ich hatte bei mehreren Installationen das Problem, das beim erstellen der Cookie Consens Buttons diese erst angezeigt wurden nachdem ich die &#8220;Setupseite&#8221; mehrfach verlassen und wieder aufgerufen hatte. Bei einer Installation war erst nur der OK Button editierbar (da nur dieser zu sehen war) nach ein paar mal Seite verlassen und wieder aufrufen konnte ich einen weitern Button hinzufügen. Vielleicht wäre es auch hilfreich, nur die Privacy und Cookie Einstellungen exportieren und importieren zu können.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sara</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-2#comment-12125</link>
+		<dc:creator><![CDATA[Sara]]></dc:creator>
+		<pubDate>Fri, 25 May 2018 12:23:58 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12125</guid>
+		<description><![CDATA[Einfach nur Danke für das tolle Theme und die super Arbeit - ihr seid echt die Besten ;)]]></description>
+		<content:encoded><![CDATA[<p>Einfach nur Danke für das tolle Theme und die super Arbeit &#8211; ihr seid echt die Besten ;)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Patrick</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-2#comment-12124</link>
+		<dc:creator><![CDATA[Patrick]]></dc:creator>
+		<pubDate>Fri, 25 May 2018 11:47:04 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12124</guid>
+		<description><![CDATA[Danach suche ich auch :-)]]></description>
+		<content:encoded><![CDATA[<p>Danach suche ich auch :-)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: ProCharter</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-2#comment-12123</link>
+		<dc:creator><![CDATA[ProCharter]]></dc:creator>
+		<pubDate>Fri, 25 May 2018 07:22:46 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12123</guid>
+		<description><![CDATA[Shouldn&#039;t the page at least re-load automatically once the setting window has closed. There needs to be a way to trigger a re-load after the settings have been changed.]]></description>
+		<content:encoded><![CDATA[<p>Shouldn&#8217;t the page at least re-load automatically once the setting window has closed. There needs to be a way to trigger a re-load after the settings have been changed.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Kriesi</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-2#comment-12122</link>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+		<pubDate>Fri, 25 May 2018 07:16:47 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12122</guid>
+		<description><![CDATA[klingt in der tat komisch. ein extra cookie notice order cookie blocker plugin hast du ja nehme ich an nicht aktiviert? Und der browser lässt cookies generell zu? 
+
+Würde aber mal empfehlen einen thread im support forum aufzumachen ;)]]></description>
+		<content:encoded><![CDATA[<p>klingt in der tat komisch. ein extra cookie notice order cookie blocker plugin hast du ja nehme ich an nicht aktiviert? Und der browser lässt cookies generell zu? </p>
+<p>Würde aber mal empfehlen einen thread im support forum aufzumachen ;)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Gerhard</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-2#comment-12121</link>
+		<dc:creator><![CDATA[Gerhard]]></dc:creator>
+		<pubDate>Fri, 25 May 2018 05:54:19 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12121</guid>
+		<description><![CDATA[Hallo zusammen,
+erstmal großes Lob für die tolle Arbeit - super Lösung, vielen Dank!
+
+Hab jetzt das Problem, dass meine Cookie-Info Box immer wieder auf meiner Site auftaucht - egal wie oft ich auf &quot;OK&quot; drücke (und das ganze auch noch in unterschiedlichen Versionen (einmal im Footer, einmal oben rechts) ... je nach Unterseite. Browser Cache hab ich geleert ... hilft nix - was mache ich falsch?
+
+Danke für eure Hilfe!]]></description>
+		<content:encoded><![CDATA[<p>Hallo zusammen,<br />
+erstmal großes Lob für die tolle Arbeit &#8211; super Lösung, vielen Dank!</p>
+<p>Hab jetzt das Problem, dass meine Cookie-Info Box immer wieder auf meiner Site auftaucht &#8211; egal wie oft ich auf &#8220;OK&#8221; drücke (und das ganze auch noch in unterschiedlichen Versionen (einmal im Footer, einmal oben rechts) &#8230; je nach Unterseite. Browser Cache hab ich geleert &#8230; hilft nix &#8211; was mache ich falsch?</p>
+<p>Danke für eure Hilfe!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Felix</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/comment-page-2#comment-12120</link>
+		<dc:creator><![CDATA[Felix]]></dc:creator>
+		<pubDate>Fri, 25 May 2018 01:50:03 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3671#comment-12120</guid>
+		<description><![CDATA[Ja - für die Message Bar ist das klar. Allerdings kann ich die Zielseite für die Checkboxen nicht mehr ändern, nachdem ich es einmal definiert habe? :-(]]></description>
+		<content:encoded><![CDATA[<p>Ja &#8211; für die Message Bar ist das klar. Allerdings kann ich die Zielseite für die Checkboxen nicht mehr ändern, nachdem ich es einmal definiert habe? :-(</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

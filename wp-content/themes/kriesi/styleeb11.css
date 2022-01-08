@@ -1,0 +1,1836 @@
+/*
+Theme Name: Kriesi.at
+Description: Main Theme for www.kriesi.at - an Enfold Child theme
+Version: 3.1.9
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+
+
+/************************************************************************
+Global settings
+*************************************************************************/
+
+html, #socket{background-color: #222324;}
+
+/* bigger font */
+body { font-size: 15px; line-height:1.75em; } 	
+
+/* semi boxed layout */
+#wrap_all, #header{ max-width: 1840px; margin: 0 auto;  }
+#main{ overflow: hidden; }
+
+/* stretch header */
+#header_main .container, #socket .container{width:96%;}
+
+/* align menu beside social icons + some slight menu changes*/
+#top .main_menu{ right:132px; border-right-style:dashed; border-right-width: 1px; padding-right:25px;} 
+#top .main_menu ul:first-child > li > a{ letter-spacing: 1px; }
+
+.single-post .header_color .main_menu ul:first-child > li.current_page_parent > a{color:#222;}
+
+.header_color .sub_menu>ul>li>a, .header_color .sub_menu>div>ul>li>a, .header_color .main_menu ul:first-child > li > a, #top .header_color .main_menu .menu ul .current_page_item > a, #top .header_color .main_menu .menu ul .current-menu-item > a, #top .header_color .sub_menu li ul a, .header_color .social_bookmarks a{
+color:#afafaf;
+-webkit-transition: color 0.2s;
+-moz-transition: 	color 0.2s;
+-o-transition: 		color 0.2s;
+transition: 		color 0.2s;
+}
+
+/*remove mini arrow from menu highlight*/
+#top .avia-menu-fx{display:none;} 
+
+/*social bookmark border radius*/
+#top #header_main .social_bookmarks li a { border-radius: 3px;} 
+
+
+#header_main .social_bookmarks{
+    margin: -15px 0 0 -9px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+#header_main .social_bookmarks li{
+	border:none;
+}
+
+
+/*position logo text*/
+#top .subtext{float:left; position: relative;}
+#top .logo img{float:left;}
+#top .logo, #top .logo a{overflow: visible;}
+#top .logo-title{  
+transition: 		opacity 0.4s ease-out;
+-moz-transition: 	opacity 0.4s ease-out;
+-webkit-transition: opacity 0.4s ease-out;
+-o-transition: 		opacity 0.4s ease-out;
+font-size: 12px; color: #000; position: absolute; left:7px; top:-7px; opacity: 1; white-space: nowrap; } 
+#top .logo-subtitle{ color: #aaa; top:7px; }
+#top .header-scrolled .logo-title{ opacity: 0; filter: alpha(opacity=0); }
+
+
+/*heading changes*/
+.template-page .entry-content-wrapper h1, .template-page .entry-content-wrapper h2{font-weight: 300; word-spacing: 1px;}
+div .alternate_color .heading-color, div .alternate_color h1, div .alternate_color h2, div .alternate_color h3, div .alternate_color h4, div .alternate_color h5, div .alternate_color h6, .alternate_color h2 strong{color:#111;}
+h2 { font-size: 32px; line-height: 1.3em; }
+h1 strong,h2 strong{font-weight: 600; }
+
+
+/*socket*/
+#socket{
+border:none;
+}
+
+.avia_mobile #scroll-top-link{display:none;}
+
+
+
+/*buttons*/
+body div .avia-button {
+border-radius: 60px;
+}
+
+#top .avia-color-theme-color-subtle{
+color:#111;
+}
+
+
+#top .hr-short .hr-inner-style {
+border-radius: 20px;
+height: 34px;
+width: 34px;
+border-width: 2px;
+border-style: solid;
+display: block;
+position: absolute;
+left: 50%;
+margin-left: -17px;
+margin-top: -17px;
+line-height: 33px;
+text-align: center;
+border: none;
+}
+
+.hr-short .hr-inner-style:before{
+font-size: 13px;
+color:rgb(66, 160, 189);
+}
+
+.title_container .breadcrumb {
+position: relative;
+right: auto;
+top: 0;
+margin-top: 0px;
+padding-bottom: 8px;
+overflow: hidden;
+left: -2px;
+}
+
+
+.avia_transform .image-overlay{  -webkit-transition: opacity 0.4s ease-in-out; -moz-transition: opacity 0.4s ease-in-out; transition: opacity 0.4s ease-in-out; }
+.avia_transform .grid-image:hover .image-overlay{opacity: 1 !important;}
+	
+	
+/************************************************************************
+Slideshow settings
+*************************************************************************/
+.caption_center h2{
+max-width: 60%;
+font-size:35px;
+margin:0 auto;
+letter-spacing: 1px;
+text-shadow: 0px 4px 21px #000;
+font-weight: 300;
+line-height: 1.1em;
+}
+
+.caption_center h2 strong{font-weight: 600;}
+
+.csstransitions .caption_center h2{
+text-shadow: none;
+}
+
+.caption_fullwidth{
+transition: 		all 1.3s 0.2s ease-out;
+-moz-transition: 	all 1.3s 0.2s ease-out;
+-webkit-transition: all 1.3s 0.2s ease-out;
+-o-transition: 		all 1.3s 0.2s ease-out;
+background: rgba(0, 0, 0, 0);
+}
+
+.csstransitions .av_slideshow_full.avia-fade-slider .active-slide .caption_fullwidth{
+background: rgba(0, 0, 0, 0.4);
+}
+
+.avia-arrow-wrap-section{
+height:20px;
+width:100px;
+position: absolute;
+bottom:-1px;
+left:50%;
+margin-left:-55px;
+z-index: 100;
+overflow: hidden;
+}
+
+.avia-arrow-wrap-section .avia-arrow{ bottom: -22px; top:auto; height: 30px; width: 30px; margin-left: -15px;}
+
+
+/************************************************************************
+BLOG STYLING
+*************************************************************************/
+#top .template-blog article.post {
+margin-bottom: 50px;
+border-bottom: 1px dashed #E1E1E1;
+padding-bottom: 50px;
+}
+
+#top.single-post .template-blog article.post{
+border-bottom: none;
+}
+
+#top .template-blog .preview-pic-blog {
+margin: 0 auto;
+display: block;
+max-width: 94%;
+margin-top: 3%;
+position: relative;
+text-align: center;
+margin-bottom: 30px;
+}
+
+#top .template-blog .post-loop-1 .preview-pic-blog {
+margin-top: -40px;
+}
+
+#top .template-blog .preview-pic-blog img{ border-radius: 3px;}
+
+.addthis_toolbox{
+position: relative;
+display: block;
+width:81px;
+}
+#top .fullsize .template-blog .post .entry-content-wrapper{max-width: 900px;}
+#top .fullsize .template-blog .post .entry-content-wrapper > * , #top .fullsize .template-blog .comment_container{ max-width: 880px; margin-left:auto; margin-right:auto; display: block; float: none; overflow: hidden;}
+#top .fullsize .template-blog .pagination{ max-width: 880px; padding:0 0 10px 0; margin:0 auto; }
+
+#top .fullsize .template-blog .post .entry-content-wrapper {
+text-align: left;
+/*
+font-size: 16px;
+line-height: 28px;
+*/
+}
+
+.preview-pic-blog{
+text-align: center;
+}
+
+.preview-pic-blog a{
+position: relative;
+display: inline-block;
+line-height: 1em;
+margin:0 auto -7px auto;
+}
+
+.preview-pic-blog img{
+display: block;
+margin:0 auto;
+}
+
+#top .template-blog .post-title{text-transform: uppercase; font-size: 42px; letter-spacing: 0px;}
+
+#top .template-blog .more-link{display: block; text-align: center; float: none; margin-top:30px; font-weight: 600; font-size: 14px;}
+#top .template-blog .content{padding: 70px 0; }
+#top .template-blog .post-meta-infos{top:15px; line-height: 20px;}
+#top .template-blog .post-title { padding: 0 0 30px 0; }
+
+/* #top .container_wrap_first .template-blog {display:none;} */
+div .entry-content-wrapper li { padding: 0px 0; }
+#top .template-blog .entry-content strong{color:#222; }
+
+#top #wrap_all .blog-pagination .pagination .pagination-meta{display:none;}
+#top #wrap_all .blog-pagination .pagination a, #top #wrap_all .blog-pagination .pagination span{float:none; display:inline-block; background: #fff; color:#666; box-shadow: none; border:1px solid #e1e1e1; }
+#top #wrap_all .blog-pagination .pagination a:hover{background: #3A3E44; color:#fff;}
+#top .blog-pagination {
+padding: 15px 15px 8px 15px;
+position: relative;
+z-index: 10;
+top: 62px;
+background: #FFF;
+border-top: 1px solid #E1E1E1;
+text-align: center;
+clear: both;
+width: 200%;
+left: -50%;
+top: 70px;
+min-height: 40px;
+background: #F8F8F8;
+}
+
+#top .entry-content .av-intro-text{
+text-align: center;
+font-size: 14px;
+padding: 23px 0;
+text-transform: uppercase;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-top-style: solid;
+border-top-width: 1px;
+margin: 35px 0 35px 0;
+line-height: 24px;
+letter-spacing: 1px;
+color: #aaa;
+}
+
+.comment_container .gravatar img{border-radius: 100px; }
+
+#top .post-title + .av-intro-text, #top .post-title + #dd_start + .av-intro-text{
+margin: 5px 0 35px 0;
+}
+
+
+
+@media only screen and (min-width: 1460px) {
+	#top .blog-container-sepeartor{height:50px; background-color: #222324;}
+	#top .container-blog.image_style_superlarge .preview-pic-blog{margin-top:0; max-width:100%;}
+	#top .container-blog.image_style_superlarge .preview-pic-blog a,
+	#top .container-blog.image_style_superlarge .preview-pic-blog img{width:100%;}
+	#top .container-blog.image_style_superlarge .preview-pic-blog img{ border-radius: 0px;}
+}
+
+#top .av-download-buttons, #top .download{
+margin: 40px 0;
+padding: 20px 10px;
+background: #F8F8F8;
+border-radius: 3px;
+text-align: center;
+}
+
+#top .main_color .av-download-buttons .avia-double-button{
+background: #FFF;
+color: #555;
+font-weight: 600;
+}
+
+#top .av-download-buttons .button_or{background: #f8f8f8; }
+
+
+h3.commentsclosed{text-align: center;}
+
+.avia-iframe-wrap {
+border: 7px solid #E1E1E1;
+}
+
+.blog-tags.minor-meta{font-size: 12px;}
+
+.single-post .template-blog .post{margin-bottom:30px; min-height:400px;}
+.single-post .template-blog .post h4{clear:both; }
+
+.extra_theme_info{
+margin:40px 0;
+display: block;
+position: relative;
+}
+
+.extra_theme_info img{display:block; border-radius: 3px;}
+
+
+
+.type-post .entry-content h4 {
+margin-top: 2.5em;
+}
+
+#top .fullsize .template-blog .post .entry-content-wrapper  p {
+    margin: 1.25em 0;
+}
+
+
+
+/************************************************************************
+404
+*************************************************************************/
+.img_container_404{ position: relative; }
+.img_container_404 h2{color:#fff; position: absolute; top:50%; margin-top:-42px; z-index: 5; left:7%; font-weight: 300; max-width:70%;}
+.img_container_404 h2 strong{font-weight: 600;}
+
+@media only screen and (max-width: 989px) {
+.img_container_404 h2{font-size: 24px; margin-top:-31px;}
+}
+
+@media only screen and (max-width: 767px) {
+.img_container_404 h2{font-size: 18px; margin-top:-35px;}
+}
+
+/************************************************************************
+About STYLING
+*************************************************************************/
+#about-us-intro .hr{margin: 30px 0 60px 0; }
+
+#about-us-team { background: #fcfcfc url(images/big_bg_world.jpg) repeat top center fixed;}
+.avia_mobile #about-us-team{background-attachment: scroll; }
+
+#about-us-team .avia-testimonial-wrapper{
+margin-top: 60px;
+}
+
+#top #about-us-team .avia-testimonial{
+background: #f8f8f8;
+box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+padding:20px;
+}
+
+#about-us-team .avia-testimonial-image {
+position: relative;
+z-index: 10;
+width: 110px;
+height: 110px;
+}
+
+#about-us-team .avia-testimonial-meta {
+position: absolute;
+top: 0;
+margin: 0;
+padding: 7px 30px 7px 130px;
+line-height: 1.5em;
+
+}
+
+#about-us-team .avia-testimonial-name{
+font-size:17px;
+}
+
+
+#about-us-team .avia-testimonial-content{
+position: relative;
+top: 55px;
+margin-bottom:55px;
+}
+
+
+
+#top .av-special-heading.classic-quote > *{
+font-style: normal;
+font-family: inherit;
+}
+
+#top #about-us-team .avia-testimonial-row-1.avia-first-testimonial{
+background: #FFF;
+}
+
+#top .iconbox{font-size: 14px; line-height: 1.8em;}
+
+
+#top .av-special-heading-h1{margin-top:0;}
+
+#about-us-numbers{
+text-align: center;
+background: #21292E;
+border-color: #21292E;
+background: #fcfcfc url(images/big_bg_world.jpg) repeat top center fixed;
+}
+.avia_mobile #about-us-numbers{background-attachment: scroll; }
+
+#about-us-numbers.avia-big-boxed .avia-big-number{
+
+color: #FFF;
+border-radius: 114px;
+padding: 70px 10px;
+width:211px;
+height:210px;
+display:inline-block;
+background-color: rgba(0,0,0 ,0.2);
+border-color: #3E4652;
+}
+#about-us-numbers.avia-big-boxed .avia-big-number h3{color: #FFF; margin-bottom: 2px;}
+#about-us-numbers.avia-big-boxed .avia-big-number-content p{font-size: 12px; position: relative; }
+
+#top .team-member-kriesi{
+margin-top:20px;
+}
+
+#top .team-member-kriesi .team-member-name, #top .team-member-kriesi .team-member-job-title {
+position: relative;
+top: -100px;
+padding: 5px 17px;
+background: rgba(0, 0, 0, 0.4);
+color: #FFF;
+float: left;
+clear: both;
+margin: 0px;
+z-index: 5;
+}
+
+.avia-testimonial_inner {
+position: relative;
+overflow: hidden;
+}
+
+
+/************************************************************************
+Portfolio STYLING
+*************************************************************************/
+.browser-top-bar{
+height:15px;
+background-color:#e1e1e1;
+width:100%;
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+position: relative;
+}
+
+.browser-url-bar{
+border-radius: 2px;
+position: absolute;
+bottom:3px;
+height:8px;
+width:85%;
+left:30px;
+background: #fff;
+}
+
+.browser-dots{ width:25px; position: relative; top: 6px;left: 5px; overflow: hidden;}
+.browser-dot{float:left; border-radius:20px; height:4px; width:4px; background: #aaa; margin-left:2px;}
+
+div .grid-entry .inner-entry{
+border-top-right-radius: 4px;
+border-top-left-radius: 4px;
+border-bottom-right-radius: 2px;
+border-bottom-left-radius: 2px;
+box-shadow: none;
+border-width: 1px;
+border-style: solid;
+margin:0;
+}
+
+.meta-price{
+font-weight: 400;
+position: absolute;
+z-index: 5;
+right: 15px;
+bottom: 11px;
+letter-spacing: 1px;
+}
+
+.meta-price span{
+font-size: 0.8em;
+opacity: 0.7;
+padding-left:2px;
+position: relative;
+top:-1px;
+}
+
+
+.grid-entry-title {
+font-size: 15px;
+margin: 0;
+padding: 0;
+font-weight: 400;
+text-align: left;
+letter-spacing: 1px;
+}
+
+.grid-content {
+border-top: 1px solid #E1E1E1;
+}
+
+div .grid-entry .avia-arrow{
+border-top: 1px solid #E1E1E1;
+border-left: 1px solid #E1E1E1;
+top: -6px;
+left: 22px;
+}
+
+/*
+.grid-image{
+height:317px !important;
+width:392px !important;
+}
+*/
+#top div .grid-sort-container{width:101%; margin-left: -1%}
+#top div .grid-sort-container .av_one_third { margin-left: 1%; margin-bottom: 1%; width: 32.333333333%; }
+
+
+
+.avia_desktop .home .grid-image img {
+-moz-transition: 	all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-o-transition: 		all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+transition: 		all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-webkit-filter: grayscale(1);
+}
+
+.avia_desktop .home .grid-image:hover img{
+-webkit-filter: grayscale(0);
+}
+
+#top .custom-overlay{ background: transparent;}
+
+#top #wrap_all .avia-hover-fx.grid-image .avia-double-buttons{
+margin-top:-25px;
+position: absolute;
+top:50%;
+width:96%;
+left:2%;
+}
+
+#top #wrap_all .avia-hover-fx.grid-image .avia-double-button{
+background: rgba(0, 0, 0, 0.5);
+max-width: 50%;
+min-width: 50%;
+width:50%;
+transition: 		none 0.4s ease-in-out;
+-moz-transition: 	none 0.4s ease-in-out;
+-webkit-transition: none 0.4s ease-in-out;
+-o-transition: 		none 0.4s ease-in-out;
+}
+
+
+.sort_by_cat{
+width:90%;
+display: table;
+height:120px;
+table-layout: fixed;
+margin: 0 auto;
+max-width: 800px;
+}
+
+#top .sort_by_cat a{
+display: table-cell;
+float:none;
+vertical-align: top;
+text-align: center;
+position: relative;
+}
+
+#top .sort_by_cat a .inner_sort_button{
+display: block; position: relative;
+}
+
+#top .sort_by_cat a .inner_sort_button span{ 
+line-height: 16px;
+display: block;
+position: absolute;
+top:70px;
+left:5%;
+width:90%;
+}
+
+.sort_by_cat .text-sep{
+display: none;
+}
+
+#top .av-cat-count {
+position: relative;
+display: block;
+height: 60px;
+width: 60px;
+line-height: 57px;
+display: block;
+border-radius: 100px;
+text-align: center;
+margin: 0 auto;
+font-size: 13px;
+font-weight: bold;
+background-color: transparent;
+background-color: rgba(255, 255, 255, 0.2);
+border: 2px solid #FFF;
+color: #FFF;
+}
+
+#top a:hover .av-cat-count{
+background-color: rgba(255, 255, 255, 0.4);
+}
+
+#top #wrap_all .active_sort .av-cat-count{
+background: #fff;
+color: #111;
+}
+
+
+#top #js_sort_items{
+background: transparent;
+}
+
+#top .sort_width_container {
+background: transparent url(images/small-banner1.jpg) top center no-repeat;
+width: 146%;
+left: -23%;
+margin-top: -50px;
+padding: 35px 50px 15px 50px;
+}
+
+#top .sort_width_container h2{text-align: center; color: #fff; margin:10px auto 40px auto; width:70%;}
+#top .sort_width_container h2 strong{color: inherit;}
+
+#top .sort_by_cat a span{color:#fff;}
+
+#top .portfolio-title-add {
+display:none;
+}
+
+#top #grid_id_best-seller-from-each-category_sort .best-seller-from-each-category_sort .portfolio-title-add, #popular .portfolio-title-add{
+display: inline-block;
+font-size: 11px;
+line-height: 10px;
+position: relative;
+top: 0px;
+left: 2px;
+opacity: 0.8;
+font-style: italic;
+letter-spacing: 0px;
+padding-right:20px;
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+.responsive #top .grid-sort-container .grid-entry {
+width: 49.5%;
+margin-bottom: 1%;
+}
+}
+
+
+@media only screen and (min-width: 1340px){ .responsive_large .fullsize .grid-col-3 .grid-image { height: 317px; } }
+@media only screen and (min-width: 1140px){ .responsive .fullsize .grid-col-3 .grid-image { height: 269px; } }
+@media only screen and (max-width: 989px) and (min-width: 768px) { .responsive .fullsize .grid-col-3 .grid-image { height: 178px; } }
+.fullsize .grid-col-3 .grid-image { height: 238px; }
+
+
+/************************************************************************
+Testimonial STYLING
+*************************************************************************/
+#top .avia-testimonial{ border:none; font-size: 13px; line-height: 1.7em;}
+.avia-testimonial-subtitle, .avia-testimonial-link{
+font-style: italic;
+}
+
+/************************************************************************
+Custom sections
+*************************************************************************/
+#learn-more{z-index: 10;}
+#learn-more .container{max-width: 920px;}
+
+#learn-more .entry-content-wrapper .av_one_third.first{margin-left: 0%;}
+#learn-more .entry-content-wrapper .av_one_third{width:29.333333333333332%; margin-left: 6%; margin-bottom:0;}
+
+
+#top #main #learn-more .template-page.content{ padding: 30px 0 37px 0;}
+
+
+
+
+
+
+#our-themes{padding:90px 0 0 0; overflow: hidden;}
+#our-themes .avia-double-buttons{margin-bottom:40px;}
+#our-themes .avia_textblock {max-width: 680px; margin: 0 auto;}
+#top #main #our-themes .template-page.content{margin:0;}
+
+#what-we-do{background: #fcfcfc url(images/big_bg2.jpg) no-repeat center center;  padding:95px 0; text-align: center; }
+/*#testimonials{background: #000 url(images/big_bg3.jpg) repeat center center;  background-attachment: fixed; overflow: hidden;}*/
+#what-you-get .entry-content-wrapper{display: table; width:100%; float:none;}
+#what-you-get .flex_column{display: table-cell; width:50%; float:none; vertical-align: middle; padding-left: 3%;}
+#what-you-get .flex_column.first{padding-right: 3%; padding-left: 0%;}
+
+
+
+
+#learn-more .flex_column:before {
+position: absolute;
+top: 12px;
+height: 15px;
+width: 15px;
+border-radius: 100px;
+left: -31px;
+font-family: 'entypo-fontello';
+font-size: 13px;
+color: #bbb;
+content: "\25CF";
+visibility: visible;
+overflow: visible;
+}
+
+#learn-more .flex_column.avia-builder-el-6:before{
+
+}
+
+#learn-more .flex_column.avia-builder-el-2:before{
+visibility: hidden;
+}
+
+#top .section-with-bg .av-special-heading > *, #top .section-with-bg .av-special-heading > * strong{
+color:#fff;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/************************************************************************
+Contact page
+*************************************************************************/
+#contact-top{
+background: #fcfcfc url(images/big_bg3.jpg) repeat center center; 
+padding:40px 0;
+background-attachment: fixed;
+}
+
+#contact-top .hr-short {margin:10px 0 40px;}
+#contact-top .hr-short .hr-inner-style{ background: #fbfbfb; }
+#contact-top .av-special-heading-h1{margin-bottom: 50px;}
+#contact-top .av-special-heading-h2{margin: 0 0 50px 0;}
+
+#contact-top .iconbox_content p{text-align: left;}
+#contact-top .iconbox_content strong{color:#222; }
+#contact-top .iconbox_content { padding: 45px 30px 15px; min-height: 230px;}
+
+#contact-top .iconbox_content a{display: block; position: relative; width: 100%; text-align: center; left:0;}
+
+#pre-sale-question form{
+border-radius: 6px;
+padding:8px;
+position: relative;
+border: 1px #e1e1e1 solid;
+background: #D1D1D1;
+background: 	-moz-repeating-linear-gradient(-45deg, #000 , #000 30px, #fff 30px, #fff 40px, #42A0BD 40px, #42A0BD 70px,#fff 70px, #fff 80px);
+background:  -webkit-repeating-linear-gradient(-45deg, #000 , #000 30px, #fff 30px, #fff 40px, #42A0BD 40px, #42A0BD 70px,#fff 70px, #fff 80px);
+background: 	  -o-repeating-linear-gradient(-45deg, #000 , #000 30px, #fff 30px, #fff 40px, #42A0BD 40px, #42A0BD 70px,#fff 70px, #fff 80px);
+background: 		 repeating-linear-gradient(-45deg, #000 , #000 30px, #fff 30px, #fff 40px, #42A0BD 40px, #42A0BD 70px,#fff 70px, #fff 80px);
+}
+
+div #pre-sale-question fieldset {
+background: #f7f7f7;
+border: 1px #E5E5E5 solid;
+border-radius: 4px;
+padding:20px;
+margin:0;
+}
+
+#pre-sale-question form p{
+    margin: 0 0 20px 0;
+}
+
+#pre-sale-question .avia-supp-contact-form .avia-supp-contact-form-submit-button {
+    float: none;
+    text-align: center;
+    width: 325px;
+    margin: 0 auto;
+}
+
+#pre-sale-question input[type="text"]{
+	margin-bottom: 0;
+	padding:13px 10px;
+}
+
+#pre-sale-question .avia-supp-contact-form .avia-supp-value-verifier-label {
+    top: 34px;
+    }
+
+#pre-sale-question .avia-supp-contact-form .avia-supp-contact-form-message-section-wrap .avia-supp-contact-form-message-success{
+	border:none;
+}
+
+
+#pre-sale-question form p label{text-align: left;}
+
+#pre-sale-question .hr-short.el_after_av_heading {
+margin: 28px 0 55px;
+}
+
+#pre-sale-question #element_avia_support_private_data_1 textarea {
+  height: 80px;
+}
+
+@media only screen and (max-width: 1139px) { #contact-top .iconbox_content{min-height: 310px;} }
+@media only screen and (max-width: 989px) { #contact-top .iconbox_content{min-height: 412px;} }
+@media only screen and (max-width: 768px) { #contact-top .iconbox_content{min-height: 10px;} }
+
+/************************************************************************
+Custom Classes
+*************************************************************************/
+.avia-subheading {letter-spacing: 1px; text-align: center; padding-bottom: 30px;}
+
+.big-seperator{margin: 40px 0;}
+.dark-strong strong{color:#222;}
+.small-font {font-size: 14px;}
+
+/************************************************************************
+Additional SHortcodes
+*************************************************************************/
+/*shortcode principles*/
+.avia-principles{
+width: 100%;
+padding-bottom: 100%;
+height: 0px;
+clear: both;
+position: relative;
+}
+
+.avia-priciple-main-logo{
+width:120px;
+left:50%;
+top:50%;
+margin-left: -60px;
+margin-top:-72px;
+position: absolute;
+z-index: 12;
+}
+
+.avia-priciple-logo {
+border-width: 1px;
+border-style: solid;
+border-radius: 100px;
+height: 60px;
+width: 60px;
+margin: -30px;
+position: absolute;
+text-align: center;
+line-height: 58px;
+font-size: 25px;
+cursor: pointer;
+z-index: 5;
+}
+
+.avia-principles-inner{
+top:0;
+left:0;
+position: absolute;
+width:100%;
+height:100%;
+z-index: 11;
+border-width:2px;
+border-style: solid;
+border-radius: 10000px;
+}
+
+.avia-priciple-logo-1{ left:50%; top:0%;		}
+.avia-priciple-logo-2{ left:92%; top:24%;		}
+.avia-priciple-logo-3{ left:92%; top:76%;		}
+.avia-priciple-logo-4{ left:50%; bottom:0%;		}
+.avia-priciple-logo-5{ right:92%; top:76%;		}
+.avia-priciple-logo-6{ right:92%; top:24%;		}
+
+.js_active .avia-priciple-logo{opacity: 0;}
+.js_active .avia-principles-inner{
+  -ms-transform: 	 scale(0.1);
+  -o-transform: 	 scale(0.1);
+  -moz-transform: 	 scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: 		 scale(0.1);
+  border-color:#000;
+}
+
+.js_active .avia-priciple-logo-1{-webkit-transform: translate(0px, 250px); -ms-transform: translate(0px, 250px); -moz-transform: translate(0px, 250px);	transform: translate(0px, 250px);	}
+.js_active .avia-priciple-logo-2{-webkit-transform: translate(-200px, 130px); -ms-transform: translate(-200px, 130px);	-moz-transform: translate(-200px, 130px); transform: translate(-200px, 130px); }
+.js_active .avia-priciple-logo-3{-webkit-transform: translate(-200px, -130px); -ms-transform: translate(-200px, -130px); -moz-transform: translate(-200px, -130px); transform: translate(-200px, -130px);	}
+.js_active .avia-priciple-logo-4{-webkit-transform: translate(0px, -250px);	-ms-transform: translate(0px, -250px); -moz-transform: translate(0px, -250px); transform: translate(0px, -250px);	}
+.js_active .avia-priciple-logo-5{-webkit-transform: translate(200px, -130px); -ms-transform: translate(200px, -130px); -moz-transform: translate(200px, -130px); transform: translate(200px, -130px);	}
+.js_active .avia-priciple-logo-6{-webkit-transform: translate(200px, 130px); -ms-transform: translate(200px, 130px); -moz-transform: translate(200px, 130px); transform: translate(200px, 130px);	}
+
+
+.avia_start_animation .avia-principles-inner{
+-moz-transition: 	all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-o-transition: 		all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+transition: 		all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  -ms-transform: 	 scale(1);
+  -o-transform: 	 scale(1);
+  -moz-transform: 	 scale(1);
+  -webkit-transform: scale(1);
+  transform: 		 scale(1);
+  border-color:#e1e1e1;
+}
+
+.avia_start_animation .avia-priciple-logo{
+-moz-transition: 	all 0.4s 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-webkit-transition: all 0.4s 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-o-transition: 		all 0.4s 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+transition: 		all 0.4s 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-webkit-transform: translate(0px, 0px);
+-ms-transform: translate(0px, 0px);
+-moz-transform: translate(0px, 0px);
+transform: translate(0px, 0px);
+opacity: 1;
+}
+
+.avia_start_animation .avia-priciple-logo-1{-moz-transition-delay: 1.0s; -o-transition-delay: 1.0s; -webkit-transition-delay: 1.0s; transition-delay: 1.0s;}
+.avia_start_animation .avia-priciple-logo-2{-moz-transition-delay: 1.2s; -o-transition-delay: 1.2s; -webkit-transition-delay: 1.2s; transition-delay: 1.2s;}
+.avia_start_animation .avia-priciple-logo-3{-moz-transition-delay: 1.4s; -o-transition-delay: 1.4s; -webkit-transition-delay: 1.4s; transition-delay: 1.4s;}
+.avia_start_animation .avia-priciple-logo-4{-moz-transition-delay: 1.6s; -o-transition-delay: 1.6s; -webkit-transition-delay: 1.6s; transition-delay: 1.6s;}
+.avia_start_animation .avia-priciple-logo-5{-moz-transition-delay: 1.8s; -o-transition-delay: 1.8s; -webkit-transition-delay: 1.8s; transition-delay: 1.8s;}
+.avia_start_animation .avia-priciple-logo-6{-moz-transition-delay: 2.0s; -o-transition-delay: 2.0s; -webkit-transition-delay: 2.0s; transition-delay: 2.0s;}
+
+.avia_animation_finished .avia-priciple-logo{ -moz-transition-delay: 0s; -o-transition-delay: 0s; -webkit-transition-delay: 0s; transition-delay: 0s; z-index: 20;}
+.avia_animation_finished .avia-principles-inner{ z-index: 20;}
+
+.avia-priciple-logo-text{
+-moz-transition: 	all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+-o-transition: 		all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+transition: 		all 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+opacity: 0;
+z-index: 12;
+display: table;
+height:90%;
+width:90%;
+position: absolute;
+top:5%;
+left:5%;
+border-radius: 1000px;
+padding:5%;
+text-align: center;
+-webkit-backface-visibility: hidden; 
+}
+
+.avia-priciple-logo-text-inner{
+display: table-cell;
+vertical-align: middle;
+
+}
+
+.active-container-1 .avia-priciple-logo-text-1{z-index:13; opacity: 0.98;}
+.active-container-2 .avia-priciple-logo-text-2{z-index:13; opacity: 0.98;}
+.active-container-3 .avia-priciple-logo-text-3{z-index:13; opacity: 0.98;}
+.active-container-4 .avia-priciple-logo-text-4{z-index:13; opacity: 0.98;}
+.active-container-5 .avia-priciple-logo-text-5{z-index:13; opacity: 0.98;}
+.active-container-6 .avia-priciple-logo-text-6{z-index:13; opacity: 0.98;}
+
+.avia-priciple-logo-text strong {
+letter-spacing: 1px;
+font-size: 21px;
+font-weight: normal;
+margin-bottom: 6px;
+display: block;
+line-height: 1.3em;
+}
+
+/*shortcode double buttons*/
+.avia-double-buttons{
+margin-top:30px;
+text-align: center;
+position: relative;
+}
+
+#top .avia-double-button{
+letter-spacing: 1px;
+padding:13px 20px;
+text-transform: uppercase;
+font-size: 13px;
+text-align: center;
+min-width: 175px;
+display: inline-block;
+transition: 		all 0.4s ease-in-out;
+-moz-transition: 	all 0.4s ease-in-out;
+-webkit-transition: all 0.4s ease-in-out;
+-o-transition: 		all 0.4s ease-in-out;
+border: 4px solid #fff;
+text-decoration: none;
+}
+
+#top .av_one_half .avia-double-button{
+min-width: 158px;
+}
+
+
+#top .avia-double-button:hover{
+text-decoration: none;
+}
+
+
+#top .avia-double-button-1{
+border-top-left-radius: 	100px;
+border-bottom-left-radius: 	100px;
+border-right-width:2px;
+}
+
+#top .avia-double-button-2{
+border-top-right-radius: 	100px;
+border-bottom-right-radius: 100px;
+border-left:none;
+}
+
+#top .button_or{
+position: absolute;
+display: block;
+height: 26px;
+line-height: 21px;
+width: 26px;
+text-align: center;
+top: 50%;
+left:50%;
+margin: -13px 0 0 -14px;
+background: #fff;
+color:#666;
+border-radius: 100px;
+font-size: 10px;
+border: 2px solid #FFF;
+font-style: italic;
+font-weight: 600;
+z-index: 11;
+}
+
+#top #wrap_all .avia-slide-wrap .avia-double-button, #top #wrap_all .avia-hover-fx .avia-double-button{
+background:#000;
+background: rgba(0,0,0,0.2);
+border-color:#fff;
+color:#fff;
+padding-bottom:11px;
+text-decoration: none;
+}
+
+#top #wrap_all .avia-slide-wrap .avia-double-button:hover, #top #wrap_all .avia-hover-fx .avia-double-button:hover{
+opacity: 0.8;
+}
+
+
+
+#top .avia_textblock  .avia-double-buttons {
+margin-top: 35px;
+}
+
+#top .avia_textblock  .avia-double-button{
+border-width:1px;
+font-weight: 600;
+}
+
+
+#top .avia_textblock  .button_or{
+border-color: #e1e1e1; border-width:1px; line-height: 22px;
+}
+
+
+/*shortcode social buttons*/
+
+#top .avia-social-buttons {
+display: block;
+clear: both;
+position: relative;
+padding: 8px;
+border-radius: 50px;
+background: #fcfcfc;
+margin-bottom: -47px;
+margin-left: auto;
+top: 21px;
+text-align: center;
+margin-right: auto;
+width: 468px;
+box-shadow: 0 -1px 2px rgb(255, 255, 255), inset 0 1px 2px rgba(0, 0, 0, .2), inset 0 .25rem 1rem rgba(0, 0, 0, .1);
+}
+
+.social-container .social-inner{
+position: relative; z-index: 10;
+}
+
+
+.social-container .fb_iframe_widget > span{
+overflow: hidden; vertical-align: initial !important;
+}
+
+.social-c-1, .social-c-1 .social-shadow, .social-c-1 .social-overlay, .social-c-1 .social-hover{
+border-top-left-radius: 	40px;
+border-bottom-left-radius: 	40px;
+}
+
+.social-c-2, .social-c-2 .social-shadow, .social-c-2 .social-overlay, .social-c-2 .social-hover{
+border-top-right-radius: 	40px;
+border-bottom-right-radius: 40px;
+}
+
+
+
+.social-container{
+display: inline-block;
+width: 225px;
+height: 40px;
+line-height: 48px;
+background: #f8f8f8;
+-webkit-perspective: 300;
+box-shadow: 0 -1px 2px rgb(255, 255, 255), inset 0 1px 2px rgba(0, 0, 0, .2), inset 0 .25rem 1rem rgba(0, 0, 0, .1);
+margin: 0px;
+position: relative;
+cursor: pointer;
+}
+
+.social-container .social-hover{position: absolute; width:100%; height:100%; left:0; top:0; z-index: 10000;
+-webkit-transform-style: preserve-3d;
+background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 100%);
+background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 100%);
+background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 100%);
+background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 100%);
+background-image: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 100%);
+}
+.social-container-twitter .social-hover{ background-color:#46d4fe; border:1px solid rgb(33, 173, 214);}
+.social-container-facebook .social-hover{ background-color:#37589b; border: 1px solid rgb(31, 63, 128); }
+.avia_transform3d  .av-social-loaded.social-container:hover .social-hover{ 
+-webkit-transform: 	rotateX(-120deg);
+-moz-transform: 	rotateX(-120deg);
+-ms-transform: 		rotateX(-120deg);
+-o-transform: 		rotateX(-120deg);
+transform: 			rotateX(-120deg);
+border-top-width: 4px;
+}
+
+.av-social-loaded.social-container{
+	cursor: default;
+}
+
+.no-avia_transform3d  .social-container:hover .social-hover{ opacity: 0; top:-25px;}
+
+.avia_transform3d .social-container .social-shadow, .social-container .social-hover, .social-container .social-overlay{
+transition: 		all 0.5s ease-in-out;
+-moz-transition: 	all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-o-transition: 		all 0.5s ease-in-out;
+-webkit-transform-origin: center bottom;
+-ms-transform-origin: center bottom;
+-moz-transform-origin: center bottom;
+-o-transform-origin: center bottom;
+transform-origin: center bottom;
+}
+
+.avia_transform3d .social-container .social-shadow {
+top: 100%;
+position: absolute;
+height:100%;
+width:100%;
+left: 0;
+height: 3.5rem;
+-webkit-transform-origin: center top;
+-ms-transform-origin: center top;
+-moz-transform-origin: center top;
+-o-transform-origin: center top;
+transform-origin: center top;
+-webkit-transform: rotateX(90deg);
+-moz-transform: rotateX(90deg);
+-ms-transform: rotateX(90deg);
+-o-transform: rotateX(90deg);
+transform: rotateX(90deg);
+opacity: 0;
+z-index: 10;
+background-image: -o-linear-gradient(top, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 100%);
+background-image: -moz-linear-gradient(top, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 100%);
+background-image: -ms-linear-gradient(top, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 100%);
+background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 100%);
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.avia_transform3d .av-social-loaded.social-container:hover .social-shadow { 
+  opacity: 1;
+  -ms-transform: rotateX(45deg) scale(.95);
+  -o-transform: rotateX(45deg) scale(.95);
+  -moz-transform: rotateX(45deg) scale(.95);
+  -webkit-transform: rotateX(45deg) scale(.95);
+  transform: rotateX(45deg) scale(.95);
+}
+
+.social-container .social-overlay{
+position: absolute;
+height:100%;
+width:100%;
+top:0;
+left:0;
+background: #000;
+z-index: 10;
+opacity: 0.5;
+}
+
+.social-container:hover .social-overlay{
+opacity: 0;
+} 
+
+.social-container .social-hover:after {
+color: #fff;
+position: relative;
+top: -4px;
+text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+
+.social-inner a{
+text-decoration: none;
+font-size: 12px;
+position: relative;
+top:-5px;
+color:#555;
+font-weight:bold;
+}
+
+
+
+/*shortcode big numbers*/
+
+.avia-big-number{
+display: block;
+clear: both;
+position: relative;
+text-align: center;
+}
+
+.avia-big-boxed .avia-big-number{
+padding:10px;
+border-style: solid;
+border-width:1px;
+border-radius:2px; 
+}
+
+
+.avia-big-number.avia-color-font-light, .avia-big-number.avia-color-font-light h3{
+color:#fff;
+}
+
+.avia-big-number.avia-color-font-dark, .avia-big-number.avia-color-font-dark h3{
+color:#222;
+}
+
+.avia-big-number.avia-color-font-embossed .avia-single-number{
+text-shadow: 0 1px 0 rgb(203, 203, 203), 0 2px 0 rgb(201, 201, 201), 0 3px 0 rgb(186, 186, 186), 0 4px 0 rgb(184, 184, 184), 0 5px 0 rgb(171, 171, 171), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+color: rgb(255, 255, 255);
+}
+
+
+.avia-big-number-title{
+font-size: 40px;
+white-space: nowrap;
+line-height: 1em;
+position: relative;
+letter-spacing: -2px;
+font-weight: 400;
+}
+
+.avia-no-number{
+opacity: 0.5;
+font-size: 0.8em;
+vertical-align:top;
+font-weight: normal;
+}
+
+/*
+.avia-big-number.avia-color-font-embossed .avia-no-number{
+vertical-align: middle;
+}
+*/
+
+.avia-big-number-content{
+padding: 0;
+position: relative;
+clear: none;
+overflow: hidden;
+text-transform: uppercase;
+font-size: 15px;
+}
+
+.avia-big-number-content p{
+margin: 0;
+}
+
+.js_active .avia-big-number-title{
+visibility: hidden;
+}
+
+.number_prepared .avia-big-number-title{
+visibility: visible;
+}
+
+
+
+/************************************************************************
+BBPRESS
+*************************************************************************/
+
+#top #wrap_all #main .bbp-template-notice, #top #wrap_all #main .bbp-template-notice a{
+text-align: center;
+background: #f8f8f8;
+color:#333;
+font-weight:bold;
+}
+
+#top #wrap_all #main .bbp-no-reply .bbp-template-notice{
+margin-left: 103px;
+}
+
+.avia_transform #top .moderator .bbp-reply-author::before{
+background: #f8f8f8;
+}
+
+#bbpress-forums .bbp-body .moderator div.bbp-topic-content, #bbpress-forums .bbp-body .moderator div.bbp-reply-content{ background: #f8f8f8 url(images/team-badge.png) top right no-repeat;} 
+/* #bbpress-forums .bbp-body .moderator.user-id-451 div.bbp-topic-content, #bbpress-forums .bbp-body .moderator.user-id-451 div.bbp-reply-content{ background: #f8f8f8 url(images/team-badge-head.png) top right no-repeat;}  */
+#bbpress-forums .bbp-body .moderator.user-id-1 div.bbp-topic-content, #bbpress-forums .bbp-body .moderator.user-id-1 div.bbp-reply-content{ background: #f8f8f8 url(images/team-badge-kriesi.png) top right no-repeat;} 
+
+.migrated-post pre br{display:none;}
+
+
+.moderator .bbp-reply-author{
+
+}
+
+#bbpress-forums{position: relative;}
+
+.single-topic .bbp-pagination{
+width: 100%;
+top: 31px;
+overflow: hidden;
+min-height: 40px;
+}
+
+#bbpress-forums ul.bbp-replies {
+border: none;
+margin-top: -40px;
+}
+
+.bbp-forums + .bbp-pagination .bbp-pagination-count{
+top: 1px;
+}
+
+.bbp-pagination-count {
+position: relative;
+top: 7px;
+}
+
+li.bbp-topic-freshness {
+text-align: left;
+float: left;
+width: 30%;
+display: block;
+}
+
+.bbp-body .topic li, .bbp-body .forum li{margin-bottom:0;}
+.bbp-body li.bbp-forum-freshness, .bbp-body li.bbp-topic-freshness { text-indent: 8px; }
+.bbp-body li.bbp-forum-freshness p, .bbp-body li.bbp-topic-freshness p{display: inline;}
+
+li.bbp-topic-title { width: 60%; }
+.by_class{font-size: 11px; font-style: italic;}
+
+
+.bbp-topic-freshness-author img,
+.bbp-topic-title .bbp-topic-meta,
+.bbp-forum-voice-count, .bbp-topic-voice-count{display:none;}
+
+#top .bbp-private-reply{
+background: transparent !important;
+}
+
+#top .bbp-replies .bbp-header{border:none;}
+#top #main .bbp-private-reply .bbp-reply-content{padding-top:20px;}
+#top.logged-in #main .bbp-private-reply .bbp-reply-content{padding-top:7px; border-color: #AFD2DD; }
+
+pre{
+margin:20px 0;
+}
+
+.moderator pre{
+background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+background-image: 	 -moz-linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
+background-image:     -ms-linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
+background-image:      -o-linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
+background-image:         linear-gradient(rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+}
+
+#top .comment_text {
+font-size: 14px;
+}
+
+/*
+.entry-content pre:hover{
+width:150%;
+left:-25%;
+}
+
+#top #wrap_all .entry-content{overflow: visible; }
+*/
+
+
+
+#top .bbp-replies+.bbp-pagination{
+display: block;
+top:-30px;
+position: relative;
+
+}
+
+.single-topic  .bbp-pagination{
+padding-left:108px;
+}
+
+.single-topic .bbp-header{ border:none; }
+
+.av-term-editor{background: #f8f8f8; border-radius: 3px; padding:20px; overflow: hidden;}
+.av-term-editor>*{float:left;margin-right:20px;}
+.av-term-editor h6{margin-bottom:10px;}
+#top .av-del-link{background: #ddd; display: block; border-radius: 2px; margin:1px 0; text-decoration: none; color:#555; font-size: 12px; padding:0 8px 0 0;}
+#top .av-del-link:hover{background: #eee;}
+.av-del-tag{background: #fff; border-radius: 100px; height:16px; width:16px; font-size: 10px;  font-family: Arial; display: inline-block; text-align: center; line-height: 16px; position: relative;
+top: -2px; margin:0px 4px;}
+#top .av-term-editor-add-tags{margin:0 20px 0 0;}
+
+.single-forum .page-thumb{display:none;}
+.forum_head_info{width:100%; margin-bottom:10px; display: block; position: relative;}
+.forum_head_info img{display: block; margin:0 auto; border-radius: 3px;}
+
+.bbp-forum-title, .bbp-topic-permalink, .bbp-author-name {
+font-weight: 600;
+}
+
+
+
+.single-forum .bbp-body .status-closed .bbp-topic-title:before {
+content: "\2713";
+}
+
+div.avia_bbpress_user_stats {
+font-size: 11px;
+text-align: left;
+border-top: 1px dashed #E1E1E1;
+padding: 5px 0 0 0;
+color: #AAA;
+}
+
+div.avia_bbpress_user_stats.danger{
+color: #C51010;
+}
+
+#top #wrap_all .bbp-body span.page-numbers.dots {
+background: rgba(0, 0, 0, 0);
+}
+
+.bbp-topics-front ul.super-sticky, .bbp-topics ul.super-sticky, .bbp-topics ul.sticky, .bbp-forum-content ul.sticky {
+background-color: #F5F5F5 !important;
+}
+
+#bbpress-forums div.bbp-topic-author img.avatar, #bbpress-forums div.bbp-reply-author img.avatar{
+width: 60px;
+height: 60px;
+}
+
+/*remove forum sub button*/
+.single-forum div#bbpress-forums #subscription-toggle {
+  display: none;
+}
+
+
+
+.avia-new-thread.button {
+  width: 100%;
+  text-align: center;
+  border-radius: 2px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
+
+/************************************************************************
+Twitter widget
+*************************************************************************/
+#top .widget_twitter .entry-content a{
+color:#42A0BD;
+}
+
+/************************************************************************
+Dig dig float bar: http://wordpress.org/plugins/digg-digg/
+*************************************************************************/
+#dd_ajax_float{
+border:1px solid #e1e1e1;
+border-radius: 3px;
+-webkit-box-shadow: none;
+-moz-box-shadow: 	none;
+box-shadow: 		none;
+padding: 10px;
+margin-left: -20px;
+margin-top: 50px;
+margin-bottom: 50px;
+height: 288px;
+}
+
+#dd_ajax_float .dd_button_v:nth-child(7){padding-top:35px;}
+
+/************************************************************************
+Verifyier Shortcodes
+*************************************************************************/
+#avia_registerform, #avia_forgot_pass_form{
+max-width: 800px;
+border-style: solid;
+border-width: 1px;
+}
+
+#top #avia_loginform{
+padding:0;
+overflow: hidden;
+margin:0;
+}
+
+#top.logged-in #avia_loginform{
+padding:15px;
+border-style: solid;
+border-width: 1px;
+}
+
+#top .avia_user_form input[type='text'], #top .avia_user_form input[type='password']{
+width: 100%;
+margin-bottom: 0;
+display: inline;
+min-width: 100px;
+padding: 13px;
+border-radius: 2px;
+}
+
+.avia_user_form .button {
+margin: 0;
+padding: 16px 50px;
+border-radius: 2px;
+}
+
+#top .avia_user_form{
+border-radius: 2px;
+padding:20px;
+background: #fff;
+/* background: rgba(255, 255, 255, 0.85); */
+margin:20px auto;
+text-align: left;
+}
+
+#top .avia_user_form .avia_message_box{margin-top:0;}
+#top .avia_message_box_content{font-size: 13px;}
+#top .registration_success_note{ text-align: center; }
+
+
+.avia-loggedin-user .avatar{
+overflow: hidden;
+border-radius: 300px;
+float: left;
+width:20%;
+margin-right:5%;
+min-width:50px;
+max-width:100px;
+}
+
+#top .avia-loggedin-user .avia_profile{
+float: none;
+overflow: hidden;
+font-size: 12px;
+width:auto;
+list-style-type: none;
+}
+
+#top .avia-loggedin-user .avia_profile li{
+list-style-position: outside;
+line-height: 1.7em;
+}
+
+.avia-extra-urls{ font-size: 12px; clear: both; padding-top: 10px;}
+.avia-extra-urls a{ }
+.avia-extra-url-seperator{ font-size: 10px; opacity: 0.8;  }
+
+#top .avia-login-error {
+color: #AF0D0D;
+border: 1px dashed #AF0D0D;
+font-size: 12px;
+padding: 9px;
+text-align: center;
+background: #FFFAFA;
+}
+
+#top .avia-login-error a{display: block; color: inherit; font-weight: bold;}
+
+#top #wrap_all .avia-loggedin-user li.queue-button {
+line-height: 3em;
+}
+
+#top .queue-button a{ border-radius: 3px;
+background: #42A0BD;
+color: #FFF;
+padding: 8px;}
+
+#top .queue-button a:hover{text-decoration: none; background: #C3512F;}
+
+.av-get-license-key-find{text-align: center; font-size: 16px; color:#222; }
+.av-get-license-key-pic{display: block; margin:0 auto; padding:3px; border:1px solid #e1e1e1; margin-bottom:20px;}
+
+
+/************************************************************************
+av_private_reply
+*************************************************************************/
+.bbp_preply_field{
+font-size: 12px;
+color:#888;
+padding:10px;
+border: 1px solid #E1E1E1;
+background: #fff;
+margin-bottom:10px;
+}
+
+.bbp_preply_field_first{
+margin-top:0;
+border-bottom: 1px dashed #E1E1E1;
+}
+
+.bbp_preply_field p:last-child{margin-bottom:0;}
+
+#top textarea#bbp_private_reply_text {
+min-height: 100px;
+border-color: #AFD2DD;
+
+}
+
+/************************************************************************
+jobs
+*************************************************************************/
+.jobs-menu > a > span.avia-menu-text:after {
+content: "4";
+font-size: 9px;
+color: #FFF;
+background: #42A0BD;
+line-height: 17px;
+width: 17px;
+display: inline-block;
+text-align: center;
+border-radius: 100px;
+position: relative;
+top: -9px;
+left: 2px;
+}
+
+.jobs-menu > a:hover > span.avia-menu-text:after{
+background: #C3512F;
+}
+
+/************************************************************************
+GOOGLE
+*************************************************************************/
+
+iframe[name="google_conversion_frame"] {
+display: none !important;
+}
+
+
+/************************************************************************
+Marketplace items
+*************************************************************************/
+
+#top #envato-marketplace-items {overflow: hidden; background: #f8f8f8; padding:6px;}
+#top #envato-marketplace-items li{width:33.33%; padding:2px; margin:0; display: block; float: left; clear: none;}
+#top #envato-marketplace-items li a{margin:0; padding:0; border:none;}
+
+/************************************************************************
+Avia Support Plugin
+*************************************************************************/
+
+#top .avia_search_form_advanced select{padding:12px 33px 12px 12px; margin:2px 0px 10px 0; width:99%; min-width: 100px; max-width: 100%; border-radius: 0;}
+#top #bbp-search-form .avia_search_form_basic #bbp_search_submit{top:1px;   left: -1px;}
+.avia_search_select{width:50%; float:left;}
+.avia_search_form_basic{overflow: hidden; padding:1px 0;}
+
+.avia_search_label{display:none;}
+.avia_search_select div{width:50%; float:left;}
+.av_search_headline{display:none;}
+
+
+/************************************************************************
+Codeable Form
+*************************************************************************/
+
+#codeableFormWrap{display:block!important;}
+
+#top form.co-form {
+    border: none;
+}
+
+#top .co-form__footer{display: none;}
+#top .co-form .co-form__checkbox{display: none;}
+#top .co-form .co-form__button {
+    background: #42A0BD;
+    }
+
+#top .co-form .co-form__button:hover {
+    background: #2E829C;
+}
+
+
+/* Tablet and lower */
+	@media only screen and (max-width: 989px) {
+	.responsive #top .logo-title{ opacity: 0; filter: alpha(opacity=0); }
+	
+	.responsive .four_to_two .av_one_fourth { margin-left: 6%; width: 47%; margin-bottom:40px;}
+	.responsive .four_to_two .av_one_fourth.first , 
+	.responsive .four_to_two .av_one_fourth.first + .av_one_fourth + .av_one_fourth{ margin-left: 0%; clear:both;}
+	
+	.responsive #top .team-member-kriesi .team-member-name, .responsive #top .team-member-kriesi .team-member-job-title { display:none; }
+	.responsive .avia-priciple-logo-text strong{font-size: 18px;}
+	.responsive .avia-priciple-logo-text-inner{font-size: 14px;}
+	
+	.responsive #top .avia-loggedin-user .avatar{width:100%; margin-right:0%;}
+	.responsive #top .avia-loggedin-user .avia_profile{overflow: visible; padding-top:20px; text-align: center; clear:both; }
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 989px) {
+	
+		.responsive #about-us-team .avia-testimonial-wrapper, .responsive #about-us-team .avia-testimonial-row, .responsive #about-us-team .avia-testimonial{display:block; width:100%;}
+		.responsive #about-us-team .avia-testimonial{margin-bottom:20px;}
+		.responsive .avia-principles { width: 110%; padding-bottom: 110%; left: -5%;}
+	}	
+	
+/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+	.responsive #top .slideshow_caption h2{max-width:100%; font-size: 18px;}
+	.responsive #about-us-team .avia-testimonial{padding:20px;}
+	
+	
+	
+	/*extra shortcodes*/
+	.responsive #top .avia-double-button{width:50%; min-width: 50%; margin:0;}
+	
+	/*portfolio sort container*/
+	.responsive #top .sort_by_cat{width:58%; display:block; overflow: hidden; height: auto;}
+	.responsive #top .sort_width_container { width: 200%; left: -50%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+	.responsive	#top .sort_by_cat a {
+		display: block;
+		float: left;
+		border-radius: 3px;
+		width: 48%;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		background-color:rgba(255, 255, 255, 0.1);
+		margin: 1%;
+		padding: 10px 0;
+		}
+	.responsive	#top .sort_by_cat a.active_sort{ background-color:rgba(255, 255, 255, 0.3); border: 1px solid rgba(255, 255, 255, 0.5);}
+	.responsive	#top .av-cat-count{display:none;}
+	.responsive #top .sort_by_cat a span{width:100%; position: static; }
+	
+	/*frontpage*/
+	.responsive #learn-more .avia-big-number .avia-big-number-title {  font-size: 24px; }
+	.responsive #learn-more .avia-big-number .avia-big-number-content{ font-size: 11px; line-height: 1.3em; }
+	.responsive #learn-more .flex_column:before, .responsive #top .avia-social-buttons{display:none;}
+	.responsive #top #main #learn-more .template-page.content{padding: 30px 0 8px 0;}
+	
+	.responsive #what-we-do{background-image:none; padding:0;}
+	.responsive #top #what-you-get .flex_column, .responsive #what-you-get .entry-content-wrapper{display:block; }
+	.responsive .avia-principles {margin-top:50px;}
+	
+	/*blog*/
+	.responsive #top .container-blog .content{padding: 30px 0; }
+	.responsive #top .fullsize .template-blog .post-title{font-size: 20px;}
+	
+	
+	.responsive #top #wrap_all .grid-sort-container .grid-entry{margin-bottom:6px; width:100%;}
+	.responsive .grid-content{padding:0;}
+	.responsive .grid-entry-title a{display:block; padding: 20px;}
+	
+	}
+	
+	
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.responsive	#top .sort_by_cat a {width:98%;}
+		.responsive #about-us-team .avia-testimonial-content{top:0; margin-bottom:0;}
+		.responsive .avia-priciple-logo-text-inner span{display:none;}
+		
+		.responsive #top .avia-double-button{letter-spacing: 0px; padding: 10px 15px;}
+	}
+	
+	
+	

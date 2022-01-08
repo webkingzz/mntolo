@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="html_stretched responsive av-preloader-disabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking html_mobile_menu_tablet html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_av-submenu-hidden html_av-submenu-display-click html_av-overlay-side html_av-overlay-side-classic html_av-submenu-clone html_entry_id_620318 av-no-preview html_text_menu_active ">
+
+<!-- Mirrored from kriesi.at/support/topic/please-help-functions-php-fix-broke-my-site/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jan 2022 05:55:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+<title>functions.php fix not working on Avisio (slider broken after WP 4.5 upgrade - Support | Kriesi.at - Premium WordPress Themes</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.5.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="functions.php fix not working on Avisio (slider broken after WP 4.5 upgrade - Support | Kriesi.at - Premium WordPress Themes" />
+<meta property="og:description" content="Tagged:&nbsp;avisio slider, help, WP upgrade problems Viewing 14 posts - 1 through 14 (of 14 total) Author Posts April 23, 2016 at 2:22 am #620318 swazziParticipant Hello, HELP!! My slider stopped working with upgrade to WP 4.5. I tried everything in your post. All plugins up to date, etc. Per Rikard, I posted this into &hellip;" />
+<meta property="og:url" content="index.html" />
+<meta property="og:site_name" content="Support | Kriesi.at - Premium WordPress Themes" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='http://s.w.org/' />
+
+<!-- google webfont font replacement -->
+
+			<script type='text/javascript'>
+			if(!document.cookie.match(/aviaPrivacyGoogleWebfontsDisabled/)){
+				(function() {
+					var f = document.createElement('link');
+					
+					f.type 	= 'text/css';
+					f.rel 	= 'stylesheet';
+					f.href 	= 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600';
+					f.id 	= 'avia-google-webfont';
+					
+					document.getElementsByTagName('head')[0].appendChild(f);
+				})();
+			}
+			</script>
+			<link rel='stylesheet' id='avia-grid-css'  href='../../../wp-content/themes/enfold/css/grideb11.css?ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-base-css'  href='../../../wp-content/themes/enfold/css/baseeb11.css?ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-layout-css'  href='../../../wp-content/themes/enfold/css/layouteb11.css?ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-audioplayer-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/audio-player/audio-playerf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-blog-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/blog/blogf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-postslider-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/postslider/postsliderf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-button-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/buttons/buttonsf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-buttonrow-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/buttonrow/buttonrowf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-button-fullwidth-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/buttons_fullwidth/buttons_fullwidthf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-catalogue-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/catalogue/cataloguef420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-comments-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/comments/commentsf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-contact-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contact/contactf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshowf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-contentpartner-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contentslider/contentsliderf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-countdown-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/countdown/countdownf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-gallery-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/galleryf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-gallery-hor-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery_horizontal/gallery_horizontalf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-maps-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/google_maps/google_mapsf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-gridrow-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/grid_row/grid_rowf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-heading-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/heading/headingf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-rotator-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/headline_rotator/headline_rotatorf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-hr-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/hr/hrf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-icon-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/icon/iconf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-iconbox-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/iconbox/iconboxf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-iconlist-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/iconlist/iconlistf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-image-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image/imagef420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-hotspot-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image_hotspots/image_hotspotsf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-magazine-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/magazine/magazinef420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-masonry-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/masonry_entries/masonry_entriesf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-siteloader-css'  href='../../../wp-content/themes/enfold/css/avia-snippet-site-preloaderf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-menu-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/menu/menuf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-modfule-notification-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/notification/notificationf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-numbers-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/numbers/numbersf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-portfolio-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/portfoliof420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-progress-bar-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/progressbar/progressbarf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-promobox-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/promobox/promoboxf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-accordion-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_accordion/slideshow_accordionf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-feature-image-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_feature_image/slideshow_feature_imagef420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-fullsize-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullsize/slideshow_fullsizef420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-fullscreen-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullscreen/slideshow_fullscreenf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-social-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/social_share/social_sharef420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-tabsection-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tab_section/tab_sectionf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-table-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/table/tablef420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-tabs-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabsf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-team-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/team/teamf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-testimonials-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/testimonials/testimonialsf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-timeline-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/timeline/timelinef420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-toggles-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/toggles/togglesf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-module-video-css'  href='../../../wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/videof420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='bbp_private_replies_style-css'  href='../../../wp-content/plugins/bbpress-private-replies/css/frond-endf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-bbpress-css'  href='../../../wp-content/themes/enfold/config-bbpress/bbpress-modf420.css?ver=4.9.19' type='text/css' media='all' />
+<link rel='stylesheet' id='avia_support_css-css'  href='../../../wp-content/plugins/avia-support/css/avia_support8113.css?ver=1.0.0-rc-17-2022-01-08' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-scs-css'  href='../../../wp-content/themes/enfold/css/shortcodeseb11.css?ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-popup-css-css'  href='../../../wp-content/themes/enfold/js/aviapopup/magnific-popupeb11.css?ver=4.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='avia-lightbox-css'  href='../../../wp-content/themes/enfold/css/avia-snippet-lightboxeb11.css?ver=4.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='avia-widget-css-css'  href='../../../wp-content/themes/enfold/css/avia-snippet-widgeteb11.css?ver=4.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='avia-dynamic-css'  href='../../../wp-content/uploads/dynamic_avia/kriesi.ata3ea.css?ver=615477f886e1c' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-custom-css'  href='../../../wp-content/themes/enfold/css/customeb11.css?ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-style-css'  href='../../../wp-content/themes/kriesi/styleeb11.css?ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='avia_support_pro_css-css'  href='../../../wp-content/plugins/avia-support-pro/css/avia_support_pro6a80.css?ver=0.0.7-2022-01-08' type='text/css' media='all' />
+            <script>
+                if (document.location.protocol != "index.html") {
+                    document.location = document.URL.replace(/^http:/i, "index.html");
+                }
+            </script>
+            <script type='text/javascript' src='../../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avia_support_vars = {"ajaxurl":"https:\/\/kriesi.at\/support\/wp-admin\/admin-ajax.php","avia_support_nonce":"eb3bfc5d28","alert_ajax_error":"An internal server error occured in processing a request. Please try again or contact us. Thank you. "};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avia_support_pro_vars = {"ajaxurl":"https:\/\/kriesi.at\/support\/wp-admin\/admin-ajax.php","Testtext":"Testtext","avia_support_pro_nonce":"59520f5a5c","alert_ajax_error":"An internal server error occured in processing a request. Please try again or contact us. Thank you. "};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avia_support_vars = {"ajaxurl":"https:\/\/kriesi.at\/support\/wp-admin\/admin-ajax.php","avia_support_nonce":"eb3bfc5d28","alert_ajax_error":"An internal server error occured in processing a request. Please try again or contact us. Thank you. "};var avia_support_pro_vars = {"ajaxurl":"https:\/\/kriesi.at\/support\/wp-admin\/admin-ajax.php","Testtext":"Testtext","avia_support_pro_nonce":"59520f5a5c","alert_ajax_error":"An internal server error occured in processing a request. Please try again or contact us. Thank you. "};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/uploads/dynamic_avia/avia-head-scripts-f5029fa11efd15dfd7a16767917ce5ca.js'></script>
+<link rel='https://api.w.org/' href='../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.19" />
+<link rel='shortlink' href='../../index0ebb.html?p=620318' />
+<link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed22b1?url=https%3A%2F%2Fkriesi.at%2Fsupport%2Ftopic%2Fplease-help-functions-php-fix-broke-my-site%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed0db8?url=https%3A%2F%2Fkriesi.at%2Fsupport%2Ftopic%2Fplease-help-functions-php-fix-broke-my-site%2F&amp;format=xml" />
+<link rel="author" href="https://plus.google.com/106461359737856957875/posts"/>
+	<link rel="apple-touch-icon-precomposed" href="../../../wp-content/themes/kriesi/images/apple-touch-icon.png" /><script data-ad-client="ca-pub-3132647751526457" async src="../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script><link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="alternate" type="application/rss+xml" title="Support | Kriesi.at - Premium WordPress Themes RSS2 Feed" href="../../feed/index.html" />
+<link rel="pingback" href="../../xmlrpc.html" />
+<!--[if lt IE 9]><script src="https://kriesi.at/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+<link rel="icon" href="../../../wp-content/uploads/2018/04/favicon_32-1.png" type="image/png">
+
+<!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
+<script type="text/javascript">'use strict';var avia_is_mobile=!1;if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&'ontouchstart' in document.documentElement){avia_is_mobile=!0;document.documentElement.className+=' avia_mobile '}
+else{document.documentElement.className+=' avia_desktop '};document.documentElement.className+=' js_active ';(function(){var e=['-webkit-','-moz-','-ms-',''],n='';for(var t in e){if(e[t]+'transform' in document.documentElement.style){document.documentElement.className+=' avia_transform ';n=e[t]+'transform'};if(e[t]+'perspective' in document.documentElement.style)document.documentElement.className+=' avia_transform3d '};if(typeof document.getElementsByClassName=='function'&&typeof document.documentElement.getBoundingClientRect=='function'&&avia_is_mobile==!1){if(n&&window.innerHeight>0){setTimeout(function(){var e=0,o={},a=0,t=document.getElementsByClassName('av-parallax'),i=window.pageYOffset||document.documentElement.scrollTop;for(e=0;e<t.length;e++){t[e].style.top='0px';o=t[e].getBoundingClientRect();a=Math.ceil((window.innerHeight+i-o.top)*0.3);t[e].style[n]='translate(0px, '+a+'px)';t[e].style.top='auto';t[e].className+=' enabled-parallax '}},50)}}})();</script><style type='text/css'>
+@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal;
+src: url('../../../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot');
+src: url('../../../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontellod41d.eot?#iefix') format('embedded-opentype'), 
+url('../../../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff') format('woff'), 
+url('../../../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf') format('truetype'), 
+url('../../../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg#entypo-fontello') format('svg');
+} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+</style>
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Enfold
+Version: 4.4
+Installed: enfold
+AviaFramework Version: 4.7
+AviaBuilder Version: 0.9.5
+aviaElementManager Version: 1.0
+- - - - - - - - - - -
+ChildTheme: Kriesi.at
+ChildTheme Version: 3.1.9
+ChildTheme Installed: enfold
+
+ML:512-PU:44-PLA:20
+WP:4.9.19
+Compress: CSS:disabled - JS:all theme files
+Updates: enabled
+PLAu:5
+-->
+</head>
+
+
+
+
+<body data-rsssl=1 id="top" class="topic bbpress topic-template-default single single-topic postid-620318  rtl_columns stretched open_sans" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+
+	
+	<div id='wrap_all'>
+
+	
+<header id='header' class='all_colors header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_slim av_header_sticky av_header_shrinking av_header_stretch_disabled av_mobile_menu_tablet av_header_searchicon av_header_unstick_top_disabled av_bottom_nav_disabled  av_header_border_disabled'  role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+
+		<div  id='header_main' class='container_wrap container_wrap_logo'>
+	
+        <div class='container av-logo-container'><div class='inner-container'><span class='logo'><a href='../../../index.html'><img height='100' width='300' src='../../../wp-content/themes/kriesi/images/logo.png' alt='Support | Kriesi.at - Premium WordPress Themes' /><span class='subtext'><strong class='logo-title'>Kriesi.at</strong><strong class='logo-title logo-subtitle'>Premium Themes</strong></span></a></span><nav class='main_menu' data-selectname='Select a page'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia-menu av-main-nav-wrap"><ul id="avia-menu" class="menu av-main-nav"><li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1"><a href="../../../index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Home</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1050938" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-mega-parent  menu-item-top-level menu-item-top-level-2"><a target="_blank" href="../../../themes/enfold-overview/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Demos</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-3"><a href="../../../blog.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Blog</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-4"><a href="../../../about.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">About</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-5"><a href="../../../contact.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Contact</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-6"><a href="../../index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Support</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-263204" class="jobs-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-7"><a href="http://jobs.kriesi.at/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Jobs</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-search" class="noMobile menu-item menu-item-search-dropdown menu-item-avia-special">
+							<a href="index1919.html?s=" data-avia-search-tooltip="
+
+&lt;form action=https://kriesi.at/support/topic/please-help-functions-php-fix-broke-my-site/"https://kriesi.at/support/search/" id=&quot;searchform&quot; method=&quot;get&quot; class=&quot;av_disable_ajax_search&quot;&gt;
+	&lt;div&gt;
+		&lt;input type=&quot;submit&quot; value=&quot;&quot; id=&quot;searchsubmit&quot; class=&quot;button avia-font-entypo-fontello&quot; /&gt;
+		&lt;input type=&quot;text&quot; id=&quot;s&quot; name=&quot;bbp_search&quot; value=&quot;&quot; placeholder='Search Forums' /&gt;
+			&lt;/div&gt;
+&lt;/form&gt;" aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Search</span></a>
+	        		   </li><li class="av-burger-menu-main menu-item-avia-special av-small-burger-icon">
+	        			<a href="#">
+							<span class="av-hamburger av-hamburger--spin av-js-hamburger">
+					        <span class="av-hamburger-box">
+						          <span class="av-hamburger-inner"></span>
+						          <strong>Menu</strong>
+					        </span>
+							</span>
+						</a>
+	        		   </li></ul></div></nav><ul class='noLightbox social_bookmarks icon_count_4'><li class='social_bookmarks_facebook av-social-link-facebook social_icon_1'><a target='_blank' href='http://facebook.com/kriesi.at' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Facebook'><span class='avia_hidden_link_text'>Facebook</span></a></li><li class='social_bookmarks_twitter av-social-link-twitter social_icon_2'><a target='_blank' href='http://twitter.com/kriesi' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Twitter'><span class='avia_hidden_link_text'>Twitter</span></a></li><li class='social_bookmarks_dribbble av-social-link-dribbble social_icon_3'><a target='_blank' href='http://dribbble.com/kriesi' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Dribbble'><span class='avia_hidden_link_text'>Dribbble</span></a></li><li class='social_bookmarks_mail av-social-link-mail social_icon_4'><a target='_blank' href='../../../newsletter.html' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Mail'><span class='avia_hidden_link_text'>Mail</span></a></li></ul></div> </div> 
+		<!-- end container_wrap-->
+		</div>
+		
+		<div class='header_bg'></div>
+
+<!-- end header -->
+</header>
+		
+	<div id='main' class='all_colors' data-scroll-offset='88'>
+
+	<div class='stretch_full container_wrap alternate_color light_bg_color title_container'><div class='container'><h1 class='main-title entry-title'><a href='index.html' rel='bookmark' title='Permanent Link: functions.php fix not working on Avisio (slider broken after WP 4.5 upgrade'  itemprop="headline" >functions.php fix not working on Avisio (slider broken after WP 4.5 upgrade</a></h1><div class="breadcrumb breadcrumbs avia-breadcrumbs"><div class="breadcrumb-trail" xmlns:v="https://rdf.data-vocabulary.org/#"><span class="trail-before"><span class="breadcrumb-title">You are here:</span></span> <span><a rel="v:url" property="v:title" href="../../../index.html" title="Kriesi.at"  class="trail-begin">Home</a></span> <span class="sep">/</span> <span><a rel="v:url" property="v:title" href="#" class="bbp-breadcrumb-root">Forums</a></span> <span class="sep">/</span> <span><a rel="v:url" property="v:title" href="../../forum/avisio/index.html" class="bbp-breadcrumb-forum">Avisio</a></span> <span class="sep">/</span> <span><span class="bbp-breadcrumb-current">functions.php fix not working on Avisio (slider broken after WP 4.5 upgrade</span></span></div></div></div></div>
+		<div class='container_wrap container_wrap_first main_color sidebar_right'>
+
+			<div class='container'>
+
+				<main class='template-page content  av-content-small alpha units'  role="main" itemprop="mainContentOfPage" >
+
+                    
+		<article class='post-entry post-entry-type-page post-entry-620318'  itemscope="itemscope" itemtype="https://schema.org/CreativeWork" >
+
+			<div class="entry-content-wrapper clearfix">
+                <header class="entry-content-header"></header><div class="entry-content"  itemprop="text" >
+<div id="bbpress-forums">
+
+	
+	<a class='forum_head_info' href='http://bitly.com/wp_enfold' target='_blank'><img src='../../../wp-content/themes/kriesi/images/banner-enfold.jpg' title='Check out Enfold' alt='' /></a>
+	
+		<div class="bbp-topic-tags"><p>Tagged:&nbsp;<a href="../../tags/avisio-slider/index.html" rel="tag">avisio slider</a>, <a href="../../tags/help/index.html" rel="tag">help</a>, <a href="../../tags/wp-upgrade-problems/index.html" rel="tag">WP upgrade problems</a></p></div>
+		
+		
+		
+			
+
+<div class="bbp-pagination">
+	<div class="bbp-pagination-count">
+
+		Viewing 14 posts - 1 through 14 (of 14 total)
+	</div>
+
+	<div class="bbp-pagination-links">
+
+		
+	</div>
+</div>
+
+
+			
+
+<ul id="topic-620318-replies" class="forums bbp-replies">
+
+	<li class="bbp-header">
+
+		<div class="bbp-reply-author">Author</div><!-- .bbp-reply-author -->
+
+		<div class="bbp-reply-content">
+
+			
+				Posts
+				
+				
+			
+		</div><!-- .bbp-reply-content -->
+
+	</li><!-- .bbp-header -->
+
+	<li class="bbp-body">
+
+		
+			
+				
+<div id="post-620318" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 23, 2016 at 2:22 am</span>
+
+		
+		<a href="index.html#post-620318" class="bbp-reply-permalink">#620318</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-620318 -->
+
+<div class="odd bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-1 user-id-19734 topic-author post-620318 topic type-topic status-closed hentry topic-tag-avisio-slider topic-tag-help topic-tag-wp-upgrade-problems">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-name" rel="nofollow">swazzi</a><br /><div class="bbp-author-role"><a href="../../profile/swazzi/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Hello, </p>
+<p>HELP!! My slider stopped working with upgrade to WP 4.5. I tried everything in your post. All plugins up to date, etc. </p>
+<p>Per Rikard, I posted this into the end of functions.php and it broke my site. I&#8217;ve restored it, but neither this nor the fix below fixed my slider.<br />
+function modify_jquery() {<br />
+if (!is_admin()) {<br />
+	wp_deregister_script(&#039;jquery&#039;);<br />
+	wp_register_script(&#039;jquery&#039;, &#039;<a href="https://code.jquery.com/jquery-1.11.3.min.js&amp;#039" rel="nofollow">https://code.jquery.com/jquery-1.11.3.min.js&#038;#039</a>;);<br />
+	wp_enqueue_script(&#039;jquery&#039;);<br />
+}<br />
+}<br />
+add_action(&#039;init&#039;, &#039;modify_jquery&#039;);</p>
+<p>other recommendation in this post: <a href="../having-problems-after-updating-to-wordpress-4-5-please-read-this-first/index.html" rel="nofollow">https://kriesi.at/support/topic/having-problems-after-updating-to-wordpress-4-5-please-read-this-first/</a></p>
+<p>Did not work either. Slider still broken. </p>
+<p>I&#8217;ve enclosed login creds. Please let me know when you&#8217;ve investigated. </p>
+<p>&#8212;&#8212;&#8212;-</p>
+<p>Also, can you please answer my worries about Aviso? Is this theme now useless? Are we forced to redo the site? Or will you keep it working?<br />
+You closed replies to that thread and didn&#8217;t respond. I need to know how you guys work before I buy any more themes from you. I think I have three. Can I expect them all to be useless in a few years? It&#8217;s one thing to no longer upgrade and improve a theme, it&#8217;s quite another to render a product obsolete and force us to rebuild the site. Or will the avisio child work with enfold?? </p>
+<p>Please respond. </p>
+<p>thanks,</p>
+
+
+<ul id="bbp-topic-revision-log-620318" class="bbp-topic-revision-log">
+
+	<li id="bbp-topic-revision-log-620318-item-620325" class="bbp-topic-revision-log-item">
+		This topic was modified 5 years, 8 months ago by <a href="../../profile/swazzi/index.html" title="View swazzi&#039;s profile"><img alt='' src='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=14&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=28&#038;d=mm&#038;r=g 2x' class='avatar avatar-14 photo' height='14' width='14' /></a>&nbsp;<a href="../../profile/swazzi/index.html" title="View swazzi&#039;s profile">swazzi</a>.
+	</li>
+
+</ul>
+
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-620396" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 23, 2016 at 8:16 am</span>
+
+		
+		<a href="index.html#post-620396" class="bbp-reply-permalink">#620396</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-620396 -->
+
+<div class="even bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-2 user-id-43919 post-620396 reply type-reply status-publish hentry av-supp-blocked-moderator">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="../../profile/basilis/index.html" title="View Basilis&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/5ff414e6a7811d37e764ba9bc04a89ae?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/5ff414e6a7811d37e764ba9bc04a89ae?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="../../profile/basilis/index.html" title="View Basilis&#039;s profile" class="bbp-author-name" rel="nofollow">Basilis</a><br /><div class="bbp-author-role"><a href="../../profile/basilis/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Inactive Moderator</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Hey swazzi!</p>
+<p>We try to keep our themes always to the latest versions and to provide top results for our clients.<br />
+We remove themes, only if they can not be updated any more or are outdated.<br />
+We now focus a lot to Enfold, which we also suggest you buy and rebuild any site.<br />
+It is easy for use and the layout builder helps you make anything as a copy.</p>
+<p>Please do let us know if we can do anything else for you, we will be more than happy to assist.</p>
+<p>Regards,<br />
+Basilis</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-620935" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 25, 2016 at 3:28 am</span>
+
+		
+		<a href="index.html#post-620935" class="bbp-reply-permalink">#620935</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-620935 -->
+
+<div class="odd bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-3 user-id-19734 topic-author post-620935 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-name" rel="nofollow">swazzi</a><br /><div class="bbp-author-role"><a href="../../profile/swazzi/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Hey Basilis,</p>
+<p> YES, CAN YOU PLEASE HELP ME FIX THE SLIDER ON MY SITE?  The recommended fixes haven&#8217;t worked. I sent log in info. </p>
+<p><strong>Did you read what I posted before?</strong> The slider has been down for a week now. I have an active business, I can&#8217;t have the site broken because you decided not to support the theme any longer with no notice. </p>
+<p>This is terrible! We should not be forced to completely re-build our sites to keep them working. I only built it 6 years ago! I paid for your theme not knowing it had a shelf life&#8230;. </p>
+<p>I bought Enfold, but I do not have time to rebuild my site right now. <strong>And why should I rebuild in Enfold, when you will probably just drop it in 5 years? </strong></p>
+<p>How can you sell a product and then drop active users of it with no warning?</p>
+<p><strong>Unless you have some way to transfer Avisio to Enfold, which would be the responsible way to do things. </strong> </p>
+<p>I cannot be the only person affected. If this is the way you work, I feel I cannot trust your products. </p>
+<p><strong>Please just help me get my site working right now, so I can figure out what to do. </strong></p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-621992" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 26, 2016 at 9:01 am</span>
+
+		
+		<a href="index.html#post-621992" class="bbp-reply-permalink">#621992</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-621992 -->
+
+<div class="even bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-4 user-id-4537 post-621992 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-name" rel="nofollow">mcr2582</a><br /><div class="bbp-author-role"><a href="../../profile/mcr2582/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Ok, this appears to fix prettyphoto and the sorting function:</p>
+<pre><code>function modify_jquery() {
+if (!is_admin()) {
+	wp_deregister_script(&#039;jquery&#039;);
+	wp_register_script(&#039;jquery&#039;, &#039;https://code.jquery.com/jquery-1.8.3.js&#039;);
+	wp_enqueue_script(&#039;jquery&#039;);
+}
+}
+add_action(&#039;init&#039;, &#039;modify_jquery&#039;);
+</code></pre>
+<p>I found this by working backwards through the jquery versions until it worked.<br />
+<a href="https://code.jquery.com/jquery/" rel="nofollow">https://code.jquery.com/jquery/</a></p>
+<p>It has to go in the theme functions.php (accessible through appearance-&gt;editor in the admin. Not the functions.php in wp-includes. If it&#8217;s put there, it breaks the site completely. (This was stated in the original instructions, but I made this mistake first.)</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-621994" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 26, 2016 at 9:03 am</span>
+
+		
+		<a href="index.html#post-621994" class="bbp-reply-permalink">#621994</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-621994 -->
+
+<div class="odd bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-5 user-id-4537 post-621994 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-name" rel="nofollow">mcr2582</a><br /><div class="bbp-author-role"><a href="../../profile/mcr2582/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Also, you may need to modify/disable code to move javascript to the bottom of the page. Otherwise, you get errors about jQuery being undefined. </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-622546" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 26, 2016 at 10:02 pm</span>
+
+		
+		<a href="index.html#post-622546" class="bbp-reply-permalink">#622546</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-622546 -->
+
+<div class="even bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-6 user-id-19734 topic-author post-622546 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-name" rel="nofollow">swazzi</a><br /><div class="bbp-author-role"><a href="../../profile/swazzi/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Thanks mcr2582. I tried that in functions in editor and the site broke. I don’t&#8217; know enough about Jquery, etc. Which is why I bought a full blown &#8220;premium&#8221; theme (that only works for a few years). </p>
+<p>Not getting any help from Kriesi. </p>
+<p>Cannot get slider working. </p>
+<p>Not happy I bought two themes here. </p>
+<p>Is there a theme company that stands by their products? Or at least helps their customers when they decide to drop a theme? </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-622602" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 27, 2016 at 1:20 am</span>
+
+		
+		<a href="index.html#post-622602" class="bbp-reply-permalink">#622602</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-622602 -->
+
+<div class="odd bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-7 user-id-28401 post-622602 reply type-reply status-publish hentry moderator moderator">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="../../profile/yigit/index.html" title="View Yigit&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/dcdc5644728716f04e7e0d63f98769db?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/dcdc5644728716f04e7e0d63f98769db?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="../../profile/yigit/index.html" title="View Yigit&#039;s profile" class="bbp-author-name" rel="nofollow">Yigit</a><br /><div class="bbp-author-role"><a href="../../profile/yigit/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Moderator</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Hey!</p>
+<p>You can go to <a href="https://wordpress.org/download/release-archive/" rel="nofollow">https://wordpress.org/download/release-archive/</a> and download an older version of WordPress and downgrade it. You can simply overwrite all files/folders except for wp-config.php file and wp-content folder </p>
+<p>Regards,<br />
+Yigit</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-622748" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 27, 2016 at 6:30 am</span>
+
+		
+		<a href="index.html#post-622748" class="bbp-reply-permalink">#622748</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-622748 -->
+
+<div class="even bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-8 user-id-4537 post-622748 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-name" rel="nofollow">mcr2582</a><br /><div class="bbp-author-role"><a href="../../profile/mcr2582/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>You&#8217;re editing the wrong functions.php file. </p>
+<p>Go here on your site:<br />
+/wp-admin/theme-editor.php</p>
+<p>In the right hand column, 6 links down, click on &#8220;Theme Functions&#8221;</p>
+<p>Scroll all the way to the bottom and paste in that text. </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-622749" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 27, 2016 at 6:31 am</span>
+
+		
+		<a href="index.html#post-622749" class="bbp-reply-permalink">#622749</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-622749 -->
+
+<div class="odd bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-9 user-id-4537 post-622749 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-name" rel="nofollow">mcr2582</a><br /><div class="bbp-author-role"><a href="../../profile/mcr2582/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>The last line in the correct file should be:<br />
+<code>include_once(KFW.&#039;/include_framework.php&#039;);</code></p>
+<p>You add this fix after that line. </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-623432" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 28, 2016 at 2:09 am</span>
+
+		
+		<a href="index.html#post-623432" class="bbp-reply-permalink">#623432</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-623432 -->
+
+<div class="even bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-10 user-id-19734 topic-author post-623432 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-name" rel="nofollow">swazzi</a><br /><div class="bbp-author-role"><a href="../../profile/swazzi/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p><strong>One last question: what is the general lifespan of a theme? Anyone? </strong></p>
+<p>mcr2582 — Thanks for your help, but I&#8217;m sure I was in that file&#8230;in the editor, theme functions. Maybe I had another conflict, as well. </p>
+<p>Thanks Yigit for finally addressing some of my concerns. </p>
+<p>My hosting company helped me roll WP back, so it&#8217;s working now. I guess I will have to re-build. </p>
+<p>Still don&#8217;t think it&#8217;s right &#8211; themes (and customer&#8217;s investment of time and money) just being dropped, with no notice or facilitation into a new theme. And I really think there&#8217;s a market (and a moral argument) for helping customers upgrade (with notice) to new themes. It could be done, and this sort of terrible experience avoided completely. And, at the same time, expand your customer base and build trust in your brand&#8230;</p>
+<p>For instance, why not create a child theme that would help old theme users switch over??  </p>
+<p>But nobody seems interested.</p>
+<p>So there it is. </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-623449" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 28, 2016 at 2:56 am</span>
+
+		
+		<a href="index.html#post-623449" class="bbp-reply-permalink">#623449</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-623449 -->
+
+<div class="odd bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-11 user-id-4537 post-623449 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/1f31464a31fee34f3c7763c3a2e5bdbd?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.artifacturestudios.com/" title="View mcr2582&#039;s profile" class="bbp-author-name" rel="nofollow">mcr2582</a><br /><div class="bbp-author-role"><a href="../../profile/mcr2582/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>To be fair to Kriesi, migration is tricky because they have many themes which likely have different data structures, and the new themes are likely different as well. If a field was used in the old theme and doesn&#8217;t exist in the new one, then what do you do with that data? On top of that, plugins can create/modify data in ways not anticipated. </p>
+<p>Also, the original structure of Avisio was based on having a slideshow and a portfolio and a blog&#8230; each one of those had a set storage structure. But I believe Enfold is more dynamic. So there isn&#8217;t a portfolio page per se, there is a portfolio object and that can exist on a page, but can exist there with many other objects as well. So you might translate the portfolio data to a portfolio object but then that object has to be located somewhere, so you&#8217;d have to place it on a page, etc. I was a web developer for 10 years and I can envision how complicated this could be. </p>
+<p>But that doesn&#8217;t mean that you and I wouldn&#8217;t have been willing to pay for a migration path. I bought Enfold over a year ago, and bought it here because I liked Avisio and while I didn&#8217;t expect different authors to maintain the same data structures, I made the incorrect assumption that the data structures used by the same author would be similar enough to facilitate migration. That turned out to be the case, and like you, I&#8217;m still on an Avisio site. But alas, the amount of work involved in creating a migration tool that would work in all scenarios probably far outweighed what could be charged for it (after all, you only need it once!) </p>
+<p>On the one hand, nothing says we have to upgrade beyond a certain point, and it should more or less continue to work the same way. However, browsers continue to advance, and someday will use code that doesn&#8217;t maintain backward compatibility to everything used in the past. That will be a long time, but what is happening faster is security exploits are discovered in WordPress and used to upload malicious code to people&#8217;s websites. That needs to be patched, but rather than maintain every legacy version of WordPress with patches, while also developing it to add new features, the patches just go into the new releases. Meanwhile, plugins also continue to be updated for security and features. And plugins that interface with external sites often do so with authentication mechanisms that become outdated. For example, Google Analytics used to allow a simple login using id and password. But now you have to use a more secure shared key setup. Lastly, Google constantly revises their website rankings and they value website quality as an indicator of relevance. The reason we bought EnFold in the first place is that they started penalizing sites for not being responsive (ability to adjust to different screen sizes/devices). </p>
+<p>So like it or not, we need to keep upgrading our sites to keep up with the times. Even WordPress releases a new default theme each year, but does continue to update the old ones. That said, they have very basic functionality, so it&#8217;s easier to do. </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-623460" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 28, 2016 at 3:37 am</span>
+
+		
+		<a href="index.html#post-623460" class="bbp-reply-permalink">#623460</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-623460 -->
+
+<div class="even bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-12 user-id-19734 topic-author post-623460 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-name" rel="nofollow">swazzi</a><br /><div class="bbp-author-role"><a href="../../profile/swazzi/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Thanks for the detailed explanation! It&#8217;s all much more complicated than I suspected. As you may have guessed, I&#8217;m not a developer except by necessity, but I&#8217;m glad to begin to understand why things work the way they do. </p>
+<p>I guess I&#8217;m going to rebuild in Enfold because it seems like it will be around for a while, and I do like what it does. I got the impression keeping the last version of WP would be unsafe after a while, and yes, plugins would start to fail, etc. </p>
+<p>Now that I know (a bit about) how these things work, I can be forewarned. But I still think it&#8217;s worth looking into&#8230; some way to make things easier for migration&#8230;even a possible new market. And definitely take out the &#8220;surprise! your site is doomed!&#8221; element. : )</p>
+<p>How long do you expect your site to be save in WP 4, or whatever version it&#8217;s &#8220;frozen&#8221; in now? What do you think the time frame is for safely getting a new site up? </p>
+<p>Thanks again for all your help!</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-624545" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 29, 2016 at 3:10 pm</span>
+
+		
+		<a href="index.html#post-624545" class="bbp-reply-permalink">#624545</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-624545 -->
+
+<div class="odd bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-13 user-id-1 post-624545 reply type-reply status-publish hentry moderator moderator">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="../../../index.html" title="View Kriesi&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/0f40cc42b2f6ac7fbff31030a84f774b?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0f40cc42b2f6ac7fbff31030a84f774b?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="../../../index.html" title="View Kriesi&#039;s profile" class="bbp-author-name" rel="nofollow">Kriesi</a><br /><div class="bbp-author-role"><a href="../../profile/kriesi/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Keymaster</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Hi mcr2582 and swazzi,</p>
+<p>First of all thanks for the detailed explanation, it describes some of the problems we as developers are dealing with. We have had a few requests about avisio moving to enfold now and for most people its easier than we expected. </p>
+<p>The reason is quite simple: avisio and enfold differ very much when it comes to shortcodes, so toggles and slideshows might not be compatible, but since most avisio pages only contain one or two of these elements at max, rebuilding them with enfold is usually pretty straight forward.</p>
+<p>I also agree with the concern that we shouldn&#8217;t drop theme support without warning, thats definitely something I underestimated<br />
+and it wont happen again. In the future we will announce things like this a few months in advance on our blog, on facebook and by newsletter.</p>
+<p>Very sorry for all the inconvenience caused by not communicating better, back when we removed Avisio.</p>
+<p>Best regards,<br />
+Kriesi</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+				
+<div id="post-624645" class="bbp-reply-header">
+
+	<div class="bbp-meta">
+
+		<span class="bbp-reply-post-date">April 29, 2016 at 4:52 pm</span>
+
+		
+		<a href="index.html#post-624645" class="bbp-reply-permalink">#624645</a>
+
+		
+		<span class="bbp-admin-links"></span>
+		
+	</div><!-- .bbp-meta -->
+
+</div><!-- #post-624645 -->
+
+<div class="even bbp-parent-forum-36 bbp-parent-topic-620318 bbp-reply-position-14 user-id-19734 topic-author post-624645 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=80&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0b4d0d1fa8951239049dd2b3685b551c?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></a><br /><a href="http://www.oasistroncones.com/" title="View swazzi&#039;s profile" class="bbp-author-name" rel="nofollow">swazzi</a><br /><div class="bbp-author-role"><a href="../../profile/swazzi/index.html" class="kriesi-at-users-profile-link" rel="nofollow"><div class="bbp-author-role">Participant</div></a></div>
+		
+		
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Thanks, Kriesi, for listening and responding. </p>
+<p>Thanks to your response and mcr2582, I now better understand the complexities and necessities on the developer&#8217;s end. It&#8217;s a difficult job, and you do it very well. With improved communication, the sky&#8217;s the limit! (This applies to just about anything, I&#8217;ve found. : )</p>
+<p>My faith in your themes (which I have always really liked) has been restored and I now feel confident in (and even look forward to) switching to Enfold, knowing It has a ton of great features, and I&#8217;ll have quality support for quite a while, and warning when it&#8217;s being phased out. </p>
+<p>In the end, my site will be much better for the move.</p>
+<p>Keep on doing great work!</p>
+<p>Swazzi </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+</div><!-- .reply -->
+
+			
+		
+	</li><!-- .bbp-body -->
+
+	<li class="bbp-footer">
+
+		<div class="bbp-reply-author">Author</div>
+
+		<div class="bbp-reply-content">
+
+			
+				Posts
+			
+		</div><!-- .bbp-reply-content -->
+
+	</li><!-- .bbp-footer -->
+
+</ul><!-- #topic-620318-replies -->
+
+
+			
+
+<div class="bbp-pagination">
+	<div class="bbp-pagination-count">
+
+		Viewing 14 posts - 1 through 14 (of 14 total)
+	</div>
+
+	<div class="bbp-pagination-links">
+
+		
+	</div>
+</div>
+
+
+		
+		
+
+
+	<div id="no-reply-620318" class="bbp-no-reply">
+		<div class="bbp-template-notice">
+			<p>The topic &#8216;functions.php fix not working on Avisio (slider broken after WP 4.5 upgrade&#8217; is closed to new replies.</p>
+		</div>
+	</div>
+
+
+
+	
+	
+</div>
+</div><footer class="entry-footer"></footer>			</div>
+
+		</article><!--end post-entry-->
+
+
+
+				<!--end content-->
+				</main>
+
+				<aside class='sidebar sidebar_right smartphones_sidebar_active alpha units'  role="complementary" itemscope="itemscope" itemtype="https://schema.org/WPSideBar" ><div class='inner_sidebar extralight-border'><section id="avia_login_widget-2" class="widget clearfix avia_login_widget"> <form name='avia_loginform' id='avia_loginform' action='#' method='post' class='avia_user_form'> <div class='avia_loginform_inner'><h3>Log in</h3><input type='hidden' name='redirect' value='https://kriesi.at/support/topic/please-help-functions-php-fix-broke-my-site/'/><p><label for='log'>Username<input type='text' name='log' id='log' class='input' size='20' value=''/></label></p><p><label for='pwd'>Password<input type='password' name='pwd' id='pwd' class='input' size='20' value=''/></label></p><p><label for='rememberme'><input type='checkbox' name='rememberme' id='rememberme' class='input' size='20' value='true' checked='checked' />Remember me</label></p><p class='submit'><input type='submit' name='avia_login' id='avia_login' class='button' value='Log in' tabindex='100' /></p><div class='avia-extra-urls'><a href='../../register/index.html' class='avia-register-url'>Register</a><span class='avia-extra-url-seperator'>|</span><a href='../../register/indexed16.html?action=lost_pw' class='avia-lost-url'>Lost Password?</a></div></div></form><span class="seperator extralight-border"></span></section><section id="avia_fb_likebox-2" class="widget clearfix avia_fb_likebox"><h3 class="widgettitle">Follow us on Facebook</h3><div class="av_facebook_widget_main_wrap" style="background-image:url(../../../wp-content/uploads/2018/05/banner_fb-495x315.png);"><div class="av_facebook_widget_page_title_container"><span class="av_facebook_widget_title"><a href="https://www.facebook.com/kriesi.at" target="_blank" title="Kriesi">Kriesi</a></span><span class="av_facebook_widget_content">13.000+ likes</span></div><div class="av_facebook_widget_main_wrap_shadow"></div><div class="av_facebook_widget_logo av_widget_img_text_confirm"><div class="av_facebook_widget_logo_image"><img src="../../../wp-content/uploads/2018/05/logo_fb-300x300.jpg" alt="Logo image"></div></div><a href="https://www.facebook.com/kriesi.at" target="_blank" class="av_facebook_widget_button av_facebook_widget_page_only"><span class='av_facebook_widget_icon' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span>Open facebook page</a><div class="av_facebook_widget_add_info"><div class="av_facebook_widget_add_info_inner"><span class="av_facebook_widget_add_info_inner_wrap">Join our Facebook community</span><div class="av_facebook_widget_imagebar"></div></div></div></div><span class="seperator extralight-border"></span></section><section id="avia_mailchimp_widget-2" class="widget clearfix avia_mailchimp_widget"><h3 class="widgettitle">Subscribe to our Newsletter</h3><div class='av-mailchimp-widget av-mailchimp-widget-style- '><form action="https://kriesi.at/support/topic/please-help-functions-php-fix-broke-my-site/" method="post"  data-av-custom-send='mailchimp_send' class="avia_ajax_form av-form-labels-hidden    avia-mailchimp-form " data-avia-form-id="1" data-avia-redirect=''><fieldset><p class=' first_form  form_element form_fullwidth' id='element_avia_0_1'> <input name="avia_0_1" class="text_input is_email" type="text" id="avia_0_1" value=""  placeholder='Email Address*'/></p><p class=' first_form  form_element form_fullwidth av-last-visible-form-element' id='element_avia_1_1'> <input name="avia_1_1" class="text_input is_empty" type="text" id="avia_1_1" value=""  placeholder='Name*'/></p><p class="hidden"><input type="text" name="avia_avia_username_1" class="hidden " id="avia_avia_username_1" value="" /></p><p class="form_element "><input type="hidden" value="1" name="avia_generated_form1" /><input type="submit" value="Subscribe" class="button"  data-sending-label="Sending"/></p></fieldset></form><div id="ajaxresponse_1" class="ajaxresponse ajaxresponse_1 hidden"></div></div><span class="seperator extralight-border"></span></section><section id="text-4" class="widget clearfix widget_text"><h3 class="widgettitle">Next Update</h3>			<div class="textwidget"><p>The next Enfold update will be announced.</p>
+<p><a class="button av-button" href="../../../documentation/enfold/changelog/index.html">Check the changelog of previous releases here</a></p>
+</div>
+		<span class="seperator extralight-border"></span></section><section id="text-3" class="widget clearfix widget_text">			<div class="textwidget"><a href='http://bit.ly/wp_enfold'><img src='../../../wp-content/uploads/2018/04/300_250.jpg' title='' alt=''/></a></div>
+		<span class="seperator extralight-border"></span></section></div></aside>
+			</div><!--end container-->
+
+		</div><!-- close default .container_wrap element -->
+
+
+
+
+		
+
+
+			
+
+			
+				<footer class='container_wrap socket_color' id='socket'  role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+                    <div class='container'>
+
+                        <span class='copyright'>© Copyright - Kriesi.at </span>
+
+                        <nav class='sub_menu_socket'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia3-menu"><ul id="avia3-menu" class="menu"><li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1"><a href="../../../index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Home</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-2"><a href="../../../blog.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Blog</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-610302" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-3"><a href="../../../newsletter.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Newsletter</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-4"><a href="../../register/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Register</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1322296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5"><a href="../../deprecated-themes/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Old Themes</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-6"><a href="../../../legal-information.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Legal Information</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-961699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-7"><a href="../../../privacy-policy.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Privacy Policy</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+</ul></div></nav>
+                    </div>
+
+	            <!-- ####### END SOCKET CONTAINER ####### -->
+				</footer>
+
+
+					<!-- end main -->
+		</div>
+		
+		<!-- end wrap_all --></div>
+
+<a href='#top' title='Scroll to top' id='scroll-top-link' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Scroll to top</span></a>
+
+<div id="fb-root"></div>
+
+
+ <script type='text/javascript'>
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = '../../../wp-content/themes/enfold/framework/index.html';
+    avia_framework_globals.installedAt = '../../../wp-content/themes/enfold/index.html';
+    avia_framework_globals.ajaxurl = '../../wp-admin/admin-ajax.html';
+/* ]]> */ 
+</script>
+ 
+ <script type='text/javascript' src='../../../wp-content/plugins/bbpress/templates/default/js/editor01c4.js?ver=2.5.14-6684'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var bbpTopicJS = {"bbp_ajaxurl":"https:\/\/kriesi.at\/support\/topic\/please-help-functions-php-fix-broke-my-site\/?bbp-ajax=true","generic_ajax_error":"Something went wrong. Refresh your browser and try again.","is_user_logged_in":"","fav_nonce":"14e1433966","subs_nonce":"768fa2344f"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/bbpress/templates/default/js/topic01c4.js?ver=2.5.14-6684'></script>
+<script type='text/javascript' src='../../../wp-content/themes/kriesi/js/kriesi68b3.js?ver=1'></script>
+<script type='text/javascript' src='../../wp-includes/js/wp-embed.minf420.js?ver=4.9.19'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avia_support_vars = {"ajaxurl":"https:\/\/kriesi.at\/support\/wp-admin\/admin-ajax.php","avia_support_nonce":"eb3bfc5d28","alert_ajax_error":"An internal server error occured in processing a request. Please try again or contact us. Thank you. "};var avia_support_pro_vars = {"ajaxurl":"https:\/\/kriesi.at\/support\/wp-admin\/admin-ajax.php","Testtext":"Testtext","avia_support_pro_nonce":"59520f5a5c","alert_ajax_error":"An internal server error occured in processing a request. Please try again or contact us. Thank you. "};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/uploads/dynamic_avia/avia-footer-scripts-b75a75b57a6344c2e53d7a6e515a54a3.js'></script>
+
+			<script>
+			if(document.cookie.match(/aviaPrivacyGoogleTrackingDisabled/)){ window['ga-disable-UA-785212-1'] = true; }
+			</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-785212-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_TRACKING_ID', { 'anonymize_ip': true });
+  gtag('config', 'UA-785212-1');
+</script>
+</body>
+
+<!-- Mirrored from kriesi.at/support/topic/please-help-functions-php-fix-broke-my-site/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jan 2022 05:55:33 GMT -->
+</html>

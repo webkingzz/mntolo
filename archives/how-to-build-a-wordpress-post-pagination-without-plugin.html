@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en-US" class="html_stretched responsive av-preloader-disabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking html_mobile_menu_tablet html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_av-submenu-hidden html_av-submenu-display-click html_av-overlay-side html_av-overlay-side-classic html_av-submenu-clone html_entry_id_1122 av-no-preview html_text_menu_active ">
+
+<!-- Mirrored from kriesi.at/archives/how-to-build-a-wordpress-post-pagination-without-plugin by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jan 2022 05:50:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="index, follow" />
+
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+<title>How to build a Wordpress Post Pagination without plugin | Kriesi.at - Premium WordPress Themes</title>
+
+<!-- All in One SEO Pack 2.5 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<meta name="description"  content="Since I got asked a few times now which function I am using to display the pagination within my themes I thought it was about time to share it with everyone who doesn&#039;t want to use a plugin for a wordpress post pagination ;)" />
+
+<link rel="canonical" href="how-to-build-a-wordpress-post-pagination-without-plugin.html" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes &raquo; Feed" href="../feed" />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes &raquo; Comments Feed" href="../comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes &raquo; How to build a WordPress Post Pagination without plugin Comments Feed" href="how-to-build-a-wordpress-post-pagination-without-plugin/feed" />
+
+<!-- google webfont font replacement -->
+
+			<script type='text/javascript'>
+			if(!document.cookie.match(/aviaPrivacyGoogleWebfontsDisabled/)){
+				(function() {
+					var f = document.createElement('link');
+					
+					f.type 	= 'text/css';
+					f.rel 	= 'stylesheet';
+					f.href 	= 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600';
+					f.id 	= 'avia-google-webfont';
+					
+					document.getElementsByTagName('head')[0].appendChild(f);
+				})();
+			}
+			</script>
+			<link rel='stylesheet' id='avia-merged-styles-css'  href='../wp-content/uploads/dynamic_avia/avia-merged-styles-c1befd77bb23eb022c8bf487ec55493b.css' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Habitat &#8211; a WordPress Blog and Portfolio Theme' href='habitat-a-wordpress-blog-and-portfolio-theme' />
+<link rel='next' title='Avia Feedback Box &#8211; My first Premium WordPress Plugin' href='avia-feedback-box-my-first-premium-wordpress-plugin' />
+<meta name="generator" content="WordPress 4.9.19" />
+<link rel='shortlink' href='../indexc9bc.html?p=1122' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embedef4e?url=https%3A%2F%2Fkriesi.at%2Farchives%2Fhow-to-build-a-wordpress-post-pagination-without-plugin" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed2b3f?url=https%3A%2F%2Fkriesi.at%2Farchives%2Fhow-to-build-a-wordpress-post-pagination-without-plugin&amp;format=xml" />
+<link rel="author" href="https://plus.google.com/106461359737856957875/posts"/>
+	<link rel="apple-touch-icon-precomposed" href="../wp-content/themes/kriesi/images/apple-touch-icon.png" /><script data-ad-client="ca-pub-3132647751526457" async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script><link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes RSS2 Feed" href="../feed" />
+<link rel="pingback" href="../xmlrpc.html" />
+<!--[if lt IE 9]><script src="https://kriesi.at/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+<link rel="icon" href="../wp-content/uploads/2018/04/favicon_32.png" type="image/png">
+
+<!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
+<script type="text/javascript">'use strict';var avia_is_mobile=!1;if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&'ontouchstart' in document.documentElement){avia_is_mobile=!0;document.documentElement.className+=' avia_mobile '}
+else{document.documentElement.className+=' avia_desktop '};document.documentElement.className+=' js_active ';(function(){var e=['-webkit-','-moz-','-ms-',''],n='';for(var t in e){if(e[t]+'transform' in document.documentElement.style){document.documentElement.className+=' avia_transform ';n=e[t]+'transform'};if(e[t]+'perspective' in document.documentElement.style)document.documentElement.className+=' avia_transform3d '};if(typeof document.getElementsByClassName=='function'&&typeof document.documentElement.getBoundingClientRect=='function'&&avia_is_mobile==!1){if(n&&window.innerHeight>0){setTimeout(function(){var e=0,o={},a=0,t=document.getElementsByClassName('av-parallax'),i=window.pageYOffset||document.documentElement.scrollTop;for(e=0;e<t.length;e++){t[e].style.top='0px';o=t[e].getBoundingClientRect();a=Math.ceil((window.innerHeight+i-o.top)*0.3);t[e].style[n]='translate(0px, '+a+'px)';t[e].style.top='auto';t[e].className+=' enabled-parallax '}},50)}}})();</script><style type='text/css'>
+@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal;
+src: url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot');
+src: url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontellod41d.eot?#iefix') format('embedded-opentype'), 
+url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff') format('woff'), 
+url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf') format('truetype'), 
+url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg#entypo-fontello') format('svg');
+} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+</style>
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Enfold
+Version: 4.4
+Installed: enfold
+AviaFramework Version: 4.7
+AviaBuilder Version: 0.9.5
+aviaElementManager Version: 1.0
+- - - - - - - - - - -
+ChildTheme: Kriesi.at
+ChildTheme Version: 3.1.9
+ChildTheme Installed: enfold
+
+ML:512-PU:36-PLA:9
+WP:4.9.19
+Compress: CSS:all theme files - JS:all theme files
+Updates: enabled
+PLAu:2
+-->
+</head>
+
+
+
+
+<body data-rsssl=1 id="top" class="post-template-default single single-post postid-1122 single-format-standard  rtl_columns stretched open_sans" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+
+	
+	<div id='wrap_all'>
+
+	
+<header id='header' class='all_colors header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_slim av_header_sticky av_header_shrinking av_header_stretch_disabled av_mobile_menu_tablet av_header_searchicon av_header_unstick_top_disabled av_bottom_nav_disabled  av_header_border_disabled'  role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+
+		<div  id='header_main' class='container_wrap container_wrap_logo'>
+	
+        <div class='container av-logo-container'><div class='inner-container'><span class='logo'><a href='../index.html'><img height='100' width='300' src='../wp-content/themes/kriesi/images/logo.png' alt='Kriesi.at - Premium WordPress Themes' /><span class='subtext'><strong class='logo-title'>Kriesi.at</strong><strong class='logo-title logo-subtitle'>Premium Themes</strong></span></a></span><nav class='main_menu' data-selectname='Select a page'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia-menu av-main-nav-wrap"><ul id="avia-menu" class="menu av-main-nav"><li id="menu-item-923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1"><a href="../index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Home</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-3790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-2"><a target="_blank" href="../themes/enfold-overview/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Demos</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-925" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-top-level menu-item-top-level-3 current-menu-item"><a href="../blog.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Blog</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-4"><a href="../about.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">About</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5"><a href="../contact.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Contact</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1812" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-6"><a href="../support/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Support</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-2049" class="jobs-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-7"><a href="http://jobs.kriesi.at/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Jobs</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-search" class="noMobile menu-item menu-item-search-dropdown menu-item-avia-special">
+							<a href="how-to-build-a-wordpress-post-pagination-without-plugin1919?s=" data-avia-search-tooltip="
+
+&lt;form action=https://kriesi.at/archives/"https://kriesi.at/" id=&quot;searchform&quot; method=&quot;get&quot; class=&quot;&quot;&gt;
+	&lt;div&gt;
+		&lt;input type=&quot;submit&quot; value=&quot;&quot; id=&quot;searchsubmit&quot; class=&quot;button avia-font-entypo-fontello&quot; /&gt;
+		&lt;input type=&quot;text&quot; id=&quot;s&quot; name=&quot;s&quot; value=&quot;&quot; placeholder='Search' /&gt;
+			&lt;/div&gt;
+&lt;/form&gt;" aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Search</span></a>
+	        		   </li><li class="av-burger-menu-main menu-item-avia-special av-small-burger-icon">
+	        			<a href="#">
+							<span class="av-hamburger av-hamburger--spin av-js-hamburger">
+					        <span class="av-hamburger-box">
+						          <span class="av-hamburger-inner"></span>
+						          <strong>Menu</strong>
+					        </span>
+							</span>
+						</a>
+	        		   </li></ul></div></nav><ul class='noLightbox social_bookmarks icon_count_4'><li class='social_bookmarks_facebook av-social-link-facebook social_icon_1'><a target='_blank' href='http://www.facebook.com/kriesi.at' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Facebook'><span class='avia_hidden_link_text'>Facebook</span></a></li><li class='social_bookmarks_twitter av-social-link-twitter social_icon_2'><a target='_blank' href='http://twitter.com/kriesi' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Twitter'><span class='avia_hidden_link_text'>Twitter</span></a></li><li class='social_bookmarks_dribbble av-social-link-dribbble social_icon_3'><a target='_blank' href='http://dribbble.com/kriesi' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Dribbble'><span class='avia_hidden_link_text'>Dribbble</span></a></li><li class='social_bookmarks_mail av-social-link-mail social_icon_4'><a target='_blank' href='../newsletter.html' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Mail'><span class='avia_hidden_link_text'>Mail</span></a></li></ul></div> </div> 
+		<!-- end container_wrap-->
+		</div>
+		
+		<div class='header_bg'></div>
+
+<!-- end header -->
+</header>
+		
+	<div id='main' class='all_colors' data-scroll-offset='88'>
+
+	
+		<div class='container_wrap container_wrap_first main_color fullsize'>
+
+			<div class='container template-blog template-single-blog '>
+
+				<main class='content units av-content-full alpha '  role="main" itemscope="itemscope" itemtype="https://schema.org/Blog" >
+
+                    <article class='post-entry post-entry-type-standard post-entry-1122 post-loop-1 post-parity-odd post-entry-last single-big with-slider post-1122 post type-post status-publish format-standard has-post-thumbnail hentry category-tutorials category-wordpress-tutorial'  itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" ><div class="preview-pic-blog"><img width="514" height="300" src="../wp-content/uploads/2010/09/wordpress_pagination.jpg" class="attachment-featured size-featured wp-post-image" alt="" srcset="https://kriesi.at/wp-content/uploads/2010/09/wordpress_pagination.jpg 514w, https://kriesi.at/wp-content/uploads/2010/09/wordpress_pagination-300x175.jpg 300w, https://kriesi.at/wp-content/uploads/2010/09/wordpress_pagination-200x117.jpg 200w" sizes="(max-width: 514px) 100vw, 514px" /></div><div class='entry-content-wrapper clearfix standard-content'><span class='post-meta-infos'><span class='date-container minor-meta updated'>September 21, 2010</span><span class='text-sep'>/</span><span class='comment-container minor-meta'><a href="how-to-build-a-wordpress-post-pagination-without-plugin.html#comments" class="comments-link" >63 Comments</a></span><span class='text-sep'>/</span><span class="blog-categories minor-meta">in <a href="category/tutorials.html" rel="tag">Tutorials</a>, <a href="category/wordpress-tutorial.html" rel="tag">Wordpress Tutorial</a> </span><span class="text-sep">/</span><span class="blog-author minor-meta">by <a href='https://twitter.com/Kriesi'>Kriesi</a> </span></span><div class="entry-content"><h1 class='post-title entry-title'  itemprop="headline" >	<a href='how-to-build-a-wordpress-post-pagination-without-plugin.html' rel='bookmark' title='Permanent Link: How to build a WordPress Post Pagination without plugin'>How to build a WordPress Post Pagination without plugin			<span class='post-format-icon minor-meta'></span>	</a></h1><p>WordPress only comes bundled with the &#8220;next page&#8221; and &#8220;previous page&#8221; links to navigate between different blog overview pages. If you happen to have a blog with a lot of posts or simply want to offer a better user experience I would recommend to remove those links and replace them with a pagination like most people (including me) are using in their templates.<span id="more-1122"></span></p>
+<p><a href="../themes/habitat/index.html">Habitat</a> for example (my latest blog theme) uses it. Just scroll down the front page and you will see those little paginated buttons.</p>
+<p><strong>Why should you use them? </strong><br />
+Because they are easier to navigate and the user instantly knows how many posts and pages are available. Its simply good user experience :)</p>
+<p>Using a plugin for this task may be an overkill since you really only need to add a few lines of php and css to your theme which I will show you now:</p>
+<h3>The function</h3>
+<p>If you just want to copy/paste the function into your theme feel free to do so, a more detailed description can be found bellow:</p>
+<pre>function kriesi_pagination($pages = '', $range = 2)
+{  
+     $showitems = ($range * 2)+1;  
+
+     global $paged;
+     if(empty($paged)) $paged = 1;
+
+     if($pages == '')
+     {
+         global $wp_query;
+         $pages = $wp_query-&gt;max_num_pages;
+         if(!$pages)
+         {
+             $pages = 1;
+         }
+     }   
+
+     if(1 != $pages)
+     {
+         echo "&lt;div class='pagination'&gt;";
+         if($paged &gt; 2 &amp;&amp; $paged &gt; $range+1 &amp;&amp; $showitems &lt; $pages) echo "&lt;a href='".get_pagenum_link(1)."'&gt;&amp;laquo;&lt;/a&gt;";
+         if($paged &gt; 1 &amp;&amp; $showitems &lt; $pages) echo "&lt;a href='".get_pagenum_link($paged - 1)."'&gt;&amp;lsaquo;&lt;/a&gt;";
+
+         for ($i=1; $i &lt;= $pages; $i++)
+         {
+             if (1 != $pages &amp;&amp;( !($i &gt;= $paged+$range+1 || $i &lt;= $paged-$range-1) || $pages &lt;= $showitems ))
+             {
+                 echo ($paged == $i)? "&lt;span class='current'&gt;".$i."&lt;/span&gt;":"&lt;a href='".get_pagenum_link($i)."' class='inactive' &gt;".$i."&lt;/a&gt;";
+             }
+         }
+
+         if ($paged &lt; $pages &amp;&amp; $showitems &lt; $pages) echo "&lt;a href='".get_pagenum_link($paged + 1)."'&gt;&amp;rsaquo;&lt;/a&gt;";  
+         if ($paged &lt; $pages-1 &amp;&amp;  $paged+$range-1 &lt; $pages &amp;&amp; $showitems &lt; $pages) echo "&lt;a href='".get_pagenum_link($pages)."'&gt;&amp;raquo;&lt;/a&gt;";
+         echo "&lt;/div&gt;\n";
+     }
+}</pre>
+<h3>How to use  &amp; Step by Step description</h3>
+<p>Displaying the pagination links on a default index page is rather easy. Call</p>
+<pre>kriesi_pagination();</pre>
+<p>and you are done.</p>
+<p>As you can see we got 2 optional parameters to pass:</p>
+<pre>function kriesi_pagination($pages = '', $range = 2)</pre>
+<p>The first one is the number of pages: passing this is only necessary if you are using a custom loop, something I will explain a little bit later.</p>
+<p>The second parameter sets the number of links to display. Range tells the script how many links before and after the current page should be displayed before it only shows the small arrows. For example with the default range of 2, if you are currently visiting the first page the script would display the 2 following pages, the next page button and the last page button:</p>
+<div class="pagination"><span class="current">1</span><a class="inactive" href="../blog/page/2.html">2</a><a class="inactive" href="../blog/page/3.html">3</a><a href="../blog/page/2.html">›</a><a href="../blog/page/12">»</a></div>
+<p>if we would visit page number 4 the script would show page 4 as the current page, would directly link to page 2 and 3 as well to 5 and 6. All other would be hidden:</p>
+<div class="pagination"><a href="../blog/index.html">«</a><a href="../blog/page/3.html">‹</a><a class="inactive" href="../blog/page/2.html">2</a><a class="inactive" href="../blog/page/3.html">3</a><span class="current">4</span><a class="inactive" href="../blog/page/5.html">5</a><a class="inactive" href="../blog/page/6">6</a><a href="../blog/page/5.html">›</a><a href="../blog/page/12">»</a></div>
+<p>For easier arithmetic operations afterwards we also store the max number of items to display in a separate variable:</p>
+<pre>$showitems = ($range * 2)+1;</pre>
+<p>Next we need access to the global variable <strong>$paged</strong>. WordPress uses this variable to store which page we are currently viewing. If that variable is empty we set it to 1. Why do we need to know it? The page we are currently at should not be linked, it should be displayed as &#8220;active&#8221;.</p>
+<pre>global $paged;
+if(empty($paged)) $paged = 1;</pre>
+<p>Now we know which page we are currently viewing, but we also need to know how many pages we got. We are still asuming that we are not using a custom loop and that the <strong>$pages</strong> variable (dont mix up with $paged) was not set when we called the script. If thats the case we can once again  make use of a global variable to get that number:</p>
+<pre>if($pages == '')
+{
+    global $wp_query;
+    $pages = $wp_query-&gt;max_num_pages;
+    if(!$pages)
+    {
+        $pages = 1;
+    }
+}</pre>
+<p>Now for the &#8220;Brainfuck&#8221; ;D</p>
+<p>As you can see,  appart from a little bit of  logic and arithmetic we  only need a single wordpress specific function. Its called get_pagenum_link() and allows us to fetch the url of a wordpress page  by passing the number of the page: get_pagenum_link(2) would get the  link to blog overview page 2 in my afforementioned Habitat theme.</p>
+<p>What is done now is a check based on quite a few if statements that asks which items to display, based on the variables we retrieved and set before. I usually do explain everything in detail but I think it wouldn&#8217;t make much sence in this case. if you are really interested in deciphering all of the if statements feel free to do so, you now know which value is stored within each variable so it shouldn&#8217;t take all too long :)</p>
+<h3>The CSS</h3>
+<p>The CSS Part of our pagination is rather simple. By default we would get an HTML output similar to this:</p>
+<pre>&lt;div class='pagination'&gt;
+ &lt;span class='current'&gt;1&lt;/span&gt;
+ &lt;a href="https://kriesi.at/blog/page/2"&gt;2&lt;/a&gt;
+ &lt;a href="https://kriesi.at/blog/page/3"&gt;3&lt;/a&gt;
+ &lt;a href="https://kriesi.at/blog/page/2"&gt;›&lt;/a&gt;
+ &lt;a href="https://kriesi.at/blog/page/12"&gt;»&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>We only need a few css rules to style this</p>
+<pre>.pagination {
+clear:both;
+padding:20px 0;
+position:relative;
+font-size:11px;
+line-height:13px;
+}
+
+.pagination span, .pagination a {
+display:block;
+float:left;
+margin: 2px 2px 2px 0;
+padding:6px 9px 5px 9px;
+text-decoration:none;
+width:auto;
+color:#fff;
+background: #555;
+}
+
+.pagination a:hover{
+color:#fff;
+background: #3279BB;
+}
+
+.pagination .current{
+padding:6px 9px 5px 9px;
+background: #3279BB;
+color:#fff;
+}</pre>
+<h3>Advanced: Custom Loops</h3>
+<p>You might probably want to use a so called <a href="http://codex.wordpress.org/The_Loop#Multiple_Loops_in_Action">custom loop</a> anywhere on a page, a loop that is not stored in the default global $wp_query object we used to retrieve the number:</p>
+<pre> $pages = $wp_query-&gt;max_num_pages;</pre>
+<p>If thats the case you need to call the kriesi_pagination() function with the first parameter set.</p>
+<p>So lets assume you are using a simple custom loop on your site:</p>
+<pre>&lt;?php $additional_loop = new WP_Query("cat=1,2,3&amp;paged=$paged"); ?&gt;
+
+&lt;?php while ($additional_loop-&gt;have_posts()) : $additional_loop-&gt;the_post(); ?&gt;
+ &lt;!-- Show loop content... --&gt;
+&lt;?php endwhile; ?&gt;</pre>
+<p>You could then call the pagination function that way:</p>
+<pre>kriesi_pagination($additional_loop-&gt;max_num_pages);</pre>
+<p>Feel free to use this function within any personal or commercial template, any attribution is appreciated but of course not required ;)</p>
+<a class='extra_theme_info' href='http://bitly.com/wp_enfold' target='_blank'><img src='../wp-content/themes/kriesi/images/enfold.jpg' title='Check out Enfold' alt='' /></a></div></div><div class='post_author_timeline'></div></article>
+
+
+	        	
+	        	
+<div class='comment-entry post-entry'>
+
+<div class='comment_meta_container'>
+			
+			<div class='side-container-comment'>
+	        		
+	        		<div class='side-container-comment-inner'>
+	        				        			
+	        			<span class='comment-count'>63</span>
+   						<span class='comment-text'>replies</span>
+   						<span class='center-border center-border-left'></span>
+   						<span class='center-border center-border-right'></span>
+   						
+	        		</div>
+	        		
+	        	</div>
+			
+			</div>
+
+			
+			<div class='comment_container'>
+			
+
+<span class='comment_page_nav_links comment_page_nav_links_top'><span class='comment_prev_page'><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-1#comments" >&laquo; Older Comments</a></span><span class='comment_next_page'></span></span>			<ol class="commentlist" id="comments">
+				    <li class="comment even thread-even depth-1" id="li-comment-3949">
+
+        <div id="comment-3949">
+        <article>
+            <div class="gravatar">
+                <img alt='diurno' src='https://secure.gravatar.com/avatar/d2d1f17f71db7716e7d6946ba22b85c6?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/d2d1f17f71db7716e7d6946ba22b85c6?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.softwebsoluciones.com.ar/" ><cite class="comment_author_name">diurno</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-3949">
+                                <time  >
+                                    December 17, 2010 at 7:59 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>cool, is awesome. a few lines of code but a great job.<br />
+Congratulation and thanks</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3954">
+
+        <div id="comment-3954">
+        <article>
+            <div class="gravatar">
+                <img alt='Tom' src='https://secure.gravatar.com/avatar/52f2e55012e62ae87d7c08b14cf88a35?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/52f2e55012e62ae87d7c08b14cf88a35?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Tom</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-3954">
+                                <time  >
+                                    December 19, 2010 at 9:06 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Excellent Post!!!<br />
+I spent the last 3 hours trying to make other tutorials work and this worked in seconds!</p>
+<p>Thanks a lot! :)</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-3960">
+
+        <div id="comment-3960">
+        <article>
+            <div class="gravatar">
+                <img alt='voxana' src='https://secure.gravatar.com/avatar/2e3bc8a790a1e3455d65b6e638dfbb60?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/2e3bc8a790a1e3455d65b6e638dfbb60?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">voxana</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-3960">
+                                <time  >
+                                    December 23, 2010 at 5:37 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Do you cut and paste this into functions.php? Just guessing. Thanks for any replies</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3970">
+
+        <div id="comment-3970">
+        <article>
+            <div class="gravatar">
+                <img alt='Tom' src='https://secure.gravatar.com/avatar/52f2e55012e62ae87d7c08b14cf88a35?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/52f2e55012e62ae87d7c08b14cf88a35?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Tom</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-3970">
+                                <time  >
+                                    December 26, 2010 at 4:01 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Hey I think there&#8217;s a little error in there.</p>
+<p> $showitems = ($range * 2)+1;<br />
+should be<br />
+ $showitems = $range +1;  </p>
+<p>I might be wrong, but this is what worked for me.</p>
+<p>Very nice post tho!</p>
+<p>Thanks a lot!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-4022">
+
+        <div id="comment-4022">
+        <article>
+            <div class="gravatar">
+                <img alt='Cippo' src='https://secure.gravatar.com/avatar/69da82852734568b19cba3b36d981e2f?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/69da82852734568b19cba3b36d981e2f?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://cippodesign.com/" ><cite class="comment_author_name">Cippo</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4022">
+                                <time  >
+                                    February 1, 2011 at 8:50 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Hi there,</p>
+<p>Kriesi I need a bit of help with your function. How can I remove /page/ from ../page/2 ?</p>
+<p>Regards,<br />
+Ciprian</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4023">
+
+        <div id="comment-4023">
+        <article>
+            <div class="gravatar">
+                <img alt='Eisstern' src='https://secure.gravatar.com/avatar/deb1d31ce988592a9622baa252b4994d?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/deb1d31ce988592a9622baa252b4994d?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Eisstern</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4023">
+                                <time  >
+                                    February 3, 2011 at 3:15 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Super Funktion! Genau soetwas benutzerfreundliches habe ich gerade gebraucht.</p>
+<p>Danke</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-4025">
+
+        <div id="comment-4025">
+        <article>
+            <div class="gravatar">
+                <img alt='Kaiser' src='https://secure.gravatar.com/avatar/b633452832ed5613b18a4432b0149ae9?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/b633452832ed5613b18a4432b0149ae9?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Kaiser</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4025">
+                                <time  >
+                                    February 9, 2011 at 1:41 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Servas Kriesi,</p>
+<p>schau einmal da: <a href="https://gist.github.com/818457" rel="nofollow">https://gist.github.com/818457</a></p>
+<p>Semantisch korrekt mit Erster/Letzter, Nächster/Voriger Link und Reichweite Attribut. </p>
+<p>Dere!<br />
+K.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4028">
+
+        <div id="comment-4028">
+        <article>
+            <div class="gravatar">
+                <img alt='Kevin Leary' src='https://secure.gravatar.com/avatar/0a9380f35d52fd24ae753a1186878b55?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/0a9380f35d52fd24ae753a1186878b55?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.kevinleary.net/" ><cite class="comment_author_name">Kevin Leary</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4028">
+                                <time  >
+                                    February 28, 2011 at 6:56 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>This function is great thanks for sharing it! </p>
+<p>I&#8217;ve replaced WP-PageNavi in a site I&#8217;m currently working on, and plan to add this to my personal base starter theme.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-4082">
+
+        <div id="comment-4082">
+        <article>
+            <div class="gravatar">
+                <img alt='IntegritySEOExperts' src='https://secure.gravatar.com/avatar/af8b7448b373083ab7d0c88531992ee8?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/af8b7448b373083ab7d0c88531992ee8?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.integrityseoexperts.co.uk/" ><cite class="comment_author_name">IntegritySEOExperts</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4082">
+                                <time  >
+                                    March 19, 2011 at 3:54 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Hi there,</p>
+<p>Which PHP file needs the pagination  code posting into please?</p>
+<p>Thanks,</p>
+<p>Kristin</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4098">
+
+        <div id="comment-4098">
+        <article>
+            <div class="gravatar">
+                <img alt='Cory Logan' src='https://secure.gravatar.com/avatar/3e5c90022b37c25a914a2c6307c349e8?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/3e5c90022b37c25a914a2c6307c349e8?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><a rel="nofollow" href="http://www.counterbeing.com/" ><cite class="comment_author_name">Cory Logan</cite></a></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4098">
+                                <time  >
+                                    March 21, 2011 at 1:43 am                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Works like a charm. I&#8217;m currently using it on my site. Thanks so much for sharing. Put your function in my functions.php, and called it at the end of my index. Made a couple of subtle modifications, but again, super easy install. Thanks so much! My content is no longer disappearing as I add more :)</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="li-comment-4117">
+
+        <div id="comment-4117">
+        <article>
+            <div class="gravatar">
+                <img alt='aishfak' src='https://secure.gravatar.com/avatar/6fe6e3ed0d020c92ad259f405a0d55e1?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/6fe6e3ed0d020c92ad259f405a0d55e1?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">aishfak</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4117">
+                                <time  >
+                                    March 23, 2011 at 5:09 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>This is great code it really help me i am very thankx full to you.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4123">
+
+        <div id="comment-4123">
+        <article>
+            <div class="gravatar">
+                <img alt='Mark' src='https://secure.gravatar.com/avatar/fe5b454f12eb95887d7e0898d3bd2a42?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/fe5b454f12eb95887d7e0898d3bd2a42?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Mark</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4123">
+                                <time  >
+                                    March 23, 2011 at 10:20 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Hi, I have one problem, and can&#8217;t figure it out. It everything seems ok, but pagination links doesn&#8217;t work, I click to page 2 link and it goes to mysite.com/page/2  but it still shows first page.</p>
+<p>It&#8217;s home.php, custom home template, it&#8217;s set to show posts from one category. Permalinks are set &#8220;/%category%/%postname%/&#8221;, also tried only with &#8220;/%postname%/&#8221;</p>
+<p>This is the code:</p>
+<p>have_posts()) : $additional_loop-&gt;the_post(); ?&gt;</p>
+<p>				&lt;a href=&quot;&#8221; rel=&#8221;bookmark&#8221;&gt;</p>
+<p>		&lt;?php the_content(&#039;Read more&#8217;); ?&gt;</p>
+<p>max_num_pages); ?&gt;</p>
+<p>Thanks in advance for help.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+<ul class="children">
+    <li class="comment even depth-2" id="li-comment-4124">
+
+        <div id="comment-4124">
+        <article>
+            <div class="gravatar">
+                <img alt='Mark' src='https://secure.gravatar.com/avatar/fe5b454f12eb95887d7e0898d3bd2a42?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/fe5b454f12eb95887d7e0898d3bd2a42?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Mark</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4124">
+                                <time  >
+                                    March 23, 2011 at 10:22 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p><code></p>
+<p>have_posts()) : $additional_loop-&gt;the_post(); ?&gt;</p>
+<p>					&lt;a href=&quot;" rel="bookmark"&gt;</p>
+<p>					&lt;?php the_content(&#039;Read more'); ?&gt;</p>
+<p>max_num_pages); ?&gt;</code></p>
+<p>I didn&#8217;t put code tags..</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="li-comment-4192">
+
+        <div id="comment-4192">
+        <article>
+            <div class="gravatar">
+                <img alt='Jon' src='https://secure.gravatar.com/avatar/224bb0695e4ebd7888953a61fd03f35a?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/224bb0695e4ebd7888953a61fd03f35a?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Jon</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4192">
+                                <time  >
+                                    March 31, 2011 at 6:58 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>I&#8217;d like to include this into a theme template for sale.  What is the license for this?  Can you post it for download?</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+<ul class="children">
+    <li class="comment even depth-2" id="li-comment-4193">
+
+        <div id="comment-4193">
+        <article>
+            <div class="gravatar">
+                <img alt='Jon' src='https://secure.gravatar.com/avatar/224bb0695e4ebd7888953a61fd03f35a?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/224bb0695e4ebd7888953a61fd03f35a?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Jon</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4193">
+                                <time  >
+                                    March 31, 2011 at 7:01 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Sorry, I just noticed the note for this at the bottom of the write up.</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+			<h4 id='pingback_heading'>Trackbacks &amp; Pingbacks</h4>			
+			<ol class="pingbacklist">
+						<li class="pingback even thread-even depth-1" id="comment-4265">
+				<div id="div-comment-4265" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://clients.oxfoz.com/ardeche/archives/238' rel='external nofollow' class='url'>Ardèche</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4265">
+			April 7, 2011 at 3:19 pm</a>		</div>
+
+		<p>[&#8230;] Kriesi pagination code  [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-4151">
+				<div id="div-comment-4151" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://thezagros.com/?p=2113' rel='external nofollow' class='url'>test &laquo; The Zagros Design Studio</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4151">
+			March 28, 2011 at 3:56 am</a>		</div>
+
+		<p>[&#8230;] [https://kriesi.at/archives/how-to-build-a-wordpress-post-pagination-without-plugin ] [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback even thread-even depth-1" id="comment-4096">
+				<div id="div-comment-4096" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://themestub.com/ambience-premium-wordpress-business-theme-business.html' rel='external nofollow' class='url'>Ambience &#8211; Premium WordPress Business Theme (Business) | Themes Tub</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4096">
+			March 20, 2011 at 5:51 pm</a>		</div>
+
+		<p>[&#8230;] Kriesi pagination script and walker menu [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-4095">
+				<div id="div-comment-4095" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://wordpress.veliman.com/ambience-premium-wordpress-business-theme-business/' rel='external nofollow' class='url'>Ambience &#8211; Premium WordPress Business Theme (Business) | Wordpress</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4095">
+			March 20, 2011 at 4:15 pm</a>		</div>
+
+		<p>[&#8230;] Kriesi pagination script and walker menu [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback even thread-even depth-1" id="comment-4077">
+				<div id="div-comment-4077" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://www.wpexplorer.com/blog/pagination-wordpress-theme.html' rel='external nofollow' class='url'>How To Manually Add Pagination To Your WordPress Theme | WPExplorer Blog</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4077">
+			March 18, 2011 at 6:54 pm</a>		</div>
+
+		<p>[&#8230;] the famous PageNavi plugin, however, I much prefer adding pagination manually (original code by Kriesi) to my themes so people don&#8217;t have to go searching for a plugin. It also helps keep the site [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-4044">
+				<div id="div-comment-4044" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://speckyboy.com/2010/12/09/20-plugin-replacing-tutorials-tips-snippets-and-solutions-for-wordpress/' rel='external nofollow' class='url'>20 Plugin Replacing Tutorials, Tips, Snippets and Solutions for WordPress-Speckyboy Design Magazine</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4044">
+			March 15, 2011 at 2:48 pm</a>		</div>
+
+		<p>[&#8230;] tweak and implement. WordPress &amp; jQuery Contact Form without a Plugin &rarr;View the Demo &rarr;WordPress Post Pagination without a Plugin Using a plugin for post pagination may be a little bit of overkill since you really only need to [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback even thread-even depth-1" id="comment-4027">
+				<div id="div-comment-4027" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://aky.in/blog-magazine/temptastic-premium-wordpress-magazine-theme/' rel='external nofollow' class='url'>Temptastic &#8211; Premium WordPress Magazine Theme | Aky.in</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4027">
+			February 25, 2011 at 1:43 pm</a>		</div>
+
+		<p>[&#8230;] Kriesi pagination code  [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-4026">
+				<div id="div-comment-4026" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://wordpress.veliman.com/temptastic-premium-wordpress-magazine-theme-blog-magazine/' rel='external nofollow' class='url'>Temptastic &#8211; Premium WordPress Magazine Theme (Blog / Magazine) | Wordpress</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-4026">
+			February 21, 2011 at 7:13 pm</a>		</div>
+
+		<p>[&#8230;] Kriesi pagination code  [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback even thread-even depth-1" id="comment-3953">
+				<div id="div-comment-3953" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://zaryl.com/cara-buat-post-pagination-tanpa-plugin.html' rel='external nofollow' class='url'>Buat halaman bernombor tanpa plugin - wordpress tutorial | Z.A.R.Y.L</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-3953">
+			December 19, 2010 at 4:19 pm</a>		</div>
+
+		<p>[&#8230;] Terima kasih kriesi [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-3931">
+				<div id="div-comment-3931" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://oleblogs.com/paginacion-en-wordpress-como-numerar-paginas/' rel='external nofollow' class='url'>Paginación en Wordpress, cómo numerar páginas</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-3931">
+			December 14, 2010 at 6:53 pm</a>		</div>
+
+		<p>[&#8230;] Si quieres más info puedes visitar la página del autor del código aquí. [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback even thread-even depth-1" id="comment-3925">
+				<div id="div-comment-3925" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://wptricks.net/create-post-pagination-without-plugin/' rel='external nofollow' class='url'>How To Create Post Pagination without plugin # WordPress Tricks &amp; Tips</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-2#comment-3925">
+			December 13, 2010 at 4:41 am</a>		</div>
+
+		<p>[&#8230;] method only using litle bit functions and we can use it easely. Original Source code by Kriesi. Thanks for creating wonderful [&#8230;]</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+			</ol>
+						
+			
+			
+			
+			
+<span class='comment_page_nav_links comment_page_nav_links_bottom'><span class='comment_prev_page'><a href="how-to-build-a-wordpress-post-pagination-without-plugin/comment-page-1#comments" >&laquo; Older Comments</a></span><span class='comment_next_page'></span></span></div> <!-- end grid div--><h3 class=' commentsclosed'>Comments are closed.</h3>
+</div>
+				<!--end content-->
+				</main>
+
+				
+
+			</div><!--end container-->
+
+		</div><!-- close default .container_wrap element -->
+
+
+		
+
+
+			
+
+			
+				<footer class='container_wrap socket_color' id='socket'  role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+                    <div class='container'>
+
+                        <span class='copyright'>© Copyright - Kriesi.at </span>
+
+                        <nav class='sub_menu_socket'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia3-menu"><ul id="avia3-menu" class="menu"><li id="menu-item-1605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1"><a href="../index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Home</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1606" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-top-level menu-item-top-level-2 current-menu-item"><a href="../blog.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Blog</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-3317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-3"><a href="../newsletter.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Newsletter</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-4"><a href="../support/register/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Register</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5"><a href="../legal-information.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Legal Information</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-3726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-6"><a href="../privacy-policy.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Privacy Policy</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+</ul></div></nav>
+                    </div>
+
+	            <!-- ####### END SOCKET CONTAINER ####### -->
+				</footer>
+
+
+					<!-- end main -->
+		</div>
+		
+		<a class='avia-post-nav avia-post-prev with-image' href='habitat-a-wordpress-blog-and-portfolio-theme' >    <span class='label iconfont' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span>    <span class='entry-info-wrap'>        <span class='entry-info'>            <span class='entry-title'>Habitat &#8211; a WordPress Blog and Portfolio Theme</span>            <span class='entry-image'><img width="80" height="80" src="../wp-content/uploads/2010/09/habitatBig-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://kriesi.at/wp-content/uploads/2010/09/habitatBig-150x150.jpg 150w, https://kriesi.at/wp-content/uploads/2010/09/habitatBig-60x60.jpg 60w" sizes="(max-width: 80px) 100vw, 80px" /></span>        </span>    </span></a><a class='avia-post-nav avia-post-next with-image' href='avia-feedback-box-my-first-premium-wordpress-plugin' >    <span class='label iconfont' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span>    <span class='entry-info-wrap'>        <span class='entry-info'>            <span class='entry-image'><img width="80" height="80" src="../wp-content/uploads/2010/10/avia_feedback_box-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://kriesi.at/wp-content/uploads/2010/10/avia_feedback_box-150x150.jpg 150w, https://kriesi.at/wp-content/uploads/2010/10/avia_feedback_box-60x60.jpg 60w" sizes="(max-width: 80px) 100vw, 80px" /></span>            <span class='entry-title'>Avia Feedback Box &#8211; My first Premium WordPress Plugin</span>        </span>    </span></a><!-- end wrap_all --></div>
+
+<a href='#top' title='Scroll to top' id='scroll-top-link' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Scroll to top</span></a>
+
+<div id="fb-root"></div>
+
+
+ <script type='text/javascript'>
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = '../wp-content/themes/enfold/framework/index.html';
+    avia_framework_globals.installedAt = '../wp-content/themes/enfold/index.html';
+    avia_framework_globals.ajaxurl = '../wp-admin/admin-ajax.html';
+/* ]]> */ 
+</script>
+ 
+ <script type='text/javascript' src='../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../wp-content/themes/kriesi/js/kriesi68b3.js?ver=1'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.minf420.js?ver=4.9.19'></script>
+<script type='text/javascript' src='../wp-content/uploads/dynamic_avia/avia-footer-scripts-ff82465bde3ba4a0f95d76fade5cd5d3.js'></script>
+
+			<script>
+			if(document.cookie.match(/aviaPrivacyGoogleTrackingDisabled/)){ window['ga-disable-UA-785212-1'] = true; }
+			</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-785212-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_TRACKING_ID', { 'anonymize_ip': true });
+  gtag('config', 'UA-785212-1');
+</script>
+</body>
+
+<!-- Mirrored from kriesi.at/archives/how-to-build-a-wordpress-post-pagination-without-plugin by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jan 2022 05:50:23 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.184 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2022-01-08 02:13:32 -->
+
+<!-- super cache -->

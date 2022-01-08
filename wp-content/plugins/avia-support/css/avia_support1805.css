@@ -1,0 +1,232 @@
+/* 
+    Created on : 29.04.2015, 11:12:10
+    Author     : Guenter
+*/
+/*	START:	loading icon	*/
+.av-supp-ajax-load{
+	position: relative;
+	display: none;
+}
+
+.av-supp-loader{ 
+	position: absolute; 
+	left:50%;
+	top:50%;
+	border-top: 2px solid rgba(0, 0, 0, 0.2) !important;
+	border-right: 2px solid rgba(0, 0, 0, 0.2) !important;
+	border-bottom:2px solid rgba(0, 0, 0, 0.2) !important;
+	border-left:  2px solid #000 !important; 
+	border-left:  2px solid #0073aa !important;
+	-webkit-animation: av-supp-rotate 0.6s infinite linear;
+	animation: av-supp-rotate  0.6s infinite linear;
+	height:18px;
+	width:18px;
+	border-radius: 100%;
+	margin-top: -11px;
+	margin-left: -11px;
+}
+
+@-webkit-keyframes av-supp-rotate {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes av-supp-rotate {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% {-webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.av-supp-ajax-loading .av-supp-ajax-load{
+	display: block;
+}
+
+/*end loading icon*/
+
+/*	===============================================================================		*/
+/*	START: Contact Form		*/
+
+.avia-supp-contact-form .avia-supp-contact-form-element{
+    display: inline-block;
+    width: 100%;
+}
+
+.avia-supp-contact-form .avia-supp-contact-form-submit-button{
+    float: right;
+    text-align: center;
+    width: 150px;
+}
+
+.avia-supp-contact-form .avia-supp-contact-form-submit-button a{
+	color: white !important;
+	text-decoration: none !important;
+}
+
+.avia-supp-contact-form .avia-supp-contact-form-buttons-wrap .av-supp-ajax-load{
+	float: right;
+    margin: 20px;
+}
+
+.avia-supp-contact-form .avia-error .avia-supp-input{
+	border: 3px solid red !important;
+	background-color: pink !important;
+}
+
+.avia-supp-contact-form .avia-supp-contact-form-message-section-wrap .avia-supp-contact-form-message-success{
+	border: 3px solid gray;
+	padding: 10px;
+}
+
+.avia-supp-contact-form .avia-supp-contact-form-message-section-wrap .avia-supp-contact-form-message-error{
+	border: 3px solid red;
+	padding: 10px;
+	background-color: pink;
+}
+
+.avia-supp-contact-form .avia-supp-contact-form-captcha-wrapper {
+    display: inline-block;
+	width: 100%;
+}
+
+.avia-supp-contact-form .avia-supp-contact-form-captcha-wrapper label{
+	float: left;
+	width: 100%;
+}
+
+.avia-supp-contact-form .avia-supp-value-verifier-label{
+	top: 28px;
+    font-size: 13px;
+    left: 10px;
+    line-height: 21px;
+    position: relative;
+	float: left;
+}
+
+.avia-supp-contact-form .avia-supp-captcha{
+	padding-left: 65px !important;
+}
+
+/*	END: Contact Form		*/
+
+/*	===============================================================================		*/
+/*	START:  Userprofile Edit Profile	*/
+
+.av-supp-blocked-moderator-user{
+	border: 1px solid #c3512f !important;
+    color: #ea1f1f;
+    display: inline-block;
+    font-weight: 900;
+    margin: 0;
+    padding: 30px;
+	width: 100%;
+}
+
+.av-supp-edit-profile-not-allowed{
+	border: 1px solid #c3512f;
+    display: inline-block;
+    padding: 30px;
+	margin: 20px 0 20px 0;
+	color: #ea1f1f;
+	font-weight: 900;
+}
+
+.av-supp-delete-user-wrap{
+	border: 1px solid #c3512f;
+    display: inline-block;
+    padding: 30px;
+	margin: 20px 0 0 0;
+	width:100%;
+}
+
+.av-supp-delete-user-wrap .av-supp-delete-user-headline{
+	color: #c3512f;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.av-supp-delete-user-wrap .user-submit-delete{
+    width: auto;
+    background-color: #c3512f;
+    color: #ffffff;
+    border-color: #a1300d;
+}
+
+.av-supp-delete-user-wrap .av-supp-delete-user-warning{
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.av-supp-delete-user-wrap .av-supp-delete-user-message{
+	clear: both;
+    display: none;
+    float: left;
+    margin-top:20px;
+}
+
+.av-supp-delete-user-wrap .av-supp-delete-user-submit{
+	display: block;
+    width: auto;
+
+}
+
+.av-supp-delete-user-wrap .av-supp-ajax-load{
+	float: left;
+    left: 200px;
+    position: relative;
+    top: 15px;
+    width: auto;	
+}
+
+/*	END:  Userprofile Edit Profile	*/
+/*	===============================================================================		*/
+
+.avia-support-pending-topic p{
+	color: #ea1f1f;
+	font-size:0.9em;
+	margin:3px 0;
+}
+
+.avia-support-contact-form-topic p{
+	color: #42A0BD;
+	font-size:0.9em;
+	margin:3px 0;
+}
+
+.avia-supp-forum-show-replies{
+	background: #a6bfde none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+	padding: 10px 16px;
+}
+
+.avia-supp-forum-show-replies + .bbp-pagination{
+	display: none;
+}
+
+.av-supp-message-wrapper.av-supp-topic-closed{
+	border: 2px solid red;
+    color: red;
+    display: inline-block;
+    font-size: 15px;
+    margin: 25px 0;
+    padding: 20px;
+}
+
+.av-supp-announcement-wrapper{
+	background: #42a0bd none repeat scroll 0 0;
+    display: inline-block;
+    margin: 15px 0;
+    padding: 25px 15px;
+    width: 100%;
+	color: white;
+	text-align: center;
+}
+
+/*
+		Added by Yigit 
+.single-topic .av-supp-bbp_template_after_replies_loop, 
+.single-topic .av-supp-bbp_template_before_replies_loop,
+.av-supp-topic-closed {
+	display: none;
+}*/

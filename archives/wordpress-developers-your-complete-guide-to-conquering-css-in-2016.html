@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-US" class="html_stretched responsive av-preloader-disabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking html_mobile_menu_tablet html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_av-submenu-hidden html_av-submenu-display-click html_av-overlay-side html_av-overlay-side-classic html_av-submenu-clone html_entry_id_2813 av-no-preview html_text_menu_active ">
+
+<!-- Mirrored from kriesi.at/archives/wordpress-developers-your-complete-guide-to-conquering-css-in-2016 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jan 2022 05:50:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="index, follow" />
+
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+<title>2016 CSS Development  | Kriesi.at - Premium WordPress Themes</title>
+
+<!-- All in One SEO Pack 2.5 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<meta name="description"  content="Working with CSS can be a frustrating task for even experienced WordPress developers. In this article we cover what you need to know to get the most out of CSS." />
+
+<meta name="keywords"  content="css,less,sass" />
+
+<link rel="canonical" href="wordpress-developers-your-complete-guide-to-conquering-css-in-2016.html" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes &raquo; Feed" href="../feed" />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes &raquo; Comments Feed" href="../comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes &raquo; WordPress Developers: Your Complete Guide to Conquering CSS in 2016 Comments Feed" href="wordpress-developers-your-complete-guide-to-conquering-css-in-2016/feed" />
+
+<!-- google webfont font replacement -->
+
+			<script type='text/javascript'>
+			if(!document.cookie.match(/aviaPrivacyGoogleWebfontsDisabled/)){
+				(function() {
+					var f = document.createElement('link');
+					
+					f.type 	= 'text/css';
+					f.rel 	= 'stylesheet';
+					f.href 	= 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600';
+					f.id 	= 'avia-google-webfont';
+					
+					document.getElementsByTagName('head')[0].appendChild(f);
+				})();
+			}
+			</script>
+			<link rel='stylesheet' id='avia-merged-styles-css'  href='../wp-content/uploads/dynamic_avia/avia-merged-styles-c1befd77bb23eb022c8bf487ec55493b.css' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Framework Security Update and Newsletter Release' href='framework-security-update-and-newsletter-release.html' />
+<link rel='next' title='How to Stop Wasting Time on Social Media and Start Dominating' href='how-to-stop-wasting-time-on-social-media-and-start-dominating.html' />
+<meta name="generator" content="WordPress 4.9.19" />
+<link rel='shortlink' href='../index2d28.html?p=2813' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embede0c7?url=https%3A%2F%2Fkriesi.at%2Farchives%2Fwordpress-developers-your-complete-guide-to-conquering-css-in-2016" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embedde38?url=https%3A%2F%2Fkriesi.at%2Farchives%2Fwordpress-developers-your-complete-guide-to-conquering-css-in-2016&amp;format=xml" />
+<link rel="author" href="https://plus.google.com/106461359737856957875/posts"/>
+	<link rel="apple-touch-icon-precomposed" href="../wp-content/themes/kriesi/images/apple-touch-icon.png" /><script data-ad-client="ca-pub-3132647751526457" async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script><link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="alternate" type="application/rss+xml" title="Kriesi.at - Premium WordPress Themes RSS2 Feed" href="../feed" />
+<link rel="pingback" href="../xmlrpc.html" />
+<!--[if lt IE 9]><script src="https://kriesi.at/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+<link rel="icon" href="../wp-content/uploads/2018/04/favicon_32.png" type="image/png">
+
+<!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
+<script type="text/javascript">'use strict';var avia_is_mobile=!1;if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&'ontouchstart' in document.documentElement){avia_is_mobile=!0;document.documentElement.className+=' avia_mobile '}
+else{document.documentElement.className+=' avia_desktop '};document.documentElement.className+=' js_active ';(function(){var e=['-webkit-','-moz-','-ms-',''],n='';for(var t in e){if(e[t]+'transform' in document.documentElement.style){document.documentElement.className+=' avia_transform ';n=e[t]+'transform'};if(e[t]+'perspective' in document.documentElement.style)document.documentElement.className+=' avia_transform3d '};if(typeof document.getElementsByClassName=='function'&&typeof document.documentElement.getBoundingClientRect=='function'&&avia_is_mobile==!1){if(n&&window.innerHeight>0){setTimeout(function(){var e=0,o={},a=0,t=document.getElementsByClassName('av-parallax'),i=window.pageYOffset||document.documentElement.scrollTop;for(e=0;e<t.length;e++){t[e].style.top='0px';o=t[e].getBoundingClientRect();a=Math.ceil((window.innerHeight+i-o.top)*0.3);t[e].style[n]='translate(0px, '+a+'px)';t[e].style.top='auto';t[e].className+=' enabled-parallax '}},50)}}})();</script><style type='text/css'>
+@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal;
+src: url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot');
+src: url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontellod41d.eot?#iefix') format('embedded-opentype'), 
+url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff') format('woff'), 
+url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf') format('truetype'), 
+url('../wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg#entypo-fontello') format('svg');
+} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+</style>
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Enfold
+Version: 4.4
+Installed: enfold
+AviaFramework Version: 4.7
+AviaBuilder Version: 0.9.5
+aviaElementManager Version: 1.0
+- - - - - - - - - - -
+ChildTheme: Kriesi.at
+ChildTheme Version: 3.1.9
+ChildTheme Installed: enfold
+
+ML:512-PU:36-PLA:9
+WP:4.9.19
+Compress: CSS:all theme files - JS:all theme files
+Updates: enabled
+PLAu:2
+-->
+</head>
+
+
+
+
+<body data-rsssl=1 id="top" class="post-template-default single single-post postid-2813 single-format-standard  rtl_columns stretched open_sans" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+
+	
+	<div id='wrap_all'>
+
+	
+<header id='header' class='all_colors header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_slim av_header_sticky av_header_shrinking av_header_stretch_disabled av_mobile_menu_tablet av_header_searchicon av_header_unstick_top_disabled av_bottom_nav_disabled  av_header_border_disabled'  role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+
+		<div  id='header_main' class='container_wrap container_wrap_logo'>
+	
+        <div class='container av-logo-container'><div class='inner-container'><span class='logo'><a href='../index.html'><img height='100' width='300' src='../wp-content/themes/kriesi/images/logo.png' alt='Kriesi.at - Premium WordPress Themes' /><span class='subtext'><strong class='logo-title'>Kriesi.at</strong><strong class='logo-title logo-subtitle'>Premium Themes</strong></span></a></span><nav class='main_menu' data-selectname='Select a page'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia-menu av-main-nav-wrap"><ul id="avia-menu" class="menu av-main-nav"><li id="menu-item-923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1"><a href="../index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Home</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-3790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-2"><a target="_blank" href="../themes/enfold-overview/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Demos</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-925" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-top-level menu-item-top-level-3 current-menu-item"><a href="../blog.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Blog</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-4"><a href="../about.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">About</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5"><a href="../contact.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Contact</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1812" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-6"><a href="../support/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Support</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-2049" class="jobs-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-7"><a href="http://jobs.kriesi.at/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Jobs</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-search" class="noMobile menu-item menu-item-search-dropdown menu-item-avia-special">
+							<a href="wordpress-developers-your-complete-guide-to-conquering-css-in-20161919?s=" data-avia-search-tooltip="
+
+&lt;form action=https://kriesi.at/archives/"https://kriesi.at/" id=&quot;searchform&quot; method=&quot;get&quot; class=&quot;&quot;&gt;
+	&lt;div&gt;
+		&lt;input type=&quot;submit&quot; value=&quot;&quot; id=&quot;searchsubmit&quot; class=&quot;button avia-font-entypo-fontello&quot; /&gt;
+		&lt;input type=&quot;text&quot; id=&quot;s&quot; name=&quot;s&quot; value=&quot;&quot; placeholder='Search' /&gt;
+			&lt;/div&gt;
+&lt;/form&gt;" aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Search</span></a>
+	        		   </li><li class="av-burger-menu-main menu-item-avia-special av-small-burger-icon">
+	        			<a href="#">
+							<span class="av-hamburger av-hamburger--spin av-js-hamburger">
+					        <span class="av-hamburger-box">
+						          <span class="av-hamburger-inner"></span>
+						          <strong>Menu</strong>
+					        </span>
+							</span>
+						</a>
+	        		   </li></ul></div></nav><ul class='noLightbox social_bookmarks icon_count_4'><li class='social_bookmarks_facebook av-social-link-facebook social_icon_1'><a target='_blank' href='http://www.facebook.com/kriesi.at' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Facebook'><span class='avia_hidden_link_text'>Facebook</span></a></li><li class='social_bookmarks_twitter av-social-link-twitter social_icon_2'><a target='_blank' href='http://twitter.com/kriesi' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Twitter'><span class='avia_hidden_link_text'>Twitter</span></a></li><li class='social_bookmarks_dribbble av-social-link-dribbble social_icon_3'><a target='_blank' href='http://dribbble.com/kriesi' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Dribbble'><span class='avia_hidden_link_text'>Dribbble</span></a></li><li class='social_bookmarks_mail av-social-link-mail social_icon_4'><a target='_blank' href='../newsletter.html' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello' title='Mail'><span class='avia_hidden_link_text'>Mail</span></a></li></ul></div> </div> 
+		<!-- end container_wrap-->
+		</div>
+		
+		<div class='header_bg'></div>
+
+<!-- end header -->
+</header>
+		
+	<div id='main' class='all_colors' data-scroll-offset='88'>
+
+	
+		<div class='container_wrap container_wrap_first main_color fullsize'>
+
+			<div class='container template-blog template-single-blog '>
+
+				<main class='content units av-content-full alpha '  role="main" itemscope="itemscope" itemtype="https://schema.org/Blog" >
+
+                    <article class='post-entry post-entry-type-standard post-entry-2813 post-loop-1 post-parity-odd post-entry-last single-big with-slider post-2813 post type-post status-publish format-standard has-post-thumbnail hentry category-css-tutorials category-wordpress tag-css tag-less tag-sass'  itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" ><div class="preview-pic-blog"><img width="800" height="400" src="../wp-content/uploads/2015/08/css-guide.jpg" class="attachment-featured size-featured wp-post-image" alt="" srcset="https://kriesi.at/wp-content/uploads/2015/08/css-guide.jpg 800w, https://kriesi.at/wp-content/uploads/2015/08/css-guide-300x150.jpg 300w, https://kriesi.at/wp-content/uploads/2015/08/css-guide-768x384.jpg 768w, https://kriesi.at/wp-content/uploads/2015/08/css-guide-705x353.jpg 705w, https://kriesi.at/wp-content/uploads/2015/08/css-guide-450x225.jpg 450w" sizes="(max-width: 800px) 100vw, 800px" /></div><div class='entry-content-wrapper clearfix standard-content'><span class='post-meta-infos'><span class='date-container minor-meta updated'>April 26, 2016</span><span class='text-sep'>/</span><span class='comment-container minor-meta'><a href="wordpress-developers-your-complete-guide-to-conquering-css-in-2016.html#comments" class="comments-link" >1 Comment</a></span><span class='text-sep'>/</span><span class="blog-categories minor-meta">in <a href="category/css-tutorials.html" rel="tag">CSS Tutorials</a>, <a href="category/wordpress.html" rel="tag">Wordpress</a> </span><span class="text-sep">/</span><span class="blog-author minor-meta">by <a href="author/tom.html" title="Posts by Tom Ewer" rel="author">Tom Ewer</a></span></span><div class="entry-content"><h1 class='post-title entry-title'  itemprop="headline" >	<a href='wordpress-developers-your-complete-guide-to-conquering-css-in-2016.html' rel='bookmark' title='Permanent Link: WordPress Developers: Your Complete Guide to Conquering CSS in 2016'>WordPress Developers: Your Complete Guide to Conquering CSS in 2016			<span class='post-format-icon minor-meta'></span>	</a></h1><p class="av-intro-text">CSS can be a divisive technology&#8230;</p>
+<p>For some, it&#8217;s a wonderfully flexible presentational technology that they love bending to their will.</p>
+<p>For others, it&#8217;s a near incomprehensible series of fractal layout hacks that make accomplishing something as simple as <a href="https://css-tricks.com/centering-css-complete-guide/" target="_blank">vertically centering an element</a> a cause for celebration.</p>
+<p>Like it or loath it as a developer though, there&#8217;s no getting around CSS when it comes to making sure your site looks as ship-shape as possible for your users.<span id="more-2813"></span></p>
+<p>In this article, we&#8217;ll cover CSS in WordPress, look at the options you have for working with it in Kriesi themes, and run through some of the basics of best practice in 2016.</p>
+<p>We&#8217;re writing for a non-CSS expert audience here, rather than those who spend their days sweating over the finer points of <a href="https://smacss.com/" target="_blank">modular CSS architectures</a>.</p>
+<p>So, with that in mind, let&#8217;s kick things off with a quick look at the basics.</p>
+<h2>Some Brief Background on CSS</h2>
+<p>Cascading Style Sheets have been around as an idea <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#History" target="_blank">since 1994</a>, but the history of their development, implementation and adoption has been a long and tortuous one.</p>
+<p>Successive waves of <a href="http://www.zdnet.com/article/did-the-browser-wars-finally-end-in-2014/" target="_blank">browser wars</a> and specification wrangling have resulted in CSS causing more than its fair share of <a href="http://www.reddit.com/r/ProgrammerHumor/comments/22xb60/i_hate_css/" target="_blank">grief</a> for developers and designers over the years.</p>
+<p>The basic idea behind the technology remains simple, however: CSS exists to allow individual page markup elements to be styled according to your wishes.</p>
+<p>The process by which new features come into being, by contrast, is <a href="http://www.w3.org/Style/CSS/read.en.html" target="_blank">arcane to say the least</a>.</p>
+<p>To cut a very, very long story short, most aspects of the <a href="http://www.smashingmagazine.com/learning-css3-useful-reference-guide/" target="_blank">CSS3</a> specification are currently implemented across modern browsers. New proposals for <a href="http://css4.rocks/" target="_blank">CSS4</a> are slowly grinding through the specification/implementation process.</p>
+<h2>Core CSS Concepts</h2>
+<p>Between worrying about specifications, <a href="http://stackoverflow.com/questions/16272760/what-are-css3-modules" target="_blank">modules</a>, browser support and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">available properties</a>, the level of baroque detail on offer with CSS can be intimidating if you&#8217;re new to it.</p>
+<p>An excellent practical starting point for beginners – or those looking to brush up their skills – is Shay Howe&#8217;s <a href="http://learn.shayhowe.com/html-css/" target="_blank">Learn to Code HTML and CSS</a> site.</p>
+<p>Concentrate on understanding the following key concepts and you will be off to a good start:</p>
+<ul>
+<li>The idea of separating the presentation from content.</li>
+<li><a href="http://learn.shayhowe.com/html-css/getting-to-know-css/">Selectors</a>.</li>
+<li>The basics of the <a href="http://learn.shayhowe.com/html-css/opening-the-box-model/">box model</a>.</li>
+<li>An understanding of <a href="http://learn.shayhowe.com/html-css/positioning-content/">positioning</a>.</li>
+<li>The role media queries play in <a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design/">responsive design</a>.</li>
+</ul>
+<p>In terms of nailing down which elements of CSS you can use in production, the incredibly handy <a href="http://caniuse.com/" target="_blank">Can I Use</a> site has done a lot of the heavy lifting for you. Consult it wisely.</p>
+<h2>Getting Your Tools Organized</h2>
+<p>Grappling with CSS in the wild is going to be considerably easier if you arm yourself with a couple of key tools.</p>
+<p>The first thing you need is a decent text editor for working with local files. The subject of which text editor makes the perfect tool is a <a href="https://en.wikipedia.org/wiki/Editor_war" target="_blank">famously fraught one</a>, so we&#8217;ll confine ourselves to pointing out some desirable features:</p>
+<ul>
+<li><strong> Support for CSS syntax highlighting:</strong> This makes visually scanning your files considerably easier.</li>
+<li><strong>Code folding:</strong> This is an enormous help in moving around large files.</li>
+<li><strong>Support for project folders:</strong> Ideally, you should be able to perform all file system navigation from your text editor.</li>
+<li><strong>Support for live preview:</strong> The ability to see your changes in real time is a huge timesaver.</li>
+</ul>
+<p>Pretty much any modern text editor should support all these features. <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> is an excellent free solution for Windows. Mac users have long leaned towards tools such as <a href="http://www.barebones.com/products/bbedit/" target="_blank">BBEdit</a> and <a href="https://panic.com/coda/" target="_blank">Coda</a>.</p>
+<p>Two recent entries worth a mention are <a href="https://atom.io/" target="_blank">Atom</a> from the team at <a href="https://github.com/" target="_blank">Github</a>, and Adobe&#8217;s <a href="http://brackets.io/" target="_blank">Brackets</a>. The latter is a particularly interesting option. It&#8217;s free and ships with a number of features designed specifically for CSS editing, such as preprocessor support and live preview.</p>
+<div class='avia-iframe-wrap'><iframe width="1500" height="844" src="https://www.youtube.com/embed/rvo3Mv1Z4qU?feature=oembed" frameborder="0" allowfullscreen></iframe></div>
+<p>The second thing that will make your excursions into CSS considerably easier is some sort of browser inspection tool.</p>
+<p>These are tools which give you the ability to interact directly with CSS on live sites. They&#8217;re simply invaluable when it comes to development or troubleshooting and without them you&#8217;re essentially flying blind.</p>
+<p>Google Chrome ships with <a href="https://developer.chrome.com/devtools" target="_blank">Developer Tools</a> by default. Firefox&#8217;s <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector" target="_blank">Page Inspector</a> and the <a href="https://developer.apple.com/safari/tools/" target="_blank">Safari Web Inspector</a> perform similar roles. Get up to speed on using one or all of them and your day-to-day dealings with CSS will be that much less painful.</p>
+<div class='avia-iframe-wrap'><iframe width="1500" height="844" src="https://www.youtube.com/embed/Z3HGJsNLQ1E?feature=oembed" frameborder="0" allowfullscreen></iframe></div>
+<h2>Getting to Grips with CSS in WordPress</h2>
+<p>Before going any further, it&#8217;s worth briefly reviewing some of the basics of <a href="https://codex.wordpress.org/CSS" target="_blank">CSS in WordPress</a> itself.</p>
+<p>Take a quick look through the <a href="https://codex.wordpress.org/Site_Architecture_1.5#Core_Structure" target="_blank">Site Architecture section</a> of the Codex and you&#8217;ll quickly notice that WordPress ships with a huge number of native CSS selectors by default.</p>
+<p>All of these can naturally be over-ridden, or entirely deleted, in your own template files but it&#8217;s no harm investigating what you&#8217;re given right out of the box.</p>
+<p>It&#8217;s beyond the scope of this article to go into individual options in detail but there&#8217;s a great intro piece over at <a href="https://css-tricks.com/" target="_blank">CSS-tricks.com</a> covering the essentials of <a href="https://css-tricks.com/back-basics-wordpress-css-understanding-native-classes/" target="_blank">native WordPress classes</a>. <a href="http://www.wpbeginner.com/" target="_blank">WPBeginner</a> also have a slightly <a href="http://www.wpbeginner.com/wp-themes/default-wordpress-generated-css-cheat-sheet-for-beginners/" target="_blank">more in-depth look</a> at the basic classes on their site.</p>
+<div class='avia-iframe-wrap'><iframe width="1500" height="844" src="https://www.youtube.com/embed/tRkfoHjFvW8?feature=oembed" frameborder="0" allowfullscreen></iframe></div>
+<p>Take some time to use the tools we mentioned in the previous section to explore how key site elements such as menus, widgets, posts and pages are handled in the default theme.</p>
+<p>Your CSS confidence will naturally start to grow and you&#8217;ll be that much more comfortable with how WordPress handles CSS under the hood.</p>
+<h2>CSS in Kriesi Themes</h2>
+<p>One of the main selling points of all Kriesi themes is of course how easy they make it to customize a site without having to dive into template or CSS files.</p>
+<p>You have three main ways of handling CSS using a Kriesi theme. Let&#8217;s quickly step through them  in ascending order of complexity:</p>
+<ol>
+<li>Use the <a href="../themes/enfold/features/index.html#tab-id-2" target="_blank">Template Builder and Style Generator</a> to avoid having to touch the CSS at all.</li>
+<li>Add your own small tweaks either via the Quick CSS box or by editing <em>custom.css</em>. Instructions for doing both are available in the <a href="../documentation/enfold/custom-css-and-quick-css/index.html" target="_blank">online Kriesi documentation</a>.</li>
+<li>Use a <a href="https://codex.wordpress.org/Child_Themes" target="_blank">child theme</a> to cleanly separate your own CSS content and ensure future theme upgrades are hassle free.</li>
+</ol>
+<p>If you&#8217;re making substantial CSS changes, option three is very much the one to go for. Detailed instructions on how to get started are in the video below and in the <a href="../documentation/enfold/using-a-child-theme/index.html" target="_blank">online documentation</a>.</p>
+<div class='avia-iframe-wrap'><iframe src="https://player.vimeo.com/video/67221517" width="1500" height="844" frameborder="0" title="Enfold - Create a Child Theme" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<h2>Best Practices in CSS</h2>
+<p>Okay, so far we&#8217;ve considered some CSS basics in the context of both WordPress and Kriesi themes but what are the best practices when it comes to actually writing your own stylesheets?</p>
+<p>To an extent, this is a matter of personal preference but there&#8217;s no doubt that your overall CSS workflow will benefit considerably from the adoption of some kind of standards to help organise your code.</p>
+<p>Due to their lack of inherent structure, CSS files can very quickly degenerate into unmaintainable swamps of randomly placed minor adjustments over time if you&#8217;re not careful.</p>
+<p>Even taking some basic decisions on naming conventions and syntax will help but there are also a number of excellent existing guidelines out there to take more detailed inspiration from.</p>
+<p>Here are two to get you started:</p>
+<ol>
+<li><a href="https://10up.github.io/Engineering-Best-Practices/css/" target="_blank">10up CSS guidelines</a>.</li>
+<li><a href="https://gist.github.com/bobbygrace/9e961e8982f42eb91b80" target="_blank">Trello CSS guidelines</a>.</li>
+</ol>
+<h2>What Do Preprocessors Offer?</h2>
+<p>As you start to sharpen your CSS skills, you&#8217;ll naturally start leaning in the direction of using <a href="http://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus" target="_blank">CSS preprocessors</a>.</p>
+<p>Using a preprocessor allows you to take advantage of features such as variables, nesting and mixins to bring a level of structure and order to your code that CSS natively lacks.</p>
+<p>The main contenders here are <a href="http://sass-lang.com/" target="_blank">Sass</a> and <a href="http://lesscss.org/" target="_blank">Less</a>. You can find a detailed breakdown of the differences between the two over at <a href="http://www.hongkiat.com/blog/sass-vs-less/" target="_blank">Hongkiat</a>.</p>
+<p>Be aware that both will potentially require some additional tooling via either Ruby or Node.js to add to your workflow. The potential payoff is tremendous however and, overall, taking advantage of the power of a preprocessor is highly recommended.</p>
+<p>The good folks at <a href="https://www.youtube.com/channel/UCyIe-61Y8C4_o-zZCtO4ETQ" target="_blank">DevTips</a> have a great overview of their usage which we&#8217;ve included below. Their entire <a href="https://www.youtube.com/watch?v=s7ONvIgOWdM&amp;list=PLqGj3iMvMa4IOmy04kDxh_hqODMqoeeCy" target="_blank">CSS Basics</a> series is also an excellent general resource.</p>
+<div class='avia-iframe-wrap'><iframe width="1500" height="844" src="https://www.youtube.com/embed/PJkWbezpHpE?feature=oembed" frameborder="0" allowfullscreen></iframe></div>
+<h2>Are Frameworks Worth It?</h2>
+<p>Another option you will run into at some stage in your CSS career is the question of whether to use a CSS framework.</p>
+<p>The basic idea here is similar to that of other frameworks such as <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a> or <a href="https://www.djangoproject.com/" target="_blank">Django</a> – pre-prepared scaffolding can save an awful lot of time and effort. Rather than re-inventing the wheel on every project, you start with a core set of functionality in place.</p>
+<p>The best known example in the CSS world is Twitter&#8217;s <a href="http://getbootstrap.com/" target="_blank">Bootstrap project</a> which has been around since 2010.</p>
+<p>The <a href="http://foundation.zurb.com/" target="_blank">Foundation project</a> from <a href="http://zurb.com/" target="_blank">Zurb</a> is another fully-featured framework that&#8217;s gaining increasing traction with developers.</p>
+<p>A common critique levelled at many frameworks is that they add an unnecessary level of bloat to projects. The <a href="http://themble.com/bones/" target="_blank">Bones</a> framework was designed specifically with WordPress in mind and offers a stripped down starting point for further exploration.</p>
+<p>Depending on the exact nature of your project, making use of a framework may or may not be overkill. They&#8217;re definitely worth researching as a developer however, even if it&#8217;s purely in terms of keeping up to speed with current front-end trends and best practices.</p>
+<h2>CSS Roadmap in WordPress</h2>
+<p>The subject of CSS in WordPress is long overdue for some serious core team attention and the last year has seen signs of nascent interest from that quarter.</p>
+<p>Core developer <a href="http://helenhousandi.com/" target="_blank">Helen Hou-Sandí</a> laid out the first steps of a vision for how to take things forward in WordPress with her article <em><a href="https://make.wordpress.org/core/2014/12/19/core-css-roadmap/" target="_blank">Core CSS: A potential roadmap to sanity</a></em> back in late 2014.</p>
+<p>It&#8217;s early days in the project but the list of proposed initiatives such as improved documentation, establishing a pattern library, nailing down naming conventions and refactoring existing code is very much to be welcomed. This is one to keep an eye on going into 2016.</p>
+<h2>Further Resources</h2>
+<p>Working with CSS can be a frustrating experience but resources for learning it have radically improved in recent years. Check out some of the following suggestions if you&#8217;re looking to further up your game:</p>
+<ul>
+<li><strong>Courses:</strong> As mentioned at the top, <a href="http://learn.shayhowe.com/html-css/" target="_blank">How to Learn CSS and HTML</a> is a wonderful starting point. Sites such as <a href="http://www.lynda.com/CSS-training-tutorials/447-0.html" target="_blank">Lynda</a>, <a href="http://teamtreehouse.com/library/topic:css" target="_blank">Treehouse</a>, <a href="https://www.codecademy.com/tracks/web" target="_blank">CodeAcademy</a> and <a href="http://shop.oreilly.com/product/0636920036241.do" target="_blank">O&#8217;Reilly</a> also all have well-structured, detailed courses covering the basics and beyond.</li>
+<li><strong>Books:</strong> <em><a href="http://abookapart.com/products/css3-for-web-designers" target="_blank">CSS3 for Web Designers</a></em> by Dan Cederholm and <em><a href="http://www.fivesimplesteps.com/products/hardboiled-web-design" target="_blank">Hardboiled Web Design </a></em>by Andy Clarke are both excellent resources. It&#8217;s also hard to go wrong with anything from their respective publishers at <a href="http://abookapart.com/" target="_blank">A Book Apart</a> and <a href="http://www.fivesimplesteps.com/collections/books" target="_blank">Five Simple Steps</a>.</li>
+<li><strong>CSS sites:</strong> <a href="https://css-tricks.com/" target="_blank">Css-Tricks </a>will keep you up to speed on techniques and <a href="http://www.csswinner.com/" target="_blank">CSS Winner</a> is a great source of design inspiration.</li>
+</ul>
+<h2>Conclusion</h2>
+<p>CSS is often considered a necessary evil by developers but getting to grips with its usage is more than worth the effort involved. Let&#8217;s briefly recap some of the steps we covered:</p>
+<ul>
+<li>Make sure you&#8217;re solid on the basics of CSS.</li>
+<li>Invest in your tooling.</li>
+<li>Get familiar with WordPress&#8217; core CSS classes.</li>
+<li>Get comfortable with slinging your own CSS via child themes.</li>
+<li>Pick a set of CSS guidelines and stick to them.</li>
+<li>Take advantage of the power of CSS preprocessors.</li>
+<li>Investigate CSS frameworks.</li>
+<li>Never stop learning.</li>
+</ul>
+<p>We&#8217;re curious to hear your thoughts on working with CSS. Is there a particular aspect of its use in WordPress that drives you crazy? Or a future feature set you can&#8217;t wait to try out?</p>
+<p>Get in touch in the comments below and share your thoughts.</p>
+<a class='extra_theme_info' href='http://bitly.com/wp_enfold' target='_blank'><img src='../wp-content/themes/kriesi/images/enfold.jpg' title='Check out Enfold' alt='' /></a></div><span class="blog-tags minor-meta"><strong>Tags:</strong><span> <a href="tag/css" rel="tag">CSS</a>, <a href="tag/less" rel="tag">LESS</a>, <a href="tag/sass" rel="tag">SASS</a></span></span></div><div class='post_author_timeline'></div></article><div class ='related_posts clearfix av-related-style-full'><h5 class='related_title'>You might also like</h5><div class='related_entries_container '><div class='av_one_half no_margin  alpha relThumb relThumb1 relThumbOdd post-format-standard related_column'>
+	<a href='create-simple-tooltips-with-css-and-jquery-part-2-smart-tooltips' class='relThumWrap noLightbox' title='Create simple tooltips with CSS and jQuery – Part 2'>
+	<span class='related_image_wrap' ><img width="180" height="105" src="../wp-content/uploads/2010/06/tooltips.jpg" class="attachment-square size-square wp-post-image" alt="" title="tooltips" srcset="https://kriesi.at/wp-content/uploads/2010/06/tooltips.jpg 514w, https://kriesi.at/wp-content/uploads/2010/06/tooltips-300x175.jpg 300w, https://kriesi.at/wp-content/uploads/2010/06/tooltips-200x117.jpg 200w" sizes="(max-width: 180px) 100vw, 180px" />	<span class='related-format-icon '><span class='related-format-icon-inner' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span></span>	</span><strong class='av-related-title'>Create simple tooltips with CSS and jQuery – Part 2</strong>	</a></div><div class='av_one_half no_margin   relThumb relThumb2 relThumbEven post-format-standard related_column'>
+	<a href='create-a-multilevel-dropdown-menu-with-css-and-improve-it-via-jquery' class='relThumWrap noLightbox' title='Create a multilevel Dropdown menu with CSS and improve it via jQuery'>
+	<span class='related_image_wrap' ><img width="100" height="100" src="../wp-content/uploads/2008/06/css.jpg" class="attachment-square size-square wp-post-image" alt="" title="css" srcset="https://kriesi.at/wp-content/uploads/2008/06/css.jpg 100w, https://kriesi.at/wp-content/uploads/2008/06/css-60x60.jpg 60w" sizes="(max-width: 100px) 100vw, 100px" />	<span class='related-format-icon '><span class='related-format-icon-inner' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span></span>	</span><strong class='av-related-title'>Create a multilevel Dropdown menu with CSS and improve it via jQuery</strong>	</a></div><div class='av_one_half no_margin   relThumb relThumb3 relThumbOdd post-format-standard related_column'>
+	<a href='apple-menu-improved-with-jquery' class='relThumWrap noLightbox' title='Create an apple style menu and improve it via jQuery'>
+	<span class='related_image_wrap' ><img width="100" height="100" src="../wp-content/uploads/2008/07/apple.jpg" class="attachment-square size-square wp-post-image" alt="" title="apple" srcset="https://kriesi.at/wp-content/uploads/2008/07/apple.jpg 100w, https://kriesi.at/wp-content/uploads/2008/07/apple-60x60.jpg 60w" sizes="(max-width: 100px) 100vw, 100px" />	<span class='related-format-icon '><span class='related-format-icon-inner' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span></span>	</span><strong class='av-related-title'>Create an apple style menu and improve it via jQuery</strong>	</a></div><div class='av_one_half no_margin   relThumb relThumb4 relThumbEven post-format-standard related_column'>
+	<a href='create-simple-tooltips-with-css-and-jquery' class='relThumWrap noLightbox' title='Create simple tooltips with CSS and jQuery – Part 1'>
+	<span class='related_image_wrap' ><img width="100" height="100" src="../wp-content/uploads/2008/04/wordpressfeed.jpg" class="attachment-square size-square wp-post-image" alt="" title="wordpressfeed" srcset="https://kriesi.at/wp-content/uploads/2008/04/wordpressfeed.jpg 100w, https://kriesi.at/wp-content/uploads/2008/04/wordpressfeed-60x60.jpg 60w" sizes="(max-width: 100px) 100vw, 100px" />	<span class='related-format-icon '><span class='related-format-icon-inner' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span></span>	</span><strong class='av-related-title'>Create simple tooltips with CSS and jQuery – Part 1</strong>	</a></div><div class='av_one_half no_margin  omega relThumb relThumb5 relThumbOdd post-format-standard related_column'>
+	<a href='wordpress-theme-javazine' class='relThumWrap noLightbox' title='Premium Wordpress Theme: Javazine'>
+	<span class='related_image_wrap' ><img width="180" height="71" src="../wp-content/uploads/2008/11/javazine.jpg" class="attachment-square size-square wp-post-image" alt="" title="javazine" srcset="https://kriesi.at/wp-content/uploads/2008/11/javazine.jpg 512w, https://kriesi.at/wp-content/uploads/2008/11/javazine-300x118.jpg 300w" sizes="(max-width: 180px) 100vw, 180px" />	<span class='related-format-icon '><span class='related-format-icon-inner' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span></span>	</span><strong class='av-related-title'>Premium Wordpress Theme: Javazine</strong>	</a></div></div></div>
+
+
+	        	
+	        	
+<div class='comment-entry post-entry'>
+
+<div class='comment_meta_container'>
+			
+			<div class='side-container-comment'>
+	        		
+	        		<div class='side-container-comment-inner'>
+	        				        			
+	        			<span class='comment-count'>1</span>
+   						<span class='comment-text'>reply</span>
+   						<span class='center-border center-border-left'></span>
+   						<span class='center-border center-border-right'></span>
+   						
+	        		</div>
+	        		
+	        	</div>
+			
+			</div>
+
+			
+			<div class='comment_container'>
+			
+
+			<ol class="commentlist" id="comments">
+				    <li class="comment even thread-even depth-1" id="li-comment-11730">
+
+        <div id="comment-11730">
+        <article>
+            <div class="gravatar">
+                <img alt='Sulumbek' src='https://secure.gravatar.com/avatar/480d3b7ddf3ee17706b877c08788590f?s=60&amp;d=mm&amp;r=g' srcset='https://secure.gravatar.com/avatar/480d3b7ddf3ee17706b877c08788590f?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />            </div>
+
+            <!-- display the comment -->
+            <div class='comment_content'>
+                <header class="comment-header">
+                    <cite class="author_name heading"><cite class="comment_author_name">Sulumbek</cite></cite> <span class="says">says:</span>                    
+                    <!-- display the comment metadata like time and date-->
+                        <div class="comment-meta commentmetadata">
+                            <a href="wordpress-developers-your-complete-guide-to-conquering-css-in-2016.html#comment-11730">
+                                <time  >
+                                    April 30, 2016 at 9:13 pm                                </time>
+                            </a>
+                        </div>
+                </header>
+
+                <!-- display the comment text -->
+                <div class='comment_text entry-content-wrapper clearfix' >
+                <p>Really great article! Thank you!</p>
+                                                </div>
+            </div>
+
+        </article>
+    </div>
+</li><!-- #comment-## -->
+			</ol>
+						
+			
+			
+			
+			
+</div> <!-- end grid div--><h3 class=' commentsclosed'>Comments are closed.</h3>
+</div>
+				<!--end content-->
+				</main>
+
+				
+
+			</div><!--end container-->
+
+		</div><!-- close default .container_wrap element -->
+
+
+		
+
+
+			
+
+			
+				<footer class='container_wrap socket_color' id='socket'  role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+                    <div class='container'>
+
+                        <span class='copyright'>© Copyright - Kriesi.at </span>
+
+                        <nav class='sub_menu_socket'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia3-menu"><ul id="avia3-menu" class="menu"><li id="menu-item-1605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1"><a href="../index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Home</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1606" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-top-level menu-item-top-level-2 current-menu-item"><a href="../blog.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Blog</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-3317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-3"><a href="../newsletter.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Newsletter</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-4"><a href="../support/register/index.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Register</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5"><a href="../legal-information.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Legal Information</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-3726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-6"><a href="../privacy-policy.html" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Privacy Policy</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+</ul></div></nav>
+                    </div>
+
+	            <!-- ####### END SOCKET CONTAINER ####### -->
+				</footer>
+
+
+					<!-- end main -->
+		</div>
+		
+		<a class='avia-post-nav avia-post-prev with-image' href='framework-security-update-and-newsletter-release.html' >    <span class='label iconfont' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span>    <span class='entry-info-wrap'>        <span class='entry-info'>            <span class='entry-title'>Framework Security Update and Newsletter Release</span>            <span class='entry-image'><img width="80" height="80" src="../wp-content/uploads/2016/04/newsletter-release-80x80.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://kriesi.at/wp-content/uploads/2016/04/newsletter-release-80x80.jpg 80w, https://kriesi.at/wp-content/uploads/2016/04/newsletter-release-36x36.jpg 36w, https://kriesi.at/wp-content/uploads/2016/04/newsletter-release-180x180.jpg 180w, https://kriesi.at/wp-content/uploads/2016/04/newsletter-release-120x120.jpg 120w" sizes="(max-width: 80px) 100vw, 80px" /></span>        </span>    </span></a><a class='avia-post-nav avia-post-next with-image' href='how-to-stop-wasting-time-on-social-media-and-start-dominating.html' >    <span class='label iconfont' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span>    <span class='entry-info-wrap'>        <span class='entry-info'>            <span class='entry-image'><img width="80" height="80" src="../wp-content/uploads/2015/07/dominating-social-80x80.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://kriesi.at/wp-content/uploads/2015/07/dominating-social-80x80.jpg 80w, https://kriesi.at/wp-content/uploads/2015/07/dominating-social-36x36.jpg 36w, https://kriesi.at/wp-content/uploads/2015/07/dominating-social-180x180.jpg 180w, https://kriesi.at/wp-content/uploads/2015/07/dominating-social-120x120.jpg 120w" sizes="(max-width: 80px) 100vw, 80px" /></span>            <span class='entry-title'>How to Stop Wasting Time on Social Media and Start Dominating</span>        </span>    </span></a><!-- end wrap_all --></div>
+
+<a href='#top' title='Scroll to top' id='scroll-top-link' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Scroll to top</span></a>
+
+<div id="fb-root"></div>
+
+
+ <script type='text/javascript'>
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = '../wp-content/themes/enfold/framework/index.html';
+    avia_framework_globals.installedAt = '../wp-content/themes/enfold/index.html';
+    avia_framework_globals.ajaxurl = '../wp-admin/admin-ajax.html';
+/* ]]> */ 
+</script>
+ 
+ <script type='text/javascript' src='../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../wp-content/themes/kriesi/js/kriesi68b3.js?ver=1'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.minf420.js?ver=4.9.19'></script>
+<script type='text/javascript' src='../wp-content/uploads/dynamic_avia/avia-footer-scripts-ff82465bde3ba4a0f95d76fade5cd5d3.js'></script>
+
+			<script>
+			if(document.cookie.match(/aviaPrivacyGoogleTrackingDisabled/)){ window['ga-disable-UA-785212-1'] = true; }
+			</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-785212-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_TRACKING_ID', { 'anonymize_ip': true });
+  gtag('config', 'UA-785212-1');
+</script>
+</body>
+
+<!-- Mirrored from kriesi.at/archives/wordpress-developers-your-complete-guide-to-conquering-css-in-2016 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jan 2022 05:50:37 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.186 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2022-01-08 02:14:38 -->
+
+<!-- super cache -->

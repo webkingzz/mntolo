@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Wordpress Tutorial &#8211; Kriesi.at &#8211; Premium WordPress Themes</title>
+	<atom:link href="https://kriesi.at/archives/category/wordpress-tutorial/feed" rel="self" type="application/rss+xml" />
+	<link>https://kriesi.at</link>
+	<description>Premium Themes</description>
+	<lastBuildDate>Mon, 16 Aug 2021 15:58:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.18</generator>
+	<item>
+		<title>Scoring 100/100 in Google PageSpeed Insights, GTmetrix PageSpeed and Yslow (and why you probably shouldn&#8217;t bother ;)</title>
+		<link>https://kriesi.at/archives/scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow</link>
+		<comments>https://kriesi.at/archives/scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow#comments</comments>
+		<pubDate>Thu, 03 May 2018 10:44:14 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3513</guid>
+		<description><![CDATA[Don&#8217;t let yourself get fooled by the title. You should definitely care about your site performance and using those tools allows you to identify problems easily. In general you get very good recommendations but you should know when to follow them and when to ignore them :) The metric that is much more important than [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">This article will teach you how to get a perfect score with Enfold and its latest performance upate to Version 4.3 on Google PageSpeed Insights and GTmetrix. It will also explain why it&#8217;s probably not a good idea to obsess over it</p>
+<p>Don&#8217;t let yourself get fooled by the title. You should definitely care about your site performance and using those tools allows you to identify problems easily. In general you get very good recommendations but you should know when to follow them and when to ignore them :)</p>
+<p>The metric that is much more important than any score, awarded by those testing tools, is the page load time of your site. And to achieve a good page load time a good server environment and optimised images are usually much more important than any theme optimisations you can do.</p>
+<p>So make sure to not get obsessed with a good score, just for the sake of the score ;)<br />
+Also, while building our latest Enfold Update we set up a total of 12 test environments and probably did 1000 speed checks. The conclusion we came to, is that the trade offs for a perfect score are often times not worth it. (eg: compressing your images to a point were quality suffers dramatically, using a ton of inline css and javascript to satisfy above the fold rules, etc)</p>
+<h4>So here is what we are going to do:</h4>
+<p><span id="more-3513"></span></p>
+<ol>
+<li>We will set up a new test site and activate our Enfold Theme</li>
+<li>We will install our <a href="https://kriesi.at/themes/enfold-2017/" target="_blank" rel="noopener">Enfold 2017 Demo</a> (it has a lot of content, images, slideshows so its a good guinea pig)</li>
+<li>We will optimize it to get to a 100/100 score on all testing tools</li>
+<li>We will tell you which of those optimisations are probably not worth the trade offs</li>
+</ol>
+<p>&nbsp;</p>
+<h4>1.) The theme by itself</h4>
+<p>After setting up the new WordPress Site and activating the theme, if we check the score we get pretty good results out of the box. After all, enfold is now heavily optimized ;)</p>
+<div class='avia-gallery  avia-gallery-1 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.26-1030x630.png' data-rel='gallery-1' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.26-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.26-495x400.png' width='495' height='400'  title='pagespeed dekstop' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.15-1030x644.png' data-rel='gallery-1' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.15-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.15-495x400.png' width='495' height='400'  title='pagespeed mobile' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.45-970x1030.png' data-rel='gallery-1' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.45-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.45-495x400.png' width='495' height='400'  title='gtmetrix' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.57-1030x854.png' data-rel='gallery-1' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.57-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.57-495x400.png' width='495' height='400'  title='yslow' alt='' /></a></div></div>
+<p>A lot of the optimization that we will introduce you to in this article are content and server related and got nothing to do with Enfold.</p>
+<p>The options that can be changed in the theme are not that many, most of the optimization is set up automatically by conditional checks we have implemented. Sort of an AI that does a lot of the optimization related stuff for you ;)</p>
+<p>Here is a screenshot of the &#8220;main&#8221; optimisation options. It is recommended to enable both the merging and compression of your CSS and JS files. It is also recommended to only load template builder elements that you are using. The theme will try to keep track of those and automatically load the necessary files. We have already described how these settings work in our <a href="https://kriesi.at/archives/enfold-4-3-performance-update">introduction blog post for Enfold 4.3</a>.</p>
+<div id="attachment_3645" style="width: 1040px" class="wp-caption aligncenter"><a href="https://kriesi.at/wp-content/uploads/2018/05/defaults-1030x591.png"><img class="wp-image-3645 size-large" src="https://kriesi.at/wp-content/uploads/2018/05/defaults-1030x591.png" alt="" width="1030" height="591" srcset="https://kriesi.at/wp-content/uploads/2018/05/defaults-1030x591.png 1030w, https://kriesi.at/wp-content/uploads/2018/05/defaults-300x172.png 300w, https://kriesi.at/wp-content/uploads/2018/05/defaults-768x441.png 768w, https://kriesi.at/wp-content/uploads/2018/05/defaults-1500x861.png 1500w, https://kriesi.at/wp-content/uploads/2018/05/defaults-705x405.png 705w, https://kriesi.at/wp-content/uploads/2018/05/defaults-450x258.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">Active default settings</p></div>
+<p>(PS: Please note: if you are upgrading from a previous Enfold version those features are by default not active and you need to enable them manually. This is to prevent any undetected errors for users that are just updating and not checking their site afterwards. New installations will have these features enabled by default)</p>
+<h4>2.) The theme with content</h4>
+<p>After installing the Enfold 2017 Demo, our initial speed test results are rather mixed:</p>
+<div class='avia-gallery  avia-gallery-2  avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/insights-desktop-1-1030x617.png' data-rel='gallery-2' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/insights-desktop-1-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/insights-desktop-1-495x400.png' width='495' height='400'  title='insights-desktop-1' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/insights-mobile-1-1030x614.png' data-rel='gallery-2' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/insights-mobile-1-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/insights-mobile-1-495x400.png' width='495' height='400'  title='insights-mobile-1' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gtmetriy-pagespeed-1-972x1030.png' data-rel='gallery-2' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gtmetriy-pagespeed-1-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gtmetriy-pagespeed-1-495x400.png' width='495' height='400'  title='gtmetriy-pagespeed-1' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gtmetrix-yslow-1-1030x851.png' data-rel='gallery-2' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gtmetrix-yslow-1-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gtmetrix-yslow-1-495x400.png' width='495' height='400'  title='gtmetrix-yslow-1' alt='' /></a></div></div>
+<p>As you can see, especially the desktop score for pagespeed insights and gtmetrix pagespeed are rather bad. This is because the score is influenced heavily by the level of image optimisation. Since we did not do any optimization yet our score suffers, despite the fact that there is a lot of green bars and the theme scores really well with most of the other performance tests. So first things first: lets install an image optimization plugin.</p>
+<p>&nbsp;</p>
+<h4>3.) Image optimization</h4>
+<p>And here you already encounter your first decision since image optimization is a tricky business.</p>
+<p>You have to strike a good balance between size reduction and image quality. If you reduce the file size too much the image might be small and the pagespeed tools might be satisfied, but the experience for your users would be rather crappy since they would see some ugly pixelated pictures. On the other hand, if you choose too little reduction your site might be too large and load slowly. And on top of that your score &#8211; and whats more important &#8211; your user experience and in the future also your mobile site ranking might suffer.</p>
+<p>We have tested a long list of plugins and found that <a href="https://wordpress.org/plugins/shortpixel-image-optimiser/" target="_blank" rel="noopener">Shortpixel</a> and <a href="https://wordpress.org/plugins/optimus/" target="_blank" rel="noopener">Optimus</a> did a really nice job for us.</p>
+<p>Optimus worked well out of the box for the images we are using on our test site and shortpixel allowed us to fine tune the results a little better due to more options.</p>
+<p>The Shortpixel &#8220;<strong>Lossy</strong>&#8221; Compression will heavily reduce the image size but is also rather aggressive. If image quality is not that big of a deal for you go with that. If quality is important use the &#8220;<strong>Glossy</strong>&#8221; compression setting. Some images might be too large for the pagespeed tools but you can then decide if you want to reduce the  image size further individually or if you want to keep the image as is. If you don&#8217;t already have a preferred image optimization plugin you can download and install either of those two plugins directly from your Enfold Performance Panel:</p>
+<div id="attachment_3535" style="width: 1040px" class="wp-caption aligncenter"><a href="https://kriesi.at/wp-content/uploads/2018/03/image-otimization.png"><img class="wp-image-3535 size-large" src="https://kriesi.at/wp-content/uploads/2018/03/image-otimization-1030x503.png" alt="" width="1030" height="503" srcset="https://kriesi.at/wp-content/uploads/2018/03/image-otimization-1030x503.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-300x147.png 300w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-768x375.png 768w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-1500x733.png 1500w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-705x344.png 705w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-450x220.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">The new image Optimization Panel of Enfold</p></div>
+<p>For the sake of this demo we went with Optimus and after batch processing all images our results got much better already. Unfortunately thats sometimes not enough for the pagespeed tools so it sometimes happens that you need to individually process some images. Optimus does not allow that, but tools like shortpixel do. In the end its a little trial and error which plugin works best for the images you are using :)</p>
+<div class='avia-gallery  avia-gallery-3 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.38-1030x559.png' data-rel='gallery-3' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.38-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.38-495x400.png' width='495' height='400'  title='Screenshot 2018-03-28 18.55.38' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.46-1030x562.png' data-rel='gallery-3' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.46-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.46-495x400.png' width='495' height='400'  title='Screenshot 2018-03-28 18.55.46' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.59.41-979x1030.png' data-rel='gallery-3' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.59.41-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.59.41-495x400.png' width='495' height='400'  title='Screenshot 2018-03-28 18.59.41' alt='' /></a></div></div>
+<p>Both Mobile and Yslow rating did not change much (because they do not really take images into account) but the others went from red straight into green with a score of at least 85+. This alone shows you how important image optimization is.</p>
+<h4>4.) Leverage browser caching</h4>
+<p>Next on the list of both pagespeed insights and GTmetrix is to set up browser caching. What this means is that static resources on your website, like CSS files, Javascript files and images, are only loaded once by a visitors browser: when he first visits. On consecutive visits of your website those resources will be loaded from the browser cache.</p>
+<p>This only works if the webserver tells the browser on first load, that those resources are viable for a longer time. So, yes, this is neither a theme nor a WordPress optimization issue, it is something that needs to be changed for your server. Since most webhosts these days run an environment that allows you to easily change this all you need is to open the root directory of your WordPress installation, look out for the .htaccess file and paste the following lines of code at the top:</p>
+<pre>&lt;IfModule mod_expires.c&gt;
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+&lt;/IfModule&gt;
+</pre>
+<p>If this does not work for you for whatever reason there are other steps you can try, described <a href="https://kinsta.com/blog/leverage-browser-caching/" target="_blank" rel="noopener">here.<br />
+</a>So now that we have enabled browser caching we can do the test again and its gotten better once again.</p>
+<div class='avia-gallery  avia-gallery-4 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-3-1030x588.png' data-rel='gallery-4' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-3-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-3-495x400.png' width='495' height='400'  title='psi-dekstop-3' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-mobile-3-1030x588.png' data-rel='gallery-4' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-mobile-3-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-mobile-3-495x400.png' width='495' height='400'  title='psi-mobile-3' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-3-969x1030.png' data-rel='gallery-4' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-3-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-3-495x400.png' width='495' height='400'  title='gt-3' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-y-3-1030x850.png' data-rel='gallery-4' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-y-3-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-y-3-495x400.png' width='495' height='400'  title='gt-y-3' alt='' /></a></div></div>
+<p>As you can see this server optimization is also quite important. Slowly but steady we are getting there.</p>
+<h4>4.) Eliminate render-blocking JavaScript and CSS in above-the-fold content /Defer parsing of JavaScript</h4>
+<p>Those two messages essentially mean the same thing: In order to render the page as fast as possible there should be as little external resources likes CSS files, Fonts, Javascript be in the head of the theme. If it must be there the page speed tools ask you to move them to the bottom of the site, or put it inside the HTML document, instead of placing it in an outside file. This is because the browser needs to wait for those files to fully load before being able to display the site.</p>
+<p>Enfold on its own tries to place as many of the files as possible at the bottom of the site to satisfy those requirements. However some external plugins may overwrite this. An example would be the Layerslider plugint that we use here. Luckily its quite easy to solve this issue, since the layerslider also got a few optimization settings. Head over to the Layerslider-&gt;Options Page and open the advanced tab. Set the options like this:</p>
+<p><a href="https://kriesi.at/wp-content/uploads/2018/03/layerslider.png"><img class="aligncenter size-large wp-image-3562" src="https://kriesi.at/wp-content/uploads/2018/03/layerslider-1030x345.png" alt="" width="1030" height="345" srcset="https://kriesi.at/wp-content/uploads/2018/03/layerslider-1030x345.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-300x100.png 300w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-768x257.png 768w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-1500x502.png 1500w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-705x236.png 705w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-450x151.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>This will tell the slider to load its script in the footer of the page as well.</p>
+<p>Another issue with above-the-fold content are custom fonts. If you are using one or more google fonts, provided by the theme, this will also hurt your score. The Enfold Performance page lets you change the way those fonts are loaded from header (which is the default) to footer. This is one of the settings that has a small trade off. Setting it to load fonts in your footer will slightly speed up the page and satisfy all the page checks.</p>
+<p>But it will also cause a short flicker of text on page load, since the text will be rendered first with a fallback font, and only then will the Google font get applied.</p>
+<p>Personally I am not using this setting for our websites because I consider that font flicker to be very annoying, but if you want to squeeze every millisecond out of your page this will be necessary. In order to get a perfect score this is also necessary so we will activate the setting as well.</p>
+<p><a href="https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer.png"><img class="aligncenter size-large wp-image-3569" src="https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-1030x392.png" alt="" width="1030" height="392" srcset="https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-1030x392.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-300x114.png 300w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-768x292.png 768w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-1500x571.png 1500w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-705x268.png 705w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-845x321.png 845w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-450x171.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>As you can see, I also set jQuery to load in the footer and I disabled some other WordPress defaults that are not necessary for most sites (emojis and jquery migrate). If you are running a lot of plugins you might want to leave those settings untouched since they might cause problems with badly coded or outdated ones. (Please note that if you are running no plugins at all some of the options are set automatically for you and won&#8217;t be displayed)</p>
+<p>Lets check our score:</p>
+<div class='avia-gallery  avia-gallery-5 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-4-1030x543.png' data-rel='gallery-5' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-4-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-4-495x400.png' width='495' height='400'  title='psi-dekstop-4' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/psdi-mobile-4-1030x542.png' data-rel='gallery-5' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psdi-mobile-4-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psdi-mobile-4-495x400.png' width='495' height='400'  title='psdi-mobile-4' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-4-974x1030.png' data-rel='gallery-5' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-4-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-4-495x400.png' width='495' height='400'  title='gt-4' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-y-4-1030x842.png' data-rel='gallery-5' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-y-4-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-y-4-495x400.png' width='495' height='400'  title='gt-y-4' alt='' /></a></div></div>
+<p>As you can see we are getting there. Already 99/100 on insights and 100 on Gtmetrix Pagespeed. Whats left to do is no longer part of the theme but once again some server stuff :)</p>
+<h4 class="rule-title">5.) Reduce server response time</h4>
+<p>This statement is shown by insights if your site is served too slow. And slow is relative here because it means longer than 20ms :)<br />
+In order to get that last 1 percent out of insights make sure that your site is using a caching plugin. Since I can remember our sites have run on <a href="https://wordpress.org/plugins/wp-super-cache/" target="_blank" rel="noopener">Wp Super Cache</a>. It is one of the easiest to use plugins that also offers options to fine tune it. In most cases you simply install and activate it and are done. Thats why it is also recommended on our Performance page ;)</p>
+<p>Once the plugin is active visit the page once, so a cached version is generated. Once that is done your site will score 100/100 in google pagespeed insights as well ;)</p>
+<div class='avia-gallery  avia-gallery-6 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-desktop-perfect-1030x822.png' data-rel='gallery-6' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-desktop-perfect-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-desktop-perfect-495x400.png' width='495' height='400'  title='psi-desktop-perfect' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-mpbile-perfect-1030x839.png' data-rel='gallery-6' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-mpbile-perfect-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-mpbile-perfect-495x400.png' width='495' height='400'  title='psi-mpbile-perfect' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-dektop-perfect-967x1030.png' data-rel='gallery-6' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-dektop-perfect-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-dektop-perfect-495x400.png' width='495' height='400'  title='gt-dektop-perfect' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-yslow-b-1030x845.png' data-rel='gallery-6' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-yslow-b-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-yslow-b-495x400.png' width='495' height='400'  title='gt-yslow-b' alt='' /></a></div></div>
+<p>As you can see, all thats left is Yslow ;)</p>
+<h4 class="rule-title">6.) Yslow: 3 big Problems left: Using a CDN, use Cookieless Domains, too many DOM elements</h4>
+<ul>
+<li>Using a CDN with Wp Supercache is rather easy. <a href="https://www.keycdn.com/support/wordpress-cdn-integration-with-wp-super-cache/" target="_blank" rel="noopener">Here is a good article</a> that lists the steps you should take.</li>
+<li>Cookiless domains: The Yslow testing tools are not up to modern standards here. With HTTPS almost everywhere now, this is no longer a necessary step. If you really want to do this for the sake of the page score, <a href="https://kinsta.com/knowledgebase/serve-static-content-from-a-cookieless-domain/" target="_blank" rel="noopener">here is an article as well</a> ;)</li>
+<li>Reducing Dom Elements: One of the trade offs I spoke about earlier. Too many DOM elements basically means that our site is too large. In order to satisfy this I will delete a few elements from the page, but I would not do this in a real life situation, If I thought that content is important ;)</li>
+</ul>
+<p>Once all those steps are performed we are coming close at Yslow as well:</p>
+<div id="attachment_3581" style="width: 855px" class="wp-caption aligncenter"><a href="https://kriesi.at/wp-content/uploads/2018/03/yslow-96.png"><img class="wp-image-3581 size-gallery" src="https://kriesi.at/wp-content/uploads/2018/03/yslow-96-845x684.png" alt="" width="845" height="684" srcset="https://kriesi.at/wp-content/uploads/2018/03/yslow-96-845x684.png 845w, https://kriesi.at/wp-content/uploads/2018/03/yslow-96-495x400.png 495w" sizes="(max-width: 845px) 100vw, 845px" /></a><p class="wp-caption-text">We are getting there :)</p></div>
+<p>&nbsp;</p>
+<p>To squeeze out the last few points Yslow wants you to reduce the number of HTTP requests (less JS and less CSS files) and add expires header to all files. The later can only be solved if you are not running any google fonts at all (tradeoffs, you remember? :P) because thats the file that Yslow is concerned about:</p>
+<p><a href="https://kriesi.at/wp-content/uploads/2018/03/expires.png"><img class="aligncenter wp-image-3582 size-large" src="https://kriesi.at/wp-content/uploads/2018/03/expires-1030x129.png" alt="" width="1030" height="129" srcset="https://kriesi.at/wp-content/uploads/2018/03/expires-1030x129.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/expires-300x38.png 300w, https://kriesi.at/wp-content/uploads/2018/03/expires-768x96.png 768w, https://kriesi.at/wp-content/uploads/2018/03/expires-1500x188.png 1500w, https://kriesi.at/wp-content/uploads/2018/03/expires-705x88.png 705w, https://kriesi.at/wp-content/uploads/2018/03/expires-450x56.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>So in order to score perfectly we would work without our google fonts and disable them. Too many external JS and CSS files is a problem specific to our current test environment: the layerslider plugin has a few files that we can not compress at the moment with the current version of the Layerslider. We talked to the layerslider team and worked out some improvements to the slider together and applied those changes to the test server (they will be included in all future versions of the Layerslider Plugin so no need for you to do anything here)</p>
+<p>Voila, we are there! (Here is a link to the<a href="https://gtmetrix.com/reports/test.kriesi.at/ZvsCwCV1" target="_blank" rel="noopener"> test server test restults</a>. It will probably be removed at some point in the future but for now you can use it to see that we were not cheating ;D )</p>
+<p><a href="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20.png"><img class="aligncenter size-large wp-image-3583" src="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-1030x227.png" alt="" width="1030" height="227" srcset="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-1030x227.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-300x66.png 300w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-768x169.png 768w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-705x155.png 705w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-450x99.png 450w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20.png 1182w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>&nbsp;</p>
+<h4>Which steps do we ignore, here at Kriesi Media?</h4>
+<p>So in theory you can see it is possible with a little effort, to achieve a perfect score. But as I said from the beginning, there are some things that you can not easily fix, and I think its important to know when to ignore the pagespeed tool.</p>
+<ul>
+<li>We will keep ignoring &#8220;above-the-fold&#8221; render blocking messages. Yes you can use a plugin and print all your CSS and Javascript to the HTML instead of loading it, but this will only hurt consecutive page loads. So you will almost always get a message about your merged css file and that it blocks rendering.</li>
+<li>We will keep using external fonts from google, and we will load them in the header. This means we can no longer get a perfect page insights score since render blocking is active, and it also means that Yslow will reduce the score due to far-future expiration headers not sent for these resources (since they are served from google, the header must be set by google and its not going to be something they will do anytime in the future)</li>
+<li>We will probably never get a perfect score for all of our images, because as a designer I want my website too look good as well :)</li>
+<li>We will keep using external plugins like the Layerslider and WooCommerce which might reduce the score a little bit but offer amazing functionallity.</li>
+</ul>
+<p>These 4 points alone will reduce the score we get awarded. However at the same time, the real and most important metric will barely be compromised. <strong>Load time for the visitor.</strong> And this is something that still will be heavily reduced if you take all those steps above:)</p>
+<p>On our test page we went down to about half the size and half the page loading time from a previous enfold version when we apply realistic settings and do not delete any content at all. I would consider that a huge win, even if we do not score perfectly ;)</p>
+<p><img class="aligncenter size-large wp-image-3585" src="https://kriesi.at/wp-content/uploads/2018/03/realistic-1030x524.jpg" alt="" width="1030" height="524" srcset="https://kriesi.at/wp-content/uploads/2018/03/realistic-1030x524.jpg 1030w, https://kriesi.at/wp-content/uploads/2018/03/realistic-300x153.jpg 300w, https://kriesi.at/wp-content/uploads/2018/03/realistic-768x390.jpg 768w, https://kriesi.at/wp-content/uploads/2018/03/realistic-705x358.jpg 705w, https://kriesi.at/wp-content/uploads/2018/03/realistic-450x229.jpg 450w, https://kriesi.at/wp-content/uploads/2018/03/realistic.jpg 1359w" sizes="(max-width: 1030px) 100vw, 1030px" /></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow/feed</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>The Complete Guide to Updating Enfold</title>
+		<link>https://kriesi.at/archives/the-complete-guide-to-updating-enfold</link>
+		<comments>https://kriesi.at/archives/the-complete-guide-to-updating-enfold#comments</comments>
+		<pubDate>Wed, 10 Jun 2015 09:36:30 +0000</pubDate>
+		<dc:creator><![CDATA[Tom Ewer]]></dc:creator>
+				<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+		<category><![CDATA[Enfold]]></category>
+		<category><![CDATA[update]]></category>
+		<category><![CDATA[WordPress Theme]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=2520</guid>
+		<description><![CDATA[In 2015, quickly putting together a professional looking WordPress site that displays perfectly across all devices has never been easier. The days of needing a team of eye-wateringly expensive external developers to fine-tune your site for weeks – if not months – are now thankfully in the past. Here at Kriesi we&#8217;re proud to have played [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">Updating WordPress Themes is easy, but if you are new to themeforest and/or WordPress here is a guide to help you</p>
+<p>In 2015, quickly putting together a professional looking WordPress site that displays perfectly across all devices has never been easier. The days of needing a team of eye-wateringly expensive external developers to fine-tune your site for weeks – if not months – are now thankfully in the past.</p>
+<p>Here at Kriesi we&#8217;re proud to have played our part in this by releasing a suite of easily configurable, fully responsive themes, chief among them our flagship product <a href="https://kriesi.at/themedemo/?theme=enfold" target="_blank">Enfold</a>. But one major paint point we’ve seen come up repeatedly – particularly for less experienced WordPress users – is the subject of updating.</p>
+<p>Enfold ships with a lifetime guarantee of free updates, and in this article we&#8217;ll walk through everything you need to know to update safely and with confidence for many years to come.</p>
+<p>Let&#8217;s begin with a quick look at the major versions of the theme to date for some context.</p>
+<p><span id="more-2520"></span></p>
+<h2>Enfold Versions to Date</h2>
+<p>Enfold has been on offer since April 2013 and we&#8217;ve been through three milestone versions and a host of minor releases in that time:</p>
+<ul>
+<li><strong>Enfold 1.0:</strong> Enfold&#8217;s debut appearance back in April of 2013.</li>
+<li><strong>Enfold 2.0:</strong> The addition of update options direct from the WordPress backend was the standout feature of this August 2013 release.</li>
+<li><strong>Enfold 3.0:</strong> A major upgrade of the theme in October 2014 that included demo installs, speed improvements and <a href="https://kriesi.at/archives/enfold-version-3-0-bigger-better-faster" target="_blank">host of new functionality</a>.</li>
+</ul>
+<p>The version at the time of writing is <a href="https://kriesi.at/archives/enfold-version-3-1-new-elements-demos-and-long-awaited-improvements" target="_blank">Enfold 3.1</a>. One of the main reasons we&#8217;re mentioning the previous iterations at the top of this article is to draw your attention to a useful file that ships with every version of Enfold: <em>version.txt</em>.</p>
+<p>If you pop open the main Enfold download folder you should see <em>version.txt</em> sitting at the top level.</p>
+<p><img class="aligncenter wp-image-2523 size-full" src="https://kriesi.at/wp-content/uploads/2015/06/version-txt-file.png" alt="Enfold version.txt file" width="664" height="103" srcset="https://kriesi.at/wp-content/uploads/2015/06/version-txt-file.png 664w, https://kriesi.at/wp-content/uploads/2015/06/version-txt-file-300x47.png 300w, https://kriesi.at/wp-content/uploads/2015/06/version-txt-file-450x70.png 450w" sizes="(max-width: 664px) 100vw, 664px" /></p>
+<p>Open the file in a text editor and you&#8217;ll see a complete changelog stretching all the way back to version 1.0.</p>
+<p>The details of historic versions will probably be of little interest to anyone other than developers, but reviewing this file is an excellent way of getting a comprehensive, no-fluff overview of all changes prior to installing a new version.</p>
+<p>Before we go any further, let&#8217;s discuss the essential preparatory step to take first to ensure your update process is hassle-free and non-destructive: using child themes.</p>
+<h2>What Child Themes Are (And Why You Should Use Them)</h2>
+<p>One of the main causes of anxiety when updating a theme is the prospect of losing any customizations you&#8217;ve previously made to your site.</p>
+<p>Responsible theme developers go to great pains to make sure their updates are as unobtrusive as possible, but there is also an onus on you as the site owner to play your part by following best practices for making theme-level modifications.</p>
+<p>The recommended technique for modifying your theme in WordPress is via the use of a <a href="https://codex.wordpress.org/Child_Themes" target="_blank">child theme</a>. This is simply a separate theme that inherits the parent theme&#8217;s functionality and gives you an encapsulated space to store your own modifications.</p>
+<p>The <a href="https://codex.wordpress.org/" target="_blank">WordPress Codex</a> provides an excellent overview for those new to this topic, including a comprehensive section on <a href="https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme" target="_blank">how to create a child theme</a>.</p>
+<p>We&#8217;ve also provided a dedicated section in our online documentation on <a href="https://kriesi.at/documentation/enfold/using-a-child-theme/" target="_blank">Using a Child Theme in Enfold</a> that includes a video overview of the process and a download link for a <a href="http://bit.ly/enfold-child" target="_blank">pre-built Enfold child theme</a> to get you started:</p>
+<div class='avia-iframe-wrap'><iframe src="https://player.vimeo.com/video/67221517" width="1500" height="844" frameborder="0" title="Enfold - Create a Child Theme" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<p>We highly recommend going down the child theme route from the beginning, as it&#8217;s the best way to ensure that any changes you make to your Enfold install will be seamlessly maintained across updates. It also offers several additional advantages in terms of overall code modularity and organization.</p>
+<p>Realistically however, not everybody will have pursued this path from the outset. You may have been entirely unaware of the child theme option or inherited a project from somebody who neglected to use one.</p>
+<p>In that case, your first course of action before updating should be to make an inventory of previous changes made to the parent theme and port them over to a child theme for testing. <a href="http://www.wpbeginner.com/wp-themes/how-to-update-a-wordpress-theme-without-losing-customization/" target="_blank">WP Beginner</a> have a solid overview of steps to take in order to do this if you are looking for a procedure to follow.</p>
+<h2>Always Back Up Your Current Work Before Updating</h2>
+<p>With the caveats about use of child themes out of the way, the next major point to bear in mind before we actually update anything is the importance of <strong>backing up your existing work before going any further</strong>.</p>
+<p>On the off chance that something goes wrong, you want the security of knowing you have a complete copy of the last working state of your system – WordPress files and database – prior to the change.</p>
+<p>Depending on the peculiarities of your setup, there are any number of ways of actually going about this but for those attempting a manual backup for the first time, plugins such as <a href="https://wordpress.org/plugins/backupwordpress/" target="_blank">BackUpWordPress</a> and <a href="https://ithemes.com/purchase/backupbuddy/" target="_blank">BackupBuddy</a> can be a great help.</p>
+<p>The WordPress Codex also has <a href="https://codex.wordpress.org/WordPress_Backups" target="_blank">a useful overview</a> of the subject and WPBeginner recently put together a great <a href="http://www.wpbeginner.com/plugins/7-best-wordpress-backup-plugins-compared-pros-and-cons/" target="_blank">breakdown of backup options</a> aimed at beginners.</p>
+<p>Whichever option you plump for in the end, make sure adequate backups are in place before you attempt any actual updates.</p>
+<p>This applies equally to the case of updating WordPress itself, or any plugins you are using. Ideally you also want these updated prior to tackling your theme.</p>
+<h2>How to Update Enfold via the WordPress Backend</h2>
+<p>So far we&#8217;ve covered the most important precautionary steps to take prior to updating. It&#8217;s now time to move on to the actual update process.</p>
+<p>The first option for installing the latest version of Enfold is to do so via the backend of WordPress – an option available in Enfold since version 2.0.</p>
+<p>We&#8217;ve put together a dedicated <a href="https://kriesi.at/documentation/enfold/updating-your-theme-files/" target="_blank">page on our documentation site</a> covering how to do this in detail, so we&#8217;ll just hit the highlights here.</p>
+<p>Begin by entering your <a href="http://themeforest.net/" target="_blank">Themeforest</a> user name and API key in the <em>Enfold Theme Options</em> panel. You can find your API key at Themeforest by navigating to <em>My Settings</em> &gt; <em>API keys</em>.</p>
+<p><img class="aligncenter wp-image-2526 size-full" src="https://kriesi.at/wp-content/uploads/2015/06/enfold-update-screen.jpg" alt="Enfold update screen" width="787" height="738" srcset="https://kriesi.at/wp-content/uploads/2015/06/enfold-update-screen.jpg 787w, https://kriesi.at/wp-content/uploads/2015/06/enfold-update-screen-300x281.jpg 300w, https://kriesi.at/wp-content/uploads/2015/06/enfold-update-screen-705x661.jpg 705w, https://kriesi.at/wp-content/uploads/2015/06/enfold-update-screen-450x422.jpg 450w" sizes="(max-width: 787px) 100vw, 787px" /></p>
+<p>This establishes a link between your WordPress install and Themeforest that gets WordPress to check for available updates every twelve hours.</p>
+<p>If an update is available, you will be prompted to install directly from the <em>Enfold Theme Options</em> screen with a simple click.</p>
+<h2>How to Update Enfold via FTP</h2>
+<p>The second option for updating Enfold is to do it manually via FTP. There are two basic reasons why you might want to choose this option:</p>
+<ol>
+<li>You&#8217;ve hit a problem with the backend solution.</li>
+<li>You need fine-grained control over exactly what gets overwritten on the server.</li>
+</ol>
+<p>If you&#8217;re new to the world of FTP, you&#8217;ll need to get your hands on an FTP client to use before going any further.</p>
+<p><a href="https://filezilla-project.org/" target="_blank">Filezilla</a> is a reliable, popular and free cross-platform choice. <a href="http://winscp.net/eng/docs/free_ftp_client_for_windows" target="_blank">WinSCP</a> has long been a favorite for Windows users, and many Mac users swear by solutions such as <a href="https://cyberduck.io" target="_blank">Cyberduck</a> and <a href="http://panic.com/transmit/" target="_blank">Transmit</a>.</p>
+<p>We&#8217;ve put together a video guide to walk you through updating via FTP:</p>
+<div class='avia-iframe-wrap'><iframe src="https://player.vimeo.com/video/67209750" width="1500" height="844" frameborder="0" title="Update with FTP" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<p>The video outlines an easy to follow, five-step process:</p>
+<ol>
+<li>Download the latest version of Enfold from your Themeforest account.</li>
+<li>Check the details of the new version in the file <em>version.txt</em> we mentioned at the top of the article. This will detail which files have been changed.</li>
+<li>Unzip the <em>enfold.zip</em> file locally so you have access to the update files for uploading.</li>
+<li>Connect to your site via FTP and navigate to the location of your Enfold install in <em>/wp-content/themes</em>.</li>
+<li>Replace the contents of your live theme folder with the updated version.</li>
+</ol>
+<p>The video also outlines strategies for dealing with situations where you have initial customizations outside a child theme that you wish to preserve.</p>
+<h2>Further Resources</h2>
+<p>The information above should be enough to get you safely through the majority of updates but – computers and software being what they are – there will be times you&#8217;ll need some extra information or assistance regardless of your level of expertise.</p>
+<p>Your first port of call should be the <a href="https://kriesi.at/documentation/enfold/" target="_blank">Enfold documentation</a> itself. We&#8217;re constantly striving to make this resource as comprehensive as possible and if there&#8217;s an answer you can&#8217;t find in there, we encourage you to contact us about it – your feedback is a vital part of making the documentation better for every user.</p>
+<p>Enfold, like all other Kriesi themes, also comes with a guarantee of lifelong customer support. Take advantage of this when you are struggling and feel free to contact us with any questions or comments via the <a href="https://kriesi.at/support/forum/enfold/" target="_blank">Enfold support forum</a>.</p>
+<p>For each release, there will generally be a <a href="https://kriesi.at/support/topic/enfold-3-0-update-thread/" target="_blank">dedicated thread covering common update issues</a> that is actively monitored by Kriesi staff – in addition to individual posts regarding update problems. We do our best to respond as quickly as possible to every thread on the support forum.</p>
+<p>WordPress itself is a constantly evolving platform so it&#8217;s also obviously worth investing some time in keeping up to speed on the application itself.</p>
+<p>Newer WordPress users should take the time to review the <a href="https://codex.wordpress.org/" target="_blank">WordPress Codex</a> as many common questions are dealt with there in depth. Of particular note is the <a href="https://codex.wordpress.org/WordPress_Lessons" target="_blank">WordPress Lessons</a> section within the online documentation that offers an excellently organized learning path to follow.</p>
+<p>There are also a number of excellent resources for deepening your WordPress knowledge available for free at sites such as <a href="http://premium.wpmudev.org/blog/35-resources-for-kick-ass-wordpress-developers" target="_blank">WPMU DEV</a> and <a href="http://www.hongkiat.com/blog/learn-wordpress-2015/" target="_blank">Hongkiat</a> along with paid courses from platforms such as <a href="http://www.lynda.com/WordPress-training-tutorials/330-0.html" target="_blank">Lynda</a>.</p>
+<h2>Conclusion</h2>
+<p>We hope this article has taken some of the fear out of updating your copy of Enfold. Let&#8217;s briefly recap the steps we covered:</p>
+<ul>
+<li>Get familiar with what has changed in the latest update by reviewing the contents of <em>version.txt</em>.</li>
+<li>Try to make sure you&#8217;re using a child theme if at all possible.</li>
+<li>Make sure WordPress and your plugins are up to date and that you have a full backup of your system in place.</li>
+<li>Either run through the backend install option to update or proceed manually via FTP if you need more control.</li>
+<li>Check the documentation and don&#8217;t be afraid to contact support if you run into any difficulties along the way.</li>
+</ul>
+<p><strong>Please let us know if you think we&#8217;ve missed out on any common issues that trip up Enfold users, or if you have any suggestions for making the update process easier in future releases in the comments below.</strong></p>
+<p>We look forward to hearing from you!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/the-complete-guide-to-updating-enfold/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Enfold Version 2.3: Say hello to our new iconfont uploader</title>
+		<link>https://kriesi.at/archives/enfold-version-2-3-say-hello-to-our-new-iconfont-uploader</link>
+		<comments>https://kriesi.at/archives/enfold-version-2-3-say-hello-to-our-new-iconfont-uploader#comments</comments>
+		<pubDate>Mon, 30 Sep 2013 21:59:28 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+		<category><![CDATA[Enfold]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=1859</guid>
+		<description><![CDATA[This was one of the most requested features in our Enfold Feature Request Thread. Using various Icon Font Sets, to get a different look and feel, and adding more social icons for the header, were the main reasons we recently sat down and completely revamped the Icon System of the theme. Enfold still ships with [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">Took a lot of Work but it is worth the wait!<br />
+We completely revamped the themes iconfont system</p>
+<p>This was one of the most requested features in our <a href="https://kriesi.at/support/topic/enfold-feature-requests/">Enfold Feature Request Thread</a>. Using various Icon Font Sets, to get a different look and feel, and adding more social icons for the header, were the main reasons we recently sat down and completely revamped the Icon System of the theme.</p>
+<p><a href="https://kriesi.at/themedemo/?theme=enfold" target="_blank">Enfold</a> still ships with the default font &#8220;<a href="http://www.entypo.com/">Entypo</a>&#8221; (of course with more social icons now), simply because its a beautiful and versatile iconfont, but you can now head over to <a href="http://fontello.com/" target="_blank">Fontello.com</a>, create a iconfont of your choice and upload it into our iconfont Manager. These icons can then be used across the site for all of our template builder elements and shortcodes :)<br />
+<span id="more-1859"></span> <div class='avia-double-buttons av-download-buttons'><a href='https://kriesi.at/themedemo/?theme=enfold' target='_blank' class='avia-double-button avia-double-button-1'>View Demo</a><span class='button_or'>or</span><a href='http://themeforest.net/item/enfold-responsive-multipurpose-theme/4519990?ref=Kriesi' target='_blank' class='avia-double-button avia-double-button-2'>View Details</a></div></p>
+<h4>How is it done?</h4>
+<p>Devin recorded a 2 minute video on how to build, upload and use a custom font. Its actually pretty straight forward:</p>
+<div class='avia-iframe-wrap'><iframe src="//player.vimeo.com/video/75743285" width="1280" height="720" frameborder="0" title="Enfold - Adding Fontello Icon Fonts" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<h3>Other changes in Enfold 2.3</h3>
+<h4>SEO Improvements</h4>
+<p>Rewriting the icon system was a big task but its not the only thing that happened: We added a big SEO improvement by using more semantic HTML5 markup across the theme, and also added support for <a href="http://schema.org/" target="_blank">schema.org</a> markup which improves the display of search results on google, bing etc.</p>
+<p>Cool thing is, you don&#8217;t need to do anything to make this work, except updating your theme. The markup will automatically be added to your site and allow many applications, especially search engines, to benefit greatly from direct access to this structured data.</p>
+<blockquote><p>On-page markup enables search engines to understand the information on web pages and provide richer search results in order to make it easier for users to find relevant information on the web. Markup can also enable new tools and applications that make use of the structure.</p>
+<p><em>From Schema.org</em></p></blockquote>
+<h4>Revolution Slider Support</h4>
+<p>In addition to that, we also have added support for the <a href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380?ref=Kriesi">Revolution Slider Plugin</a>. If the plugin is active you will note that you can now use a template builder element to easily embed the slider on your page :)</p>
+<h4>iOS 7 Theme Check</h4>
+<p>Apples latest iOS version is already used by <a href="http://appleinsider.com/articles/13/09/25/chitika-ios-7-passes-52-percent-of-devices-one-week-after-launch">more than 50%</a> of iPhone and iPad users, so we figured we should optimize the theme to work flawless on those devices. We removed a lot of old CSS rules that fixed several issues that are no longer present on either Chrome or Safari, and also added a few new tweaks, so you are all set to offer your visitors and customers a great mobile experience :)</p>
+<h4>Small improvements</h4>
+<p>As always we added a few necessary bugfixes and smaller improvements that you can check in your versions.txt file of the latest theme version.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/enfold-version-2-3-say-hello-to-our-new-iconfont-uploader/feed</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+		<item>
+		<title>15 useful WordPress Functions you probably don&#8217;t know</title>
+		<link>https://kriesi.at/archives/15-useful-wordpress-functions-you-probably-dont-know</link>
+		<comments>https://kriesi.at/archives/15-useful-wordpress-functions-you-probably-dont-know#comments</comments>
+		<pubDate>Mon, 11 Oct 2010 17:20:57 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=1154</guid>
+		<description><![CDATA[While I was building my first premium Wordpress Plugin - <a href="http://aviathemes.com/plugins/avia-feedback-box/">the Avia Feedback Box</a> - I needed to solve quite a few problems I have never encounterd when creating themes. During my research I stumbled upon several really cool wordpress functions that I want to share with you.]]></description>
+				<content:encoded><![CDATA[<p>While I was building my first premium WordPress Plugin &#8211; <a href="http://aviathemes.com/plugins/avia-feedback-box/">the Avia Feedback Box</a> &#8211; I needed to solve quite a few problems I have never encounterd when creating themes. During my research I stumbled upon several really cool wordpress functions that I want to share with you.<br />
+<span id="more-1154"></span></p>
+<h4>WordPress Transient API</h4>
+<pre>set_transient(), get_transient(), delete_transient()</pre>
+<p>This is a function set very similar to get_options() and update_options() which helps to easily store and retrieve data in your options database table. The big difference here is that you also pass a time parameter which acts as expiration date for the database entry.</p>
+<p>Once the time has expired the data is removed. This is especially useful if you want to cache data or query results for a short amount of time. An example would be a twitter widget which retrieves data from the twitter api, but since twitter is down pretty often it would be wise to save that data for a few minutes. That also would speed up the site for subsqequent page requests since you don&#8217;t need to connect to an external API.</p>
+<p>It works pretty easy: the function set_transient accepts 3 parameters:</p>
+<pre>set_transient($transient, $value, $expiration);</pre>
+<p>so saving a value to your database for an hour would look like this:</p>
+<pre>set_transient('the_name', $special_query_results, 60*60);</pre>
+<p>getting the value like this:</p>
+<pre>$value = get_transient('the_name');</pre>
+<p><a href="http://codex.wordpress.org/Transients_API">http://codex.wordpress.org/Transients_API</a></p>
+<h4>WordPress &#8220;Cron Jobs&#8221;</h4>
+<pre>wp_schedule_event(time(), 'hourly', 'my_schedule_hook');</pre>
+<p>Schedules a hook which will be executed by the WordPress actions core on a specific interval, specified by you. The action will trigger when someone visits your WordPress site, if the scheduled time has passed.</p>
+<p>So if you want to execute some code on a regular base, like checking an RSS Feed, doing a database backup or reseting database values this function will do it for you. Unfortunatley its not as easy to use as transient but here is a short article on how it is done:<br />
+<a href="http://themocracy.com/2010/02/wp-cron-automating-scheduling/"> http://themocracy.com/2010/02/wp-cron-automating-scheduling/</a><br />
+<a href="http://codex.wordpress.org/Function_Reference/wp_schedule_event">http://codex.wordpress.org/Function_Reference/wp_schedule_event</a></p>
+<h4>WordPress HTTP API</h4>
+<pre>wp_remote_get( $url, $args = array() );</pre>
+<p>An easy to use function if you want to retrieve the content of a Webpage. The function stores the result within an easily accessible array. Not only do you get the result content of the webpage, you also get header informations and response codes. This function is also capable of retrieving feed content which also makes it useful if you want to create a twitter plugin or an rss reader with wordpress.</p>
+<p><a href="http://codex.wordpress.org/HTTP_API">http://codex.wordpress.org/HTTP_API</a><br />
+<a href="http://codex.wordpress.org/Function_API/wp_remote_get">http://codex.wordpress.org/Function_API/wp_remote_get</a></p>
+<h4>Easily Fetch an RSS Feed with WordPress</h4>
+<pre>$feed = fetch_feed( $uri );</pre>
+<p>fetch_feed is another simple wordpress method to get feed content. It also has the added benefit that it uses the <a title="http://simplepie.org/" href="http://simplepie.org/">SimplePie</a> and FeedCache functionality for retrieval and parsing and automatic caching.</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/fetch_feed">http://codex.wordpress.org/Function_Reference/fetch_feed</a></p>
+<h4>WordPress mail function</h4>
+<pre>wp_mail()
+wp_mail( $to, $subject, $message, $headers, $attachments );</pre>
+<pre>Example:
+
+$to = 'kriesi@gmail.com';
+$subject = 'Hello Kriesi!';
+$message = 'This message was sent by wordpress'
+
+$mail = wp_mail($to, $subject, $message);
+
+if($mail) echo 'Mail delivered';</pre>
+<p>An incredible useful and exceptional easy to use function that also allows you to send headers and attachments, allows plain text sending and html messages and quite a few other options!</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/wp_mail">http://codex.wordpress.org/Function_Reference/wp_mail</a></p>
+<h4>WordPress Human Time</h4>
+<pre>human_time_diff( $from, $to )</pre>
+<p>A feature to mimic twitter like time display. Instead of outputting the time in a basic format you can display it like this:</p>
+<p><small>Kriesi posted 13 hours ago</small></p>
+<p><a href="http://codex.wordpress.org/Function_Reference/human_time_diff">http://codex.wordpress.org/Function_Reference/human_time_diff</a></p>
+<h4>WordPress get comments</h4>
+<pre>get_comments()</pre>
+<p>Sometimes its neccessary to retrieve the comments outside of the comments loop like I did with the <a href="http://aviathemes.com/plugins/avia-feedback-box/">Avia Feedback Box </a>Plugin, where comments are displayed via ajax. This function helps you in doing so ;)</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/get_comments">http://codex.wordpress.org/Function_Reference/get_comments</a></p>
+<h4>WordPress validation of strings</h4>
+<pre>wp_kses($string, $allowed_html, $allowed_protocols);</pre>
+<p>wp_kses is a very usefull function when it comes to sanitizing untrusted user input. This function makes sure that only the allowed HTML element names, attribute names and attribute values plus only sane HTML entities will occur in $string.</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/wp_kses">http://codex.wordpress.org/Function_Reference/wp_kses</a></p>
+<h4>WordPress text transformation</h4>
+<pre>wptexturize()</pre>
+<p>A text transformation function that converts commonly used strings into the typographical correct signs. Used for dashes, ellipsis etc and will also add typograpic quotes to certain phrases.</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/wptexturize">http://codex.wordpress.org/Function_Reference/wptexturize</a></p>
+<pre>wpautop()</pre>
+<p>The last text transformation tool on the list is used by wordpress to ad &lt;p&gt; tags to a string by replacing double &lt;br/&gt; tags</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/wpautop">http://codex.wordpress.org/Function_Reference/wpautop</a></p>
+<h4>WordPress Shortcode API</h4>
+<pre>add_shortcode(), do_shortcode()</pre>
+<p>add_shortcode() is an easy way to create macros for your post content. for example lets say you want to wrap some content inside the post area within a div with some additional classes and ids that allows you to create multiple columns. you could of course just switch to the html editor and enter</p>
+<pre>&lt;div class='one_third'&gt;Content goes here&lt;/div&gt;</pre>
+<p>Easier and more convenient especially if you are dealing with customers who dont know html would be a shortcode solution within your functions.php file:</p>
+<pre>function column_shortcode( $atts, $content = null ) {
+   return '&lt;div class='one_third&gt;' . $content . '&lt;/div&gt;';
+}
+
+add_shortcode('one_third_column', 'column_shortcode');</pre>
+<p>You could then use this shortcode in your post content:</p>
+<pre>[one_third_column]Content goes here[/one_third_column]</pre>
+<p>If you would like to nest shortcodes within each other you would need to make sure to add the do_shortcode method to your function like this:</p>
+<pre>column_shortcode( $atts, $content = null ) {
+   return '&lt;div class='one_third&gt;' . do_shortcode($content) . '&lt;/div&gt;';
+}</pre>
+<p><a href="http://codex.wordpress.org/Shortcode_API">http://codex.wordpress.org/Shortcode_API</a></p>
+<h4>Create WordPress post with a php function:</h4>
+<pre>wp_insert_post()</pre>
+<p>This function inserts posts pages and custom post types in the database. It sanitizes variables, does some checks, fills in missing variables like date/time, etc. very handy when you need to create and insert posts by user input. This function fits perfectly if you have a front end form for example and users can suggest posts.</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/wp_insert_post">http://codex.wordpress.org/Function_Reference/wp_insert_post</a></p>
+<h4>Create WordPress comment with a php function:</h4>
+<pre>wp_insert_comment()</pre>
+<p>Similar to wp_insert_posts this function inserts a comment. Might also come in handy ;)</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/wp_insert_comment">http://codex.wordpress.org/Function_Reference/wp_insert_comment</a></p>
+<h4>WordPress Object Cache:</h4>
+<pre>wp_cache_add(),  wp_cache_set(),  wp_cache_get(),  wp_cache_delete, wp_cache_replace(), wp_cache_flush</pre>
+<p><tt>WP_Object_Cache</tt> is WordPress&#8217; class for caching data which may be computationally expensive to regenerate, such as the result of complex database queries. If you care for theme and plugin performance you should definitley read the wordpress codex entry for this topic!</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/WP_Cache">http://codex.wordpress.org/Function_Reference/WP_Cache</a></p>
+<h4>Kill wordpress execution:</h4>
+<pre>wp_die()</pre>
+<p>An appropriate end for this post: the wp_die function</p>
+<p>wp_die kills the WordPress execution and display <a title="wikipedia:HTML" href="http://en.wikipedia.org/wiki/HTML">HTML</a> message with error message.</p>
+<p>A call to this function complements the die() PHP function. The difference is that HTML will be displayed to the user. It is recommended to use this function only when the execution should not continue any further.</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/wp_die">http://codex.wordpress.org/Function_Reference/wp_die</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/15-useful-wordpress-functions-you-probably-dont-know/feed</wfw:commentRss>
+		<slash:comments>48</slash:comments>
+		</item>
+		<item>
+		<title>How to build a WordPress Post Pagination without plugin</title>
+		<link>https://kriesi.at/archives/how-to-build-a-wordpress-post-pagination-without-plugin</link>
+		<comments>https://kriesi.at/archives/how-to-build-a-wordpress-post-pagination-without-plugin#comments</comments>
+		<pubDate>Tue, 21 Sep 2010 16:41:26 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=1122</guid>
+		<description><![CDATA[Since I got asked a few times now which function I am using to display the pagination within my themes I thought it was about time to share it with everyone who doesn't want to use a plugin for a wordpress post pagination ;)]]></description>
+				<content:encoded><![CDATA[<p>WordPress only comes bundled with the &#8220;next page&#8221; and &#8220;previous page&#8221; links to navigate between different blog overview pages. If you happen to have a blog with a lot of posts or simply want to offer a better user experience I would recommend to remove those links and replace them with a pagination like most people (including me) are using in their templates.<span id="more-1122"></span></p>
+<p><a href="https://kriesi.at/themes/habitat/">Habitat</a> for example (my latest blog theme) uses it. Just scroll down the front page and you will see those little paginated buttons.</p>
+<p><strong>Why should you use them? </strong><br />
+Because they are easier to navigate and the user instantly knows how many posts and pages are available. Its simply good user experience :)</p>
+<p>Using a plugin for this task may be an overkill since you really only need to add a few lines of php and css to your theme which I will show you now:</p>
+<h3>The function</h3>
+<p>If you just want to copy/paste the function into your theme feel free to do so, a more detailed description can be found bellow:</p>
+<pre>function kriesi_pagination($pages = '', $range = 2)
+{  
+     $showitems = ($range * 2)+1;  
+
+     global $paged;
+     if(empty($paged)) $paged = 1;
+
+     if($pages == '')
+     {
+         global $wp_query;
+         $pages = $wp_query-&gt;max_num_pages;
+         if(!$pages)
+         {
+             $pages = 1;
+         }
+     }   
+
+     if(1 != $pages)
+     {
+         echo "&lt;div class='pagination'&gt;";
+         if($paged &gt; 2 &amp;&amp; $paged &gt; $range+1 &amp;&amp; $showitems &lt; $pages) echo "&lt;a href='".get_pagenum_link(1)."'&gt;&amp;laquo;&lt;/a&gt;";
+         if($paged &gt; 1 &amp;&amp; $showitems &lt; $pages) echo "&lt;a href='".get_pagenum_link($paged - 1)."'&gt;&amp;lsaquo;&lt;/a&gt;";
+
+         for ($i=1; $i &lt;= $pages; $i++)
+         {
+             if (1 != $pages &amp;&amp;( !($i &gt;= $paged+$range+1 || $i &lt;= $paged-$range-1) || $pages &lt;= $showitems ))
+             {
+                 echo ($paged == $i)? "&lt;span class='current'&gt;".$i."&lt;/span&gt;":"&lt;a href='".get_pagenum_link($i)."' class='inactive' &gt;".$i."&lt;/a&gt;";
+             }
+         }
+
+         if ($paged &lt; $pages &amp;&amp; $showitems &lt; $pages) echo "&lt;a href='".get_pagenum_link($paged + 1)."'&gt;&amp;rsaquo;&lt;/a&gt;";  
+         if ($paged &lt; $pages-1 &amp;&amp;  $paged+$range-1 &lt; $pages &amp;&amp; $showitems &lt; $pages) echo "&lt;a href='".get_pagenum_link($pages)."'&gt;&amp;raquo;&lt;/a&gt;";
+         echo "&lt;/div&gt;\n";
+     }
+}</pre>
+<h3>How to use  &amp; Step by Step description</h3>
+<p>Displaying the pagination links on a default index page is rather easy. Call</p>
+<pre>kriesi_pagination();</pre>
+<p>and you are done.</p>
+<p>As you can see we got 2 optional parameters to pass:</p>
+<pre>function kriesi_pagination($pages = '', $range = 2)</pre>
+<p>The first one is the number of pages: passing this is only necessary if you are using a custom loop, something I will explain a little bit later.</p>
+<p>The second parameter sets the number of links to display. Range tells the script how many links before and after the current page should be displayed before it only shows the small arrows. For example with the default range of 2, if you are currently visiting the first page the script would display the 2 following pages, the next page button and the last page button:</p>
+<div class="pagination"><span class="current">1</span><a class="inactive" href="https://kriesi.at/blog/page/2">2</a><a class="inactive" href="https://kriesi.at/blog/page/3">3</a><a href="https://kriesi.at/blog/page/2">›</a><a href="https://kriesi.at/blog/page/12">»</a></div>
+<p>if we would visit page number 4 the script would show page 4 as the current page, would directly link to page 2 and 3 as well to 5 and 6. All other would be hidden:</p>
+<div class="pagination"><a href="https://kriesi.at/blog/">«</a><a href="https://kriesi.at/blog/page/3">‹</a><a class="inactive" href="https://kriesi.at/blog/page/2">2</a><a class="inactive" href="https://kriesi.at/blog/page/3">3</a><span class="current">4</span><a class="inactive" href="https://kriesi.at/blog/page/5">5</a><a class="inactive" href="https://kriesi.at/blog/page/6">6</a><a href="https://kriesi.at/blog/page/5">›</a><a href="https://kriesi.at/blog/page/12">»</a></div>
+<p>For easier arithmetic operations afterwards we also store the max number of items to display in a separate variable:</p>
+<pre>$showitems = ($range * 2)+1;</pre>
+<p>Next we need access to the global variable <strong>$paged</strong>. WordPress uses this variable to store which page we are currently viewing. If that variable is empty we set it to 1. Why do we need to know it? The page we are currently at should not be linked, it should be displayed as &#8220;active&#8221;.</p>
+<pre>global $paged;
+if(empty($paged)) $paged = 1;</pre>
+<p>Now we know which page we are currently viewing, but we also need to know how many pages we got. We are still asuming that we are not using a custom loop and that the <strong>$pages</strong> variable (dont mix up with $paged) was not set when we called the script. If thats the case we can once again  make use of a global variable to get that number:</p>
+<pre>if($pages == '')
+{
+    global $wp_query;
+    $pages = $wp_query-&gt;max_num_pages;
+    if(!$pages)
+    {
+        $pages = 1;
+    }
+}</pre>
+<p>Now for the &#8220;Brainfuck&#8221; ;D</p>
+<p>As you can see,  appart from a little bit of  logic and arithmetic we  only need a single wordpress specific function. Its called get_pagenum_link() and allows us to fetch the url of a wordpress page  by passing the number of the page: get_pagenum_link(2) would get the  link to blog overview page 2 in my afforementioned Habitat theme.</p>
+<p>What is done now is a check based on quite a few if statements that asks which items to display, based on the variables we retrieved and set before. I usually do explain everything in detail but I think it wouldn&#8217;t make much sence in this case. if you are really interested in deciphering all of the if statements feel free to do so, you now know which value is stored within each variable so it shouldn&#8217;t take all too long :)</p>
+<h3>The CSS</h3>
+<p>The CSS Part of our pagination is rather simple. By default we would get an HTML output similar to this:</p>
+<pre>&lt;div class='pagination'&gt;
+ &lt;span class='current'&gt;1&lt;/span&gt;
+ &lt;a href="https://kriesi.at/blog/page/2"&gt;2&lt;/a&gt;
+ &lt;a href="https://kriesi.at/blog/page/3"&gt;3&lt;/a&gt;
+ &lt;a href="https://kriesi.at/blog/page/2"&gt;›&lt;/a&gt;
+ &lt;a href="https://kriesi.at/blog/page/12"&gt;»&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>We only need a few css rules to style this</p>
+<pre>.pagination {
+clear:both;
+padding:20px 0;
+position:relative;
+font-size:11px;
+line-height:13px;
+}
+
+.pagination span, .pagination a {
+display:block;
+float:left;
+margin: 2px 2px 2px 0;
+padding:6px 9px 5px 9px;
+text-decoration:none;
+width:auto;
+color:#fff;
+background: #555;
+}
+
+.pagination a:hover{
+color:#fff;
+background: #3279BB;
+}
+
+.pagination .current{
+padding:6px 9px 5px 9px;
+background: #3279BB;
+color:#fff;
+}</pre>
+<h3>Advanced: Custom Loops</h3>
+<p>You might probably want to use a so called <a href="http://codex.wordpress.org/The_Loop#Multiple_Loops_in_Action">custom loop</a> anywhere on a page, a loop that is not stored in the default global $wp_query object we used to retrieve the number:</p>
+<pre> $pages = $wp_query-&gt;max_num_pages;</pre>
+<p>If thats the case you need to call the kriesi_pagination() function with the first parameter set.</p>
+<p>So lets assume you are using a simple custom loop on your site:</p>
+<pre>&lt;?php $additional_loop = new WP_Query("cat=1,2,3&amp;paged=$paged"); ?&gt;
+
+&lt;?php while ($additional_loop-&gt;have_posts()) : $additional_loop-&gt;the_post(); ?&gt;
+ &lt;!-- Show loop content... --&gt;
+&lt;?php endwhile; ?&gt;</pre>
+<p>You could then call the pagination function that way:</p>
+<pre>kriesi_pagination($additional_loop-&gt;max_num_pages);</pre>
+<p>Feel free to use this function within any personal or commercial template, any attribution is appreciated but of course not required ;)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/how-to-build-a-wordpress-post-pagination-without-plugin/feed</wfw:commentRss>
+		<slash:comments>63</slash:comments>
+		</item>
+		<item>
+		<title>Improve your WordPress Navigation Menu Output</title>
+		<link>https://kriesi.at/archives/improve-your-wordpress-navigation-menu-output</link>
+		<comments>https://kriesi.at/archives/improve-your-wordpress-navigation-menu-output#comments</comments>
+		<pubDate>Sun, 18 Jul 2010 20:40:15 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=1059</guid>
+		<description><![CDATA[Wordpress 3 has gone gold and ships with an amazing new menu manager that can be used to control the navigation menus of your website. This tutorial will teach you how to change the default output of this manager since getting a custom output can heavily improve the style of your themes. So first of all here is an <a href="https://kriesi.at/themes/avisio/">example of the wordpress menu</a> we want to build.]]></description>
+				<content:encoded><![CDATA[<p>WordPress 3 has gone gold and ships with an amazing new menu manager that can be used to control the navigation menus of your website. This tutorial will teach you how to change the default output of this manager, since getting a custom output can heavily improve the style of your themes. So first of all here is an <a href="https://kriesi.at/themes/avisio/">example of the wordpress menu</a> we want to build.</p>
+<p><span id="more-1059"></span></p>
+<h2>How to display the content of the wordpress menu description field</h2>
+<p>As you can see, instead of a simple list we got the menu item name and below that name is a small description of that menu item. This is currently a rather popular style that unfortunatley can&#8217;t be done out of the box by wordpress.</p>
+<p>As you may already know, once you have created a menu at your wordpress backend at Appearance &gt; Menus you can use a wordpress function called <a href="http://codex.wordpress.org/Function_Reference/wp_nav_menu">wp_nav_menu()</a> within your template files to display those menus.</p>
+<p>The problem is, the basic output would look something like this:</p>
+<pre>&lt;ul id="menu-main"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<p>With a basic unordered list like that its almost impossible to create such a menu. So we need to change the output to get this:</p>
+<pre>&lt;ul id="menu-main"&gt;
+     &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Home&lt;/strong&gt;&lt;span&gt;Starting the journey&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;About&lt;/strong&gt;&lt;span&gt;What to expect&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Contact&lt;/strong&gt;&lt;span&gt;Get in touch!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Blog&lt;/strong&gt;&lt;span&gt; Latest storys&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<p>The &lt;strong&gt; tags wrap arround the title whereas the description is put into the &lt;span&gt; tags. Those can be styled easily with CSS later on to create this special menu style.</p>
+<h2>Preparing the backend</h2>
+<p><img class="alignleft size-full wp-image-1063" title="Screen options" src="https://kriesi.at/wp-content/uploads/2010/07/screenshot-2010-07-18-um-21.55.29.png" alt="" width="296" height="105" />The first thing we need to do is to setup the menu properly in our backend. WordPress already comes with the option to add a description to each menu item, but it is hidden by default.</p>
+<p>When you are at the Appearance &gt; Menus Site you need to look at the top right and you will notice a &#8220;Screen Option&#8221; tab. Click it and you will get the option to display several other input fields for each menu item, among them a checkbox to show the description.</p>
+<p><a href="https://kriesi.at/wp-content/uploads/2010/07/screenshot-2010-07-18-um-22.44.321.png"><img class="alignleft size-medium wp-image-1070" title="Edit menu" src="https://kriesi.at/wp-content/uploads/2010/07/screenshot-2010-07-18-um-22.44.321-300x241.png" alt="" width="300" height="241" srcset="https://kriesi.at/wp-content/uploads/2010/07/screenshot-2010-07-18-um-22.44.321-300x241.png 300w, https://kriesi.at/wp-content/uploads/2010/07/screenshot-2010-07-18-um-22.44.321.png 423w" sizes="(max-width: 300px) 100vw, 300px" /></a>Once that is done,  if you start editing your items you will notice that you can now enter a description for each menu item.</p>
+<p>By default wordpress adds a rather long description to menu items that are created by pages, I would recommend to just delete those enourmous novels and just add a few words just like I did.</p>
+<p>Now that we have setup the data to display in our backend, its time to prepare the frontend to show that data.</p>
+<h2>Editing the output by using a custom walker</h2>
+<p>WordPress uses a special &#8220;<strong>Walker</strong>&#8221; class that iterates over each data record and then displays this record accordingly. The cool thing about that is that we can simply create our own <strong>custom walker</strong> extending that PHP class. That way we dont need to care about fetching the stuff from the database or preparing the data arrays. We only need to extend the part of the wordpress code that outputs the list. So open your functions.php file and add the following code:</p>
+<pre>class description_walker extends Walker_Nav_Menu
+{
+      function start_el(&amp;$output, $item, $depth, $args)
+      {
+           global $wp_query;
+           $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+           $class_names = $value = '';
+
+           $classes = empty( $item-&gt;classes ) ? array() : (array) $item-&gt;classes;
+
+           $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
+           $class_names = ' class="'. esc_attr( $class_names ) . '"';
+
+           $output .= $indent . '&lt;li id="menu-item-'. $item-&gt;ID . '"' . $value . $class_names .'&gt;';
+
+           $attributes  = ! empty( $item-&gt;attr_title ) ? ' title="'  . esc_attr( $item-&gt;attr_title ) .'"' : '';
+           $attributes .= ! empty( $item-&gt;target )     ? ' target="' . esc_attr( $item-&gt;target     ) .'"' : '';
+           $attributes .= ! empty( $item-&gt;xfn )        ? ' rel="'    . esc_attr( $item-&gt;xfn        ) .'"' : '';
+           $attributes .= ! empty( $item-&gt;url )        ? ' href="'   . esc_attr( $item-&gt;url        ) .'"' : '';
+
+           $prepend = '&lt;strong&gt;';
+           $append = '&lt;/strong&gt;';
+           $description  = ! empty( $item-&gt;description ) ? '&lt;span&gt;'.esc_attr( $item-&gt;description ).'&lt;/span&gt;' : '';
+
+           if($depth != 0)
+           {
+                     $description = $append = $prepend = "";
+           }
+
+            $item_output = $args-&gt;before;
+            $item_output .= '&lt;a'. $attributes .'&gt;';
+            $item_output .= $args-&gt;link_before .$prepend.apply_filters( 'the_title', $item-&gt;title, $item-&gt;ID ).$append;
+            $item_output .= $description.$args-&gt;link_after;
+            $item_output .= '&lt;/a&gt;';
+            $item_output .= $args-&gt;after;
+
+            $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+            }
+}</pre>
+<p>So what does this Class do? This is basically the walker that wordpress is using (I just copied the source code) and added a few lines in the lower third for a better output: The walker now checks if a description is set, and if thats the case it wraps the description into a span tag and appends it to the navigation title.</p>
+<p>The walker also checks if we are currently iterating over a sub menu item or a top level item, since our sub menu items do not need to display a description.</p>
+<h2>The Function Call</h2>
+<p>Now that we have created a custom walker we only need to tell wordpress that it should use our walker instead of its own. This can be easily done by calling the <a href="http://codex.wordpress.org/Function_Reference/wp_nav_menu">wp_nav_menu()</a> with the walker parameter set:</p>
+<pre>wp_nav_menu( array(
+ 'container' =&gt;false,
+ 'menu_class' =&gt; 'nav',
+ 'echo' =&gt; true,
+ 'before' =&gt; '',
+ 'after' =&gt; '',
+ 'link_before' =&gt; '',
+ 'link_after' =&gt; '',
+ 'depth' =&gt; 0,
+ 'walker' =&gt; new description_walker())
+ );
+</pre>
+<p>Thats it. Once that is done your menu will be output with a completly different code structure that you can easily style with CSS to fit your needs. Here is a short snippet to get you startet:</p>
+<pre>.nav{
+height:50px;
+padding-left:13px;
+margin:0;
+padding:0;
+list-style-type:none;
+list-style-position:outside;
+position:relative;
+}
+
+.nav a{
+display:block;
+float:left;
+line-height:18px;
+outline:medium none;
+padding:2px 10px;
+text-decoration:none;
+width:95px;
+min-height: 35px;
+}
+
+.nav li a strong {
+display:block;
+font-size:14px;
+font-weight:normal;
+}
+
+.nav li a span {
+display:block;
+font-size:10px;
+line-height:14px;
+}
+</pre>
+<p>I hope you can utilize this knowledge to push the boundaries of beautiful wordpress generated menus ;)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/improve-your-wordpress-navigation-menu-output/feed</wfw:commentRss>
+		<slash:comments>60</slash:comments>
+		</item>
+		<item>
+		<title>WordPress Tutorial: Simple Breadcrumb Navigation</title>
+		<link>https://kriesi.at/archives/wordpress-tutorial-simple-breadcrumb-navigation</link>
+		<comments>https://kriesi.at/archives/wordpress-tutorial-simple-breadcrumb-navigation#comments</comments>
+		<pubDate>Wed, 10 Sep 2008 13:38:29 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+		<category><![CDATA[Breadcrumb]]></category>
+		<category><![CDATA[navigation]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=397</guid>
+		<description><![CDATA[First Steps to create a simple and lightweight WordPress Breadcrumb Navigation]]></description>
+				<content:encoded><![CDATA[<p>I am currently working on some larger projects, and some of them are in desperate need of a <strong>breadcrumb navigation</strong>, since there are so many sub categories and pages, that users often have a hard time not to lose track of their current position on the site.</p>
+<p>After searching the web for an adequate plugin, the only Breadcrumb navigation I could find was <a href="http://mtekk.weblogs.us/code/breadcrumb-navxt/">Breadcrumb NavXT</a>. The plugin is basically the only one which supports nested pages as well as nested categories. It has a ton of options&#8230; to my mind there are way to many. After testing the plugin on a blank installation my Database query count went from 17 to 59 even if I was on the starting page where no breadcrumb navigation was displayed. So I decided to code a lightweight version for myself.</p>
+<p>What you will learn here, are the basics of creating a <strong>simple</strong> breadcrumb navigation. This tutorial doesn&#8217;t offer a complete script, just some snippets to experiment with =)</p>
+<p><span id="more-397"></span>First of all here is the whole script:</p>
+<pre>function my_breadcrumb() {
+         if ( !is_front_page() ) {
+		echo '&lt;p class="breadcrumb"&gt;&lt;span class="breadcrumb_info"&gt;You are here:&lt;/span&gt; &lt;a href="';
+		echo get_option('home');
+		echo '"&gt;';
+		bloginfo('name');
+		echo "&lt;/a&gt; &amp;raquo; ";
+		}
+
+		if ( is_category() || is_single() ) {
+			$category = get_the_category();
+			$ID = $category[0]-&gt;cat_ID;
+			echo get_category_parents($ID, TRUE, ' &amp;raquo; ', FALSE );
+		}
+
+		if(is_single() || is_page()) {the_title();}
+		if(is_tag()){ echo "Tag: ".single_tag_title('',FALSE); }
+		if(is_404()){ echo "404 - Page not Found"; }
+		if(is_search()){ echo "Search"; }
+		if(is_year()){ echo get_the_time('Y'); }
+
+		echo "&lt;/p&gt;";
+
+          }</pre>
+<p>I am using WordPress conditional Tags to check which section/post or page we are currently viewing. As you can see at the top, I don&#8217;t want to display the breadcrumb on the starting page. If we aren&#8217;t viewing the starting page, the first level &#8211; a link to the starting page &#8211; will be displayed.</p>
+<pre>if ( is_category() || is_single() ) {
+	        $category = get_the_category();
+		$ID = $category[0]-&gt;cat_ID;
+		echo get_category_parents($ID, TRUE, ' &amp;raquo; ', FALSE );
+		}</pre>
+<p>This is the trickiest part of the whole script since it uses some uncommon WordPress functions. It basically asks WordPress to display all parent categories of the current category/post. This way we can handle nested categories as well</p>
+<p>If you want more information on <a href="http://codex.wordpress.org/Template_Tags/get_the_category">get_the_category</a> and <a href="http://codex.wordpress.org/Template_Tags/get_category_parents">get_category_parents</a> just check the WordPress Documentation =)</p>
+<pre>if(is_single() || is_page()) {the_title();}
+if(is_tag()){ echo "Tag: ".single_tag_title('',FALSE); }
+if(is_404()){ echo "404 - Page not Found"; }
+if(is_search()){ echo "Search"; }
+if(is_year()){ echo get_the_time('Y'); }</pre>
+<p>This one is pretty straight forward: We are using conditional comments again to handle some of the various scenarios like post, pages, tag and year archives, 404 sites etc.</p>
+<p>If you want to create a script that can handle all possible scenarios you should check the <a href="http://codex.wordpress.org/Conditional_Tags">conditional tags reference</a> to see which cases need attention.</p>
+<p>These short snippets should invite you to experiment a little bit since they can build the foundation to a complete lightweight breadcrumb script. It is far from complete now (nested pages don&#8217;t work, nested categories need a few tweaks, attachment handling is missing etc) but I guess its enough to start with ;)<br />
+I am currently scripting a complete Breadcumb Navigation for my own and I am pretty satisfied with the outcome. It only needs some more minor tweaks to be ready for the public, but I dont&#8217;t know if I can spare some time in the upcoming future so I wanted to share these basics now, just in case you need them =)</p>
+<p>What you can expect when my script is complete: a very lightweight breadcrumb script with little to no options but the possibilty to tweak it easily with little php knowledge, and the power to display a breadcrumb navigation without stressing your database (The NavXT-plugin uses about 40 queries, mine will use about 0-4)</p>
+<p>Thanks to <a href="http://bueltge.de/brotkrumen-navi-fuer-wordpress/">Frank Bültge</a> for the inspiration ;)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/wordpress-tutorial-simple-breadcrumb-navigation/feed</wfw:commentRss>
+		<slash:comments>25</slash:comments>
+		</item>
+		<item>
+		<title>WordPress: Display Content in multiple Columns</title>
+		<link>https://kriesi.at/archives/wordpress-display-content-in-multiple-columns</link>
+		<comments>https://kriesi.at/archives/wordpress-display-content-in-multiple-columns#comments</comments>
+		<pubDate>Mon, 21 Jul 2008 10:41:49 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+		<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=250</guid>
+		<description><![CDATA[Learn how to modify the Wordpress function the_content() and display your WordPress content in multiple columns.]]></description>
+				<content:encoded><![CDATA[<p>Recently I had to create a website which displays the content in <strong>2 columns</strong>.</p>
+<p>While CSS 3 is capable of doing this on its own with the new <a title="CSS3" href="http://www.w3.org/TR/2007/WD-css3-grid-20070905/">Grid Position Module</a>, a lot of browsers do not support this functions yet, so I needed to add a little extra markup to the output which is generated via the_content() to get the following result:</p>
+<p><span id="more-250"></span></p>
+<p><img class="alignleft size-full wp-image-251" alt="" src="https://kriesi.at/wp-content/uploads/2008/07/2column.jpg" width="512" height="142" srcset="https://kriesi.at/wp-content/uploads/2008/07/2column.jpg 512w, https://kriesi.at/wp-content/uploads/2008/07/2column-300x83.jpg 300w" sizes="(max-width: 512px) 100vw, 512px" /><br />
+To get this result we need to <strong>filter the_content()</strong> before output with a custom function and add 2 divs to the output, which we style with CSS later on. So Ladys and Gentleman please open the <strong>functions.php</strong> file of your current WordPress Theme.</p>
+<p>What functions.php does is let you create functions you can reuse in your theme. It works similar to a plugin file, being loaded when the theme is first loaded.</p>
+<p>First of all: here you can see the whole code we need to filter our content, step by step description follows:</p>
+<pre>function my_multi_col($content){
+$columns = explode('&lt;h2&gt;', $content);
+
+$i = 0;
+
+	foreach ($columns as $column){
+	if (($i % 2) == 0){
+		$return .= '&lt;div class="content_left"&gt;' . "\n";
+		if ($i &gt; 1){
+		$return .= "&lt;h2&gt;";
+	} else{
+		$return .= '&lt;div class="content_right"&gt;' . "\n &lt;h2&gt;";
+	}
+		$return .= $column;
+		$return .= '&lt;/p&gt;&lt;/div&gt;';
+		$i++;
+	}
+
+	if(isset($columns[1])){
+	    $content = wpautop($return);
+	}else{
+	    $content = wpautop($content);
+	}
+	echo $content;
+}
+add_filter('the_content', 'my_multi_col');</pre>
+<p>What we do first is define a delimiter and split the whole content at specific points. I wanted to create a new column whenever a h2 tag was found.</p>
+<pre>$columns = explode('&lt;h2&gt;', $content);</pre>
+<p>The result is stored in an array which we will use to create a new $content string. To access each array item we will use a foreach loop:</p>
+<pre>        $i = 0;
+
+	foreach ($columns as $column){
+        $i++;
+	}</pre>
+<p>You should have noticed the variable $i by now, we will use it to check if the current content part should be stored in a left column or right column div. To accomplish this we simply use the modulo operation ( $i % 2).</p>
+<p>The modulo operator divides the first integer by the second and returns the remainder. Since we divide by 2 there are only 2 possible values to return: 0 and 1. If zero is returned we need a left content div, if 1 is returned a right content div:</p>
+<pre>        $i = 0;
+	foreach ($columns as $column){
+            if (($i % 2) == 0){
+                $return .= '&lt;div class="content_left"&gt;' . "\n";
+            }else{
+                $return .= '&lt;div class="content_right"&gt;' . "\n";
+            }
+        $i++;
+	}</pre>
+<p>Since the explode function we used earlier strips away our &lt;h2&gt; opening tags we need to add them to the code again, but we must be careful were to add them: We always need an opening tag in the right column and always need an opening tag in the left column except for the first time!</p>
+<pre>$i = 0;
+
+	foreach ($columns as $column){
+	if (($i % 2) == 0){
+		$return .= '&lt;div class="content_left"&gt;' . "\n";
+		if ($i &gt; 1){
+		$return .= "&lt;h2&gt;";
+	} else{
+		$return .= '&lt;div class="content_right"&gt;' . "\n &lt;h2&gt;";
+	}
+
+	}</pre>
+<p>After adding the opening tags we simply put in the exploded $content parts and close the current &lt;p&gt; (automatically generated by WordPress) and &lt;div&gt; tag. After creating our new content string which is currently stored as a whole in $return we pass it to the wpautop which automatically adds formating to the string, store it in $content and then output it with echo, but ONLY if there was an h2 tag found. Otherwise we don&#8217;t need a second column and display the_content() without modifications.</p>
+<pre>$i = 0;
+
+	foreach ($columns as $column){
+	if (($i % 2) == 0){
+		$return .= '&lt;div class="content_left"&gt;' . "\n";
+		if ($i &gt; 1){
+		$return .= "&lt;h2&gt;";
+	} else{
+		$return .= '&lt;div class="content_right"&gt;' . "\n &lt;h2&gt;";
+	}
+		$return .= $column;
+		$return .= '&lt;/p&gt;&lt;/div&gt;';
+		$i++;
+	}
+
+        if(isset($columns[1])){
+	    $content = wpautop($return);
+	}else{
+	    $content = wpautop($content);
+	}	echo $content;
+}</pre>
+<p>Last but not least we have to tell WordPress when to activate our function. This is simply done with <a href="http://codex.wordpress.org/Plugin_API#Filters">&#8220;add_filter&#8221;</a></p>
+<pre>add_filter('the_content', 'my_multi_col');</pre>
+<p>Now whenever $content contains any h2 items they will be put in different divs . Just add some basic CSS and you are done:</p>
+<pre>.content_right, .content_left{
+float:left;
+width:45%;
+}
+
+.content_left{
+padding-right:5%;
+}</pre>
+<p>The function we created is far from perfect, but the main goal of this tutorial is to show you how you can modify the output of the WordPress generated content in an easy way. Have fun doing so ;)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/wordpress-display-content-in-multiple-columns/feed</wfw:commentRss>
+		<slash:comments>73</slash:comments>
+		</item>
+		<item>
+		<title>How to use WordPress Custom Fields</title>
+		<link>https://kriesi.at/archives/how-to-use-wordpress-custom-fields</link>
+		<comments>https://kriesi.at/archives/how-to-use-wordpress-custom-fields#comments</comments>
+		<pubDate>Wed, 09 Jul 2008 15:31:29 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+		<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=246</guid>
+		<description><![CDATA[Learn the basic principles of using WordPress Custom Fields, to create complex WordPress Themes.]]></description>
+				<content:encoded><![CDATA[<p>WordPress gives an author the ability to add extra data to each written post and page. This data is called <strong>meta-data</strong> and is stored in <strong>custom fields</strong>.</p>
+<p>These fields are really flexible in use and make it possible for developers and theme-authors to create stunning sites, far beyond from normal blog design.<span id="more-246"></span></p>
+<p>In case you have never noticed it: to access these fields just head over to the write post/page site down to the Advanced Options Tabs. There you will find  the Custom Fields Tab which looks something like this:</p>
+<p><img class="alignnone size-full wp-image-247" alt="" src="https://kriesi.at/wp-content/uploads/2008/07/customfields.jpg" width="500" height="401" srcset="https://kriesi.at/wp-content/uploads/2008/07/customfields.jpg 520w, https://kriesi.at/wp-content/uploads/2008/07/customfields-300x241.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></p>
+<p>Custom fields consist of two parts: <strong>A key and a value</strong>.</p>
+<p>There are different options to display those fields, the one thing they all got in common: you have to call them inside the loop.</p>
+<pre>&lt;?php the_meta(); ?&gt;</pre>
+<p>This is the easiest way to display the data. The template tag automatically puts the entire meta-data into a CSS style called <tt>post-meta</tt>. The <strong>key</strong> is in a <tt>span</tt> called <tt>post-meta-key</tt>.</p>
+<p>All of this is showcased in an unordered list:</p>
+<pre>&lt;ul class='post-meta'&gt;
+&lt;li&gt;&lt;span class='post-meta-key'&gt;mood:&lt;/span&gt; happy&lt;/li&gt;
+&lt;li&gt;&lt;span class='post-meta-key'&gt;Weather:&lt;/span&gt; fine&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<p>You might want to use these custom informations in a more sophisticated way then displaying unordered lists with your mood and the current weather. Especially if you want to display a post in a way that doesn&#8217;t remind the visitor of a typical blog post, custom fields come in very handy.</p>
+<p>Just take a look at my <a title="Portfolio" href="/portfolio">porfolio page</a>, or if you want to see a whole site based around custom fields, head over to <a title="Best Web Gallery" href="http://bestwebgallery.com/">BestWebGallery</a>. Each post is stuffed with a lot of meta data which is used to display the posts in an unique way.</p>
+<p>To display the data in a superior way we use the function</p>
+<pre> get_post_meta($post_id, $key, $single);</pre>
+<p>The parameters we need to pass are explained fast:</p>
+<ul>
+<li>$post_id is the ID of the post which stores the meta data. Most of the time it is the current post and we use: <strong>$post-&gt;ID</strong></li>
+<li><tt>$key</tt> is a string containing the name of the meta value you want.</li>
+<li><tt>$single</tt> can either be <tt>true</tt> or <tt>false</tt>. If set to true then the function will return a single result, as a <strong>string</strong>. If false, or not set, then the function returns an <strong>array</strong> of the custom fields.This is needed if you have different $keys with the same name. We will set this to true for our example.</li>
+</ul>
+<p>So lets say we have a custom field named &#8220;image&#8221; which contains the URI to the image:<img class="alignnone size-full wp-image-248" alt="" src="https://kriesi.at/wp-content/uploads/2008/07/image1.jpg" width="494" height="113" srcset="https://kriesi.at/wp-content/uploads/2008/07/image1.jpg 494w, https://kriesi.at/wp-content/uploads/2008/07/image1-300x68.jpg 300w" sizes="(max-width: 494px) 100vw, 494px" /></p>
+<p>we could easily display this image the following way:</p>
+<pre>&lt;?php $image = get_post_meta($post-&gt;ID, 'Image', true); ?&gt;
+
+&lt;img src="&lt;?php echo $image; ?&gt;" alt="" /&gt;</pre>
+<p>There are many ways to use custom fields, another one would be to add  a different class to some of your posts:</p>
+<pre>&lt;?php $additional_class = get_post_meta($post-&gt;ID, 'class', true); ?&gt;
+
+&lt;div class="my_post &lt;?php echo $additional_class;?&gt; "&gt;
+the_content();
+&lt;/div&gt;
+?&gt;</pre>
+<p>The possibilitys are nearly endless, so let your creative juices flow and enhance your site with custom fields ;)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/how-to-use-wordpress-custom-fields/feed</wfw:commentRss>
+		<slash:comments>75</slash:comments>
+		</item>
+		<item>
+		<title>WordPress: how to separate comments and trackbacks</title>
+		<link>https://kriesi.at/archives/wordpress-how-to-separate-comments-and-trackbacks</link>
+		<comments>https://kriesi.at/archives/wordpress-how-to-separate-comments-and-trackbacks#comments</comments>
+		<pubDate>Thu, 29 May 2008 19:20:25 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Tutorials]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+		<category><![CDATA[comments]]></category>
+		<category><![CDATA[trackbacks]]></category>
+		<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=223</guid>
+		<description><![CDATA[Learn how to separate comments and trackbacks in WordPress so it is easy for your readers to follow ongoing conversations.]]></description>
+				<content:encoded><![CDATA[<p>Today I read an interesting article on <a href="http://nettuts.com/">NETTUTS</a> which claims to <a title="NETTUTS" href="http://nettuts.com/news/unraveling-the-secrets-of-wordpress-commentsphp-file/">unravel the Secrets of WordPress &amp; Comments.php File</a>. This is actually pretty true, the author did a good job at explaining the different functions, comment loops, and form elements.</p>
+<p>The one thing I really missed was an explanation on how to separate comments from trackbacks. Discussing on a blog with tons of trackback posts between the ongoing discussion is really annoying.</p>
+<p><span id="more-223"></span></p>
+<p>So here is my little addition to the NETTUTS tuorial:</p>
+<h3>How to separate comments from trackbacks in WordPress</h3>
+<p>First thing we need is a working peace of basic comment code, I&#8217;ll take the one from NETTUTS: (if you need any explanation on this piece of code, just read the aforementioned article)</p>
+<pre>&lt;?php if($comments) : ?&gt;
+&lt;ol&gt;
+    &lt;?php foreach($comments as $comment) : ?&gt;
+        &lt;li id="comment-&lt;?php comment_ID(); ?&gt;"&gt;
+            &lt;?php if ($comment-&gt;comment_approved == "0") : ?&gt;
+            &lt;p&gt;Your comment is awaiting approval&lt;/p&gt;
+        &lt;?php endif; ?&gt;
+        &lt;?php comment_text(); ?&gt;
+            &lt;cite&gt;&lt;?php comment_type(); ?&gt; by &lt;?php comment_author_link(); ?&gt; on &lt;?php comment_date(); ?&gt; at &lt;?php comment_time(); ?&gt;&lt;/cite&gt;
+        &lt;/li&gt;
+    &lt;?php endforeach; ?&gt;
+&lt;/ol&gt;
+&lt;?php else : ?&gt;
+    &lt;p&gt;No comments yet&lt;/p&gt;
+&lt;?php endif; ?&gt;</pre>
+<p>Now we will use the function get_comment_type(); to check which kind of comment this is. The function returns one of three possible values: pingback, trackback or a comment.<br />
+Our first target is to display only the comments. This is easily accomplished with an additional if statement:</p>
+<pre>&lt;?php if($comments) : ?&gt;
+&lt;ol&gt;
+    &lt;?php foreach($comments as $comment) : ?&gt;
+       &lt;?php if(get_comment_type() == "comment") : ?&gt;
+            &lt;li id="comment-&lt;?php comment_ID(); ?&gt;"&gt;
+                &lt;?php if ($comment-&gt;comment_approved == "0") : ?&gt;
+                &lt;p&gt;Your comment is awaiting approval&lt;/p&gt;
+            &lt;?php endif; ?&gt;
+            &lt;?php comment_text(); ?&gt;
+                &lt;cite&gt;&lt;?php comment_type(); ?&gt; by &lt;?php comment_author_link(); ?&gt; on &lt;?php comment_date(); ?&gt; at &lt;?php comment_time(); ?&gt;&lt;/cite&gt;
+            &lt;/li&gt;
+        &lt;?php endif; ?&gt;
+    &lt;?php endforeach; ?&gt;
+&lt;/ol&gt;
+&lt;?php else : ?&gt;
+    &lt;p&gt;No comments yet&lt;/p&gt;
+&lt;?php endif; ?&gt;</pre>
+<p>If you don&#8217;t want to display trackbacks you are done now. In case you want to show them, you have to call the comment loop a second time, this time only displaying the comment, if get_comment_type() returns pingback or trackback.</p>
+<pre>&lt;?php if($comments) : ?&gt;
+&lt;ol&gt;
+    &lt;?php foreach($comments as $comment) : ?&gt;
+        &lt;?php if((get_comment_type() == "pingback") || (get_comment_type() == "trackback")) : ?&gt;
+            &lt;li id="comment-&lt;?php comment_ID(); ?&gt;"&gt;
+                &lt;?php comment_author_link() ?&gt;&lt;/li&gt;
+            &lt;/li&gt;
+        &lt;?php endif; ?&gt;
+    &lt;?php endforeach; ?&gt;
+&lt;/ol&gt;
+&lt;?php endif; ?&gt;</pre>
+<p>Thats it, not that hard to master and a big improvement in readability for your ongoing discussions.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/wordpress-how-to-separate-comments-and-trackbacks/feed</wfw:commentRss>
+		<slash:comments>46</slash:comments>
+		</item>
+	</channel>
+</rss>

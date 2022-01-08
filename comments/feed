@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments for Kriesi.at &#8211; Premium WordPress Themes</title>
+	<atom:link href="https://kriesi.at/comments/feed" rel="self" type="application/rss+xml" />
+	<link>https://kriesi.at</link>
+	<description>Premium Themes</description>
+	<lastBuildDate>Thu, 03 Jan 2019 09:11:26 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.18</generator>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by SEO Kansas City</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12175</link>
+		<dc:creator><![CDATA[SEO Kansas City]]></dc:creator>
+		<pubDate>Thu, 03 Jan 2019 09:11:26 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12175</guid>
+		<description><![CDATA[Long live Wordpress!!!]]></description>
+		<content:encoded><![CDATA[<p>Long live WordPress!!!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by Lina</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12170</link>
+		<dc:creator><![CDATA[Lina]]></dc:creator>
+		<pubDate>Thu, 27 Dec 2018 19:50:20 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12170</guid>
+		<description><![CDATA[My website doesn&#039;t work properly anymore since the update to WP 5.0. I can&#039;t change any texts or add new elements. So I tried to upgrade the theme, which says version 3.8 at the moment, but it shows this message: &quot;No Updates available. You are running the latest version!&quot; What should I do??]]></description>
+		<content:encoded><![CDATA[<p>My website doesn&#8217;t work properly anymore since the update to WP 5.0. I can&#8217;t change any texts or add new elements. So I tried to upgrade the theme, which says version 3.8 at the moment, but it shows this message: &#8220;No Updates available. You are running the latest version!&#8221; What should I do??</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by Jim</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12169</link>
+		<dc:creator><![CDATA[Jim]]></dc:creator>
+		<pubDate>Wed, 26 Dec 2018 05:25:56 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12169</guid>
+		<description><![CDATA[Thank You for sharing.]]></description>
+		<content:encoded><![CDATA[<p>Thank You for sharing.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by Steve</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12167</link>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+		<pubDate>Thu, 20 Dec 2018 09:34:38 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12167</guid>
+		<description><![CDATA[I have 7 or 8 sites running Enfold and as such have been very nervous as I also provide a managed service to look after these.
+
+The 19th  Dec release of Enfold is running on one of my live sites, without the Classic Editor plugin installed and WP 5.0.2 - so far all the issues I&#039;d previously found (and subsequently had to install the classic editor) seem to be resolved.
+
+I thought I would post this purely for people info - I&#039;m not going to update the other to WP5 for a while as I&#039;m sure other issues will surface - particularly as WP seems to be updating minor releases at a fairly rapid rate - but so far so good with the latest release.]]></description>
+		<content:encoded><![CDATA[<p>I have 7 or 8 sites running Enfold and as such have been very nervous as I also provide a managed service to look after these.</p>
+<p>The 19th  Dec release of Enfold is running on one of my live sites, without the Classic Editor plugin installed and WP 5.0.2 &#8211; so far all the issues I&#8217;d previously found (and subsequently had to install the classic editor) seem to be resolved.</p>
+<p>I thought I would post this purely for people info &#8211; I&#8217;m not going to update the other to WP5 for a while as I&#8217;m sure other issues will surface &#8211; particularly as WP seems to be updating minor releases at a fairly rapid rate &#8211; but so far so good with the latest release.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by Kriesi</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12166</link>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+		<pubDate>Wed, 19 Dec 2018 19:55:52 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12166</guid>
+		<description><![CDATA[No, that should work fine, although I recommend backing up your older theme just in case :)
+If you got any problems please open a thread in our support forum :)]]></description>
+		<content:encoded><![CDATA[<p>No, that should work fine, although I recommend backing up your older theme just in case :)<br />
+If you got any problems please open a thread in our support forum :)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by Kriesi</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12165</link>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+		<pubDate>Wed, 19 Dec 2018 19:54:57 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12165</guid>
+		<description><![CDATA[The wp 4.9.X branch is of course supported as well ;)]]></description>
+		<content:encoded><![CDATA[<p>The wp 4.9.X branch is of course supported as well ;)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by Dirk</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12163</link>
+		<dc:creator><![CDATA[Dirk]]></dc:creator>
+		<pubDate>Wed, 19 Dec 2018 05:37:39 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12163</guid>
+		<description><![CDATA[Hi Enfold-Team,
+one little question.
+
+I have WP 4.9.8 install by my Provider, and can i Uptate Theme Enfold to 4.5.2 its work than with my WP 4.9.8?
+At the moment are running Enfold 4.5 on my Host.
+
+Or ist the new Enfold 4.5.1. and 4.5.2. only for the new WP 5.0.1. Version compatibel?
+
+Thanks for your reply.
+
+Brgds
+Dirk]]></description>
+		<content:encoded><![CDATA[<p>Hi Enfold-Team,<br />
+one little question.</p>
+<p>I have WP 4.9.8 install by my Provider, and can i Uptate Theme Enfold to 4.5.2 its work than with my WP 4.9.8?<br />
+At the moment are running Enfold 4.5 on my Host.</p>
+<p>Or ist the new Enfold 4.5.1. and 4.5.2. only for the new WP 5.0.1. Version compatibel?</p>
+<p>Thanks for your reply.</p>
+<p>Brgds<br />
+Dirk</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by Real T</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12162</link>
+		<dc:creator><![CDATA[Real T]]></dc:creator>
+		<pubDate>Tue, 18 Dec 2018 18:08:12 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12162</guid>
+		<description><![CDATA[Same here. Enfold totally deserves more love &#060;3]]></description>
+		<content:encoded><![CDATA[<p>Same here. Enfold totally deserves more love &lt;3</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by Lisa</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12161</link>
+		<dc:creator><![CDATA[Lisa]]></dc:creator>
+		<pubDate>Mon, 17 Dec 2018 23:22:01 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12161</guid>
+		<description><![CDATA[Hi--I&#039;ve been asked to look at a website that broken with WP 5.0.  It is using v 3.5.4 of 
+Enfold.  Will it break the site completely to try to update the theme from a version that is that old? Please advise. Thanks.]]></description>
+		<content:encoded><![CDATA[<p>Hi&#8211;I&#8217;ve been asked to look at a website that broken with WP 5.0.  It is using v 3.5.4 of<br />
+Enfold.  Will it break the site completely to try to update the theme from a version that is that old? Please advise. Thanks.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on WordPress 5.0, Enfold 4.5.1 and our older Themes by Michael</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/comment-page-1#comment-12160</link>
+		<dc:creator><![CDATA[Michael]]></dc:creator>
+		<pubDate>Sun, 16 Dec 2018 13:31:51 +0000</pubDate>
+		<guid isPermaLink="false">https://kriesi.at/?p=3764#comment-12160</guid>
+		<description><![CDATA[Hi
+
+My hoster provides PHP 7.3, so I did an upgrade of my website to this PHP version (had PHP 7.2 previously).
+
+The result is the following error message after the backend login:
+&quot;No input file specified.&quot;
+
+I guess that Enfold (in my case v4.5.1) is not compatible with PHP 7.3 yet. Is that possible and if yes, when will that be resolved?
+(downgraded to PHP 7.2 now to make the backend available again)
+
+Best regards and thanks in advance
+Michael]]></description>
+		<content:encoded><![CDATA[<p>Hi</p>
+<p>My hoster provides PHP 7.3, so I did an upgrade of my website to this PHP version (had PHP 7.2 previously).</p>
+<p>The result is the following error message after the backend login:<br />
+&#8220;No input file specified.&#8221;</p>
+<p>I guess that Enfold (in my case v4.5.1) is not compatible with PHP 7.3 yet. Is that possible and if yes, when will that be resolved?<br />
+(downgraded to PHP 7.2 now to make the backend available again)</p>
+<p>Best regards and thanks in advance<br />
+Michael</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

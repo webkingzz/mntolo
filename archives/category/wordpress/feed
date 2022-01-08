@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Wordpress &#8211; Kriesi.at &#8211; Premium WordPress Themes</title>
+	<atom:link href="https://kriesi.at/archives/category/wordpress/feed" rel="self" type="application/rss+xml" />
+	<link>https://kriesi.at</link>
+	<description>Premium Themes</description>
+	<lastBuildDate>Mon, 16 Aug 2021 15:58:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.18</generator>
+	<item>
+		<title>Enfold 4.6 Release and Late Birthday Sale</title>
+		<link>https://kriesi.at/archives/enfold-4-6-release-and-late-birthday-sale</link>
+		<pubDate>Tue, 02 Mar 2021 08:02:17 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3840</guid>
+		<description><![CDATA[While working on the next version of Enfold we nearly missed another of it&#8217;s birthdays. Shame on us!! Enfold turned 6 this year, which is quite amazing! As always we want to celebrate this with a short birthday sale and a new release :) We slashed the price by more than 33% for a limited [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">We have been notified by our users that we nearly missed another Enfold Birthday&#8230;</p>
+<p>While working on the next version of Enfold we nearly missed another of it&#8217;s birthdays. Shame on us!! Enfold turned 6 this year, which is quite amazing! As always we want to celebrate this with a short birthday sale and a new release :) We slashed the price by more than 33% for a limited time so <a href="https://1.envato.market/c/1236844/275988/4415?subId1=blog$&amp;subId2=hyperlink_article_text_txt&amp;subId3=https%3A%2F%2Fthemeforest.net%2Fitem%2Fenfold-responsive-multipurpose-theme%2F4519990&amp;u=https%3A%2F%2Fthemeforest.net%2Fitem%2Fenfold-responsive-multipurpose-theme%2F4519990">grab a copy here</a> before its to late.</p>
+<p>In order to make the sale happen we have released this version as a major maintenance release with a ton of smaller features, improvements and bugfixes. New demos will be added shortly in a subsequent release but we didn&#8217;t want to wait any longer :)</p>
+<div class='avia-double-buttons av-download-buttons'><a href='https://kriesi.at/themes/enfold-overview/' target='_blank' class='avia-double-button avia-double-button-1'>View Demo</a><span class='button_or'>or</span><a href='https://1.envato.market/c/1236844/275988/4415?subId1=blog$&subId2=hyperlink_article_text_txt&subId3=https%3A%2F%2Fthemeforest.net%2Fitem%2Fenfold-responsive-multipurpose-theme%2F4519990&u=https%3A%2F%2Fthemeforest.net%2Fitem%2Fenfold-responsive-multipurpose-theme%2F4519990' target='_blank' class='avia-double-button avia-double-button-2'>View Details</a></div>
+<p><span id="more-3840"></span></p>
+<h4>So whats new with this one?</h4>
+<p>Quite a lot actually, the list is quite long :)</p>
+<h4>Features added:</h4>
+<ul>
+<li>added: GDPR / DSGVO: Cookie Settings allow forced OPT-IN
+<ul>
+<li>extended theme option settings in privacy tab
+<ul>
+<li>cookie consent message bar can now be hidden but modal popup and all function can be used</li>
+<li>user can opt out / user must opt in</li>
+<li>new button action &#8220;Do not accept and hide notification&#8221;</li>
+<li>Alert message text if user clicks &#8220;Do not accept and hide notification&#8221; button</li>
+<li>Show modal popup on pageload immediately when needed</li>
+<li>Show an icon to reopen closed message bar</li>
+<li>Add action buttons &#8220;Accept&#8221;, &#8220;Discard&#8221; and &#8220;Link&#8221; to modal popup (hides default close lightbox button)</li>
+<li>Additional custom cookies (e.g. set by plugins) can be added to be monitored for removing</li>
+</ul>
+</li>
+<li>Default modal privacy popup extendend to reflect new situation</li>
+<li>Switching to &#8220;User must opt in&#8221; resets all settings to only allow essential cookies and user has to accept or refuse this again and can opt in for other services</li>
+<li>If user refuses Google reCaptcha in contact forms a filterable message is shown instead of submit button</li>
+<li>A custom lightbox can be used (js wrapper function needed &#8211; avia_cookie_consent_modal_callback)</li>
+</ul>
+</li>
+<li>added shortcodes for privacy:
+<ul>
+<li>av_privacy_allow_cookies (toggle)</li>
+<li>av_privacy_accept_essential_cookies (toggle)</li>
+<li>av_privacy_google_recaptcha (toggle)</li>
+<li>av_privacy_custom_cookie (toggle)</li>
+<li>av_privacy_accept_button</li>
+<li>av_privacy_do_not_accept_button</li>
+<li>av_privacy_modal_popup_button</li>
+<li>av_privacy_cookie_info</li>
+</ul>
+</li>
+<li>added filters for privacy:
+<ul>
+<li>&#8216;avf_privacy_cookie_infos&#8217; &#8211; filter to change info text for cookies</li>
+<li>&#8216;avf_admin_keep_cookies&#8217; &#8211; filter the cookies that are kept for admins</li>
+<li>&#8216;avf_contact_form_recaptcha_disabled_msg&#8217; &#8211; filter to change message text that a contact form cannot be submitted because sevice disabled</li>
+<li>&#8216;avf_privacy_additional_frontend_data&#8217; &#8211; filter frontend messages</li>
+<li>&#8216;avf_privacy_custom_cookies_array&#8217; &#8211; filter theme options custom cookie array</li>
+</ul>
+</li>
+<li>added filter: avf_alb_tinymce_ignore_indent_fix &#8211; allows to supress fix for individual pages</li>
+<li>added filter: avf_avia_backend_truncate_string &#8211; modify string before it is truncated e.g. for excerpt</li>
+<li>added: backwards comp. for revslider &lt; 6.0 (removed when adding fixes for &gt; 6.0</li>
+<li>added: theme option &#8220;ID attribute input field&#8221; (Layout Builder tab)</li>
+<li>added: theme option &#8220;Customize heading tags&#8221; (Layout Builder tab)</li>
+<li>added: Developer tab to modal popup of alb elements</li>
+<li>added: id attribute to most alb elements &#8211; value is sanitized</li>
+<li>added: Custom CSS input value is now sanitized</li>
+<li>added: WhatsApp share button and social icon</li>
+<li>added: HTML title and alt attribute to transparent logo</li>
+<li>added: HTML title attribute to logo</li>
+<li>added: change default heading tags, and add a custom heading class (value is sanitized) to:
+<ul>
+<li>Contact Form</li>
+<li>Content Slider</li>
+<li>Events Countdown</li>
+<li>Icon Box</li>
+<li>Icon Grid</li>
+<li>Icon List</li>
+<li>Partner/Logo Element</li>
+<li>Magazine</li>
+<li>Easy Slider</li>
+<li>Accordion Slider</li>
+<li>Featured Image Slider</li>
+</ul>
+</li>
+<li>added: User editable aria-label attribute to:
+<ul>
+<li>Color Section</li>
+<li>Tab Section</li>
+<li>Grid Row</li>
+<li>Contact Form</li>
+</ul>
+</li>
+<li>added: filters:
+<ul>
+<li>&#8216;avf_the_content&#8217; &#8211; filter for content replacement by 3rd party plugins (toolset)</li>
+<li>&#8216;avf_disable_recaptchaV3_for_post&#8217; &#8211; filter to supress loading of API for special posts/pages</li>
+<li>&#8216;avf_google_recaptcha_badge_content&#8217; &#8211; filter to change default Google display text instead of badge icon</li>
+<li>&#8216;avf_load_google_recaptcha_api_prohibited&#8217; &#8211; filter allows to supress loading of script (on desired pages)</li>
+<li>&#8216;avf_recaptcha_show_extended_error_messages&#8217; &#8211; filter to allow other logged in users roles to see error messages (default is admin)</li>
+<li>&#8216;avf_recaptcha_transient_expiration&#8217; &#8211; filter to change transient expiration time (default 30 min.)</li>
+<li>&#8216;avf_form_autoresponder_email_from_prefix&#8217; &#8211; filter to change from prefix text &#8211; default get_bloginfo(&#8216;name&#8217;);</li>
+<li>&#8216;avf_copyright_info&#8217; &#8211; filter to change theme options copyright text in footer</li>
+<li>&#8216;avf_colorpicker_colors&#8217; &#8211; filter to change default color picker palette colors</li>
+<li>&#8216;avf_logo_title&#8217; &#8211; filter to change saved image title when used as logo</li>
+<li>&#8216;avf_hide_transparency_logo_meta&#8217; &#8211; filter to hide title and alt attribute</li>
+<li>&#8216;avf_alb_get_developer_settings&#8217; &#8211; filter theme options</li>
+<li>&#8216;avf_alb_element_heading_tags&#8217; &#8211; filter possible tags for element</li>
+<li>&#8216;avf_alb_exec_sc_only&#8217; &#8211; filter to force execution of ALB shortcode</li>
+</ul>
+</li>
+<li>added: filter for plugins to handle HTML video output</li>
+<li>added: Google Services backend: Feedback if API cannot be loaded (e.g. internet connection problems)</li>
+<li>added: option to allow to filter upcoming events by events category</li>
+<li>added: option to add title attribute to buttons</li>
+<li>added: Enter open/close accordion tabs when focus on title for ADA support</li>
+<li>added: aria-label and role=&#8221;search&#8221; to ajax search icon and popup</li>
+<li>added: info message that audio player does no longer stop on FF if js compression enabled since WP 5.2</li>
+<li>added: information about sticky fullwidth submenu and burger menu</li>
+<li>added: option to change display name of social link target on social share buttons and aria label</li>
+<li>added: &#8220;From&#8221; field to ALB contact form options to specify a custom from address</li>
+<li>added: &#8220;Reply To&#8221; to mails sent to contact form reciepients (Option Your email address)</li>
+<li>added: New instagram icon to icon font</li>
+<li>added: filter avf_customize_heading_settings in helper-social-media.php</li>
+<li>added: filter avf_process_shortcode_in_backend</li>
+<li>added: compatibility for relevanssi search in core (ALB elements, ajax search)</li>
+<li>added: YOAST &#8211; evaluate shortcodes on saving post and ajax callback wpseo_filter_shortcodes</li>
+<li>added: PHP version info to Theme Updates info box</li>
+<li>added: Option to disable Google Maps in frontend (replaces filter avf_load_google_map_api_prohibited)</li>
+<li>added: action ava_deactivate_enfold_plugin_addon</li>
+<li> added: filter avf_exclude_taxonomies_magazine</li>
+<li>added: ALB magazine element options to display author, category, tags</li>
+</ul>
+<h4>Bugfixes</h4>
+<ul>
+<li>fixed: jQuery migrate notices on theme options page</li>
+<li>fixed: upcoming events &#8211; next event not queried correctly</li>
+<li>fixed: bug with custom styling colors in &#8220;Accordion&#8221; element</li>
+<li>fixed: bug on template-archives page tabs not displayed when &#8220;Only needed elements&#8221; selected</li>
+<li>fixed: Revolution Slider 6.x deprecated function name getArrSlidersShort ( new: get_sliders_short ) and changed database structure</li>
+<li>fixed: German translation bug</li>
+<li>fixed: IE11 not supporting array.includes() method</li>
+<li>fixed: Gutenberg &#8211; H1 and H2 elements displayed in all capitals on backend</li>
+<li>fixed: contact form subject and special characters in site name returned special HTML character</li>
+<li>fixed: numeric captcha input cursor is above equation</li>
+<li>fixed: ALB tinyMCE tab indent/dedent not working for lists in visual mode</li>
+<li>fixed: AudioPlayer does not stop looping playlist since WP 5.2</li>
+<li>fixed: notice undefined property in helper-social-media.php</li>
+<li>fixed: issue with Block editor popups not being visible</li>
+<li>fixed: issue rendering footer shortcodes on bbPress pages</li>
+<li>fixed: WP 5.2 Uncaught error: Class ‘ShortcodeHelper’ not found in template-builder.class.php</li>
+<li>fixed: problem with Envato API error message</li>
+<li>fixed: issue with Image effect in Masonry element</li>
+<li>fixed: issue with Tab Section element on Safari</li>
+</ul>
+<h4>Language Updates</h4>
+<ul>
+<li>updated: Italian translation</li>
+<li>updated: language file de_DE_formal</li>
+</ul>
+<h4>Improvements</h4>
+<ul>
+<li>improved: filter avf_logo</li>
+<li>improved: Compatibility with Polylang and Cookie Consent Message translations</li>
+<li>improved: added option to disable ssl in file merging check when creating compressed file</li>
+<li>improved: Contact form hidden labels now only hidden with CSS for screen readers and accessibility tree</li>
+<li>improved: allow to zoom screen on mobile devices</li>
+<li>improved: replace deprecated jQuery methods bind, unbind, live with on, off</li>
+<li>improved: Switch Instagram links to HTTPS</li>
+<li>improved: ADA Compliance for Scroll to top button</li>
+<li>improved: Google reCAPTCHA implementation
+<ul>
+<li>added key verification in backend for version 2 and version 3</li>
+<li>added several backend options( e.g. to hide google badge and show message text only, &#8230;.. )</li>
+<li>added in case V3 verification fails in frontend V2 checkbox is shown to verify human</li>
+<li>added options in ALB and shortcode contact form to select type of human verification</li>
+<li>added a single to use token to contact form to check submit when V2 or V3 is used</li>
+</ul>
+</li>
+<li>improved: Check if verified keys have been changed without verifying:
+<ul>
+<li>reCAPTCHA</li>
+<li>Google Maps</li>
+<li>Mailchimp</li>
+<li>Envato token (theme update tab)</li>
+</ul>
+</li>
+<li>improved: Compatibility with PHP 7.3 to avoid deprecated notices</li>
+<li>improved: Screen Options code refactored for easier maintainence</li>
+<li>improved: animated numbers show formatted in backend preview (modal popup)</li>
+<li>improved: config files for not used plugins are no longer loaded</li>
+</ul>
+<h4>Removed Features</h4>
+<ul>
+<li>removed: Google Plus options due to shut down</li>
+<li>removed: theme support avia_template_builder_custom_css use theme option or filter avf_alb_get_extended_settings instead</li>
+<li>removed: theme support avia_template_builder_custom_tab_toogle_id (theme option &#8220;ID attribute input field&#8221; used instead)</li>
+<li>deprecated: filter avf_load_google_map_api_prohibited</li>
+</ul>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>WordPress 5.0, Enfold 4.5.1 and our older Themes</title>
+		<link>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1</link>
+		<comments>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1#comments</comments>
+		<pubDate>Sun, 06 Dec 2020 16:56:32 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3764</guid>
+		<description><![CDATA[So this is probably one of the most discussed topics in recent WordPress history. The introduction of the new WordPress Block editor (or Gutenberg editor as it was previously named). Some love it, some hate it, (and judging from the abysmal 2.5 star rating of the plugin, the later group is currently probably the bigger [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">WordPress 5.0 will arrive soon and with it comes a new &#8220;Block&#8221; based editor that replaces the previous default editor </p>
+<p>So this is probably one of the most discussed topics in recent WordPress history. The introduction of the new WordPress Block editor (or Gutenberg editor as it was previously named). Some love it, some hate it, (and judging from the <a href="https://wordpress.org/plugins/gutenberg/" target="_blank" rel="noopener">abysmal 2.5 star rating</a> of the plugin, the later group is currently probably the bigger one), but no matter if you like or dislike it, it will affect you if you use WordPress in one way or another.</p>
+<p>Here is how it affects our Enfold users, users of our other themes and also how it affects us :)</p>
+<p><span id="more-3764"></span></p>
+<h3>1.) Enfold Users</h3>
+<p>With the latest Enfold release to version 4.5.1 we have tried to incorporate the new editor in the same way as it was previously used. Which means when you create or edit a page or post you have the option to either use the WordPress Block Editor or you can switch to Enfolds very own Advanced Layout Builder. The Layout builder basically behaves the same way as always :)</p>
+<p>Although with the introduction of a non-reloading backend some features definitely come in more handy now, like the undo/redo functionality :)</p>
+<p>Other than that: When writing and editing non-template builder pages and posts you will need to learn to work with the new Block Editor. If you don&#8217;t want to do that there is a plugin that will <a href="https://wordpress.org/plugins/disable-gutenberg/" target="_blank" rel="noopener">disable the new Block editor</a> and activate the old classic editor.</p>
+<p>To sum it up: As Enfold user you either will need to upgrade to Enfold version 4.5.1 or install the Block Editor Disabling Plugin, if you want to run WordPress 5.0. Otherwise you won&#8217;t have proper access to Enfolds layout builder.</p>
+<h3>2.) Other Theme Users (Replete, Abundance, Choices etc)</h3>
+<p>Fore those themes you will need to make a choice. They all use an old template builder which is not very flexible and other than Enfolds Layout builder is probably also inferior to the new Block Editor. So you can either use the Block Editor and no longer use the old layout builder or install the &#8220;<a href="https://wordpress.org/plugins/disable-gutenberg/" target="_blank" rel="noopener">Disable Gutenberg</a>&#8221; plugin and use the old one, along with our old template builder.</p>
+<p>Apart from that: We used the new WordPress release to take a closer look at those themes and what we want to do next with them. We unfortunately came to the conclusion that it is no longer viable to maintain them at this point.</p>
+<p>The reason for this is basically the sales model that Themeforest has chosen. Instead of the need for users to re-license the theme every year for new updates (which is quite common in the WordPress community) they decided to try and generate recurring revenue by selling &#8220;support add ons&#8221;. However those are never enough to cover the development costs of a theme that is no longer in its prime. And since all of our other themes are now 7 years or longer on the market they are quite old in internet terms ;)</p>
+<p>So for the last few years Enfold basically covered the update costs for those themes. We think it&#8217;s time to deprecate them now, as long as they are still working and try to encourage existing users to move on to another theme of choice (preferably Enfold of course ;) )</p>
+<p>We will keep supporting our older themes in the support forums for months to come but there won&#8217;t be any new releases or updates on Themeforest. In fact, within the next 1-2 weeks  we will remove them from Themeforest altogether. So if you are running one of those themes and want to grab the latest version please do so now :)</p>
+<p>If you have purchased one of those themes within the last 6 months and don&#8217;t want to use it because of this, feel free to request a refund on Themeforest. We will grant it, no questions asked :)</p>
+<p>Also if you want to keep them running  on your site there are a lot of third party developers out there able to help with all kind of issues and improvements. So if you need help that is beyond the scope of what our support can do we will be happy to connect you :)</p>
+<h3>3.) What it means for Kriesi Media</h3>
+<p>So since we are removing all our older themes from Themeforest and only keep Enfold we will become a &#8220;one product&#8221; company. This should free up some development (and in the far future also some support) time which our existing Enfold customer base probably appreciates :)<br />
+We have some heavy improvements planned for our very own Advanced Template Builder but for the near future our editor and the WordPress Block editor won&#8217;t merge in any significant way. So if you enjoy working with Enfold you can be assured that it will stay that way :)</p>
+<p>&nbsp;</p>
+<p>As always, if you find any issues with the latest release feel free to open up a thread in our <a href="https://kriesi.at/support/">support forum</a> so we can try to fix it for you and others as soon as possible :)</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/wordpress-5-0-and-enfold-4-5-1/feed</wfw:commentRss>
+		<slash:comments>37</slash:comments>
+		</item>
+		<item>
+		<title>Enfold 4.5 &#8211; new template builder elements, more options, new demos focusing on gradients and a few words about the Gutenberg editor</title>
+		<link>https://kriesi.at/archives/enfold-4-5-new-template-builder-elements-more-options-and-demos-and-a-few-words-about-the-gutenberg-editor</link>
+		<pubDate>Tue, 20 Oct 2020 13:27:14 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3752</guid>
+		<description><![CDATA[In our last few major releases we were focusing a lot on improving the theme performance wise and making it as easy as possible to be GDPR compliant. During that time we also introduced some new visual features (like gradients for example) which did not get a proper introduction due to the emphasis on usability [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">A release that highlights some of the recent improvements of Enfold </p>
+<p>In our last few major releases we were focusing a lot on improving the theme performance wise and making it as easy as possible to be GDPR compliant. During that time we also introduced some new visual features (like gradients for example) which did not get a proper introduction due to the emphasis on usability and non visual features. We figured we should spoil you with a design oriented update between those recent usability updates and the ones we are currently preparing for the future :)</p>
+<p><span id="more-3752"></span></p>
+<h2>So whats new?</h2>
+<p>Quite a lot actually.</p>
+<p>First of all we added 2 new demos (<a href="https://kriesi.at/themes/enfold-knowledgebase-demo/" target="_blank" rel="noopener">knowledgebase</a> and <a href="https://kriesi.at/themes/enfold-one-page-agency/">agency</a>) that show the power of aforementioned gradients and box shadows, and feature a style that is very different from our previous demos.</p>
+<p>For sites with a lot of post based content we got additional blog list layouts.  We also got a new ajax search element for the template builder that allows you to easily place an additional search field anywhere on your site. A new <a href="https://kriesi.at/themes/enfold-knowledgebase-demo/2018/03/03/at-omnis-qui-atque/" target="_blank" rel="noopener">table of contents widget</a> allows to show the structure of a single entry in the sidebar and allows easy navigation for the user. This should all aid you in building and structuring websites that contain a lot of posts.</p>
+<p>In the &#8220;new element department&#8221; we got the new <a href="https://kriesi.at/themes/enfold-one-page-agency/#services">Icon Grid element</a> that displays a grid of icons and allows you to show flipbox or tooltip content on hover.</p>
+<p>Of course there is a slew of new options and improvements  like extra hover effects for the <a href="https://kriesi.at/themes/enfold-one-page-agency/#portfolio" target="_blank" rel="noopener">masonry</a> (with greyscale, desaturation and blur options), some additional improvements to the GDPR scripts that were introduced with the latest update, improvements to the theme updater, more animation settings for Masonry, Gallery, Icon List and other elements with predefined animations, etc etc &#8211; Feel free to check out the full changelog at the end of the entry ;)</p>
+<h3>Theme Updater</h3>
+<p>One thing that has changed, is the way theme updates are now done from the backend. We had to switch to the latest API version that Themeforest provides since earlier versions are now deprecated and no longer work reliable. Since these two API versions are not compatible this means that it will definitely be necessary to update your API credentials in your Enfold backend once you have done the update to version 4.5. We have updated our theme documentation on how to create that new &#8220;access token&#8221; that is required by Themeforest now.</p>
+<h3>Gutenberg</h3>
+<p>Some of you might have already seen that WordPress is trying to move to a new text editor called &#8220;Gutenberg&#8221;. This editor is currently available as a plugin but will &#8211; sooner or later &#8211; end up in the final Version of WordPress Core, thus replacing the current TinyMCE Texteditor.</p>
+<p>Now that we got a relatively stable version of Gutenberg to work with, we checked in which way we can incorporate our template builder and are happy to let you know that we should be able to provide the same experience with Gutenberg that we provide now, meaning that you can switch between the Gutenberg editor and the Advanced Layout Builder whenever you like.</p>
+<p>We will add this to one of the following smaller updates to make sure once you switch to WordPress 5.0 (which is said to be the official release of  Gutenberg) everything is smooth sailing. The current release also has a compatibility script that allows you to test the Gutenberg plugin and still use our Template Builder. We just wanted to let you know that its going to be smoother than now in the future ;)</p>
+<h3>What else did we change? Here is the Changelog:</h3>
+<ul>
+<li>added: new demo: Enfold Agency</li>
+<li>added: new demo: Enfold Knowledgebase</li>
+<li>added: new element: Ajax Search Form</li>
+<li>added: new Element: Icon Grid Element with Flipbox or Tooltip</li>
+<li>added: option to chose an alternate main menu for mobile devices</li>
+<li>added: box shadow for columns</li>
+<li>added: compatibility with the Gutenberg WordPress Editor Plugin (once the editor is added to the WordPress core a more sophisticated solution will be applied)</li>
+<li>added: option to link special headings</li>
+<li>added: custom margins for color sections</li>
+<li>added: a new option to enable a separate sidebar for archive pages instead of using the &#8216;blog sidebar&#8217;</li>
+<li>added: additional blog list layouts</li>
+<li>added: options to visually wrap an Animated Numbers element into a circle</li>
+<li>added: Table of contents widget, which allows to automatically collect the content of a page based on the headings used</li>
+<li>added: Various additional styling options for the advanced styling blocks.</li>
+<li>added: new options for the timeline element to display &#8220;steps&#8221; (like: step 1: register, step 2: confirm, step 3: etc)</li>
+<li>added: Text alignment option for left sidebar</li>
+<li>added: Highlight column by slightly increasing its</li>
+<li>added: Additional accordion styles</li>
+<li>added: new sidebar styling</li>
+<li>added: option to display a data privacy checkbox to registration form</li>
+<li>added: filter that allows plugins to translate a footer template page</li>
+<li>added: new Product snippet element to display woocommerce price as template builder element</li>
+<li>added: RTL support for portfolio and masonry grids</li>
+<li>added: a re-coded version of the combowidget was re-introduced to the theme</li>
+<li>added: option to always load the mediaelement scripts, in case it is required for 3rd party plugins</li>
+<li>added: extra hover effects for masonry images: (grayscale/desaurationt/blur)</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>improved: the theme updater now works with the latest Envato API version. Please not: you will need to generate a new token for updates</li>
+<li>improved: added support for smoothscroll for clickable columns and cells</li>
+<li>improved: contact form auto responder email can now be set and various filter names have been updated</li>
+<li>improved: backend element preview</li>
+<li>improved: added the option to enable/disable animations for the following elements: Masonry Entries, Masonry Gallery, Gallery, Icon List, Timeline, Icon</li>
+<li>improved: added support for WP Embed for ALB pages</li>
+<li>improved: classes to prev page/ next page pagination and a filter for output</li>
+<li>improved: added a filter to allow 3rd party scripts to force load media element in frontend</li>
+<li>improved: added support for custom post type select for magazine element</li>
+<li>improved: the theme updater script</li>
+<li>improved: Allow tabs to be selected using keyboard navigation only</li>
+<li>improved: Events Calendar Styling rules</li>
+<li>improved: Google maps values can be filtered programmatically now</li>
+<li>improved: Social media buttons all link to https now</li>
+<li>improved: added a filter to programmatically change the google maps overlay image</li>
+<li>improved: added rel=&#8217;nofollow&#8217; to search link to avoid duplicate content in search engines</li>
+<li>improved: lightbox behaviour for WooCommerce Galleries</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>fixed: an issue with layerslider fullwidth/responsive mode</li>
+<li>fixed: an issue with multiple image uploads in shortcode popup</li>
+<li>fixed: an issue with product review display</li>
+<li>fixed: an issue with disabled elements and the data privacy modal window</li>
+<li>fixed: an issue with RTL comment field display</li>
+<li>fixed: some small spelling errors and typos</li>
+<li>fixed: an issue with sticky transparent headers on tablet sized screens</li>
+<li>fixed: a PHP warning caused by the instagram caching widget</li>
+<li>fixed: an issue with the Masonry Gallery Lightbox title</li>
+<li>fixed: changed schema.org address to https:</li>
+<li>fixed: issue with cookie consent message not accepting modified font size</li>
+<li>fixed: a problem with multiple tab sections on one page</li>
+<li>fixed: phone number on tablet screen size</li>
+<li>fixed: a fallback image issue for slideshows</li>
+<li>fixed: WPML bug not showing translated images</li>
+<li>fixed: a WooCommerce shop page ordering conflict</li>
+<li>fixed: Layerslider Text alignment when using RTL language</li>
+<li>fixed: a protfolio grid column issue</li>
+<li>fixed: an issue with the media gallery and IE11</li>
+<li>fixed: empty inline background-image property for sections</li>
+<li>fixed: img HTML tags syntax error for height and width</li>
+<li>fixed: an empty translation string causing a PoEdit Error</li>
+<li>fixed: an issue with circle images that are set to increase their size on hover</li>
+<li>fixed: an issue with codeblock overwriting in ALB</li>
+<li>fixed: an issue with horizontal gallery lightboxes if multiple galleries are active</li>
+<li>fixed: undefined PHP notice for video element</li>
+<li>fixed: added a check if the inital open tab value is valid</li>
+<li>fixed: an issue with the overlay burger menu when the layout: &#8220;logo center/menu below&#8221; was selected</li>
+<li>fixed: added missing link target to timeline element</li>
+<li>fixed: a problem with codeblock in postcontent element</li>
+<li>fixed: an issue with postboxes causing a javascript error on post saving</li>
+<li>fixed: an issue with custom footers not being displayed fullwidth</li>
+<li>fixed: an issue with portfolio javascript breaking on complex ALB pages</li>
+<li>updated: several language files (german, spanish, hebrew)</li>
+</ul>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Enfold 4.4 and the GDPR (General Data Protection Regulation)</title>
+		<link>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation</link>
+		<comments>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation#comments</comments>
+		<pubDate>Wed, 23 May 2018 03:53:17 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3671</guid>
+		<description><![CDATA[First things first: especially if you are European this law was very present during the last weeks and there is a good chance you already know about it. If you don&#8217;t: what exactly is the General Data Protection Regulation? What is the GDPR? “The General Data Protection Regulation (GDPR) is a regulation by which the EU intends [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">By now most people have probably heard about the new EU data privacy law that will come to full effect on May 25th 2018. We have adapted Enfold  to make the journey to compliance a little easier for those who deal with European Visitors on their site</p>
+<p>First things first: especially if you are European this law was very present during the last weeks and there is a good chance you already know about it. If you don&#8217;t: what exactly is the General Data Protection Regulation?</p>
+<p><span id="more-3671"></span></p>
+<h3>What is the GDPR?</h3>
+<p>“The <strong>General Data Protection Regulation</strong> (<a href="https://www.eugdpr.org/"><strong>GDPR</strong></a>) is a regulation by which the EU intends to strengthen and unify data protection for all individuals from the European Union (EU). It also addresses the export of personal data outside the EU.</p>
+<p>It aims primarily to give control back to EU citizens and residents over their personal data and to simplify the regulatory environment for international business (any company that is gathering, processing or storing the personal data of EU citizens).”</p>
+<p>If you ended up on our site chances are good you are running your own website. If you have visitors from the EU on your site the GDPR basically requires you to adhere to European standards regarding the data of your users, otherwise you might get fined.</p>
+<h3>What do I need to do?</h3>
+<p>At the very least you need to set up a proper privacy policy on your website (<a href="https://wordpress.org/news/2018/05/wordpress-4-9-6-privacy-and-maintenance-release/" target="_blank" rel="noopener">WordPress 4.9.6 added the tools</a> to do that), establish a record of processing activities and make sure that users get control over their data (they should be able to get info on what data you have about them, how you use it and if requested you also need to remove it, if that does not interfere with other lawful duties of yours) We are not going into detail here since there are a ton of fully fledged, well written articles out there that explain in detail which steps to take to be compliant.</p>
+<h3>What do I not need to do?</h3>
+<p>There are currently a lot of horror stories out there on how websites must be adapted (like all forms must come with checkboxes, all user IP addresses must be erased, all external services like Google Fonts, Video Embeds and Maps must be removed, all Cookies must be blocked and whatnot).</p>
+<p>Non compliance will result in catastrophic fines and will end your business. We should all close our websites right now and be done with it. etc etc</p>
+<p>We have talked to lawyers, we have visited information events and we have scoured the web for reliable resources written by people with a background in data protection or law. The gist we got from those sources:</p>
+<p>It&#8217;s all not as bad as it sounds. Yes there is some work to do. But many of these &#8220;required changes&#8221; are highly debatable or outright wrong, and even if you don&#8217;t get everything right from the beginning: the authorities in each country are tasked to try to inform first and only if they encounter repeated violation of the law impose fines.</p>
+<h3>The key takeaway from our talks with lawyers</h3>
+<p>This might probably be the most important takeaway we got from our research. According to our lawyers you can pretty much use every feature as is if one of 2 conditions are met: <strong>legitimate interest</strong> on your side, or <strong>consent</strong> given by the visitor.</p>
+<p>The problem with <strong>legitimate interest </strong>is that its one of those things that are not strictly defined by the law, which means its open to interpretation. The question is: when are you allowed to put your interest first and when do you need to step back and ask for permission? A question that got no general answer as we understand it, but needs to be reviewed for each case individually.</p>
+<p>Although legitimate interest may be open to interpretation, according to our lawyers it&#8217;s usually still the better option compared to user consent. The problem with consent is that it can be revoked at any time which can cause you a lot of extra work.</p>
+<p>So if its possible its better to argue that you need a feature for a particular business reason, inform the user on your privacy policy page about it and be done with it, instead of placing consent checkboxes and popups all over the website ;) In some cases this might not be possible, so we have added several new options to the theme that allow you to go either route, depending on what you (and your lawyers) feel is appropriate.</p>
+<h3>So what did change with Enfold 4.4</h3>
+<p>Finally we are talking about the theme :D As was discussed above, it is currently hard to tell what is allowed, what is not and what is in a legal grey area. So what we did is: allow you to choose how you want to use certain features, depending on what the legal advisors and authorities in your country tell you :)</p>
+<h4>External services</h4>
+<p>The biggest changes we applied are in regard to external services. Since external services receive user IP addresses if you use their services we have implemented ways that this only happens on user interaction.</p>
+<p>You can now set up your instagram and facbook widget in a way that they do not send data unless the user interacts with them. Same goes for google maps where you can set up a placeholder image that is displayed until the user requests the actual map. The very same was implemented for vimeo videos and youtube. The cool thing about those features is that its not only helpful with data protection but its also in accordance with our recent efforts to improve page speed and performance scores. And it of course helps a lot with performance if external sources are only loaded on user request.</p>
+<p>We have also implemented a font upload feature that allows you to upload google webfonts (or any fonts for that matter) to your webserver. Users have asked for the possibility to use their own custom fonts for some time now and it was a good opportunity to implement that feature ;)</p>
+<h4>Consent Checkboxes</h4>
+<p>Enfold now allows you to display checkboxes after any theme generated form, that asks for user acceptance of your privacy policy before sending the form. As mentioned earlier we do not think that this is necessary (legitimate interest vs consent), but it was requested so often, we figured we can at least provide the feature for now until there are definite rulings for sending contact, newsletter or comment forms :)</p>
+<h4>Shortcodes for your privacy policy</h4>
+<p>We also added a few shortcodes that allow the user to disable certain features on your website, in case you decide to use them without asking in the first place.</p>
+<ul>
+<li><strong>[av_privacy_google_tracking]</strong> &#8211; allows a user to disable google tracking in his or her browser</li>
+<li><strong>[av_privacy_google_webfonts]</strong> &#8211; allows a user to disable the use of google webfonts in his or her browser</li>
+<li><strong>[av_privacy_google_maps]</strong> &#8211; allows a user to disable the use of google maps in his or her browser</li>
+<li><strong>[av_privacy_video_embeds]</strong> &#8211; allows a user to disable video embeds in his or her browser</li>
+<li><strong>[av_privacy_link]</strong> &#8211; displays a link to the privacy policy page set in your WordPress admin panel</li>
+</ul>
+<p>If you do not like the default text or language these shortcodes generate you can use your own text like this: [shortcode]YOUR OWN TEXT[/shortcode]</p>
+<h4>Cookie consent bar improvements</h4>
+<p>The cookie consent bar was also heavily improved in 2 ways.</p>
+<ol>
+<li>It is now possible to generate any number of call to action buttons</li>
+<li>It is now possible to display a information modal window that explains which cookies are used on your site and how they are used. It also explains why some of them can not be disabled via shortcode (of course browser disabling always works) and how to opt out of services like google analytics tracking. You can of course change that default info and set up your own modal information.</li>
+</ol>
+<p><a href="https://kriesi.at/wp-content/uploads/2018/05/cookie-1030x672.png"><img class="aligncenter size-large wp-image-3678" src="https://kriesi.at/wp-content/uploads/2018/05/cookie-1030x672.png" alt="" width="1030" height="672" srcset="https://kriesi.at/wp-content/uploads/2018/05/cookie-1030x672.png 1030w, https://kriesi.at/wp-content/uploads/2018/05/cookie-300x196.png 300w, https://kriesi.at/wp-content/uploads/2018/05/cookie-768x501.png 768w, https://kriesi.at/wp-content/uploads/2018/05/cookie-1500x979.png 1500w, https://kriesi.at/wp-content/uploads/2018/05/cookie-705x460.png 705w, https://kriesi.at/wp-content/uploads/2018/05/cookie-450x294.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>And since we are talking about cookies:</p>
+<h4>One more word about Cookies</h4>
+<p>You may notice the absence of a feature to generally disable cookies. This is a &#8220;requirement&#8221; that is also heavily discussed on the internet but since Enfold does not set any cookie that stores any personal information we decided against it. Enfold cookies do one of 3 things:</p>
+<ul>
+<li>dismiss the cookie consent bar permanently (permanent cookie)</li>
+<li>make sure that the breadcrumb navigation is displayed properly (session cookie)</li>
+<li>allow a user to disable certain features like webfonts, analytics, maps or videos (permanent cookies)</li>
+</ul>
+<p>As you can see none of those store any user information, so the GDPR does not apply here. We would recommend to mention that you set cookies in your privacy policy and also explain how they are used and how to disable them in the web browser, if the user really really does not want any cookies to be set, but we do not think its necessary to block them as a whole. If you think it is: there are plugins out there that can do the job.</p>
+<h3>Whats more?</h3>
+<p>Although we only had very little time since our last major update we were able to also set up a new demo for you. Since this is an update that is caused by a new law, we only considered it fitting to provide a demo for lawyers :D</p>
+<p><a href="https://kriesi.at/themes/enfold-law/" target="_blank" rel="noopener"><img class="aligncenter wp-image-3680 size-large" src="https://kriesi.at/wp-content/uploads/2018/05/law-1030x568.png" alt="" width="1030" height="568" srcset="https://kriesi.at/wp-content/uploads/2018/05/law-1030x568.png 1030w, https://kriesi.at/wp-content/uploads/2018/05/law-300x165.png 300w, https://kriesi.at/wp-content/uploads/2018/05/law-768x423.png 768w, https://kriesi.at/wp-content/uploads/2018/05/law-1500x827.png 1500w, https://kriesi.at/wp-content/uploads/2018/05/law-705x389.png 705w, https://kriesi.at/wp-content/uploads/2018/05/law-450x248.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>&nbsp;</p>
+<h3>Last but not least: a disclaimer :/</h3>
+<div id='avia-messagebox-' class='avia_message_box  avia-color-orange avia-size-large avia-icon_select-yes avia-border-  '><span class='avia_message_box_title' >Disclaimer</span><div class='avia_message_box_content' ><span class='avia_message_box_icon' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'></span><p>We are not lawyers, so don’t take any of this as legal advice!</p>
+<p>We wrote down what we have been told by people who are well versed in legal matters but a lot of this is subject to interpretation so make sure to consult with your lawyer if you want to be sure what to do.</p>
+</div></div>
+<h4>Full Changelog</h4>
+<p>Since the last major update was only a month ago there is not a lot more going on than what has been discussed above. Nevertheless here is the full changelog:</p>
+<ul>
+<li>added: new demo: Enfold Law</li>
+<li>added: cookie consent bar got an improved way of adding unlimited buttons</li>
+<li>added: cookie consent bar got an option to display a modal window with detailed information and the possibility to deactivate some cookies and features</li>
+<li>added: custom font uploader &#8211; you can now upload and use any font you like</li>
+<li>added: the facebook page widget got a &#8220;data protection&#8221; mode were it does not load the facebook javascript without user interaction</li>
+<li>added: the instagram widget got a &#8220;data protection&#8221; mode were it does store all images on your own server</li>
+<li>added: google maps got a &#8220;data protection&#8221; mode that allows to load the maps API only when the user clicks on a google map fallback image</li>
+<li>added: shortcode that can be used in your data protection policy that allows the visitor to disable google analytics tracking</li>
+<li>added: shortcode that can be used in your data protection policy that allows the visitor to disable google web fonts</li>
+<li>added: shortcode that can be used in your data protection policy that allows the visitor to disable youtube and vimeo video embeds</li>
+<li>added: shortcode that can be used in your data protection policy that allows the visitor to disable google map embeds</li>
+<li>added: option to add a checkbox to all comment forms that asks for approval of your privacy policy before sending the form</li>
+<li>added: option to add a checkbox to all contact forms that asks for approval of your privacy policy before sending the form</li>
+<li>added: option to add a checkbox to all newsletter forms that asks for approval of your privacy policy before sending the form</li>
+<li>added: option to add a checkbox to your login form that asks for approval of your privacy policy before logging in</li>
+<li>improved: cookie management for portfolio breadcrumb navigation is deactivated if breadcrumbs are deactivated</li>
+<li>fixed: an issue with safari admin menu</li>
+<li>fixed: an issue with the linkpicker not displaying all posts to select</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/enfold-4-4-and-the-gdpr-general-data-protection-regulation/feed</wfw:commentRss>
+		<slash:comments>78</slash:comments>
+		</item>
+		<item>
+		<title>Scoring 100/100 in Google PageSpeed Insights, GTmetrix PageSpeed and Yslow (and why you probably shouldn&#8217;t bother ;)</title>
+		<link>https://kriesi.at/archives/scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow</link>
+		<comments>https://kriesi.at/archives/scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow#comments</comments>
+		<pubDate>Thu, 03 May 2018 10:44:14 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3513</guid>
+		<description><![CDATA[Don&#8217;t let yourself get fooled by the title. You should definitely care about your site performance and using those tools allows you to identify problems easily. In general you get very good recommendations but you should know when to follow them and when to ignore them :) The metric that is much more important than [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">This article will teach you how to get a perfect score with Enfold and its latest performance upate to Version 4.3 on Google PageSpeed Insights and GTmetrix. It will also explain why it&#8217;s probably not a good idea to obsess over it</p>
+<p>Don&#8217;t let yourself get fooled by the title. You should definitely care about your site performance and using those tools allows you to identify problems easily. In general you get very good recommendations but you should know when to follow them and when to ignore them :)</p>
+<p>The metric that is much more important than any score, awarded by those testing tools, is the page load time of your site. And to achieve a good page load time a good server environment and optimised images are usually much more important than any theme optimisations you can do.</p>
+<p>So make sure to not get obsessed with a good score, just for the sake of the score ;)<br />
+Also, while building our latest Enfold Update we set up a total of 12 test environments and probably did 1000 speed checks. The conclusion we came to, is that the trade offs for a perfect score are often times not worth it. (eg: compressing your images to a point were quality suffers dramatically, using a ton of inline css and javascript to satisfy above the fold rules, etc)</p>
+<h4>So here is what we are going to do:</h4>
+<p><span id="more-3513"></span></p>
+<ol>
+<li>We will set up a new test site and activate our Enfold Theme</li>
+<li>We will install our <a href="https://kriesi.at/themes/enfold-2017/" target="_blank" rel="noopener">Enfold 2017 Demo</a> (it has a lot of content, images, slideshows so its a good guinea pig)</li>
+<li>We will optimize it to get to a 100/100 score on all testing tools</li>
+<li>We will tell you which of those optimisations are probably not worth the trade offs</li>
+</ol>
+<p>&nbsp;</p>
+<h4>1.) The theme by itself</h4>
+<p>After setting up the new WordPress Site and activating the theme, if we check the score we get pretty good results out of the box. After all, enfold is now heavily optimized ;)</p>
+<div class='avia-gallery  avia-gallery-1 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.26-1030x630.png' data-rel='gallery-1' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.26-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.26-495x400.png' width='495' height='400'  title='pagespeed dekstop' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.15-1030x644.png' data-rel='gallery-1' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.15-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.29.15-495x400.png' width='495' height='400'  title='pagespeed mobile' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.45-970x1030.png' data-rel='gallery-1' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.45-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.45-495x400.png' width='495' height='400'  title='gtmetrix' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.57-1030x854.png' data-rel='gallery-1' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.57-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-29-14.26.57-495x400.png' width='495' height='400'  title='yslow' alt='' /></a></div></div>
+<p>A lot of the optimization that we will introduce you to in this article are content and server related and got nothing to do with Enfold.</p>
+<p>The options that can be changed in the theme are not that many, most of the optimization is set up automatically by conditional checks we have implemented. Sort of an AI that does a lot of the optimization related stuff for you ;)</p>
+<p>Here is a screenshot of the &#8220;main&#8221; optimisation options. It is recommended to enable both the merging and compression of your CSS and JS files. It is also recommended to only load template builder elements that you are using. The theme will try to keep track of those and automatically load the necessary files. We have already described how these settings work in our <a href="https://kriesi.at/archives/enfold-4-3-performance-update">introduction blog post for Enfold 4.3</a>.</p>
+<div id="attachment_3645" style="width: 1040px" class="wp-caption aligncenter"><a href="https://kriesi.at/wp-content/uploads/2018/05/defaults-1030x591.png"><img class="wp-image-3645 size-large" src="https://kriesi.at/wp-content/uploads/2018/05/defaults-1030x591.png" alt="" width="1030" height="591" srcset="https://kriesi.at/wp-content/uploads/2018/05/defaults-1030x591.png 1030w, https://kriesi.at/wp-content/uploads/2018/05/defaults-300x172.png 300w, https://kriesi.at/wp-content/uploads/2018/05/defaults-768x441.png 768w, https://kriesi.at/wp-content/uploads/2018/05/defaults-1500x861.png 1500w, https://kriesi.at/wp-content/uploads/2018/05/defaults-705x405.png 705w, https://kriesi.at/wp-content/uploads/2018/05/defaults-450x258.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">Active default settings</p></div>
+<p>(PS: Please note: if you are upgrading from a previous Enfold version those features are by default not active and you need to enable them manually. This is to prevent any undetected errors for users that are just updating and not checking their site afterwards. New installations will have these features enabled by default)</p>
+<h4>2.) The theme with content</h4>
+<p>After installing the Enfold 2017 Demo, our initial speed test results are rather mixed:</p>
+<div class='avia-gallery  avia-gallery-2  avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/insights-desktop-1-1030x617.png' data-rel='gallery-2' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/insights-desktop-1-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/insights-desktop-1-495x400.png' width='495' height='400'  title='insights-desktop-1' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/insights-mobile-1-1030x614.png' data-rel='gallery-2' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/insights-mobile-1-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/insights-mobile-1-495x400.png' width='495' height='400'  title='insights-mobile-1' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gtmetriy-pagespeed-1-972x1030.png' data-rel='gallery-2' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gtmetriy-pagespeed-1-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gtmetriy-pagespeed-1-495x400.png' width='495' height='400'  title='gtmetriy-pagespeed-1' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gtmetrix-yslow-1-1030x851.png' data-rel='gallery-2' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gtmetrix-yslow-1-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gtmetrix-yslow-1-495x400.png' width='495' height='400'  title='gtmetrix-yslow-1' alt='' /></a></div></div>
+<p>As you can see, especially the desktop score for pagespeed insights and gtmetrix pagespeed are rather bad. This is because the score is influenced heavily by the level of image optimisation. Since we did not do any optimization yet our score suffers, despite the fact that there is a lot of green bars and the theme scores really well with most of the other performance tests. So first things first: lets install an image optimization plugin.</p>
+<p>&nbsp;</p>
+<h4>3.) Image optimization</h4>
+<p>And here you already encounter your first decision since image optimization is a tricky business.</p>
+<p>You have to strike a good balance between size reduction and image quality. If you reduce the file size too much the image might be small and the pagespeed tools might be satisfied, but the experience for your users would be rather crappy since they would see some ugly pixelated pictures. On the other hand, if you choose too little reduction your site might be too large and load slowly. And on top of that your score &#8211; and whats more important &#8211; your user experience and in the future also your mobile site ranking might suffer.</p>
+<p>We have tested a long list of plugins and found that <a href="https://wordpress.org/plugins/shortpixel-image-optimiser/" target="_blank" rel="noopener">Shortpixel</a> and <a href="https://wordpress.org/plugins/optimus/" target="_blank" rel="noopener">Optimus</a> did a really nice job for us.</p>
+<p>Optimus worked well out of the box for the images we are using on our test site and shortpixel allowed us to fine tune the results a little better due to more options.</p>
+<p>The Shortpixel &#8220;<strong>Lossy</strong>&#8221; Compression will heavily reduce the image size but is also rather aggressive. If image quality is not that big of a deal for you go with that. If quality is important use the &#8220;<strong>Glossy</strong>&#8221; compression setting. Some images might be too large for the pagespeed tools but you can then decide if you want to reduce the  image size further individually or if you want to keep the image as is. If you don&#8217;t already have a preferred image optimization plugin you can download and install either of those two plugins directly from your Enfold Performance Panel:</p>
+<div id="attachment_3535" style="width: 1040px" class="wp-caption aligncenter"><a href="https://kriesi.at/wp-content/uploads/2018/03/image-otimization.png"><img class="wp-image-3535 size-large" src="https://kriesi.at/wp-content/uploads/2018/03/image-otimization-1030x503.png" alt="" width="1030" height="503" srcset="https://kriesi.at/wp-content/uploads/2018/03/image-otimization-1030x503.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-300x147.png 300w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-768x375.png 768w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-1500x733.png 1500w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-705x344.png 705w, https://kriesi.at/wp-content/uploads/2018/03/image-otimization-450x220.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">The new image Optimization Panel of Enfold</p></div>
+<p>For the sake of this demo we went with Optimus and after batch processing all images our results got much better already. Unfortunately thats sometimes not enough for the pagespeed tools so it sometimes happens that you need to individually process some images. Optimus does not allow that, but tools like shortpixel do. In the end its a little trial and error which plugin works best for the images you are using :)</p>
+<div class='avia-gallery  avia-gallery-3 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.38-1030x559.png' data-rel='gallery-3' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.38-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.38-495x400.png' width='495' height='400'  title='Screenshot 2018-03-28 18.55.38' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.46-1030x562.png' data-rel='gallery-3' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.46-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.55.46-495x400.png' width='495' height='400'  title='Screenshot 2018-03-28 18.55.46' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.59.41-979x1030.png' data-rel='gallery-3' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.59.41-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-18.59.41-495x400.png' width='495' height='400'  title='Screenshot 2018-03-28 18.59.41' alt='' /></a></div></div>
+<p>Both Mobile and Yslow rating did not change much (because they do not really take images into account) but the others went from red straight into green with a score of at least 85+. This alone shows you how important image optimization is.</p>
+<h4>4.) Leverage browser caching</h4>
+<p>Next on the list of both pagespeed insights and GTmetrix is to set up browser caching. What this means is that static resources on your website, like CSS files, Javascript files and images, are only loaded once by a visitors browser: when he first visits. On consecutive visits of your website those resources will be loaded from the browser cache.</p>
+<p>This only works if the webserver tells the browser on first load, that those resources are viable for a longer time. So, yes, this is neither a theme nor a WordPress optimization issue, it is something that needs to be changed for your server. Since most webhosts these days run an environment that allows you to easily change this all you need is to open the root directory of your WordPress installation, look out for the .htaccess file and paste the following lines of code at the top:</p>
+<pre>&lt;IfModule mod_expires.c&gt;
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+&lt;/IfModule&gt;
+</pre>
+<p>If this does not work for you for whatever reason there are other steps you can try, described <a href="https://kinsta.com/blog/leverage-browser-caching/" target="_blank" rel="noopener">here.<br />
+</a>So now that we have enabled browser caching we can do the test again and its gotten better once again.</p>
+<div class='avia-gallery  avia-gallery-4 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-3-1030x588.png' data-rel='gallery-4' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-3-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-3-495x400.png' width='495' height='400'  title='psi-dekstop-3' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-mobile-3-1030x588.png' data-rel='gallery-4' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-mobile-3-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-mobile-3-495x400.png' width='495' height='400'  title='psi-mobile-3' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-3-969x1030.png' data-rel='gallery-4' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-3-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-3-495x400.png' width='495' height='400'  title='gt-3' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-y-3-1030x850.png' data-rel='gallery-4' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-y-3-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-y-3-495x400.png' width='495' height='400'  title='gt-y-3' alt='' /></a></div></div>
+<p>As you can see this server optimization is also quite important. Slowly but steady we are getting there.</p>
+<h4>4.) Eliminate render-blocking JavaScript and CSS in above-the-fold content /Defer parsing of JavaScript</h4>
+<p>Those two messages essentially mean the same thing: In order to render the page as fast as possible there should be as little external resources likes CSS files, Fonts, Javascript be in the head of the theme. If it must be there the page speed tools ask you to move them to the bottom of the site, or put it inside the HTML document, instead of placing it in an outside file. This is because the browser needs to wait for those files to fully load before being able to display the site.</p>
+<p>Enfold on its own tries to place as many of the files as possible at the bottom of the site to satisfy those requirements. However some external plugins may overwrite this. An example would be the Layerslider plugint that we use here. Luckily its quite easy to solve this issue, since the layerslider also got a few optimization settings. Head over to the Layerslider-&gt;Options Page and open the advanced tab. Set the options like this:</p>
+<p><a href="https://kriesi.at/wp-content/uploads/2018/03/layerslider.png"><img class="aligncenter size-large wp-image-3562" src="https://kriesi.at/wp-content/uploads/2018/03/layerslider-1030x345.png" alt="" width="1030" height="345" srcset="https://kriesi.at/wp-content/uploads/2018/03/layerslider-1030x345.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-300x100.png 300w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-768x257.png 768w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-1500x502.png 1500w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-705x236.png 705w, https://kriesi.at/wp-content/uploads/2018/03/layerslider-450x151.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>This will tell the slider to load its script in the footer of the page as well.</p>
+<p>Another issue with above-the-fold content are custom fonts. If you are using one or more google fonts, provided by the theme, this will also hurt your score. The Enfold Performance page lets you change the way those fonts are loaded from header (which is the default) to footer. This is one of the settings that has a small trade off. Setting it to load fonts in your footer will slightly speed up the page and satisfy all the page checks.</p>
+<p>But it will also cause a short flicker of text on page load, since the text will be rendered first with a fallback font, and only then will the Google font get applied.</p>
+<p>Personally I am not using this setting for our websites because I consider that font flicker to be very annoying, but if you want to squeeze every millisecond out of your page this will be necessary. In order to get a perfect score this is also necessary so we will activate the setting as well.</p>
+<p><a href="https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer.png"><img class="aligncenter size-large wp-image-3569" src="https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-1030x392.png" alt="" width="1030" height="392" srcset="https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-1030x392.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-300x114.png 300w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-768x292.png 768w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-1500x571.png 1500w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-705x268.png 705w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-845x321.png 845w, https://kriesi.at/wp-content/uploads/2018/03/scripts-in-footer-450x171.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>As you can see, I also set jQuery to load in the footer and I disabled some other WordPress defaults that are not necessary for most sites (emojis and jquery migrate). If you are running a lot of plugins you might want to leave those settings untouched since they might cause problems with badly coded or outdated ones. (Please note that if you are running no plugins at all some of the options are set automatically for you and won&#8217;t be displayed)</p>
+<p>Lets check our score:</p>
+<div class='avia-gallery  avia-gallery-5 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-4-1030x543.png' data-rel='gallery-5' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-4-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-dekstop-4-495x400.png' width='495' height='400'  title='psi-dekstop-4' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/psdi-mobile-4-1030x542.png' data-rel='gallery-5' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psdi-mobile-4-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psdi-mobile-4-495x400.png' width='495' height='400'  title='psdi-mobile-4' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-4-974x1030.png' data-rel='gallery-5' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-4-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-4-495x400.png' width='495' height='400'  title='gt-4' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-y-4-1030x842.png' data-rel='gallery-5' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-y-4-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-y-4-495x400.png' width='495' height='400'  title='gt-y-4' alt='' /></a></div></div>
+<p>As you can see we are getting there. Already 99/100 on insights and 100 on Gtmetrix Pagespeed. Whats left to do is no longer part of the theme but once again some server stuff :)</p>
+<h4 class="rule-title">5.) Reduce server response time</h4>
+<p>This statement is shown by insights if your site is served too slow. And slow is relative here because it means longer than 20ms :)<br />
+In order to get that last 1 percent out of insights make sure that your site is using a caching plugin. Since I can remember our sites have run on <a href="https://wordpress.org/plugins/wp-super-cache/" target="_blank" rel="noopener">Wp Super Cache</a>. It is one of the easiest to use plugins that also offers options to fine tune it. In most cases you simply install and activate it and are done. Thats why it is also recommended on our Performance page ;)</p>
+<p>Once the plugin is active visit the page once, so a cached version is generated. Once that is done your site will score 100/100 in google pagespeed insights as well ;)</p>
+<div class='avia-gallery  avia-gallery-6 avia_lazyload avia_animate_when_visible  '  itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject" ><div class='avia-gallery-thumb'> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-desktop-perfect-1030x822.png' data-rel='gallery-6' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-desktop-perfect-495x400.png' class='first_thumb lightbox ' data-onclick='1' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-desktop-perfect-495x400.png' width='495' height='400'  title='psi-desktop-perfect' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/psi-mpbile-perfect-1030x839.png' data-rel='gallery-6' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/psi-mpbile-perfect-495x400.png' class='lightbox ' data-onclick='2' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/psi-mpbile-perfect-495x400.png' width='495' height='400'  title='psi-mpbile-perfect' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-dektop-perfect-967x1030.png' data-rel='gallery-6' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-dektop-perfect-495x400.png' class='lightbox ' data-onclick='3' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-dektop-perfect-495x400.png' width='495' height='400'  title='gt-dektop-perfect' alt='' /></a> <a href='https://kriesi.at/wp-content/uploads/2018/03/gt-yslow-b-1030x845.png' data-rel='gallery-6' data-prev-img='https://kriesi.at/wp-content/uploads/2018/03/gt-yslow-b-495x400.png' class='lightbox ' data-onclick='4' title=''  itemprop="thumbnailUrl" ><img  src='https://kriesi.at/wp-content/uploads/2018/03/gt-yslow-b-495x400.png' width='495' height='400'  title='gt-yslow-b' alt='' /></a></div></div>
+<p>As you can see, all thats left is Yslow ;)</p>
+<h4 class="rule-title">6.) Yslow: 3 big Problems left: Using a CDN, use Cookieless Domains, too many DOM elements</h4>
+<ul>
+<li>Using a CDN with Wp Supercache is rather easy. <a href="https://www.keycdn.com/support/wordpress-cdn-integration-with-wp-super-cache/" target="_blank" rel="noopener">Here is a good article</a> that lists the steps you should take.</li>
+<li>Cookiless domains: The Yslow testing tools are not up to modern standards here. With HTTPS almost everywhere now, this is no longer a necessary step. If you really want to do this for the sake of the page score, <a href="https://kinsta.com/knowledgebase/serve-static-content-from-a-cookieless-domain/" target="_blank" rel="noopener">here is an article as well</a> ;)</li>
+<li>Reducing Dom Elements: One of the trade offs I spoke about earlier. Too many DOM elements basically means that our site is too large. In order to satisfy this I will delete a few elements from the page, but I would not do this in a real life situation, If I thought that content is important ;)</li>
+</ul>
+<p>Once all those steps are performed we are coming close at Yslow as well:</p>
+<div id="attachment_3581" style="width: 855px" class="wp-caption aligncenter"><a href="https://kriesi.at/wp-content/uploads/2018/03/yslow-96.png"><img class="wp-image-3581 size-gallery" src="https://kriesi.at/wp-content/uploads/2018/03/yslow-96-845x684.png" alt="" width="845" height="684" srcset="https://kriesi.at/wp-content/uploads/2018/03/yslow-96-845x684.png 845w, https://kriesi.at/wp-content/uploads/2018/03/yslow-96-495x400.png 495w" sizes="(max-width: 845px) 100vw, 845px" /></a><p class="wp-caption-text">We are getting there :)</p></div>
+<p>&nbsp;</p>
+<p>To squeeze out the last few points Yslow wants you to reduce the number of HTTP requests (less JS and less CSS files) and add expires header to all files. The later can only be solved if you are not running any google fonts at all (tradeoffs, you remember? :P) because thats the file that Yslow is concerned about:</p>
+<p><a href="https://kriesi.at/wp-content/uploads/2018/03/expires.png"><img class="aligncenter wp-image-3582 size-large" src="https://kriesi.at/wp-content/uploads/2018/03/expires-1030x129.png" alt="" width="1030" height="129" srcset="https://kriesi.at/wp-content/uploads/2018/03/expires-1030x129.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/expires-300x38.png 300w, https://kriesi.at/wp-content/uploads/2018/03/expires-768x96.png 768w, https://kriesi.at/wp-content/uploads/2018/03/expires-1500x188.png 1500w, https://kriesi.at/wp-content/uploads/2018/03/expires-705x88.png 705w, https://kriesi.at/wp-content/uploads/2018/03/expires-450x56.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>So in order to score perfectly we would work without our google fonts and disable them. Too many external JS and CSS files is a problem specific to our current test environment: the layerslider plugin has a few files that we can not compress at the moment with the current version of the Layerslider. We talked to the layerslider team and worked out some improvements to the slider together and applied those changes to the test server (they will be included in all future versions of the Layerslider Plugin so no need for you to do anything here)</p>
+<p>Voila, we are there! (Here is a link to the<a href="https://gtmetrix.com/reports/test.kriesi.at/ZvsCwCV1" target="_blank" rel="noopener"> test server test restults</a>. It will probably be removed at some point in the future but for now you can use it to see that we were not cheating ;D )</p>
+<p><a href="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20.png"><img class="aligncenter size-large wp-image-3583" src="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-1030x227.png" alt="" width="1030" height="227" srcset="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-1030x227.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-300x66.png 300w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-768x169.png 768w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-705x155.png 705w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-450x99.png 450w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20.png 1182w" sizes="(max-width: 1030px) 100vw, 1030px" /></a></p>
+<p>&nbsp;</p>
+<h4>Which steps do we ignore, here at Kriesi Media?</h4>
+<p>So in theory you can see it is possible with a little effort, to achieve a perfect score. But as I said from the beginning, there are some things that you can not easily fix, and I think its important to know when to ignore the pagespeed tool.</p>
+<ul>
+<li>We will keep ignoring &#8220;above-the-fold&#8221; render blocking messages. Yes you can use a plugin and print all your CSS and Javascript to the HTML instead of loading it, but this will only hurt consecutive page loads. So you will almost always get a message about your merged css file and that it blocks rendering.</li>
+<li>We will keep using external fonts from google, and we will load them in the header. This means we can no longer get a perfect page insights score since render blocking is active, and it also means that Yslow will reduce the score due to far-future expiration headers not sent for these resources (since they are served from google, the header must be set by google and its not going to be something they will do anytime in the future)</li>
+<li>We will probably never get a perfect score for all of our images, because as a designer I want my website too look good as well :)</li>
+<li>We will keep using external plugins like the Layerslider and WooCommerce which might reduce the score a little bit but offer amazing functionallity.</li>
+</ul>
+<p>These 4 points alone will reduce the score we get awarded. However at the same time, the real and most important metric will barely be compromised. <strong>Load time for the visitor.</strong> And this is something that still will be heavily reduced if you take all those steps above:)</p>
+<p>On our test page we went down to about half the size and half the page loading time from a previous enfold version when we apply realistic settings and do not delete any content at all. I would consider that a huge win, even if we do not score perfectly ;)</p>
+<p><img class="aligncenter size-large wp-image-3585" src="https://kriesi.at/wp-content/uploads/2018/03/realistic-1030x524.jpg" alt="" width="1030" height="524" srcset="https://kriesi.at/wp-content/uploads/2018/03/realistic-1030x524.jpg 1030w, https://kriesi.at/wp-content/uploads/2018/03/realistic-300x153.jpg 300w, https://kriesi.at/wp-content/uploads/2018/03/realistic-768x390.jpg 768w, https://kriesi.at/wp-content/uploads/2018/03/realistic-705x358.jpg 705w, https://kriesi.at/wp-content/uploads/2018/03/realistic-450x229.jpg 450w, https://kriesi.at/wp-content/uploads/2018/03/realistic.jpg 1359w" sizes="(max-width: 1030px) 100vw, 1030px" /></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow/feed</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>Enfold 4.3: Performance Update</title>
+		<link>https://kriesi.at/archives/enfold-4-3-performance-update</link>
+		<comments>https://kriesi.at/archives/enfold-4-3-performance-update#comments</comments>
+		<pubDate>Tue, 24 Apr 2018 08:17:57 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3604</guid>
+		<description><![CDATA[This release is probably one of the most important in recent years, since its the first major step in changing some of the core workings of our Enfold theme. Whenever software is written, a developer has to make certain decisions on how this software works. Most of the stuff we decided on, when first building [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">As announced earlier we wanted to improve the speed and usability of Enfold. I think you will like what we came up with :) </p>
+<p>This release is probably one of the most important in recent years, since its the first major step in changing some of the core workings of our Enfold theme.</p>
+<p>Whenever software is written, a developer has to make certain decisions on how this software works. Most of the stuff we decided on, when first building Enfold has served us well. But unfortunately some of those decisions now started to affect our ability to improve the theme further. This is why we decided to do a few major overhauls and Enfold 4.3 is the first one. This release affects performance in a few major ways and its hard to overstate how important all those performance changes are. So before we describe what we did, here is how it affects the theme:</p>
+<ul>
+<li>A typical Enfold based Website now loads anywhere from <strong>15%-75% less</strong> CSS and JS</li>
+<li>Enfold is now probably the best optimised multipurpose theme out there. We checked the competition and Enfold now uses less CSS and less JS on an average site than anyone else.</li>
+<li>In addition to being leaner and cleaner than the competition out of the box, the theme is now also exceptionally easy to optimize and you can <a href="https://kriesi.at/archives/scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow">achieve perfect google/gtmetrix pagespeed scores</a> if desired</li>
+<li>Search rankings will be higher for Websites using Enfold since loading speed for mobile will be factored into search results soon</li>
+<li>Conversion from visitors to customers will be better, since it&#8217;s a fact that every millisecond you can shave off the load time has a positive impact</li>
+</ul>
+<div id="attachment_3583" style="width: 1040px" class="wp-caption aligncenter"><a href="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20.png"><img class="size-large wp-image-3583" src="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-1030x227.png" alt="" width="1030" height="227" srcset="https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-1030x227.png 1030w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-300x66.png 300w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-768x169.png 768w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-705x155.png 705w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20-450x99.png 450w, https://kriesi.at/wp-content/uploads/2018/03/Screenshot-2018-03-28-16.22.20.png 1182w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">Achieving a perfect score in google or gtmetrix is now possible ;) &#8211; <a href="https://kriesi.at/archives/scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow">Blog post here</a>!</p></div>
+<p>So what did we change and why?</p>
+<p><span id="more-3604"></span></p>
+<h3>Modules</h3>
+<p>In this release we switched to a &#8220;module based&#8221; feature system. Previously when we added a new option in the backend, or added a new template builder element, it was enabled for everyone by default and was always loaded. So as Enfold grew with time, the list of features to load grew with it and the amount of CSS and JS also grew.</p>
+<p>Since only very large sites use every Enfold feature we offer, this means that a lot of smaller sites load a lot of unnecessary resources. It also means that adding new niche features is usually not a good idea since it affects all users who don&#8217;t use the feature negatively. We wanted to change that and therefore switched to a module based system.</p>
+<p>From now on Enfold only loads the CSS and JS files it requires. The theme now keeps track of the elements and options you use. So if you don&#8217;t use a video player, a countdown and a portfolio, the theme will no longer load these features.</p>
+<div id="attachment_3617" style="width: 1040px" class="wp-caption aligncenter"><a href="https://kriesi.at/wp-content/uploads/2018/04/modules.png"><img class="wp-image-3617 size-large" src="https://kriesi.at/wp-content/uploads/2018/04/modules-1030x211.png" alt="" width="1030" height="211" srcset="https://kriesi.at/wp-content/uploads/2018/04/modules-1030x211.png 1030w, https://kriesi.at/wp-content/uploads/2018/04/modules-300x61.png 300w, https://kriesi.at/wp-content/uploads/2018/04/modules-768x157.png 768w, https://kriesi.at/wp-content/uploads/2018/04/modules-1500x307.png 1500w, https://kriesi.at/wp-content/uploads/2018/04/modules-705x144.png 705w, https://kriesi.at/wp-content/uploads/2018/04/modules-450x92.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">Enable and Disable Modules to your liking in the new &#8220;Performance&#8221; Theme options</p></div>
+<p>What sounds like a little change,  was actually a lot of work over several months. The effects on performance and loading times are well worth it:</p>
+<p>A medium sized website (which I would say are 90% of our customers) now loads only about 35% of the resources it previously did. Thats 65% less stuff to load for your visitor, and therefore usually a huge speed improvement.</p>
+<p>It also means that we can now easily add niche features if we consider them valuable without affecting everyone elses performance. (like our new <a href="https://kriesi.at/themes/enfold-elegant-portfolio/about/" target="_blank" rel="noopener">timeline element</a> for example)</p>
+<h3>Compression</h3>
+<p>Along with the module based approach, we added a file compression feature that generates and optimises CSS and JS files, based on the features you use. So not only does the theme need to load less resources, those that are loaded are also compressed and cached properly (without any plugins) which further reduces loading times.</p>
+<div id="attachment_3619" style="width: 1040px" class="wp-caption aligncenter"><a href="https://kriesi.at/wp-content/uploads/2018/04/compression.png"><img class="wp-image-3619 size-large" src="https://kriesi.at/wp-content/uploads/2018/04/compression-1030x191.png" alt="" width="1030" height="191" srcset="https://kriesi.at/wp-content/uploads/2018/04/compression-1030x191.png 1030w, https://kriesi.at/wp-content/uploads/2018/04/compression-300x56.png 300w, https://kriesi.at/wp-content/uploads/2018/04/compression-768x143.png 768w, https://kriesi.at/wp-content/uploads/2018/04/compression-1500x278.png 1500w, https://kriesi.at/wp-content/uploads/2018/04/compression-705x131.png 705w, https://kriesi.at/wp-content/uploads/2018/04/compression-450x84.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" /></a><p class="wp-caption-text">File merging and compression for CSS and Javascript</p></div>
+<h3>Performance options</h3>
+<p>Since we were already doing the performance &#8220;dance&#8221; we added a whole performance theme options tab in your backend, that allows you to fine tune resource loading for your theme with a few clicks. We have already released an article on how to score <a href="https://kriesi.at/archives/scoring-100-100-in-google-pagespeed-insights-gtmetrix-pagespeed-and-yslow" target="_blank" rel="noopener">perfectly on google pagespeed and gtmetrix</a>.</p>
+<p>The Performance tab allows you to deactivate unnecessary and often unused default WordPress settings, it allows to change the behavior of our new module loading and compression to previous defaults (if you run into any troubles with plugins) and it offers optimization hints like which image optimization plugin or which caching plugin to use :)</p>
+<h3>What else is new and deserves a mention?</h3>
+<p>1.) As always there are lots of changes and improvements in this release and one that we like a lot is the option to use a whole page as a &#8220;global template&#8221;.<br />
+The new template builder element called &#8220;<strong>page content</strong>&#8221; allows you to load another page into the page you are currently using.</p>
+<p>As an example: lets say on each of your pages you want to display a list of links and logos to your business partners.<br />
+If you previously did that and a partner changed you had to change the list on every page individually. Now you can just create a &#8220;partnerlist&#8221; page that only contains this list and then load it into your frontpage, contact page, about page etc.</p>
+<p>If a partner changes you simply edit the &#8220;partnerlist&#8221; page and those changes will be visible on all your other pages as well.</p>
+<p>2.) Similar to that, we figured that using the same boring 3 or 4 column footer layout lost a lot of its appeal over time and is very limiting. You can now generate a footer page with your template builder and set that page to be your footer in your theme options at Enfold-&gt;Footer. A simple example of a nice custom footer can be seen in our <a href="https://kriesi.at/themes/enfold-elegant-portfolio/#footer-template" target="_blank" rel="noopener">latest demo</a>.</p>
+<p>Among other things we of course got <a href="https://kriesi.at/themes/enfold-elegant-portfolio/" target="_blank" rel="noopener">a new demo</a>, new template builder elements called &#8220;<a href="https://kriesi.at/themes/enfold-elegant-portfolio/about/" target="_blank" rel="noopener">timeline</a>&#8221; and &#8220;<a href="https://kriesi.at/themes/enfold-elegant-portfolio/#footer-template">button row</a>&#8221; (which lets you display multiple buttons in one row) full column linking, the option to display a notifications on pageload (eg cookie use) and so much more. Check the Change log for all the big and small details ;)</p>
+<h3>Whats up next?</h3>
+<p>Now that we only load features based on usage we are free to add niche template builder elements without affecting users who don&#8217;t need those elements. So you will probably see some of those niche elements with some niche demos. That said we are still keen on keeping Enfold easy to use for beginners, so we will of course not add every feature or element that comes to mind :D</p>
+<p>We are planing a smaller release next that adds features that satisfy the upcoming <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation" target="_blank" rel="noopener"><b>General Data Protection Regulation </b></a>which will be enforced accross the EU and also affect everyone doing business with someone in the EU.</p>
+<p>As for the bigger changes that we plan: as I mentioned earlier the way we previously loaded our assests was one of the things that stood in our way to further improve the theme. Another thing that served us well for a time but is now rather limiting are shortcodes. Enfolds template builder is &#8211; like most other template builders &#8211; based on shortcodes. Back when we first built enfold this was a de-facto standard and it had its merits. However, they are now a thing of the past. Shortcodes are slow (in terms of processing), require a lot of overhead (coding wise), cause problems a lot (with improper html nesting and/or HTML special characters) and are not very flexible in some other regards (nesting, global elements).</p>
+<p>WordPress itself is moving away from Shortcodes with their new Gutenberg Editor and we also noticed that some of the things we want to achieve with the builder (like unlimited nesting of columns, template builder content within toggles and tabs, etc) are not really doable while using shortcode as the &#8220;data structure&#8221; of a page. So this is the 2nd big task that we are tackling. We will change the data format of the builder and get rid of the shortcode structure in the long run to be able to improve the builder the way we would like. This will, like the implementation of modules, take a few releases but once done you are in for some big template builder improvements ;)</p>
+<h3>Change log</h3>
+<ul>
+<li>added: a new demo: <a href="https://kriesi.at/themes/enfold-elegant-portfolio/" target="_blank" rel="noopener">Enfold Elegant Portfolio</a></li>
+<li>added: performance tab in theme options that allows you to improve your website performance by using file compression/removal</li>
+<li>added: <a href="https://kriesi.at/themes/enfold-elegant-portfolio/#footer-template" target="_blank" rel="noopener">button row element</a> that allows to display multiple buttons beside each other</li>
+<li>added: new &#8220;<a href="https://kriesi.at/themes/enfold-elegant-portfolio/" target="_blank" rel="noopener">typewriter</a>&#8221; animation for rotating header element</li>
+<li>added: you can now set links for columns and cells</li>
+<li>added: you can now set a page as footer. This allows completely different footer designs</li>
+<li>added: option to close the notification template builder element and set a cookie to not display it again</li>
+<li>added: option to use background gradients for cells, columns and sections</li>
+<li>added: option to display a cookie use notification</li>
+<li>added: option to display button label as tooltip (that way you can use icon only buttons with hover effect)</li>
+<li>added: option to set a custom <a href="https://kriesi.at/themes/enfold-elegant-portfolio/404/" target="_blank" rel="noopener">404 page layout</a></li>
+<li>added: copyright option for image element</li>
+<li>added: plugin check for image optimization and caching plugins</li>
+<li>added: plugin recommendation for image optimization and caching plugins</li>
+<li>added: advanced styling option to style the active main menu item</li>
+<li>added: new google fonts</li>
+<li>added: margin spacing options for header element and header rotation element</li>
+<li>improved: several CSS and JS files will now only load if they are required, based on the theme option settings</li>
+<li>improved: demo import script</li>
+<li>fixed: buttons in main menu now always got the same height</li>
+<li>fixed: usage of the old jQuery Migrate Library no longer necessary due to JS improvements</li>
+<li>fixed: backwards comp. with PHP &lt; 5.5 in header.php</li>
+<li>fixed: slideshow fallback link handling for easy slider</li>
+<li>fixed: an issue with the size of self hosted videos</li>
+<li>fixed: loading of instagram images works properly again</li>
+<li>fixed: backwards compatibility issues wit RTL styling</li>
+<li>fixed: ALB color section: Small Arrow in Bottom Border Styling shows up twice</li>
+<li>fixed: ALB Product Purchase Button and WooCommerce &gt; 3.0 lead to endless loop</li>
+<li>fixed: Small issue in not creating attributes in breadcrumb for first element</li>
+<li>fixed: an issue with event Calender tickets</li>
+<li>fixed: an display issue with the shop main page and the breadcrumb navigation</li>
+<li>fixed: an issue with image overlay display</li>
+<li>updated: Layerslider plugin</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/enfold-4-3-performance-update/feed</wfw:commentRss>
+		<slash:comments>80</slash:comments>
+		</item>
+		<item>
+		<title>A few updates regarding WPML: Introducing WPML’s Contractors System</title>
+		<link>https://kriesi.at/archives/introducing-wpmls-contractors-system</link>
+		<comments>https://kriesi.at/archives/introducing-wpmls-contractors-system#comments</comments>
+		<pubDate>Tue, 30 Jan 2018 11:40:24 +0000</pubDate>
+		<dc:creator><![CDATA[Yigit]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Plugins]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3479</guid>
+		<description><![CDATA[WPML recently launched their contractors system to connect end users with contractors. End users can invite selected contractors to their projects in case they need help and the system will take care of the rest and distribute those invites. Once user and contractor are connected, WPML steps back and lets those two parties work out [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">WPML&#8217;s new contractors system makes it easier for Enfold users to find experienced developers to help them on  their multilingual projects and for developers to find Enfold users who need help. </p>
+<p><a href="https://wpml.org/">WPML</a> recently launched their contractors system to connect end users with contractors. End users can invite selected contractors to their projects in case they need help and the system will take care of the rest and distribute those invites. Once user and contractor are connected, WPML steps back and lets those two parties work out the details (WPML does not get involved in payments)</p>
+<p>Now Enfold users can search for contractors on <a href="https://wpml.org/contractors/?wpv_view_count=1435673&amp;wpv-wpcf-how-big-projects-can-you-handle=&amp;wpv-wpcf-do-you-provide-maintenance=+&amp;wpv-site-theme%5B%5D=enfold&amp;wpv-wpcf-how-small-projects-can-you-take=" target="_blank" rel="noopener">WPML&#8217;s Contractors System</a>. Contractors are well experienced in both Enfold and WPML but services they can provide are not limited to making your Enfold site a multilingual one. Most contractors can help you build a new website, maintain an existing website, fix issues on your existing website, help with SEO and more.</p>
+<p><span id="more-3479"></span></p>
+<p>If you are a developer/contractor looking to work on Enfold based projects, you can join WPML Contractors Club too. To join, you need to have at least 6 months of experience with  WPML  and have at least created 3 websites with it.</p>
+<p>You will need to do two things to appear as a WPML contractor:</p>
+<ul>
+<li>Fill the application form, which gives additional details about you and about the projects you can do.</li>
+<li>Upload at least three showcase sites, which will appear on your contractor page as your showcase.</li>
+</ul>
+<p>The WPML team will review your application, let you know if anything needs attention and will publish it when it’s complete.</p>
+<p>We are hoping that this system will be beneficial for both users and contractors. You can find more information about WPML&#8217;s contractors system <a href="https://wpml.org/2018/01/introducing-wpmls-contractors-system/" target="_blank" rel="noopener">here</a>.</p>
+<h3>New WPML feature, Display as translated</h3>
+<p><span style="font-weight: 400;">WPML also introduces a new translation mode called &#8211; </span><b>display as translated</b><span style="font-weight: 400;"> &#8211; which is compatible with Enfold and invaluable for developers using Enfold demos.</span></p>
+<p><span style="font-weight: 400;">About the </span><b>display as translated</b><span style="font-weight: 400;"> feature: </span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Users can show original content if no translation is available.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Users can display untranslated content without the need to duplicate it anymore. </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Useful for sites that don&#8217;t need to translate everything: </span><span style="font-weight: 400;">listing, directory and membership sites as well as WooCommerce products and taxonomies.</span></li>
+</ul>
+<p>You can find more information on <a href="https://kriesi.at/documentation/enfold/how-to-translate-pages-built-with-enfold-using-wpml/" target="_blank" rel="noopener">How to translate pages built with Enfold using WPML</a> tutorial on Enfold documentation.</p>
+<p>Hope some of this is useful for you guys!</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/introducing-wpmls-contractors-system/feed</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>Enfold 4.2: Focus on Audio and 5 new Demos for creatives, as well as first steps in theme optimization</title>
+		<link>https://kriesi.at/archives/enfold-4-2-focus-on-audio-and-5-new-demos-for-creatives-as-well-as-first-steps-in-theme-optimization</link>
+		<pubDate>Sat, 28 Oct 2017 15:29:07 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3463</guid>
+		<description><![CDATA[With that in mind we decided to cater for a few niche categories which were not really well supported by Enfold till now. Namely everything related to audio. And although we supported the WordPress audio player from the first release, it was more of an afterthought. We now added a dedicated audio player element with [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">Since our last release only featured 2 new demos due to all the backend work, we decided to help our creative community with this release and a slew of new demos concepts</p>
+<p>With that in mind we decided to cater for a few niche categories which were not really well supported by Enfold till now. Namely everything related to audio. And although we supported the WordPress audio player from the first release, it was more of an afterthought. We now added a dedicated audio player element with more options like autoplay so you can build <a href="https://kriesi.at/themes/enfold-dj/">Dj</a>, <a href="https://kriesi.at/themes/enfold-band/">Band</a>, Nightclub and other sites that are focused on audio.</p>
+<p><span id="more-3463"></span></p>
+<p>Also new are the demo for <a href="https://kriesi.at/themes/enfold-freelancer/">freelancers</a>, which uses a fullscreen split design, the demo for <a href="https://kriesi.at/themes/enfold-visual-artist/">visual artists</a>, which might help everyone who frequently draws and the <a href="https://kriesi.at/themes/enfold-gaming/">gaming</a> demo, for everyone who builds gaming related apps. As always each of these demos looks vastly different from anything we have done before, just to give you a glimpse of the possibilities of the theme :)</p>
+<p>&nbsp;</p>
+<h3>What else is new, what else is next?</h3>
+<p>Since we announced that we are going to improve Enfolds performance this was also something we started to look into. We were already able to remove an entire stylesheet with more than 1000 lines of CSS and also removed a lot of the backend generated CSS. The idea for future releases is to streamline CSS and JS and then make it possible for users to remove resources based on the elements that are used. This should also allow us to implement stuff like Google Accelerated Mobile Pages (AMP), something which is currently not really possible.</p>
+<p>Unfortunately this is no small undertaking since it will require a lot of core code changes. Since we want to keep everything running smoothly and since we do not want to break backwards compatibility we will carefully weave those changes into the next few releases, so stay tuned ;)</p>
+<p>&nbsp;</p>
+<h3>Change log</h3>
+<ul>
+<li>added: 5 new demos for creatives
+<ul>
+<li><a href="https://kriesi.at/themes/enfold-band/">band demo</a></li>
+<li><a href="https://kriesi.at/themes/enfold-dj/">dj demo</a></li>
+<li><a href="https://kriesi.at/themes/enfold-freelancer/">freelancer demo</a></li>
+<li><a href="https://kriesi.at/themes/enfold-visual-artist/">visual artist demo</a></li>
+<li><a href="https://kriesi.at/themes/enfold-gaming/">gaming demo</a></li>
+</ul>
+</li>
+<li>added: new template builder element: audio playlist</li>
+<li>added: new google fonts</li>
+<li>added: option to select color for section scroll down arrow</li>
+<li>added: new styling and color options for the toggle shortcode</li>
+<li>added: new wordpress filter to modify or remove main menu</li>
+<li>improved: better handling/loading times of deactivated lightbox script</li>
+<li>improved: default mediaelement audio player styling is now more modern, cleaner and requires much less css</li>
+<li>improved: several css files were trimed and others removed (1000 lines of css removed)</li>
+<li>improved: performance of blog element and reduced database queries</li>
+<li>improved: advanced options for link overlay display</li>
+<li>improved: testimonials shortcode delimiter logic</li>
+<li>improved: Plugin WP SEO integration with builder inserted images has been improved</li>
+<li>improved: Horizontal gallery now shows navigation arrows on mobile devices</li>
+<li>improved: Horizontal gallery allows to enter element ID now</li>
+<li>improved: handling of special characters like line breaks in shortcodes</li>
+<li>improved: tab section height handling when inner elements change their height</li>
+<li>improved: scroll down arrow alignment</li>
+<li>improved: several RTL css styles</li>
+<li>improved: breadcrumb navigation in ssl environments</li>
+<li>improved: removed an old filter from woocommerce</li>
+<li>improved: google maps API key handling within the theme and the theme framework</li>
+<li>improved: inclusion of layerslider plugin, so it does no longer show the update notice all the time</li>
+<li>fixed: an issue with the toggle shortcode not animating when showing its content</li>
+<li>fixed: issue with section overlays when a down arrow is used</li>
+<li>fixed: an issue with tabsection names that did not contain any non special chars</li>
+<li>fixed: an issue with the hamburger menu when empty links with subitems were used.</li>
+<li>fixed: Horizontal gallery now works with custom links</li>
+<li>fixed: Horizontal gallery now works with titles and captions in the lightbox</li>
+<li>fixed: Horizontal gallery now no longer breaks if the number of the initial image is larger than the gallery image count</li>
+<li>fixed: an issue with duplicate ids after a grid row element</li>
+<li>fixed: a bug with tab section alignment on RTL setups</li>
+<li>fixed: an issue with the Woocommerce checkout options on smaller screens</li>
+<li>fixed: an issue with hotspot descriptions</li>
+<li>fixed: an issue with demo import causing php notices</li>
+<li>fixed: a few smaller issues with the new mobile menu</li>
+<li>fixed: an issue with the post delimiter on custom made blog entries</li>
+<li>fixed: an issue with the secondary menu items not visible if the main menu is displayed as burger icon</li>
+<li>fixed: an issue with the shortcode wand and image with hotspot shortcode when not used as a template builder element</li>
+<li>fixed: an issue with product search in woocommerce</li>
+<li>fixed: an issue with mobile submenu cloning when the main menu is set to display in a sidebar</li>
+<li>fixed: an issue with copy/pasted shortcodes</li>
+<li>fixed: an issue with Zen Menu and Themify_Conditional_Menus</li>
+<li>fixed: an issue with importing demo data in php 7</li>
+<li>fixed: an issue with WPML and double language flags in the new mobile menu</li>
+<li>fixed: an issue with diagonal bordered sections and scroll down arrows</li>
+<li>fixed: an issue with burger menu social items on tablet screens</li>
+<li>fixed: an display issue with icon elements following a delimiter</li>
+<li>fixed: a bug with the caption shortcode within the textblock eelment</li>
+<li>updated: layerslider plugin</li>
+<li>updated: several translation files</li>
+</ul>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Enfold 4.1: Mobile improvements, Photography Demos, new Gallery and more</title>
+		<link>https://kriesi.at/archives/enfold-4-1-mobile-improvements-photography-demos-new-gallery-and-more</link>
+		<comments>https://kriesi.at/archives/enfold-4-1-mobile-improvements-photography-demos-new-gallery-and-more#comments</comments>
+		<pubDate>Thu, 13 Jul 2017 12:55:07 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3436</guid>
+		<description><![CDATA[Lets start with the new demos and the new layout builder element. We noticed a lot of photographers are using enfold for their projects and wanted to provide a few more demos for them to present their work. Therefore we created a new minimal photography demo, a dark photography demo and a horizontal gallery element. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">This update is the first in a series of updates to enhance Enfolds performance even more, both on mobile and desktop devices</p>
+<p>Lets start with the new demos and the new layout builder element. We noticed a lot of photographers are using enfold for their projects and wanted to provide a few more demos for them to present their work. Therefore we created a new <a href="https://kriesi.at/themes/enfold-minimal-photography/">minimal photography demo</a>, <a href="https://kriesi.at/themes/enfold-dark-photography/">a dark photography demo</a> and a <a href="https://kriesi.at/themes/enfold-dark-photography/portfolio-item/arctic/">horizontal gallery element</a>.</p>
+<p><span id="more-3436"></span></p>
+<h3>What else is new?</h3>
+<p>After releasing Enfold Version 4 we took a closer look at the requests we got and one that keept poping up was an enhanced mobile experience. We figured thats a good idea since mobile devices are an every growing way to browse the web, and Enfold lacked in a few ways.</p>
+<p>So what we added in this first release, which targets mobile devices are a much improved mobile menu that allows to change a lot of styles to make your mobile menu as unique as your site. It is also possible to use the site search on mobile, something that was also not possible.</p>
+<p>Another part of the theme which was heavily improved was the mobile options you got for your advanced layout builder. Pretty much all of the elements got a new option tab called &#8220;Screen Options&#8221; and depending on the element you will find several new settings there. Text based elements, for example, received the option to set the font size based on screen size. Column based elements received the same option for columns. Pretty much all elements can now be shown or hidden depending on the screen size. This allows for some interesting ways to build your website:</p>
+<p>Previously you had to set up an element for desktop size and then check if the theme properly scales it down on mobile devices. And although this usually works fine, there are elements or situations were this can get tricky.</p>
+<p>Now what you can do is simply set up 2 versions of an element and display/hide them at a breakpoint of your choice. Although it is not recommended to overdo this for the sake of search engines, it is now much easier to present tables of data or various sized images for various devices, for example.</p>
+<p>We also added 2 new tabs in your Enfold theme settings (&#8220;Main Menu&#8221; &amp; &#8220;Layout Builder&#8221;) and added new options for those tabs, as well as placing existing once in there if they are a better fit than their previous parents ;)</p>
+<p>There are of course a lot of smaller improvements and bugfixes which you can check out in the change log below.</p>
+<h3>What&#8217;s next?</h3>
+<p>We will keep improving the mobile experience with the next release and also want to improve the performance of Enfold in general. So if you got any suggestions in that direction feel free to use the comments.</p>
+<h3>Having Update Problems?</h3>
+<p>Since a lot of files have changed in this release there might be smaller issues (especially with menu customizations) some of you might encounter. If you encounter any issues please <a href="https://kriesi.at/support/topic/enfold-version-4-1-update-troubles/">follow the steps in this thread</a> and if that does not help: feel free to open a new thread in our support forum. We will do our best to take care of you :)</p>
+<h3>Change log</h3>
+<ul>
+<li>added: new photography theme demos: <a href="https://kriesi.at/themes/enfold-minimal-photography/">minimal photography</a> and <a href="https://kriesi.at/themes/enfold-dark-photography/">dark photography</a></li>
+<li>added: new template builder element: <a href="https://kriesi.at/themes/enfold-dark-photography/portfolio-item/kuala-lumpur/">horizontal gallery</a></li>
+<li>added: new modern mobile menu with more options (old mobile menu item was removed)</li>
+<li>added: new theme options tab for the main menu</li>
+<li>added: several new options to edit and style the main menu on mobile devices</li>
+<li>added: most elements received a &#8220;screen options&#8221; tab.</li>
+<li>added: visibility settings based on the screen options for all template builder elements</li>
+<li>added: font size settings to the screen options tab for text based elements (eg headings)</li>
+<li>added: column count settings based on the screen options for complex column based elements (eg masonry)</li>
+<li>added: advanced styling options for the mobile menu to create unique fly-out and overlay menus</li>
+<li>added: new theme options tab for the layout builder</li>
+<li>added: option to disable the live preview in backend</li>
+<li>added: option to enable custom css classes for template builder elements</li>
+<li>added: option to disable the post navigation between single posts</li>
+<li>added: google maps options to display Satellite, Hybrid or Terrain maps</li>
+<li>added: team element option to change image size</li>
+<li>added: Woocommerce can now add structured data to template builder elements</li>
+<li>added: tab sections can be pre-opened by url now</li>
+<li>added: google maps key check is now done when entering the key for easier checking if the key is valid</li>
+<li>added: new orientation for masonry image elements when set to &#8220;perfect grid&#8221; &#8211; you can now display images <a href="https://kriesi.at/themes/enfold-dark-photography/">as squares</a>, as well as landscape or portrait images of various sizes</li>
+<li>fixed: an issue with broken columns in tab section in backend</li>
+<li>fixed: breadcrumb function with custom shops</li>
+<li>fixed: an issue with tab sections on firefox when more than one word was used for the tab title</li>
+<li>fixed: several frontend issues with equal height tabs and columns within tabs</li>
+<li>fixed: RTL related issues</li>
+<li>fixed: an issue with shortcodes when they where copied from one page to another without using the default content field</li>
+<li>fixed: several minor query issues with the latest version of Woocommerce</li>
+<li>fixed: an issue with special chars in heading elements</li>
+<li>fixed: woocommerce cart dropdown on the checkout page was not updated properly</li>
+<li>fixed: several minor spelling errors in the template builder</li>
+<li>fixed: portfolio custom links now work better with various slideshows</li>
+<li>fixed: a woocommerce issue with out of stock items</li>
+<li>fixed: an issue with google maps click events and firefox</li>
+<li>fixed: an issue with initial active item on tab sections</li>
+<li>fixed: a problem with product layout settings</li>
+<li>fixed: an issue with linked images inside the layerslider slideshow</li>
+<li>fixed: a bug with portfolio ajax slideshows not autorotating or stoping after one cycle</li>
+<li>fixed: a minor character encoding problem in the template builder</li>
+<li>fixed: a display issue with comment forms when displayed after certain elements</li>
+<li>fixed: a few minor issues with php 7.1</li>
+<li>fixed: a menu display bug in ios 10+ when the items are animated</li>
+<li>fixed: a z-index issue with section overlays</li>
+<li>fixed: a problem with disabled backend options not beeing rendered properly after enabling them</li>
+<li>fixed: a flickering issue caused by css with the main menu on webkit engines (chrome, safari, opera)</li>
+<li>fixed: a validation issue with the mailchimp API key</li>
+<li>fixed: an issue with the live preview not updating properly after an option change</li>
+<li>fixed: a blog gallery bug when no sidebar blog was used in conjunction with the sidebar main menu</li>
+<li>fixed: menu overlay sub level menu items font size and line height are now set properly</li>
+<li>fixed: an issue with custom menu color settings and transparent menus</li>
+<li>improved: search functionality can now be used on mobile phones</li>
+<li>improved: cleanup of several CSS classes</li>
+<li>improved: removal of several JS functions that were no longer needed and improvement of existing functions like menu and smoothscroll</li>
+<li>updated: layerslider to the latest version</li>
+<li>updated: several language translation files</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/enfold-4-1-mobile-improvements-photography-demos-new-gallery-and-more/feed</wfw:commentRss>
+		<slash:comments>20</slash:comments>
+		</item>
+		<item>
+		<title>Enfold reimagined &#8211; Version 4.0</title>
+		<link>https://kriesi.at/archives/enfold-reimagined-version-4-0</link>
+		<comments>https://kriesi.at/archives/enfold-reimagined-version-4-0#comments</comments>
+		<pubDate>Wed, 01 Mar 2017 10:59:24 +0000</pubDate>
+		<dc:creator><![CDATA[Kriesi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[WordPress Themes]]></category>
+
+		<guid isPermaLink="false">https://kriesi.at/?p=3397</guid>
+		<description><![CDATA[Everything in this release was geared toward the question: If we would release a new theme today, how would it look like and how would it behave? More detailed: Would we build the site with a frontend editor or still use a backend editor? How would it look like? Would we need another slew of elements [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p class="av-intro-text">If Enfold were a new theme and we were to release it in 2017, that&#8217;s probably what it would look like</p>
+<p>Everything in this release was geared toward the question: If we would release a new theme today, how would it look like and how would it behave? More detailed:</p>
+<ul>
+<li>Would we build the site with a frontend editor or still use a backend editor?</li>
+<li>How would it look like?</li>
+<li>Would we need another slew of elements for the builder or are we fine with what we got?</li>
+<li>What about the design of existing elements?</li>
+<li>Which demos would we need?</li>
+</ul>
+<p>First of all, I think a lot of the decisions and assumptions on how a theme should work that we made back when we built Enfold are still valid. And I think a lot of our customers agree with us, since Enfold is still the best rated top seller on Themeforest with an <strong>astonishing rating of 4.85 out of 5</strong>. If you think about it, thats quite insane. Our rating gets worse if someone rates the theme with 4 stars; yet 4 stars is already considered an excellent rating :)</p>
+<div class='avia-double-buttons av-download-buttons'><a href='https://kriesi.at/themes/enfold-2017/' target='_blank' class='avia-double-button avia-double-button-1'>View Demo</a><span class='button_or'>or</span><a href='https://kriesi.at/themes/enfold-2017/' target='_blank' class='avia-double-button avia-double-button-2'>View Details</a></div>
+<p>But there are always things to improve so here here are a few explanations, thoughts and conclusions for those questions above, and what we plan to do in the future:</p>
+<p><span id="more-3397"></span></p>
+<h3>#1) The Editor</h3>
+<p>These days one of the core experiences to improve is the way a website gets built. So the first question we asked ourselves was if a frontend editor should replace (or be added) to the backend advanced layout editor that we currently use.</p>
+<p>There are a lot of merits for that argument, and the most noticeable one was that you can see how an element looks like while you are editing it. This is especially beneficial if you take new users into account, who have little or no idea how a certain element will look like if they change an option or setting.</p>
+<p>On the other hand, we consider lay-outing a site with front-end editors a pain. We have not seen an approach by anyone yet which works as fine as the visual dumbed down version of a backend editor. Even with several prototypes built by ourselves, there was no way we could reproduce the super simple and clear process of building a layout in your backend.</p>
+<p>So we decided to <strong>marry the best features of both worlds</strong> and heavily improved our backend editor with a lot more visual cues for layout elements like sections, grids and columns (which now display their backend color, their id, their background image and more&#8230;)</p>
+<p>More importantly we also added a <a href="https://kriesi.at/themes/enfold-2017/files/2017/02/layout_editor.jpg">live preview window</a> to most of the content elements, which allows us to show to users how their changes visually affect an element without the need to switch to the frontend.</p>
+<p><a href="https://kriesi.at/themes/enfold-2017/files/2017/02/layout_editor.jpg"><img class="aligncenter wp-image-3423 size-full" src="https://kriesi.at/wp-content/uploads/2017/02/preview.jpg" alt="" width="800" height="400" srcset="https://kriesi.at/wp-content/uploads/2017/02/preview.jpg 800w, https://kriesi.at/wp-content/uploads/2017/02/preview-300x150.jpg 300w, https://kriesi.at/wp-content/uploads/2017/02/preview-768x384.jpg 768w, https://kriesi.at/wp-content/uploads/2017/02/preview-705x353.jpg 705w, https://kriesi.at/wp-content/uploads/2017/02/preview-450x225.jpg 450w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>I built the whole <a href="https://kriesi.at/themes/enfold-2017/">Enfold 2017 Demo</a> with these features already implemented and really loved the experience, so I am very curious about your feedback :)</p>
+<h3>#2) Design and availability of layout builder elements</h3>
+<p>In general we don&#8217;t think that there are a lot of elements that would be totally necessary to add to the theme. We already got about 70 different ones (also counting the ones that are only activated when plugins like WooCommerce are active) and <a href="https://kriesi.at/themes/enfold-overview/">our demos</a> show that you can build pretty much everything you can think off.</p>
+<p><strong>BUT</strong>: every now and then we encounter something nice on other websites or get feature requests that make total sense at the time and then decide to add that element. I still like that approach and I think we will keep doing that in the future. This was also the case with the latest element that got added, the <a href="https://kriesi.at/themes/enfold-2017/elements/tab-section/">tab section</a>.</p>
+<p>Customers have requested a tab element that can take full advantage of the layout builder for a while now, but since it required a lot of rewriting of the way the builder works in the backend, we postponed it time and time again. However with the latest release and with the extensive rewrites to the layout builder that we already did, the time for this element has finally come :)</p>
+<p>In addition to that, now that we got a visual preview  for content elements, its also a lot easier for us to add more design options without overwhelming newer customers. The first few elements that received more styles to chose from are the <a href="https://kriesi.at/themes/enfold-2017/elements/progress-bars/">progress bar</a>, the <a href="https://kriesi.at/themes/enfold-2017/elements/testimonials/">testimonial element</a> and the <a href="https://kriesi.at/themes/enfold-2017/elements/icon-box/">icon box</a> but others will soon follow.</p>
+<p>We also tried to streamline a lot of the design elements on our pages among all elements (e.g.: the loader that is visible once you click a light-box image, a portfolio Ajax item, a masonry load more button etc. was modernized and streamlined across all elements and also improved for retina display)</p>
+<p>This is the way we intend to go forward in the future as well. Be careful with adding new elements, be careful with adding new theme options that don&#8217;t offer visual feedback, but try to add more options for elements that work with the preview window; and on top of that make sure that all of this stuff fits together well and then pack it into new amazing demos. Speaking of demos&#8230;</p>
+<h3>#3) The Main Demo</h3>
+<p><a href="https://kriesi.at/themes/enfold-2017/"><img class="aligncenter wp-image-3422 size-full" src="https://kriesi.at/wp-content/uploads/2017/02/2017.jpg" width="800" height="400" srcset="https://kriesi.at/wp-content/uploads/2017/02/2017.jpg 800w, https://kriesi.at/wp-content/uploads/2017/02/2017-300x150.jpg 300w, https://kriesi.at/wp-content/uploads/2017/02/2017-768x384.jpg 768w, https://kriesi.at/wp-content/uploads/2017/02/2017-705x353.jpg 705w, https://kriesi.at/wp-content/uploads/2017/02/2017-450x225.jpg 450w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>Another question to be asked when you release a new theme: How should the main demo look like?</p>
+<p>We still like the Classic Enfold Demo that was released 4 years ago, but there are certain elements and design choices that look a little dated by now. They are still beloved by a lot of users, thats why we did not simply change existing elements, but as mentioned above, added additional style now that we got the preview window.</p>
+<p>But in order to take full advantage of all the stuff that we built during the last 4 years we decided that we need a new main demo. This always takes a lot of effort, since other than the usual niche demo which seldom has more than 5-10 pages, these full feature demos have several hundred individual pages. We are really happy with the outcome and <a href="https://kriesi.at/themes/enfold-2017/">hope you like it as well!</a></p>
+<p>The old main demo will of course still stay online and be available for demo import in the future.</p>
+<h3>And whats next?</h3>
+<p>Next thing on our agenda is to improve all the elements that could benefit from an overhaul on mobile devices. We have snuck a few things into this release already but will try to heavily improve the mobile experience with the next one. Feel free to leave any suggestions in the comment section of this post.</p>
+<p>Last but not least we got the usual change log with a list of bug fixes and improvements.</p>
+<p><a href="https://themeforest.net/item/enfold-responsive-multipurpose-theme/4519990#item-description__changelog">Here are the</a> most important changes.</p>
+<h3></h3>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://kriesi.at/archives/enfold-reimagined-version-4-0/feed</wfw:commentRss>
+		<slash:comments>31</slash:comments>
+		</item>
+	</channel>
+</rss>
